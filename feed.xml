@@ -2,9 +2,15 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 <title>Aggregated GitHub Releases</title>
 <link href="https://example.com/feed.xml" rel="self"/>
-<updated>2024-03-11T17:23:08Z</updated>
+<updated>2024-03-11T18:01:27Z</updated>
 <author><name>Aggregated Feed</name></author>
 <id>urn:uuid:aggregated-feed</id>
+<entry>
+<title>v5.20.0</title>
+<link href='https://github.com/hashicorp/terraform-provider-google/releases/tag/v5.20.0'/>
+<id>tag:github.com,2008:Repository/93446075/v5.20.0</id>
+<updated>2024-03-11T17:31:19Z</updated>
+</entry>
 <entry>
 <title>v3.95.0</title>
 <link href='https://github.com/hashicorp/terraform-provider-azurerm/releases/tag/v3.95.0'/>
@@ -238,11 +244,5 @@
 <link href='https://github.com/hashicorp/terraform-provider-azurerm/releases/tag/v3.86.0'/>
 <id>tag:github.com,2008:Repository/93446042/v3.86.0</id>
 <updated>2024-01-05T05:59:54Z</updated>
-</entry>
-<entry>
-<title>v5.10.0</title>
-<link href='https://github.com/hashicorp/terraform-provider-google/releases/tag/v5.10.0'/>
-<id>tag:github.com,2008:Repository/93446075/v5.10.0</id>
-<updated>2023-12-18T19:57:14Z</updated>
 </entry>
 </feed>
