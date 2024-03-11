@@ -1,0 +1,33 @@
+name: Publish Aggregated RSS to GitHub Pages
+
+on:
+  schedule:
+    - cron: '0 */6 * * *' # Runs every 6 hours; adjust as needed
+  workflow_dispatch: # Allows manual triggering
+
+jobs:
+  build-and-publish:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+      with:
+        fetch-depth: 0 # Fetches all history for .Git Info and tags
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.x'
+
+    - name: Install dependencies
+      run: |
+        pip install feedparser requests
+
+    - name: Generate Aggregated RSS Feed
+      run: python aggregate_rss.py
+
+    - name: Publish to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./ # Or the directory where your RSS file is saved
