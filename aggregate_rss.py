@@ -44,3 +44,10 @@ for entry in entries:
     print(f"</entry>")
 
 print("</feed>")
+
+
+with open('feed.xml', 'w', encoding='utf-8') as f:
+    f.write('<?xml version="1.0" encoding="UTF-8"?>\n')
+    f.write('<feed xmlns="http://www.w3.org/2005/Atom">\n')
+    # Include the rest of your feed content here
+    f.write('</feed>')
