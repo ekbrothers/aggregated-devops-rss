@@ -22,6 +22,7 @@ jobs:
     - name: Install dependencies
       run: |
         pip install feedparser requests
+        pip install feedparser requests pytz
 
     - name: Generate Aggregated RSS Feed
       run: python aggregate_rss.py
