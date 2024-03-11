@@ -2,9 +2,21 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 <title>Aggregated GitHub Releases</title>
 <link href="https://example.com/feed.xml" rel="self"/>
-<updated>2024-03-11T17:00:47Z</updated>
+<updated>2024-03-11T17:03:54Z</updated>
 <author><name>Aggregated Feed</name></author>
 <id>urn:uuid:aggregated-feed</id>
+<entry>
+<title>v3.95.0</title>
+<link href='https://github.com/hashicorp/terraform-provider-azurerm/releases/tag/v3.95.0'/>
+<id>tag:github.com,2008:Repository/93446042/v3.95.0</id>
+<updated>2024-03-08T17:47:18Z</updated>
+</entry>
+<entry>
+<title>v5.40.0</title>
+<link href='https://github.com/hashicorp/terraform-provider-aws/releases/tag/v5.40.0'/>
+<id>tag:github.com,2008:Repository/93444615/v5.40.0</id>
+<updated>2024-03-07T23:00:15Z</updated>
+</entry>
 <entry>
 <title>v1.8.0-beta1</title>
 <link href='https://github.com/hashicorp/terraform/releases/tag/v1.8.0-beta1'/>
@@ -18,6 +30,24 @@
 <updated>2024-03-04T17:37:43Z</updated>
 </entry>
 <entry>
+<title>v5.39.1</title>
+<link href='https://github.com/hashicorp/terraform-provider-aws/releases/tag/v5.39.1'/>
+<id>tag:github.com,2008:Repository/93444615/v5.39.1</id>
+<updated>2024-03-01T18:38:25Z</updated>
+</entry>
+<entry>
+<title>v3.94.0</title>
+<link href='https://github.com/hashicorp/terraform-provider-azurerm/releases/tag/v3.94.0'/>
+<id>tag:github.com,2008:Repository/93446042/v3.94.0</id>
+<updated>2024-03-01T02:47:12Z</updated>
+</entry>
+<entry>
+<title>v5.39.0</title>
+<link href='https://github.com/hashicorp/terraform-provider-aws/releases/tag/v5.39.0'/>
+<id>tag:github.com,2008:Repository/93444615/v5.39.0</id>
+<updated>2024-02-29T23:24:22Z</updated>
+</entry>
+<entry>
 <title>v1.8.0-alpha20240228</title>
 <link href='https://github.com/hashicorp/terraform/releases/tag/v1.8.0-alpha20240228'/>
 <id>tag:github.com,2008:Repository/17728164/v1.8.0-alpha20240228</id>
@@ -28,6 +58,18 @@
 <link href='https://github.com/hashicorp/terraform-provider-google/releases/tag/v5.18.0'/>
 <id>tag:github.com,2008:Repository/93446075/v5.18.0</id>
 <updated>2024-02-26T18:10:05Z</updated>
+</entry>
+<entry>
+<title>v3.93.0</title>
+<link href='https://github.com/hashicorp/terraform-provider-azurerm/releases/tag/v3.93.0'/>
+<id>tag:github.com,2008:Repository/93446042/v3.93.0</id>
+<updated>2024-02-23T02:59:26Z</updated>
+</entry>
+<entry>
+<title>v5.38.0</title>
+<link href='https://github.com/hashicorp/terraform-provider-aws/releases/tag/v5.38.0'/>
+<id>tag:github.com,2008:Repository/93444615/v5.38.0</id>
+<updated>2024-02-22T23:13:46Z</updated>
 </entry>
 <entry>
 <title>v1.7.4</title>
@@ -48,6 +90,18 @@
 <updated>2024-02-16T23:13:44Z</updated>
 </entry>
 <entry>
+<title>v3.92.0</title>
+<link href='https://github.com/hashicorp/terraform-provider-azurerm/releases/tag/v3.92.0'/>
+<id>tag:github.com,2008:Repository/93446042/v3.92.0</id>
+<updated>2024-02-16T03:09:24Z</updated>
+</entry>
+<entry>
+<title>v5.37.0</title>
+<link href='https://github.com/hashicorp/terraform-provider-aws/releases/tag/v5.37.0'/>
+<id>tag:github.com,2008:Repository/93444615/v5.37.0</id>
+<updated>2024-02-15T21:25:26Z</updated>
+</entry>
+<entry>
 <title>v1.8.0-alpha20240214</title>
 <link href='https://github.com/hashicorp/terraform/releases/tag/v1.8.0-alpha20240214'/>
 <id>tag:github.com,2008:Repository/17728164/v1.8.0-alpha20240214</id>
@@ -60,6 +114,18 @@
 <updated>2024-02-12T19:06:03Z</updated>
 </entry>
 <entry>
+<title>v3.91.0</title>
+<link href='https://github.com/hashicorp/terraform-provider-azurerm/releases/tag/v3.91.0'/>
+<id>tag:github.com,2008:Repository/93446042/v3.91.0</id>
+<updated>2024-02-09T02:51:38Z</updated>
+</entry>
+<entry>
+<title>v5.36.0</title>
+<link href='https://github.com/hashicorp/terraform-provider-aws/releases/tag/v5.36.0'/>
+<id>tag:github.com,2008:Repository/93444615/v5.36.0</id>
+<updated>2024-02-08T23:24:37Z</updated>
+</entry>
+<entry>
 <title>v1.7.3</title>
 <link href='https://github.com/hashicorp/terraform/releases/tag/v1.7.3'/>
 <id>tag:github.com,2008:Repository/17728164/v1.7.3</id>
@@ -70,6 +136,18 @@
 <link href='https://github.com/hashicorp/terraform-provider-google/releases/tag/v5.15.0'/>
 <id>tag:github.com,2008:Repository/93446075/v5.15.0</id>
 <updated>2024-02-05T19:13:36Z</updated>
+</entry>
+<entry>
+<title>v5.35.0</title>
+<link href='https://github.com/hashicorp/terraform-provider-aws/releases/tag/v5.35.0'/>
+<id>tag:github.com,2008:Repository/93444615/v5.35.0</id>
+<updated>2024-02-02T22:29:49Z</updated>
+</entry>
+<entry>
+<title>v3.90.0</title>
+<link href='https://github.com/hashicorp/terraform-provider-azurerm/releases/tag/v3.90.0'/>
+<id>tag:github.com,2008:Repository/93446042/v3.90.0</id>
+<updated>2024-02-02T01:40:21Z</updated>
 </entry>
 <entry>
 <title>v1.8.0-alpha20240131</title>
@@ -90,6 +168,18 @@
 <updated>2024-01-29T19:44:24Z</updated>
 </entry>
 <entry>
+<title>v5.34.0</title>
+<link href='https://github.com/hashicorp/terraform-provider-aws/releases/tag/v5.34.0'/>
+<id>tag:github.com,2008:Repository/93444615/v5.34.0</id>
+<updated>2024-01-26T01:51:56Z</updated>
+</entry>
+<entry>
+<title>v3.89.0</title>
+<link href='https://github.com/hashicorp/terraform-provider-azurerm/releases/tag/v3.89.0'/>
+<id>tag:github.com,2008:Repository/93446042/v3.89.0</id>
+<updated>2024-01-25T13:18:41Z</updated>
+</entry>
+<entry>
 <title>v1.7.1</title>
 <link href='https://github.com/hashicorp/terraform/releases/tag/v1.7.1'/>
 <id>tag:github.com,2008:Repository/17728164/v1.7.1</id>
@@ -100,6 +190,18 @@
 <link href='https://github.com/hashicorp/terraform-provider-google/releases/tag/v5.13.0'/>
 <id>tag:github.com,2008:Repository/93446075/v5.13.0</id>
 <updated>2024-01-22T19:40:43Z</updated>
+</entry>
+<entry>
+<title>v3.88.0</title>
+<link href='https://github.com/hashicorp/terraform-provider-azurerm/releases/tag/v3.88.0'/>
+<id>tag:github.com,2008:Repository/93446042/v3.88.0</id>
+<updated>2024-01-19T02:02:24Z</updated>
+</entry>
+<entry>
+<title>v5.33.0</title>
+<link href='https://github.com/hashicorp/terraform-provider-aws/releases/tag/v5.33.0'/>
+<id>tag:github.com,2008:Repository/93444615/v5.33.0</id>
+<updated>2024-01-18T22:45:08Z</updated>
 </entry>
 <entry>
 <title>v1.7.0</title>
@@ -114,10 +216,28 @@
 <updated>2024-01-16T19:33:44Z</updated>
 </entry>
 <entry>
+<title>v3.87.0</title>
+<link href='https://github.com/hashicorp/terraform-provider-azurerm/releases/tag/v3.87.0'/>
+<id>tag:github.com,2008:Repository/93446042/v3.87.0</id>
+<updated>2024-01-12T22:16:17Z</updated>
+</entry>
+<entry>
+<title>v5.32.1</title>
+<link href='https://github.com/hashicorp/terraform-provider-aws/releases/tag/v5.32.1'/>
+<id>tag:github.com,2008:Repository/93444615/v5.32.1</id>
+<updated>2024-01-12T18:03:52Z</updated>
+</entry>
+<entry>
 <title>v5.11.0</title>
 <link href='https://github.com/hashicorp/terraform-provider-google/releases/tag/v5.11.0'/>
 <id>tag:github.com,2008:Repository/93446075/v5.11.0</id>
 <updated>2024-01-08T22:55:33Z</updated>
+</entry>
+<entry>
+<title>v3.86.0</title>
+<link href='https://github.com/hashicorp/terraform-provider-azurerm/releases/tag/v3.86.0'/>
+<id>tag:github.com,2008:Repository/93446042/v3.86.0</id>
+<updated>2024-01-05T05:59:54Z</updated>
 </entry>
 <entry>
 <title>v5.10.0</title>

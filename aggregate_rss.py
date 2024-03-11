@@ -7,7 +7,9 @@ import pytz
 feeds = [
     "https://github.com/hashicorp/terraform/releases.atom",
     "https://github.com/hashicorp/terraform-provider-google/releases.atom",
-    "http://lorem-rss.herokuapp.com/feed/feed?unit=second&interval=30"
+    "http://lorem-rss.herokuapp.com/feed/feed?unit=second&interval=30",
+    "https://github.com/hashicorp/terraform-provider-azurerm/releases.atom",
+    "https://github.com/hashicorp/terraform-provider-aws/releases.atom"
 ]
 
 entries = []
