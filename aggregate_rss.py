@@ -61,16 +61,19 @@ with open('feed.xml', 'w', encoding='utf-8') as f:
     f.write('<id>urn:uuid:aggregated-feed</id>\n')
 
     for entry in entries:
-        # Safely access the 'title' and 'link', and format 'published' date
         title = entry.get('title', 'No title available')
         link = entry.get('link', 'No link available')
         published = datetime(*entry.published_parsed[:6]).strftime('%Y-%m-%dT%H:%M:%SZ') if entry.published_parsed else 'No date available'
+        summary = entry.get('summary', 'No summary available')
+        author = entry.get('author', 'No author available')
         
         f.write('<entry>\n')
         f.write(f"<title>{title}</title>\n")
         f.write(f"<link href='{link}'/>\n")
         f.write(f"<id>{entry.id}</id>\n")
         f.write(f"<updated>{published}</updated>\n")
+        f.write(f"<summary>{summary}</summary>\n")
+        f.write(f"<author><name>{author}</name></author>\n")
         f.write('</entry>\n')
     
     f.write('</feed>')
