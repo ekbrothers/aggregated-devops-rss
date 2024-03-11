@@ -16,8 +16,8 @@ entries = []
 for feed_url in feeds:
     response = requests.get(feed_url)
     feed = feedparser.parse(response.content)
-    print(f"Found {len(feed.entries)} entries in {feed_url}")
-    entries.extend(feed.entries)
+    # print(f"Found {len(feed.entries)} entries in {feed_url}")
+    # entries.extend(feed.entries)
     for entry in feed.entries:
         # Provide a default value or try alternative fields if 'published' is missing
         entry.published_parsed = entry.get('published_parsed', entry.get('updated_parsed'))
@@ -54,16 +54,21 @@ with open('feed.xml', 'w', encoding='utf-8') as f:
     f.write('<feed xmlns="http://www.w3.org/2005/Atom">\n')
     f.write('<title>Aggregated GitHub Releases</title>\n')
     f.write('<link href="https://example.com/feed.xml" rel="self"/>\n')
-    f.write('<updated>{}</updated>\n'.format(datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%SZ')))
-    f.write('<author><name>Author Name</name></author>\n')
-    f.write('<id>urn:uuid:your-unique-identifier-here</id>\n')
+    f.write(f"<updated>{datetime.now(pytz.utc).strftime('%Y-%m-%dT%H:%M:%SZ')}</updated>\n")
+    f.write('<author><name>Aggregated Feed</name></author>\n')
+    f.write('<id>urn:uuid:aggregated-feed</id>\n')
 
     for entry in entries:
+        # Safely access the 'title' and 'link', and format 'published' date
+        title = entry.get('title', 'No title available')
+        link = entry.get('link', 'No link available')
+        published = datetime(*entry.published_parsed[:6]).strftime('%Y-%m-%dT%H:%M:%SZ') if entry.published_parsed else 'No date available'
+        
         f.write('<entry>\n')
-        f.write('<title>{}</title>\n'.format(entry['title']))
-        f.write('<link href="{}"/>\n'.format(entry['link']))
-        f.write('<id>{}</id>\n'.format(entry['id']))
-        f.write('<updated>{}</updated>\n'.format(entry['published'].strftime('%Y-%m-%dT%H:%M:%SZ')))
+        f.write(f"<title>{title}</title>\n")
+        f.write(f"<link href='{link}'/>\n")
+        f.write(f"<id>{entry.id}</id>\n")
+        f.write(f"<updated>{published}</updated>\n")
         f.write('</entry>\n')
     
     f.write('</feed>')
