@@ -6,7 +6,8 @@ import pytz
 # RSS feed URLs
 feeds = [
     "https://github.com/hashicorp/terraform/releases.atom",
-    "https://github.com/hashicorp/terraform-provider-google/releases.atom"
+    "https://github.com/hashicorp/terraform-provider-google/releases.atom",
+    "http://lorem-rss.herokuapp.com/feed/feed?unit=second&interval=30"
 ]
 
 entries = []
@@ -15,6 +16,8 @@ entries = []
 for feed_url in feeds:
     response = requests.get(feed_url)
     feed = feedparser.parse(response.content)
+    print(f"Found {len(feed.entries)} entries in {feed_url}")
+    entries.extend(feed.entries)
     for entry in feed.entries:
         # Provide a default value or try alternative fields if 'published' is missing
         entry.published_parsed = entry.get('published_parsed', entry.get('updated_parsed'))
