@@ -52,5 +52,18 @@ print("</feed>")
 with open('feed.xml', 'w', encoding='utf-8') as f:
     f.write('<?xml version="1.0" encoding="UTF-8"?>\n')
     f.write('<feed xmlns="http://www.w3.org/2005/Atom">\n')
-    # Include the rest of your feed content here
+    f.write('<title>Aggregated GitHub Releases</title>\n')
+    f.write('<link href="https://example.com/feed.xml" rel="self"/>\n')
+    f.write('<updated>{}</updated>\n'.format(datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%SZ')))
+    f.write('<author><name>Author Name</name></author>\n')
+    f.write('<id>urn:uuid:your-unique-identifier-here</id>\n')
+
+    for entry in entries:
+        f.write('<entry>\n')
+        f.write('<title>{}</title>\n'.format(entry['title']))
+        f.write('<link href="{}"/>\n'.format(entry['link']))
+        f.write('<id>{}</id>\n'.format(entry['id']))
+        f.write('<updated>{}</updated>\n'.format(entry['published'].strftime('%Y-%m-%dT%H:%M:%SZ')))
+        f.write('</entry>\n')
+    
     f.write('</feed>')
