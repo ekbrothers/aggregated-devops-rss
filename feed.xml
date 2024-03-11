@@ -1,3 +1,128 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
+<title>Aggregated GitHub Releases</title>
+<link href="https://example.com/feed.xml" rel="self"/>
+<updated>2024-03-11T16:57:40Z</updated>
+<author><name>Aggregated Feed</name></author>
+<id>urn:uuid:aggregated-feed</id>
+<entry>
+<title>v1.8.0-beta1</title>
+<link href='https://github.com/hashicorp/terraform/releases/tag/v1.8.0-beta1'/>
+<id>tag:github.com,2008:Repository/17728164/v1.8.0-beta1</id>
+<updated>2024-03-06T19:08:23Z</updated>
+</entry>
+<entry>
+<title>v5.19.0</title>
+<link href='https://github.com/hashicorp/terraform-provider-google/releases/tag/v5.19.0'/>
+<id>tag:github.com,2008:Repository/93446075/v5.19.0</id>
+<updated>2024-03-04T17:37:43Z</updated>
+</entry>
+<entry>
+<title>v1.8.0-alpha20240228</title>
+<link href='https://github.com/hashicorp/terraform/releases/tag/v1.8.0-alpha20240228'/>
+<id>tag:github.com,2008:Repository/17728164/v1.8.0-alpha20240228</id>
+<updated>2024-02-28T13:46:52Z</updated>
+</entry>
+<entry>
+<title>v5.18.0</title>
+<link href='https://github.com/hashicorp/terraform-provider-google/releases/tag/v5.18.0'/>
+<id>tag:github.com,2008:Repository/93446075/v5.18.0</id>
+<updated>2024-02-26T18:10:05Z</updated>
+</entry>
+<entry>
+<title>v1.7.4</title>
+<link href='https://github.com/hashicorp/terraform/releases/tag/v1.7.4'/>
+<id>tag:github.com,2008:Repository/17728164/v1.7.4</id>
+<updated>2024-02-21T20:19:23Z</updated>
+</entry>
+<entry>
+<title>v5.17.0</title>
+<link href='https://github.com/hashicorp/terraform-provider-google/releases/tag/v5.17.0'/>
+<id>tag:github.com,2008:Repository/93446075/v5.17.0</id>
+<updated>2024-02-20T22:26:18Z</updated>
+</entry>
+<entry>
+<title>v1.8.0-alpha20240216</title>
+<link href='https://github.com/hashicorp/terraform/releases/tag/v1.8.0-alpha20240216'/>
+<id>tag:github.com,2008:Repository/17728164/v1.8.0-alpha20240216</id>
+<updated>2024-02-16T23:13:44Z</updated>
+</entry>
+<entry>
+<title>v1.8.0-alpha20240214</title>
+<link href='https://github.com/hashicorp/terraform/releases/tag/v1.8.0-alpha20240214'/>
+<id>tag:github.com,2008:Repository/17728164/v1.8.0-alpha20240214</id>
+<updated>2024-02-14T18:07:30Z</updated>
+</entry>
+<entry>
+<title>v5.16.0</title>
+<link href='https://github.com/hashicorp/terraform-provider-google/releases/tag/v5.16.0'/>
+<id>tag:github.com,2008:Repository/93446075/v5.16.0</id>
+<updated>2024-02-12T19:06:03Z</updated>
+</entry>
+<entry>
+<title>v1.7.3</title>
+<link href='https://github.com/hashicorp/terraform/releases/tag/v1.7.3'/>
+<id>tag:github.com,2008:Repository/17728164/v1.7.3</id>
+<updated>2024-02-08T01:43:04Z</updated>
+</entry>
+<entry>
+<title>v5.15.0</title>
+<link href='https://github.com/hashicorp/terraform-provider-google/releases/tag/v5.15.0'/>
+<id>tag:github.com,2008:Repository/93446075/v5.15.0</id>
+<updated>2024-02-05T19:13:36Z</updated>
+</entry>
+<entry>
+<title>v1.8.0-alpha20240131</title>
+<link href='https://github.com/hashicorp/terraform/releases/tag/v1.8.0-alpha20240131'/>
+<id>tag:github.com,2008:Repository/17728164/v1.8.0-alpha20240131</id>
+<updated>2024-01-31T15:55:07Z</updated>
+</entry>
+<entry>
+<title>v1.7.2</title>
+<link href='https://github.com/hashicorp/terraform/releases/tag/v1.7.2'/>
+<id>tag:github.com,2008:Repository/17728164/v1.7.2</id>
+<updated>2024-01-31T14:49:39Z</updated>
+</entry>
+<entry>
+<title>v5.14.0</title>
+<link href='https://github.com/hashicorp/terraform-provider-google/releases/tag/v5.14.0'/>
+<id>tag:github.com,2008:Repository/93446075/v5.14.0</id>
+<updated>2024-01-29T19:44:24Z</updated>
+</entry>
+<entry>
+<title>v1.7.1</title>
+<link href='https://github.com/hashicorp/terraform/releases/tag/v1.7.1'/>
+<id>tag:github.com,2008:Repository/17728164/v1.7.1</id>
+<updated>2024-01-24T12:36:42Z</updated>
+</entry>
+<entry>
+<title>v5.13.0</title>
+<link href='https://github.com/hashicorp/terraform-provider-google/releases/tag/v5.13.0'/>
+<id>tag:github.com,2008:Repository/93446075/v5.13.0</id>
+<updated>2024-01-22T19:40:43Z</updated>
+</entry>
+<entry>
+<title>v1.7.0</title>
+<link href='https://github.com/hashicorp/terraform/releases/tag/v1.7.0'/>
+<id>tag:github.com,2008:Repository/17728164/v1.7.0</id>
+<updated>2024-01-17T19:59:32Z</updated>
+</entry>
+<entry>
+<title>v5.12.0</title>
+<link href='https://github.com/hashicorp/terraform-provider-google/releases/tag/v5.12.0'/>
+<id>tag:github.com,2008:Repository/93446075/v5.12.0</id>
+<updated>2024-01-16T19:33:44Z</updated>
+</entry>
+<entry>
+<title>v5.11.0</title>
+<link href='https://github.com/hashicorp/terraform-provider-google/releases/tag/v5.11.0'/>
+<id>tag:github.com,2008:Repository/93446075/v5.11.0</id>
+<updated>2024-01-08T22:55:33Z</updated>
+</entry>
+<entry>
+<title>v5.10.0</title>
+<link href='https://github.com/hashicorp/terraform-provider-google/releases/tag/v5.10.0'/>
+<id>tag:github.com,2008:Repository/93446075/v5.10.0</id>
+<updated>2023-12-18T19:57:14Z</updated>
+</entry>
 </feed>
