@@ -32,3 +32,6 @@ jobs:
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./ # Or the directory where your RSS file is saved
+    
+    - name: Output GitHub Pages URL
+      run: echo "Your aggregated RSS feed is published at https://ekbrothers.github.io/aggregated-devops-rss /"
