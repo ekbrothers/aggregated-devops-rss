@@ -41,7 +41,8 @@ with open('feed.xml', 'w', encoding='utf-8') as f:
         title = f"{provider_name} Release: {entry.title}"
         link = entry.link
         published = datetime(*entry.published_parsed[:6]).strftime('%Y-%m-%dT%H:%M:%SZ') if entry.published_parsed else 'No date available'
-        summary = entry.summary if 'summary' in entry else 'No summary available'
+        # Wrap summary in CDATA section
+        summary = f"<![CDATA[{entry.summary}]]>" if 'summary' in entry else 'No summary available'
         author = entry.author if 'author' in entry else 'No author available'
         
         f.write('<entry>\n')
@@ -49,8 +50,8 @@ with open('feed.xml', 'w', encoding='utf-8') as f:
         f.write(f"<link href='{link}'/>\n")
         f.write(f"<id>{entry.id}</id>\n")
         f.write(f"<updated>{published}</updated>\n")
-        if summary:  # Only include summary if available
-            f.write(f"<summary>{summary}</summary>\n")
+        # Insert summary with CDATA section
+        f.write(f"<summary>{summary}</summary>\n")
         if author:  # Only include author if available
             f.write(f"<author><name>{author}</name></author>\n")
         f.write('</entry>\n')
