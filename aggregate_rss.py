@@ -5,11 +5,11 @@ import pytz
 
 # RSS feed URLs with their respective provider names for prefixing titles
 feeds = {
-    "https://github.com/hashicorp/terraform/releases.atom": "Terraform",
-    "https://github.com/hashicorp/terraform-provider-google/releases.atom": "Google Cloud",
+    "https://github.com/hashicorp/terraform/releases.atom": "Terraform Cloud",
+    "https://github.com/hashicorp/terraform-provider-google/releases.atom": "GCP Provider",
     "http://lorem-rss.herokuapp.com/feed/feed?unit=second&interval=30": "Lorem RSS",
-    "https://github.com/hashicorp/terraform-provider-azurerm/releases.atom": "Azure",
-    "https://github.com/hashicorp/terraform-provider-aws/releases.atom": "AWS"
+    "https://github.com/hashicorp/terraform-provider-azurerm/releases.atom": "AzureRM Provider",
+    "https://github.com/hashicorp/terraform-provider-aws/releases.atom": "AWS Provider"
 }
 
 entries = []
@@ -26,7 +26,7 @@ for feed_url, provider_name in feeds.items():
 # Sort entries by published date, using a default date if necessary
 entries.sort(key=lambda entry: entry.published_parsed or datetime(1970, 1, 1, tzinfo=pytz.utc), reverse=True)
 
-with open('aggregated_feed.xml', 'w', encoding='utf-8') as f:
+with open('feed.xml', 'w', encoding='utf-8') as f:
     f.write('<?xml version="1.0" encoding="UTF-8"?>\n')
     f.write('<feed xmlns="http://www.w3.org/2005/Atom">\n')
     f.write('<title>Aggregated GitHub Releases</title>\n')
@@ -37,7 +37,7 @@ with open('aggregated_feed.xml', 'w', encoding='utf-8') as f:
 
     for entry in entries:
         provider_name = entry['provider_name']
-        title = f"{provider_name} Terraform Provider Release: {entry.title}"
+        title = f"{provider_name} Release: {entry.title}"
         link = entry.link
         published = datetime(*entry.published_parsed[:6]).strftime('%Y-%m-%dT%H:%M:%SZ') if entry.published_parsed else 'No date available'
         summary = entry.summary if 'summary' in entry else 'No summary available'
