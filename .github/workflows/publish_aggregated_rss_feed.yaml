@@ -2,7 +2,7 @@ name: Publish Aggregated RSS to GitHub Pages
 
 on:
   schedule:
-    - cron: '0 */6 * * *' # Runs every 6 hours; adjust as needed
+    - cron: '0 15 * * 5' # Runs at 3 PM UTC every Friday, which corresponds to 9 AM CST
   workflow_dispatch: # Allows manual triggering
   push:
     branches:
