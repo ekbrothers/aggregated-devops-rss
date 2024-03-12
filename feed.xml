@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 <title>Aggregated GitHub Releases</title>
 <link href="https://example.com/feed.xml" rel="self"/>
-<updated>2024-03-12T18:01:32Z</updated>
+<updated>2024-03-12T18:09:37Z</updated>
 <author><name>Aggregated Feed</name></author>
 <id>urn:uuid:aggregated-feed</id>
 <entry>
@@ -10,7 +10,7 @@
 <link href='https://github.com/hashicorp/terraform-provider-google/releases/tag/v5.20.0'/>
 <id>tag:github.com,2008:Repository/93446075/v5.20.0</id>
 <updated>2024-03-11T17:31:19Z</updated>
-<summary><![CDATA[<p>FEATURES:</p>
+<content type='html'><![CDATA[<p>FEATURES:</p>
 <ul>
 <li><strong>New Resource:</strong> <code>google_clouddeploy_custom_target_type_iam_*</code> (<a href="https://github.com/hashicorp/terraform-provider-google/pull/17445">#17445</a>)</li>
 </ul>
@@ -26,7 +26,7 @@
 <li>artifactregistry: fixed permadiff when <code>google_artifact_repository.docker_config</code> field is unset (<a href="https://github.com/hashicorp/terraform-provider-google/pull/17484">#17484</a>)</li>
 <li>bigquery: corrected plan-time validation on <code>google_bigquery_dataset.dataset_id</code> (<a href="https://github.com/hashicorp/terraform-provider-google/pull/17449">#17449</a>)</li>
 <li>kms: fixed issue where <code>google_kms_crypto_key_version.attestation.cert_chains</code> properties were incorrectly set to type string (<a href="https://github.com/hashicorp/terraform-provider-google/pull/17486">#17486</a>)</li>
-</ul>]]></summary>
+</ul>]]></content>
 <author><name>github-actions[bot]</name></author>
 </entry>
 <entry>
@@ -34,7 +34,7 @@
 <link href='https://github.com/hashicorp/terraform-provider-azurerm/releases/tag/v3.95.0'/>
 <id>tag:github.com,2008:Repository/93446042/v3.95.0</id>
 <updated>2024-03-08T17:47:18Z</updated>
-<summary><![CDATA[<p>FEATURES:</p>
+<content type='html'><![CDATA[<p>FEATURES:</p>
 <ul>
 <li>New Resource: <code>azurerm_container_app_custom_domain</code> (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/24421">#24421</a>)</li>
 <li>New Resource: <code>azurerm_data_protection_backup_instance_kubernetes_cluster</code> (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/24940">#24940</a>)</li>
@@ -89,7 +89,7 @@
 <li>Deprecated Resource: <code>azurerm_static_site</code> (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/25117">#25117</a>)</li>
 <li>Deprecated Resource: <code>azurerm_static_site_custom_domain</code> (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/25117">#25117</a>)</li>
 <li><code>azurerm_kubernetes_fleet_manager</code> - the <code>hub_profile</code> property has been deprecated (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/25010">#25010</a>)</li>
-</ul>]]></summary>
+</ul>]]></content>
 <author><name>github-actions[bot]</name></author>
 </entry>
 <entry>
@@ -97,7 +97,7 @@
 <link href='https://github.com/hashicorp/terraform-provider-aws/releases/tag/v5.40.0'/>
 <id>tag:github.com,2008:Repository/93444615/v5.40.0</id>
 <updated>2024-03-07T23:00:15Z</updated>
-<summary><![CDATA[<p>FEATURES:</p>
+<content type='html'><![CDATA[<p>FEATURES:</p>
 <ul>
 <li><strong>New Function:</strong> <code>arn_build</code> (<a href="https://github.com/hashicorp/terraform-provider-aws/issues/34952">#34952</a>)</li>
 <li><strong>New Function:</strong> <code>arn_parse</code> (<a href="https://github.com/hashicorp/terraform-provider-aws/issues/34952">#34952</a>)</li>
@@ -134,7 +134,7 @@
 <li>resource/aws_s3_object: Tags with empty values no longer remove all tags. (<a href="https://github.com/hashicorp/terraform-provider-aws/issues/35710">#35710</a>)</li>
 <li>resource/aws_s3_object_copy: Tags with empty values no longer remove all tags. (<a href="https://github.com/hashicorp/terraform-provider-aws/issues/35710">#35710</a>)</li>
 <li>resource/aws_vpclattice_listener_rule: Remove <code>action.forward.target_groups</code> maximum item limit (<a href="https://github.com/hashicorp/terraform-provider-aws/issues/36095">#36095</a>)</li>
-</ul>]]></summary>
+</ul>]]></content>
 <author><name>github-actions[bot]</name></author>
 </entry>
 <entry>
@@ -142,7 +142,7 @@
 <link href='https://github.com/hashicorp/terraform/releases/tag/v1.8.0-beta1'/>
 <id>tag:github.com,2008:Repository/17728164/v1.8.0-beta1</id>
 <updated>2024-03-06T19:08:23Z</updated>
-<summary><![CDATA[<h2>1.8.0-beta1 (March 6, 2024)</h2>
+<content type='html'><![CDATA[<h2>1.8.0-beta1 (March 6, 2024)</h2>
 <p>UPGRADE NOTES:</p>
 <p>If you are upgrading from Terraform v1.7 or earlier, please refer to<br />
 <a href="https://developer.hashicorp.com/terraform/language/v1.8.x/upgrade-guides" rel="nofollow">the Terraform v1.8 Upgrade Guide</a>.</p>
@@ -202,7 +202,7 @@
 <li><a href="https://github.com/hashicorp/terraform/blob/v0.13/CHANGELOG.md">v0.13</a></li>
 <li><a href="https://github.com/hashicorp/terraform/blob/v0.12/CHANGELOG.md">v0.12</a></li>
 <li><a href="https://github.com/hashicorp/terraform/blob/v0.11/CHANGELOG.md">v0.11 and earlier</a></li>
-</ul>]]></summary>
+</ul>]]></content>
 <author><name>hc-github-team-es-release-engineering</name></author>
 </entry>
 <entry>
@@ -210,7 +210,7 @@
 <link href='https://github.com/hashicorp/terraform-provider-google/releases/tag/v5.19.0'/>
 <id>tag:github.com,2008:Repository/93446075/v5.19.0</id>
 <updated>2024-03-04T17:37:43Z</updated>
-<summary><![CDATA[<p>FEATURES:</p>
+<content type='html'><![CDATA[<p>FEATURES:</p>
 <ul>
 <li><strong>New Resource:</strong> <code>google_clouddeploy_automation</code>(<a href="https://github.com/hashicorp/terraform-provider-google/pull/17427">#17427</a>)</li>
 <li><strong>New Resource:</strong> <code>google_clouddeploy_target_iam_*</code> (<a href="https://github.com/hashicorp/terraform-provider-google/pull/17368">#17368</a>)</li>
@@ -228,7 +228,7 @@
 <p>BUG FIXES:</p>
 <ul>
 <li>resourcemanager: added a retry to deleting the default network when <code>auto_create_network</code> is false in <code>google_project</code> (<a href="https://github.com/hashicorp/terraform-provider-google/pull/17419">#17419</a>)</li>
-</ul>]]></summary>
+</ul>]]></content>
 <author><name>github-actions[bot]</name></author>
 </entry>
 <entry>
@@ -236,10 +236,10 @@
 <link href='https://github.com/hashicorp/terraform-provider-aws/releases/tag/v5.39.1'/>
 <id>tag:github.com,2008:Repository/93444615/v5.39.1</id>
 <updated>2024-03-01T18:38:25Z</updated>
-<summary><![CDATA[<p>BUG FIXES:</p>
+<content type='html'><![CDATA[<p>BUG FIXES:</p>
 <ul>
 <li>data-source/aws_instance: Fix <code>panic: Invalid address to set</code> related to <code>root_block_device.0.tags_all</code> (<a href="https://github.com/hashicorp/terraform-provider-aws/issues/36054">#36054</a>)</li>
-</ul>]]></summary>
+</ul>]]></content>
 <author><name>github-actions[bot]</name></author>
 </entry>
 <entry>
@@ -247,7 +247,7 @@
 <link href='https://github.com/hashicorp/terraform-provider-azurerm/releases/tag/v3.94.0'/>
 <id>tag:github.com,2008:Repository/93446042/v3.94.0</id>
 <updated>2024-03-01T02:47:12Z</updated>
-<summary><![CDATA[<p>FEATURES:</p>
+<content type='html'><![CDATA[<p>FEATURES:</p>
 <ul>
 <li><strong>New Resource</strong>: <code>azurerm_kubernetes_fleet_update_run</code> (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/24813">#24813</a>)</li>
 </ul>
@@ -288,7 +288,7 @@
 <li><code>azurerm_recovery_services_vault</code> - validate that <code>use_system_assigned_identity</code> and <code>user_assigned_identity_id</code> cannot be set at the same time (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/24091">#24091</a>)</li>
 <li><code>azurerm_recovery_vaults</code> will now create properly with <code>SystemAssigned,UserAssigned</code> identity (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/24978">#24978</a>)</li>
 <li><code>azurerm_subscription</code> - fixing an issue where response pages weren't iterated over correctly (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/25055">#25055</a>)</li>
-</ul>]]></summary>
+</ul>]]></content>
 <author><name>github-actions[bot]</name></author>
 </entry>
 <entry>
@@ -296,7 +296,7 @@
 <link href='https://github.com/hashicorp/terraform-provider-aws/releases/tag/v5.39.0'/>
 <id>tag:github.com,2008:Repository/93444615/v5.39.0</id>
 <updated>2024-02-29T23:24:22Z</updated>
-<summary><![CDATA[<p>FEATURES:</p>
+<content type='html'><![CDATA[<p>FEATURES:</p>
 <ul>
 <li><strong>New Data Source:</strong> <code>aws_redshift_data_shares</code> (<a href="https://github.com/hashicorp/terraform-provider-aws/issues/35937">#35937</a>)</li>
 <li><strong>New Resource:</strong> <code>aws_apprunner_deployment</code> (<a href="https://github.com/hashicorp/terraform-provider-aws/issues/35758">#35758</a>)</li>
@@ -333,7 +333,7 @@ Add attributes <code>admin_password_secret_kms_key_id</code> and <code>manage_ad
 <li>resource/aws_redshiftserverless_workgroup: Fix <code>max_capacity</code> removal (<a href="https://github.com/hashicorp/terraform-provider-aws/issues/36032">#36032</a>)</li>
 <li>resource/aws_redshiftserverless_workgroup: Fix updating both <code>base_capacity</code> and <code>max_capacity</code> (<a href="https://github.com/hashicorp/terraform-provider-aws/issues/36032">#36032</a>)</li>
 <li>resource/aws_shield_drt_access_log_bucket_association: Change <code>log_bucket</code> and <code>role_arn_association_id</code> to <a href="https://developer.hashicorp.com/terraform/plugin/sdkv2/schemas/schema-behaviors#forcenew" rel="nofollow">ForceNew</a> (<a href="https://github.com/hashicorp/terraform-provider-aws/issues/34667">#34667</a>)</li>
-</ul>]]></summary>
+</ul>]]></content>
 <author><name>github-actions[bot]</name></author>
 </entry>
 <entry>
@@ -341,7 +341,7 @@ Add attributes <code>admin_password_secret_kms_key_id</code> and <code>manage_ad
 <link href='https://github.com/hashicorp/vault/releases/tag/v1.15.6'/>
 <id>tag:github.com,2008:Repository/31288958/v1.15.6</id>
 <updated>2024-02-29T20:06:16Z</updated>
-<summary><![CDATA[<h2>1.15.6</h2>
+<content type='html'><![CDATA[<h2>1.15.6</h2>
 <h3>February 29, 2024</h3>
 <p>SECURITY:</p>
 <ul>
@@ -382,7 +382,7 @@ data] to report to Hashicorp.</li>
 <li>ui: Do not show resultant-acl banner on namespaces a user has access to [<a href="https://github.com/hashicorp/vault/pull/25256">GH-25256</a>]</li>
 <li>ui: Fix copy button not working on masked input when value is not a string [<a href="https://github.com/hashicorp/vault/pull/25269">GH-25269</a>]</li>
 <li>ui: Update the KV secret data when you change the version you're viewing of a nested secret. [<a href="https://github.com/hashicorp/vault/pull/25152">GH-25152</a>]</li>
-</ul>]]></summary>
+</ul>]]></content>
 <author><name>hc-github-team-es-release-engineering</name></author>
 </entry>
 <entry>
@@ -390,7 +390,7 @@ data] to report to Hashicorp.</li>
 <link href='https://github.com/hashicorp/vault/releases/tag/v1.14.10'/>
 <id>tag:github.com,2008:Repository/31288958/v1.14.10</id>
 <updated>2024-02-29T20:06:03Z</updated>
-<summary><![CDATA[<h2>1.14.10</h2>
+<content type='html'><![CDATA[<h2>1.14.10</h2>
 <h3>February 29, 2024</h3>
 <p>SECURITY:</p>
 <ul>
@@ -421,7 +421,7 @@ data] to report to Hashicorp.</li>
 <li>secrets/transform (enterprise): guard against a panic looking up a token in exportable mode with barrier storage.</li>
 <li>secrets/transit: When provided an invalid input with hash_algorithm=none, a lock was not released properly before reporting an error leading to deadlocks on a subsequent key configuration update. [<a href="https://github.com/hashicorp/vault/pull/25336">GH-25336</a>]</li>
 <li>storage/file: Fixing spuriously deleting storage keys ending with .temp [<a href="https://github.com/hashicorp/vault/pull/25395">GH-25395</a>]</li>
-</ul>]]></summary>
+</ul>]]></content>
 <author><name>hc-github-team-es-release-engineering</name></author>
 </entry>
 <entry>
@@ -429,7 +429,7 @@ data] to report to Hashicorp.</li>
 <link href='https://github.com/hashicorp/terraform/releases/tag/v1.8.0-alpha20240228'/>
 <id>tag:github.com,2008:Repository/17728164/v1.8.0-alpha20240228</id>
 <updated>2024-02-28T13:46:52Z</updated>
-<summary><![CDATA[<h2>1.8.0-alpha20240228 (February 28, 2024)</h2>
+<content type='html'><![CDATA[<h2>1.8.0-alpha20240228 (February 28, 2024)</h2>
 <p>UPGRADE NOTES:</p>
 <ul>
 <li>The first plan after upgrading may show resource updates with no apparent changes if <code>-refresh-only</code> or <code>-refresh=false</code> is used. The fix introduced for <a class="issue-link js-issue-link" href="https://github.com/hashicorp/terraform/pull/34567">#34567</a> may require rewriting the state for some resources, which will be done automatically during the first normal plan and apply operation.</li>
@@ -498,7 +498,7 @@ data] to report to Hashicorp.</li>
 <li><a href="https://github.com/hashicorp/terraform/blob/v0.13/CHANGELOG.md">v0.13</a></li>
 <li><a href="https://github.com/hashicorp/terraform/blob/v0.12/CHANGELOG.md">v0.12</a></li>
 <li><a href="https://github.com/hashicorp/terraform/blob/v0.11/CHANGELOG.md">v0.11 and earlier</a></li>
-</ul>]]></summary>
+</ul>]]></content>
 <author><name>hc-github-team-es-release-engineering</name></author>
 </entry>
 <entry>
@@ -506,7 +506,7 @@ data] to report to Hashicorp.</li>
 <link href='https://github.com/hashicorp/terraform-provider-google/releases/tag/v5.18.0'/>
 <id>tag:github.com,2008:Repository/93446075/v5.18.0</id>
 <updated>2024-02-26T18:10:05Z</updated>
-<summary><![CDATA[<p>BREAKING CHANGES:</p>
+<content type='html'><![CDATA[<p>BREAKING CHANGES:</p>
 <ul>
 <li>securityposture: marked <code>policy_sets</code> and <code>policy_sets.policies</code> required in <code>google_securityposture_posture</code>. API validation already enforced this, so no resources could be provisioned without these (<a href="https://github.com/hashicorp/terraform-provider-google/pull/17303">#17303</a>)</li>
 </ul>
@@ -541,7 +541,7 @@ data] to report to Hashicorp.</li>
 <li>compute: fixed perma-diff on <code>min_ports_per_vm</code> in <code>google_compute_router_nat</code> when the field is unset by making the field default to the API-set value (<a href="https://github.com/hashicorp/terraform-provider-google/pull/17337">#17337</a>)</li>
 <li>dataflow: fixed crash in <code>google_dataflox_job</code> to return an error instead if a job's Environment field is nil when reading job information (<a href="https://github.com/hashicorp/terraform-provider-google/pull/17344">#17344</a>)</li>
 <li>notebooks: changed <code>tag</code> field to default to the API's value if not specified in <code>google_notebooks_instance</code> (<a href="https://github.com/hashicorp/terraform-provider-google/pull/17323">#17323</a>)</li>
-</ul>]]></summary>
+</ul>]]></content>
 <author><name>github-actions[bot]</name></author>
 </entry>
 <entry>
@@ -549,7 +549,7 @@ data] to report to Hashicorp.</li>
 <link href='https://github.com/hashicorp/terraform-provider-azurerm/releases/tag/v3.93.0'/>
 <id>tag:github.com,2008:Repository/93446042/v3.93.0</id>
 <updated>2024-02-23T02:59:26Z</updated>
-<summary><![CDATA[<ul>
+<content type='html'><![CDATA[<ul>
 <li><strong>New Data Source</strong>: <code>azurerm_express_route_circuit_peering</code> (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/24971">#24971</a>)</li>
 <li><strong>New Data Source</strong>: <code>azurerm_storage_table_entities</code> (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/24973">#24973</a>)</li>
 <li><strong>New Resource</strong>: <code>azurerm_dev_center_catalog</code> (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/24833">#24833</a>)</li>
@@ -593,7 +593,7 @@ data] to report to Hashicorp.</li>
 <li><code>azurerm_storage_account</code> - improve the validation around the <code>immutability_policy</code> being used with <code>blob_properties</code> (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/24938">#24938</a>)</li>
 <li><code>azurerm_security_center_setting</code> - prevent a bug when name is <code>SENTINEL</code> (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/24497">#24497</a>)</li>
 <li><code>azurerm_windows_virtual_machine_scale_set</code> - correctly include <code>public_ip_prefix_id</code> during updates (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/24939">#24939</a>)</li>
-</ul>]]></summary>
+</ul>]]></content>
 <author><name>github-actions[bot]</name></author>
 </entry>
 <entry>
@@ -601,7 +601,7 @@ data] to report to Hashicorp.</li>
 <link href='https://github.com/hashicorp/terraform-provider-aws/releases/tag/v5.38.0'/>
 <id>tag:github.com,2008:Repository/93444615/v5.38.0</id>
 <updated>2024-02-22T23:13:46Z</updated>
-<summary><![CDATA[<p>FEATURES:</p>
+<content type='html'><![CDATA[<p>FEATURES:</p>
 <ul>
 <li><strong>New Data Source:</strong> <code>aws_batch_job_definition</code> (<a href="https://github.com/hashicorp/terraform-provider-aws/issues/34663">#34663</a>)</li>
 <li><strong>New Data Source:</strong> <code>aws_cognito_user_group</code> (<a href="https://github.com/hashicorp/terraform-provider-aws/issues/34046">#34046</a>)</li>
@@ -639,7 +639,7 @@ data] to report to Hashicorp.</li>
 <li>resource/aws_eks_node_group: Fix <code>cluster_name</code> plan-time validation, allowing single-character names (<a href="https://github.com/hashicorp/terraform-provider-aws/issues/35874">#35874</a>)</li>
 <li>resource/aws_prometheus_scraper: Fixes invalid result after apply error. (<a href="https://github.com/hashicorp/terraform-provider-aws/issues/35844">#35844</a>)</li>
 <li>resource/aws_sqs_queue_policy: Retry IAM eventual consistency errors (<a href="https://github.com/hashicorp/terraform-provider-aws/issues/35861">#35861</a>)</li>
-</ul>]]></summary>
+</ul>]]></content>
 <author><name>github-actions[bot]</name></author>
 </entry>
 <entry>
@@ -647,7 +647,7 @@ data] to report to Hashicorp.</li>
 <link href='https://github.com/hashicorp/vault/releases/tag/v1.16.0-rc2'/>
 <id>tag:github.com,2008:Repository/31288958/v1.16.0-rc2</id>
 <updated>2024-02-22T00:31:04Z</updated>
-<summary><![CDATA[<h2>1.16.0-rc2</h2>
+<content type='html'><![CDATA[<h2>1.16.0-rc2</h2>
 <h3>February 21, 2024</h3>
 <p>SECURITY:</p>
 <ul>
@@ -964,7 +964,7 @@ leading to failure to complete merkle sync without a full re-index. [<a href="ht
 <li>ui: fix issue where kv v2 capabilities checks were not passing in the full secret path if secret was inside a directory. [<a href="https://github.com/hashicorp/vault/pull/24404">GH-24404</a>]</li>
 <li>ui: fix navigation items shown to user when chroot_namespace configured [<a href="https://github.com/hashicorp/vault/pull/24492">GH-24492</a>]</li>
 <li>ui: show error from API when seal fails [<a href="https://github.com/hashicorp/vault/pull/23921">GH-23921</a>]</li>
-</ul>]]></summary>
+</ul>]]></content>
 <author><name>hc-github-team-es-release-engineering</name></author>
 </entry>
 <entry>
@@ -972,12 +972,12 @@ leading to failure to complete merkle sync without a full re-index. [<a href="ht
 <link href='https://github.com/hashicorp/terraform/releases/tag/v1.7.4'/>
 <id>tag:github.com,2008:Repository/17728164/v1.7.4</id>
 <updated>2024-02-21T20:19:23Z</updated>
-<summary><![CDATA[<h2>1.7.4 (February 21, 2024)</h2>
+<content type='html'><![CDATA[<h2>1.7.4 (February 21, 2024)</h2>
 <p>BUG FIXES:</p>
 <ul>
 <li><code>terraform test</code>: Fix automatic loading of variable files within the test directory on <code>windows</code> platforms. (<a href="https://github.com/hashicorp/terraform/pull/34666">#34666</a>)</li>
 <li>plan renderer: Very large numbers (&gt; 2^63) will no longer be truncated in the human-readable plan. (<a href="https://github.com/hashicorp/terraform/pull/34702">#34702</a>)</li>
-</ul>]]></summary>
+</ul>]]></content>
 <author><name>hc-github-team-es-release-engineering</name></author>
 </entry>
 <entry>
@@ -985,7 +985,7 @@ leading to failure to complete merkle sync without a full re-index. [<a href="ht
 <link href='https://github.com/hashicorp/terraform-provider-google/releases/tag/v5.17.0'/>
 <id>tag:github.com,2008:Repository/93446075/v5.17.0</id>
 <updated>2024-02-20T22:26:18Z</updated>
-<summary><![CDATA[<p>NOTES:</p>
+<content type='html'><![CDATA[<p>NOTES:</p>
 <ul>
 <li>cloudbuildv2: changed underlying actuation engine for <code>google_cloudbuildv2_connection</code>, there should be no user-facing impact (<a href="https://github.com/hashicorp/terraform-provider-google/pull/17222">#17222</a>)</li>
 </ul>
@@ -1016,7 +1016,7 @@ leading to failure to complete merkle sync without a full re-index. [<a href="ht
 <ul>
 <li>compute: made <code>resource_manager_tags</code> updatable on <code>google_compute_instance_template</code> and <code>google_compute_region_instance_template</code> (<a href="https://github.com/hashicorp/terraform-provider-google/pull/17256">#17256</a>)</li>
 <li>notebooks: prevented recreation of <code>google_notebooks_instance</code> when <code>kms_key</code> or <code>service_account_scopes</code> are changed server-side (<a href="https://github.com/hashicorp/terraform-provider-google/pull/17232">#17232</a>)</li>
-</ul>]]></summary>
+</ul>]]></content>
 <author><name>github-actions[bot]</name></author>
 </entry>
 <entry>
@@ -1024,7 +1024,7 @@ leading to failure to complete merkle sync without a full re-index. [<a href="ht
 <link href='https://github.com/hashicorp/terraform/releases/tag/v1.8.0-alpha20240216'/>
 <id>tag:github.com,2008:Repository/17728164/v1.8.0-alpha20240216</id>
 <updated>2024-02-16T23:13:44Z</updated>
-<summary><![CDATA[<h2>1.8.0-alpha20240216 (February 16, 2024)</h2>
+<content type='html'><![CDATA[<h2>1.8.0-alpha20240216 (February 16, 2024)</h2>
 <p>UPGRADE NOTES:</p>
 <ul>
 <li>The first plan after upgrading may show resource updates with no apparent changes if <code>-refresh-only</code> or <code>-refresh=false</code> is used. The fix introduced for <a class="issue-link js-issue-link" href="https://github.com/hashicorp/terraform/pull/34567">#34567</a> may require rewriting the state for some resources, which will be done automatically during the first normal plan and apply operation.</li>
@@ -1087,7 +1087,7 @@ leading to failure to complete merkle sync without a full re-index. [<a href="ht
 <li><a href="https://github.com/hashicorp/terraform/blob/v0.13/CHANGELOG.md">v0.13</a></li>
 <li><a href="https://github.com/hashicorp/terraform/blob/v0.12/CHANGELOG.md">v0.12</a></li>
 <li><a href="https://github.com/hashicorp/terraform/blob/v0.11/CHANGELOG.md">v0.11 and earlier</a></li>
-</ul>]]></summary>
+</ul>]]></content>
 <author><name>hc-github-team-es-release-engineering</name></author>
 </entry>
 <entry>
@@ -1095,7 +1095,7 @@ leading to failure to complete merkle sync without a full re-index. [<a href="ht
 <link href='https://github.com/hashicorp/terraform-provider-azurerm/releases/tag/v3.92.0'/>
 <id>tag:github.com,2008:Repository/93446042/v3.92.0</id>
 <updated>2024-02-16T03:09:24Z</updated>
-<summary><![CDATA[<p>FEATURES:</p>
+<content type='html'><![CDATA[<p>FEATURES:</p>
 <ul>
 <li><strong>New Data Source</strong>: <code>azurerm_virtual_desktop_application_group</code> (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/24771">#24771</a>)</li>
 </ul>
@@ -1130,7 +1130,7 @@ leading to failure to complete merkle sync without a full re-index. [<a href="ht
 <li><code>azurerm_search_service</code> - fixed the update function to adjust for changed API behaviour (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/24903">#24903</a>)</li>
 <li><code>azurerm_windows_web_app</code> - support <code>off</code> for the <code>file_system_level</code> property (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/24877">#24877</a>)</li>
 <li><code>azurerm_windows_web_app_slot</code> - support <code>off</code> for the <code>file_system_level</code> property (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/24877">#24877</a>)</li>
-</ul>]]></summary>
+</ul>]]></content>
 <author><name>github-actions[bot]</name></author>
 </entry>
 <entry>
@@ -1138,7 +1138,7 @@ leading to failure to complete merkle sync without a full re-index. [<a href="ht
 <link href='https://github.com/hashicorp/terraform-provider-aws/releases/tag/v5.37.0'/>
 <id>tag:github.com,2008:Repository/93444615/v5.37.0</id>
 <updated>2024-02-15T21:25:26Z</updated>
-<summary><![CDATA[<p>NOTES:</p>
+<content type='html'><![CDATA[<p>NOTES:</p>
 <ul>
 <li>provider: Updates to Go 1.21 (used by Terraform starting with v1.6.0), which, for Windows, requires at least Windows 10 or Windows Server 2016--support for previous versions has been discontinued--and, for macOS, requires macOS 10.15 Catalina or later--support for previous versions has been discontinued. (<a href="https://github.com/hashicorp/terraform-provider-aws/issues/35832">#35832</a>)</li>
 <li>resource/aws_bedrock_provisioned_model_throughput: Because we cannot easily test this functionality, it is best effort and we ask for community help in testing (<a href="https://github.com/hashicorp/terraform-provider-aws/issues/35689">#35689</a>)</li>
@@ -1189,7 +1189,7 @@ leading to failure to complete merkle sync without a full re-index. [<a href="ht
 <li>resource/aws_redshift_data_share_authorization: Fix read operation to properly handle shares in <code>ACTIVE</code> status (<a href="https://github.com/hashicorp/terraform-provider-aws/issues/35771">#35771</a>)</li>
 <li>resource/aws_s3_bucket_acl: Correctly updates <code>access_control_policy</code> when switching configuration to <code>acl</code>. (<a href="https://github.com/hashicorp/terraform-provider-aws/issues/35775">#35775</a>)</li>
 <li>resource/resource_share_acceptor: Wait until RAM resource share available after accepting the invitation (<a href="https://github.com/hashicorp/terraform-provider-aws/issues/34753">#34753</a>)</li>
-</ul>]]></summary>
+</ul>]]></content>
 <author><name>github-actions[bot]</name></author>
 </entry>
 <entry>
@@ -1197,7 +1197,7 @@ leading to failure to complete merkle sync without a full re-index. [<a href="ht
 <link href='https://github.com/hashicorp/vault/releases/tag/v1.16.0-rc1'/>
 <id>tag:github.com,2008:Repository/31288958/v1.16.0-rc1</id>
 <updated>2024-02-15T01:36:36Z</updated>
-<summary><![CDATA[<h2>1.16.0-rc1</h2>
+<content type='html'><![CDATA[<h2>1.16.0-rc1</h2>
 <h3>February 14, 2024</h3>
 <p>SECURITY:</p>
 <ul>
@@ -1510,7 +1510,7 @@ leading to failure to complete merkle sync without a full re-index. [<a href="ht
 <li>ui: fix issue where kv v2 capabilities checks were not passing in the full secret path if secret was inside a directory. [<a href="https://github.com/hashicorp/vault/pull/24404">GH-24404</a>]</li>
 <li>ui: fix navigation items shown to user when chroot_namespace configured [<a href="https://github.com/hashicorp/vault/pull/24492">GH-24492</a>]</li>
 <li>ui: show error from API when seal fails [<a href="https://github.com/hashicorp/vault/pull/23921">GH-23921</a>]</li>
-</ul>]]></summary>
+</ul>]]></content>
 <author><name>hc-github-team-es-release-engineering</name></author>
 </entry>
 <entry>
@@ -1518,7 +1518,7 @@ leading to failure to complete merkle sync without a full re-index. [<a href="ht
 <link href='https://github.com/hashicorp/terraform/releases/tag/v1.8.0-alpha20240214'/>
 <id>tag:github.com,2008:Repository/17728164/v1.8.0-alpha20240214</id>
 <updated>2024-02-14T18:07:30Z</updated>
-<summary><![CDATA[<h2>1.8.0-alpha20240214 (February 14, 2024)</h2>
+<content type='html'><![CDATA[<h2>1.8.0-alpha20240214 (February 14, 2024)</h2>
 <p>UPGRADE NOTES:</p>
 <ul>
 <li>The first plan after upgrading may show resource updates with no apparent changes if <code>-refresh-only</code> or <code>-refresh=false</code> is used. The fix introduced for <a class="issue-link js-issue-link" href="https://github.com/hashicorp/terraform/pull/34567">#34567</a> may require rewriting the state for some resources, which will be done automatically during the first normal plan and apply operation.</li>
@@ -1578,7 +1578,7 @@ leading to failure to complete merkle sync without a full re-index. [<a href="ht
 <li><a href="https://github.com/hashicorp/terraform/blob/v0.13/CHANGELOG.md">v0.13</a></li>
 <li><a href="https://github.com/hashicorp/terraform/blob/v0.12/CHANGELOG.md">v0.12</a></li>
 <li><a href="https://github.com/hashicorp/terraform/blob/v0.11/CHANGELOG.md">v0.11 and earlier</a></li>
-</ul>]]></summary>
+</ul>]]></content>
 <author><name>hc-github-team-es-release-engineering</name></author>
 </entry>
 <entry>
@@ -1586,7 +1586,7 @@ leading to failure to complete merkle sync without a full re-index. [<a href="ht
 <link href='https://github.com/hashicorp/terraform-provider-google/releases/tag/v5.16.0'/>
 <id>tag:github.com,2008:Repository/93446075/v5.16.0</id>
 <updated>2024-02-12T19:06:03Z</updated>
-<summary><![CDATA[<p>FEATURES:</p>
+<content type='html'><![CDATA[<p>FEATURES:</p>
 <ul>
 <li><strong>New Resource:</strong> <code>google_clouddeploy_delivery_pipeline_iam_*</code> (<a href="https://github.com/hashicorp/terraform-provider-google/pull/17180">#17180</a>)</li>
 <li><strong>New Resource:</strong> <code>google_compute_instance_group_membership</code> (<a href="https://github.com/hashicorp/terraform-provider-google/pull/17188">#17188</a>)</li>
@@ -1598,7 +1598,7 @@ leading to failure to complete merkle sync without a full re-index. [<a href="ht
 <li>bigquery: promoted <code>table_replication_info</code> field on <code>resource_bigquery_table</code> resource to GA (<a href="https://github.com/hashicorp/terraform-provider-google/pull/17181">#17181</a>)</li>
 <li>networksecurity: removed unused custom code from <code>google_network_security_address_group</code> (<a href="https://github.com/hashicorp/terraform-provider-google/pull/17183">#17183</a>)</li>
 <li>provider: added an optional provider level label <code>goog-terraform-provisioned</code> to identify resources that were created by Terraform when viewing/editing these resources in other tools. (<a href="https://github.com/hashicorp/terraform-provider-google/pull/17170">#17170</a>)</li>
-</ul>]]></summary>
+</ul>]]></content>
 <author><name>github-actions[bot]</name></author>
 </entry>
 <entry>
@@ -1606,7 +1606,7 @@ leading to failure to complete merkle sync without a full re-index. [<a href="ht
 <link href='https://github.com/hashicorp/terraform-provider-azurerm/releases/tag/v3.91.0'/>
 <id>tag:github.com,2008:Repository/93446042/v3.91.0</id>
 <updated>2024-02-09T02:51:38Z</updated>
-<summary><![CDATA[<p>FEATURES:</p>
+<content type='html'><![CDATA[<p>FEATURES:</p>
 <ul>
 <li><strong>New Data Source</strong>: <code>azurerm_databricks_access_connector</code> (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/24769">#24769</a>)</li>
 <li><strong>New Resource</strong>: <code>azurerm_data_protection_backup_policy_kubernetes_cluster</code> (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/24718">#24718</a>)</li>
@@ -1636,7 +1636,7 @@ leading to failure to complete merkle sync without a full re-index. [<a href="ht
 <p>BUG FIXES:</p>
 <ul>
 <li><code>azurerm_api_management</code> -  the <code>virtual_network_configuration</code> property now updates correctly outside of <code>virtual_network_type</code> (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/24569">#24569</a>)</li>
-</ul>]]></summary>
+</ul>]]></content>
 <author><name>github-actions[bot]</name></author>
 </entry>
 <entry>
@@ -1644,7 +1644,7 @@ leading to failure to complete merkle sync without a full re-index. [<a href="ht
 <link href='https://github.com/hashicorp/terraform-provider-aws/releases/tag/v5.36.0'/>
 <id>tag:github.com,2008:Repository/93444615/v5.36.0</id>
 <updated>2024-02-08T23:24:37Z</updated>
-<summary><![CDATA[<p>NOTES:</p>
+<content type='html'><![CDATA[<p>NOTES:</p>
 <ul>
 <li>data-source/aws_media_convert_queue: The AWS Elemental MediaConvert service has been converted to use standard <a href="https://docs.aws.amazon.com/general/latest/gr/mediaconvert.html#mediaconvert_region" rel="nofollow">Regional endpoints</a> instead of deprecated per-account endpoints (<a href="https://github.com/hashicorp/terraform-provider-aws/issues/35615">#35615</a>)</li>
 <li>resource/aws_controltower_landing_zone: Because we cannot easily test this functionality, it is best effort and we ask for community help in testing (<a href="https://github.com/hashicorp/terraform-provider-aws/issues/34595">#34595</a>)</li>
@@ -1679,7 +1679,7 @@ leading to failure to complete merkle sync without a full re-index. [<a href="ht
 <li>resource/aws_lb_listener_rule: Was incorrectly reporting conflicting <code>action[].target_group_arn</code> when <code>ignore_changes</code> was set. (<a href="https://github.com/hashicorp/terraform-provider-aws/issues/35671">#35671</a>)</li>
 <li>resource/aws_lb_listener_rule: Was not storing <code>action[].forward</code> in state if only a single <code>target_group</code> was set. (<a href="https://github.com/hashicorp/terraform-provider-aws/issues/35671">#35671</a>)</li>
 <li>resource/aws_ssm_patch_baseline: Mark <code>json</code> as Computed if there are content changes (<a href="https://github.com/hashicorp/terraform-provider-aws/issues/35606">#35606</a>)</li>
-</ul>]]></summary>
+</ul>]]></content>
 <author><name>github-actions[bot]</name></author>
 </entry>
 <entry>
@@ -1687,7 +1687,7 @@ leading to failure to complete merkle sync without a full re-index. [<a href="ht
 <link href='https://github.com/hashicorp/vault/releases/tag/api%2Fauth%2Fuserpass%2Fv0.6.0'/>
 <id>tag:github.com,2008:Repository/31288958/api/auth/userpass/v0.6.0</id>
 <updated>2024-02-08T15:46:33Z</updated>
-<summary><![CDATA[<p>Update Vault auth submodule API versions for 1.16 (<a class="issue-link js-issue-link" href="https://github.com/hashicorp/vault/pull/25290">#25290</a>)</p>]]></summary>
+<content type='html'><![CDATA[<p>Update Vault auth submodule API versions for 1.16 (<a class="issue-link js-issue-link" href="https://github.com/hashicorp/vault/pull/25290">#25290</a>)</p>]]></content>
 <author><name>VioletHynes</name></author>
 </entry>
 <entry>
@@ -1695,7 +1695,7 @@ leading to failure to complete merkle sync without a full re-index. [<a href="ht
 <link href='https://github.com/hashicorp/vault/releases/tag/api%2Fauth%2Fldap%2Fv0.6.0'/>
 <id>tag:github.com,2008:Repository/31288958/api/auth/ldap/v0.6.0</id>
 <updated>2024-02-08T15:46:33Z</updated>
-<summary><![CDATA[<p>Update Vault auth submodule API versions for 1.16 (<a class="issue-link js-issue-link" href="https://github.com/hashicorp/vault/pull/25290">#25290</a>)</p>]]></summary>
+<content type='html'><![CDATA[<p>Update Vault auth submodule API versions for 1.16 (<a class="issue-link js-issue-link" href="https://github.com/hashicorp/vault/pull/25290">#25290</a>)</p>]]></content>
 <author><name>VioletHynes</name></author>
 </entry>
 <entry>
@@ -1703,7 +1703,7 @@ leading to failure to complete merkle sync without a full re-index. [<a href="ht
 <link href='https://github.com/hashicorp/vault/releases/tag/api%2Fauth%2Fkubernetes%2Fv0.6.0'/>
 <id>tag:github.com,2008:Repository/31288958/api/auth/kubernetes/v0.6.0</id>
 <updated>2024-02-08T15:46:33Z</updated>
-<summary><![CDATA[<p>Update Vault auth submodule API versions for 1.16 (<a class="issue-link js-issue-link" href="https://github.com/hashicorp/vault/pull/25290">#25290</a>)</p>]]></summary>
+<content type='html'><![CDATA[<p>Update Vault auth submodule API versions for 1.16 (<a class="issue-link js-issue-link" href="https://github.com/hashicorp/vault/pull/25290">#25290</a>)</p>]]></content>
 <author><name>VioletHynes</name></author>
 </entry>
 <entry>
@@ -1711,7 +1711,7 @@ leading to failure to complete merkle sync without a full re-index. [<a href="ht
 <link href='https://github.com/hashicorp/vault/releases/tag/api%2Fauth%2Fgcp%2Fv0.6.0'/>
 <id>tag:github.com,2008:Repository/31288958/api/auth/gcp/v0.6.0</id>
 <updated>2024-02-08T15:46:33Z</updated>
-<summary><![CDATA[<p>Update Vault auth submodule API versions for 1.16 (<a class="issue-link js-issue-link" href="https://github.com/hashicorp/vault/pull/25290">#25290</a>)</p>]]></summary>
+<content type='html'><![CDATA[<p>Update Vault auth submodule API versions for 1.16 (<a class="issue-link js-issue-link" href="https://github.com/hashicorp/vault/pull/25290">#25290</a>)</p>]]></content>
 <author><name>VioletHynes</name></author>
 </entry>
 <entry>
@@ -1719,13 +1719,13 @@ leading to failure to complete merkle sync without a full re-index. [<a href="ht
 <link href='https://github.com/hashicorp/terraform/releases/tag/v1.7.3'/>
 <id>tag:github.com,2008:Repository/17728164/v1.7.3</id>
 <updated>2024-02-08T01:43:04Z</updated>
-<summary><![CDATA[<h2>1.7.3 (February 7, 2024)</h2>
+<content type='html'><![CDATA[<h2>1.7.3 (February 7, 2024)</h2>
 <p>BUG FIXES:</p>
 <ul>
 <li><code>terraform test</code>: Fix crash when dynamic-typed attributes are not assigned values in mocks. (<a href="https://github.com/hashicorp/terraform/pull/34511">#34610</a>)</li>
 <li>provisioners/file: Fix panic when source is null. (<a href="https://github.com/hashicorp/terraform/pull/34621">#34621</a>)</li>
 <li><code>import</code>: Throw helpful error message if an import block is configured with an empty ID (<a href="https://github.com/hashicorp/terraform/pull/34625">34625</a>)</li>
-</ul>]]></summary>
+</ul>]]></content>
 <author><name>hc-github-team-es-release-engineering</name></author>
 </entry>
 <entry>
@@ -1733,7 +1733,7 @@ leading to failure to complete merkle sync without a full re-index. [<a href="ht
 <link href='https://github.com/hashicorp/vault/releases/tag/sdk%2Fv0.11.0'/>
 <id>tag:github.com,2008:Repository/31288958/sdk/v0.11.0</id>
 <updated>2024-02-08T01:28:54Z</updated>
-<summary><![CDATA[<p>Signed-off-by: Ryan Cragun <a href="mailto:me@ryan.ec">me@ryan.ec</a></p>]]></summary>
+<content type='html'><![CDATA[<p>Signed-off-by: Ryan Cragun <a href="mailto:me@ryan.ec">me@ryan.ec</a></p>]]></content>
 <author><name>ryancragun</name></author>
 </entry>
 <entry>
@@ -1741,7 +1741,7 @@ leading to failure to complete merkle sync without a full re-index. [<a href="ht
 <link href='https://github.com/hashicorp/vault/releases/tag/api%2Fv1.12.0'/>
 <id>tag:github.com,2008:Repository/31288958/api/v1.12.0</id>
 <updated>2024-02-08T01:28:54Z</updated>
-<summary><![CDATA[<p>Signed-off-by: Ryan Cragun <a href="mailto:me@ryan.ec">me@ryan.ec</a></p>]]></summary>
+<content type='html'><![CDATA[<p>Signed-off-by: Ryan Cragun <a href="mailto:me@ryan.ec">me@ryan.ec</a></p>]]></content>
 <author><name>ryancragun</name></author>
 </entry>
 <entry>
@@ -1749,7 +1749,7 @@ leading to failure to complete merkle sync without a full re-index. [<a href="ht
 <link href='https://github.com/hashicorp/terraform-provider-google/releases/tag/v5.15.0'/>
 <id>tag:github.com,2008:Repository/93446075/v5.15.0</id>
 <updated>2024-02-05T19:13:36Z</updated>
-<summary><![CDATA[<p>FEATURES:</p>
+<content type='html'><![CDATA[<p>FEATURES:</p>
 <ul>
 <li><strong>New Data Source:</strong> <code>google_compute_machine_types</code> (<a href="https://github.com/hashicorp/terraform-provider-google/pull/17107">#17107</a>)</li>
 <li><strong>New Resource:</strong> <code>google_blockchain_nodes</code> (<a href="https://github.com/hashicorp/terraform-provider-google/pull/17096">#17096</a>)</li>
@@ -1773,7 +1773,7 @@ leading to failure to complete merkle sync without a full re-index. [<a href="ht
 <li>alloydb: fixed an issue where <code>database_flags</code> in secondary <code>google_alloydb_instance</code> resources would cause a diff, as they are copied from the primary (<a href="https://github.com/hashicorp/terraform-provider-google/pull/17128">#17128</a>)</li>
 <li>filestore: made <code>google_filestore_instance.source_backup</code> field configurable (<a href="https://github.com/hashicorp/terraform-provider-google/pull/17099">#17099</a>)</li>
 <li>vmwareengine: fixed a bug to prevent recreation of existing <a href="https://registry.terraform.io/providers/hashicorp/google/latest/docs/data-sources/vmwareengine_private_cloud" rel="nofollow"><code>google_vmwareengine_private_cloud</code></a> resources when upgrading provider version from &lt;5.10.0 (<a href="https://github.com/hashicorp/terraform-provider-google/pull/17135">#17135</a></li>
-</ul>]]></summary>
+</ul>]]></content>
 <author><name>github-actions[bot]</name></author>
 </entry>
 <entry>
@@ -1781,7 +1781,7 @@ leading to failure to complete merkle sync without a full re-index. [<a href="ht
 <link href='https://github.com/hashicorp/terraform-provider-aws/releases/tag/v5.35.0'/>
 <id>tag:github.com,2008:Repository/93444615/v5.35.0</id>
 <updated>2024-02-02T22:29:49Z</updated>
-<summary><![CDATA[<p>FEATURES:</p>
+<content type='html'><![CDATA[<p>FEATURES:</p>
 <ul>
 <li><strong>New Data Source:</strong> <code>aws_bedrock_custom_model</code> (<a href="https://github.com/hashicorp/terraform-provider-aws/issues/34310">#34310</a>)</li>
 <li><strong>New Data Source:</strong> <code>aws_bedrock_custom_models</code> (<a href="https://github.com/hashicorp/terraform-provider-aws/issues/34310">#34310</a>)</li>
@@ -1812,7 +1812,7 @@ leading to failure to complete merkle sync without a full re-index. [<a href="ht
 <li>resource/aws_efs_file_system: Increase <code>lifecycle_policy</code> maximum item limit to 3 (<a href="https://github.com/hashicorp/terraform-provider-aws/issues/35522">#35522</a>)</li>
 <li>resource/aws_eks_access_entry: Retry IAM eventual consistency errors on create (<a href="https://github.com/hashicorp/terraform-provider-aws/issues/35535">#35535</a>)</li>
 <li>resource/aws_finspace_kx_cluster: Increase <code>command_line_arguments</code> max length restriction from 50 to 1024. (<a href="https://github.com/hashicorp/terraform-provider-aws/issues/35581">#35581</a>)</li>
-</ul>]]></summary>
+</ul>]]></content>
 <author><name>github-actions[bot]</name></author>
 </entry>
 <entry>
@@ -1820,7 +1820,7 @@ leading to failure to complete merkle sync without a full re-index. [<a href="ht
 <link href='https://github.com/hashicorp/terraform-provider-azurerm/releases/tag/v3.90.0'/>
 <id>tag:github.com,2008:Repository/93446042/v3.90.0</id>
 <updated>2024-02-02T01:40:21Z</updated>
-<summary><![CDATA[<p>UPGRADE NOTES:</p>
+<content type='html'><![CDATA[<p>UPGRADE NOTES:</p>
 <ul>
 <li>provider - The provider will now automatically register the <code>AppConfiguration</code>, <code>DataFactory</code>, and <code>SignalRService</code> Resource Providers. When running Terraform with limited permissions, note that you must disable automatic Resource Provider Registration and ensure that any Resource Providers Terraform requires are registered. (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/24645">#24645</a>)</li>
 </ul>
@@ -1876,7 +1876,7 @@ leading to failure to complete merkle sync without a full re-index. [<a href="ht
 <li><code>azurerm_mssql_managed_instance_failover_group</code> - prevent an issue when trying to create a failover group with a managed instance from a different subscription (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/24646">#24646</a>)</li>
 <li><code>azurerm_storage_account</code> - conditionally update properties only when needed (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/24669">#24669</a>)</li>
 <li><code>azurerm_storage_account</code> - change update order for <code>access_tier</code>to prevent errors when uploading blobs to the archive tier (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/22250">#22250</a>)</li>
-</ul>]]></summary>
+</ul>]]></content>
 <author><name>github-actions[bot]</name></author>
 </entry>
 <entry>
@@ -1884,7 +1884,7 @@ leading to failure to complete merkle sync without a full re-index. [<a href="ht
 <link href='https://github.com/hashicorp/terraform/releases/tag/v1.8.0-alpha20240131'/>
 <id>tag:github.com,2008:Repository/17728164/v1.8.0-alpha20240131</id>
 <updated>2024-01-31T15:55:07Z</updated>
-<summary><![CDATA[<h2>1.8.0-alpha20240131 (January 31, 2024)</h2>
+<content type='html'><![CDATA[<h2>1.8.0-alpha20240131 (January 31, 2024)</h2>
 <p>UPGRADE NOTES:</p>
 <ul>
 <li>The first plan after upgrading may show resource updates with no apparent changes if <code>-refresh-only</code> or <code>-refresh=false</code> is used. The fix introduced for <a class="issue-link js-issue-link" href="https://github.com/hashicorp/terraform/pull/34567">#34567</a> may require rewriting the state for some resources, which will be done automatically during the first normal plan and apply operation.</li>
@@ -1923,7 +1923,7 @@ leading to failure to complete merkle sync without a full re-index. [<a href="ht
 <li><a href="https://github.com/hashicorp/terraform/blob/v0.13/CHANGELOG.md">v0.13</a></li>
 <li><a href="https://github.com/hashicorp/terraform/blob/v0.12/CHANGELOG.md">v0.12</a></li>
 <li><a href="https://github.com/hashicorp/terraform/blob/v0.11/CHANGELOG.md">v0.11 and earlier</a></li>
-</ul>]]></summary>
+</ul>]]></content>
 <author><name>hc-github-team-es-release-engineering</name></author>
 </entry>
 <entry>
@@ -1931,7 +1931,7 @@ leading to failure to complete merkle sync without a full re-index. [<a href="ht
 <link href='https://github.com/hashicorp/terraform/releases/tag/v1.7.2'/>
 <id>tag:github.com,2008:Repository/17728164/v1.7.2</id>
 <updated>2024-01-31T14:49:39Z</updated>
-<summary><![CDATA[<h2>1.7.2 (January 31, 2024)</h2>
+<content type='html'><![CDATA[<h2>1.7.2 (January 31, 2024)</h2>
 <p>BUG FIXES:</p>
 <ul>
 <li>backend/s3: No longer returns error when IAM user or role does not have access to the default workspace prefix <code>env:</code>. (<a href="https://github.com/hashicorp/terraform/pull/34511">#34511</a>)</li>
@@ -1941,7 +1941,7 @@ leading to failure to complete merkle sync without a full re-index. [<a href="ht
 <ul>
 <li><code>terraform fmt</code>: Terraform mock data files (<code>.tfmock.hcl</code>) will now be included when executing the format command. (<a href="https://github.com/hashicorp/terraform/issues/34580">#34580</a>)</li>
 <li>Add additional diagnostics when a generated provider block that fails schema validation requires explicit configuration. (<a href="https://github.com/hashicorp/terraform/issues/34595">#34595</a>)</li>
-</ul>]]></summary>
+</ul>]]></content>
 <author><name>hc-github-team-es-release-engineering</name></author>
 </entry>
 <entry>
@@ -1949,7 +1949,7 @@ leading to failure to complete merkle sync without a full re-index. [<a href="ht
 <link href='https://github.com/hashicorp/terraform-provider-google/releases/tag/v5.14.0'/>
 <id>tag:github.com,2008:Repository/93446075/v5.14.0</id>
 <updated>2024-01-29T19:44:24Z</updated>
-<summary><![CDATA[<p>FEATURES:</p>
+<content type='html'><![CDATA[<p>FEATURES:</p>
 <ul>
 <li><strong>New Resource:</strong> <code>google_discovery_engine_data_store</code> (<a href="https://github.com/hashicorp/terraform-provider-google/pull/17084">#17084</a>)</li>
 <li><strong>New Resource:</strong> <code>google_securityposture_posture_deployment</code> (<a href="https://github.com/hashicorp/terraform-provider-google/pull/17085">#17085</a>)</li>
@@ -1968,7 +1968,7 @@ leading to failure to complete merkle sync without a full re-index. [<a href="ht
 <li>cloudfunctions2: fixed permadiff when <code>build_config.docker_repository</code> field is not specified on <code>google_cloudfunctions2_function</code> resource (<a href="https://github.com/hashicorp/terraform-provider-google/pull/17072">#17072</a>)</li>
 <li>compute: fixed error when <code>iap</code> field is unset for <code>google_compute_region_backend_service</code> resource (<a href="https://github.com/hashicorp/terraform-provider-google/pull/17071">#17071</a>)</li>
 <li>eventarc: fixed error when setting <code>destination.cloud_function</code> field on <code>google_eventarc_trigger</code> resource by making it output-only (<a href="https://github.com/hashicorp/terraform-provider-google/pull/17052">#17052</a>)</li>
-</ul>]]></summary>
+</ul>]]></content>
 <author><name>github-actions[bot]</name></author>
 </entry>
 <entry>
@@ -1976,7 +1976,7 @@ leading to failure to complete merkle sync without a full re-index. [<a href="ht
 <link href='https://github.com/hashicorp/terraform-provider-aws/releases/tag/v5.34.0'/>
 <id>tag:github.com,2008:Repository/93444615/v5.34.0</id>
 <updated>2024-01-26T01:51:56Z</updated>
-<summary><![CDATA[<p>FEATURES:</p>
+<content type='html'><![CDATA[<p>FEATURES:</p>
 <ul>
 <li><strong>New Resource:</strong> <code>aws_rekognition_project</code> (<a href="https://github.com/hashicorp/terraform-provider-aws/issues/35429">#35429</a>)</li>
 <li><strong>New Resource:</strong> <code>aws_route53domains_delegation_signer_record</code> (<a href="https://github.com/hashicorp/terraform-provider-aws/issues/33596">#33596</a>)</li>
@@ -2008,7 +2008,7 @@ leading to failure to complete merkle sync without a full re-index. [<a href="ht
 <li>resource/aws_eks_access_entry: Mark <code>type</code> and <code>user_name</code> as Optional, allowing values to be configured (<a href="https://github.com/hashicorp/terraform-provider-aws/issues/35391">#35391</a>)</li>
 <li>resource/aws_grafana_license_association: Fix missing <code>workspace_id</code> attribute after import (<a href="https://github.com/hashicorp/terraform-provider-aws/issues/35290">#35290</a>)</li>
 <li>resource/aws_security_group_rule: Fix <code>UnsupportedOperation: The functionality you requested is not available in this region</code> errors on Read in certain partitions (<a href="https://github.com/hashicorp/terraform-provider-aws/issues/33484">#33484</a>)</li>
-</ul>]]></summary>
+</ul>]]></content>
 <author><name>github-actions[bot]</name></author>
 </entry>
 <entry>
@@ -2016,7 +2016,7 @@ leading to failure to complete merkle sync without a full re-index. [<a href="ht
 <link href='https://github.com/hashicorp/terraform-provider-azurerm/releases/tag/v3.89.0'/>
 <id>tag:github.com,2008:Repository/93446042/v3.89.0</id>
 <updated>2024-01-25T13:18:41Z</updated>
-<summary><![CDATA[<p>FEATURES:</p>
+<content type='html'><![CDATA[<p>FEATURES:</p>
 <ul>
 <li>New Data Source: <code>azurerm_data_factory_trigger_schedule</code> (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/24572">#24572</a>)</li>
 <li>New Data Source: <code>azurerm_data_factory_trigger_schedules</code> (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/24572">#24572</a>)</li>
@@ -2092,7 +2092,7 @@ leading to failure to complete merkle sync without a full re-index. [<a href="ht
 <li>
 <p><code>azurerm_network_interface</code> - the <code>ip_configuration</code> properties are no longer added to a Load Balancer Backend if one of those <code>ip_configurations</code> is associated with a backend (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/24470">#24470</a>)</p>
 </li>
-</ul>]]></summary>
+</ul>]]></content>
 <author><name>github-actions[bot]</name></author>
 </entry>
 <entry>
@@ -2100,12 +2100,12 @@ leading to failure to complete merkle sync without a full re-index. [<a href="ht
 <link href='https://github.com/hashicorp/terraform/releases/tag/v1.7.1'/>
 <id>tag:github.com,2008:Repository/17728164/v1.7.1</id>
 <updated>2024-01-24T12:36:42Z</updated>
-<summary><![CDATA[<h2>1.7.1 (January 24, 2024)</h2>
+<content type='html'><![CDATA[<h2>1.7.1 (January 24, 2024)</h2>
 <p>BUG FIXES:</p>
 <ul>
 <li><code>terraform test</code>: Fix crash when referencing variables or functions within the file level <code>variables</code> block. (<a href="https://github.com/hashicorp/terraform/issues/34531">#34531</a>)</li>
 <li><code>terraform test</code>: Fix crash when <code>override_module</code> block was missing the <code>outputs</code> attribute. (<a href="https://github.com/hashicorp/terraform/issues/34563">#34563</a>)</li>
-</ul>]]></summary>
+</ul>]]></content>
 <author><name>hc-github-team-es-release-engineering</name></author>
 </entry>
 <entry>
@@ -2113,7 +2113,7 @@ leading to failure to complete merkle sync without a full re-index. [<a href="ht
 <link href='https://github.com/hashicorp/terraform-provider-google/releases/tag/v5.13.0'/>
 <id>tag:github.com,2008:Repository/93446075/v5.13.0</id>
 <updated>2024-01-22T19:40:43Z</updated>
-<summary><![CDATA[<p>NOTES:</p>
+<content type='html'><![CDATA[<p>NOTES:</p>
 <ul>
 <li>cloudbuildv2: changed underlying actuation engine for <code>google_cloudbuildv2_repository</code>, there should be no user-facing impact (<a href="https://github.com/hashicorp/terraform-provider-google/pull/16969">#16969</a>)</li>
 <li>provider: added support for in-place update for <code>labels</code> and <code>terraform_labels</code> fields in immutable resources (<a href="https://github.com/hashicorp/terraform-provider-google/pull/17016">#17016</a>)</li>
@@ -2142,7 +2142,7 @@ leading to failure to complete merkle sync without a full re-index. [<a href="ht
 <li>networkservices: fixed a perma-diff on <code>addresses</code> field in <code>google_network_services_gateway</code> resource (<a href="https://github.com/hashicorp/terraform-provider-google/pull/17035">#17035</a>)</li>
 <li>provider: fixed <code>universe_domain</code> behavior to correctly throw an error when explicitly configured <code>universe_domain</code> values did not match credentials assumed to be in the default universe (<a href="https://github.com/hashicorp/terraform-provider-google/pull/17014">#17014</a>)</li>
 <li>spanner: fixed error when adding <code>autoscaling_config</code> to an existing <code>google_spanner_instance</code> resource (<a href="https://github.com/hashicorp/terraform-provider-google/pull/17033">#17033</a>)</li>
-</ul>]]></summary>
+</ul>]]></content>
 <author><name>github-actions[bot]</name></author>
 </entry>
 <entry>
@@ -2150,7 +2150,7 @@ leading to failure to complete merkle sync without a full re-index. [<a href="ht
 <link href='https://github.com/hashicorp/terraform-provider-azurerm/releases/tag/v3.88.0'/>
 <id>tag:github.com,2008:Repository/93446042/v3.88.0</id>
 <updated>2024-01-19T02:02:24Z</updated>
-<summary><![CDATA[<p>FEATURES:</p>
+<content type='html'><![CDATA[<p>FEATURES:</p>
 <ul>
 <li>New Data Source: <code>azurerm_nginx_deployment</code> (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/24492">#24492</a>)</li>
 <li>New Resource: <code>azurerm_spring_cloud_dynatrace_application_performance_monitoring</code> (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/23889">#23889</a>)</li>
@@ -2177,7 +2177,7 @@ leading to failure to complete merkle sync without a full re-index. [<a href="ht
 <li><code>azurerm_application_gateway</code> - the <code>components</code> property within the <code>url</code> block is no longer computed (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/24480">#24480</a>)</li>
 <li><code>azurerm_cdn_frontdoor_route</code> - prevent an issue where <code>cdn_frontdoor_origin_path</code> gets removed on update if unchanged. (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/24488">#24488</a>)</li>
 <li><code>azurerm_cognitive_account</code> - fixing support for the <code>DC0</code> SKU (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/24526">#24526</a>)</li>
-</ul>]]></summary>
+</ul>]]></content>
 <author><name>github-actions[bot]</name></author>
 </entry>
 <entry>
@@ -2185,7 +2185,7 @@ leading to failure to complete merkle sync without a full re-index. [<a href="ht
 <link href='https://github.com/hashicorp/terraform-provider-aws/releases/tag/v5.33.0'/>
 <id>tag:github.com,2008:Repository/93444615/v5.33.0</id>
 <updated>2024-01-18T22:45:08Z</updated>
-<summary><![CDATA[<p>FEATURES:</p>
+<content type='html'><![CDATA[<p>FEATURES:</p>
 <ul>
 <li><strong>New Data Source:</strong> <code>aws_eks_access_entry</code> (<a href="https://github.com/hashicorp/terraform-provider-aws/issues/35037">#35037</a>)</li>
 <li><strong>New Resource:</strong> <code>aws_eks_access_entry</code> (<a href="https://github.com/hashicorp/terraform-provider-aws/issues/35037">#35037</a>)</li>
@@ -2208,7 +2208,7 @@ leading to failure to complete merkle sync without a full re-index. [<a href="ht
 <li>resource/aws_fis_experiment_template: Fix validation error when not using <code>target.resource_arns</code> or <code>target.resource_tag</code> attributes. (<a href="https://github.com/hashicorp/terraform-provider-aws/issues/35254">#35254</a>)</li>
 <li>resource/aws_lb_listener: Fix <code>ValidationError: Mutual Authentication mode passthrough does not support ignoring certificate expiry</code> errors when <code>mutual_authentication.mode</code> is set to <code>passthrough</code> (<a href="https://github.com/hashicorp/terraform-provider-aws/issues/35289">#35289</a>)</li>
 <li>resource/aws_secretsmanager_secret_version: Fix <code>InvalidParameterException: The parameter RemoveFromVersionId can't be empty. Staging label AWSCURRENT is currently attached to version ..., so you must explicitly reference that version in RemoveFromVersionId</code> errors when a secret is updated outside Terraform (<a href="https://github.com/hashicorp/terraform-provider-aws/issues/19943">#19943</a>)</li>
-</ul>]]></summary>
+</ul>]]></content>
 <author><name>github-actions[bot]</name></author>
 </entry>
 <entry>
@@ -2216,7 +2216,7 @@ leading to failure to complete merkle sync without a full re-index. [<a href="ht
 <link href='https://github.com/hashicorp/terraform/releases/tag/v1.7.0'/>
 <id>tag:github.com,2008:Repository/17728164/v1.7.0</id>
 <updated>2024-01-17T19:59:32Z</updated>
-<summary><![CDATA[<h2>1.7.0 (January 17, 2024)</h2>
+<content type='html'><![CDATA[<h2>1.7.0 (January 17, 2024)</h2>
 <p>UPGRADE NOTES:</p>
 <ul>
 <li>
@@ -2296,7 +2296,7 @@ leading to failure to complete merkle sync without a full re-index. [<a href="ht
 <li><a href="https://github.com/hashicorp/terraform/blob/v0.13/CHANGELOG.md">v0.13</a></li>
 <li><a href="https://github.com/hashicorp/terraform/blob/v0.12/CHANGELOG.md">v0.12</a></li>
 <li><a href="https://github.com/hashicorp/terraform/blob/v0.11/CHANGELOG.md">v0.11 and earlier</a></li>
-</ul>]]></summary>
+</ul>]]></content>
 <author><name>hc-github-team-es-release-engineering</name></author>
 </entry>
 <entry>
@@ -2304,7 +2304,7 @@ leading to failure to complete merkle sync without a full re-index. [<a href="ht
 <link href='https://github.com/hashicorp/terraform-provider-google/releases/tag/v5.12.0'/>
 <id>tag:github.com,2008:Repository/93446075/v5.12.0</id>
 <updated>2024-01-16T19:33:44Z</updated>
-<summary><![CDATA[<p>FEATURES:</p>
+<content type='html'><![CDATA[<p>FEATURES:</p>
 <ul>
 <li><strong>New Data Source:</strong> <code>google_dns_managed_zones</code> (<a href="https://github.com/hashicorp/terraform-provider-google/pull/16949">#16949</a>)</li>
 <li><strong>New Data Source:</strong> <code>google_filestore_instance</code> (<a href="https://github.com/hashicorp/terraform-provider-google/pull/16931">#16931</a>)</li>
@@ -2335,7 +2335,7 @@ leading to failure to complete merkle sync without a full re-index. [<a href="ht
 <li>edgecontainer: fixed resource import on <code>google_edgecontainer_vpn_connection</code> resource (<a href="https://github.com/hashicorp/terraform-provider-google/pull/16948">#16948</a>)</li>
 <li>servicemanagement: fixed an issue where an inconsistent plan would be created when certain fields such as <code>openapi_config</code>, <code>grpc_config</code>, and <code>protoc_output_base64</code>, had computed values in <code>google_endpoints_service</code> resource (<a href="https://github.com/hashicorp/terraform-provider-google/pull/16946">#16946</a>)</li>
 <li>storage: fixed an issue where retry timeout wasn't being utilized when creating <code>google_storage_bucket</code> resource (<a href="https://github.com/hashicorp/terraform-provider-google/pull/16902">#16902</a>)</li>
-</ul>]]></summary>
+</ul>]]></content>
 <author><name>github-actions[bot]</name></author>
 </entry>
 <entry>
@@ -2343,7 +2343,7 @@ leading to failure to complete merkle sync without a full re-index. [<a href="ht
 <link href='https://github.com/hashicorp/terraform-provider-azurerm/releases/tag/v3.87.0'/>
 <id>tag:github.com,2008:Repository/93446042/v3.87.0</id>
 <updated>2024-01-12T22:16:17Z</updated>
-<summary><![CDATA[<p>ENHANCEMENTS:</p>
+<content type='html'><![CDATA[<p>ENHANCEMENTS:</p>
 <ul>
 <li>dependencies: updating to <code>v0.20240112.1095456</code> of <code>github.com/hashicorp/go-azure-sdk</code> [<a class="issue-link js-issue-link" href="https://github.com/hashicorp/terraform-provider-azurerm/pull/24477">GH-24477</a>]</li>
 <li>dependencies: updating to <code>v0.65.1</code> of <code>github.com/hashicorp/go-azure-helpers</code> [<a class="issue-link js-issue-link" href="https://github.com/hashicorp/terraform-provider-azurerm/pull/24479">GH-24479</a>]</li>
@@ -2388,7 +2388,7 @@ leading to failure to complete merkle sync without a full re-index. [<a href="ht
 <li><code>azure_windows_web_app_slot</code> - prevent a bug in App Service processing of <code>application_stack</code> in updates to <code>site_config</code> (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/24424">#24424</a>)</li>
 <li><code>azurerm_maintenance_configuration</code> - set the <code>reboot</code> property in flatten from <code>AlwaysReboot</code> to <code>Always</code> (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/24376">#24376</a>)</li>
 <li><code>azurerm_container_app_environment</code> - the <code>workload_profile</code> property can now be updated (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/24409">#24409</a>)</li>
-</ul>]]></summary>
+</ul>]]></content>
 <author><name>github-actions[bot]</name></author>
 </entry>
 <entry>
@@ -2396,12 +2396,12 @@ leading to failure to complete merkle sync without a full re-index. [<a href="ht
 <link href='https://github.com/hashicorp/terraform-provider-aws/releases/tag/v5.32.1'/>
 <id>tag:github.com,2008:Repository/93444615/v5.32.1</id>
 <updated>2024-01-12T18:03:52Z</updated>
-<summary><![CDATA[<p>BUG FIXES:</p>
+<content type='html'><![CDATA[<p>BUG FIXES:</p>
 <ul>
 <li>data-source/aws_ecr_image: Fix error when <code>most_recent</code> is not also <code>latest</code> (<a href="https://github.com/hashicorp/terraform-provider-aws/issues/35269">#35269</a>)</li>
 <li>resource/aws_iot_ca_certificate: Change <code>registration_config.role_arn</code> from <code>TypeBool</code> to <code>TypeString</code>, fixing <code>Inappropriate value for attribute "role_arn": a bool is required</code> errors (<a href="https://github.com/hashicorp/terraform-provider-aws/issues/35234">#35234</a>)</li>
 <li>resource/aws_mq_broker: Fix <code>interface conversion: interface {} is *schema.Set, not []string</code> panic (<a href="https://github.com/hashicorp/terraform-provider-aws/issues/35265">#35265</a>)</li>
-</ul>]]></summary>
+</ul>]]></content>
 <author><name>github-actions[bot]</name></author>
 </entry>
 <entry>
@@ -2409,7 +2409,7 @@ leading to failure to complete merkle sync without a full re-index. [<a href="ht
 <link href='https://github.com/hashicorp/terraform-provider-google/releases/tag/v5.11.0'/>
 <id>tag:github.com,2008:Repository/93446075/v5.11.0</id>
 <updated>2024-01-08T22:55:33Z</updated>
-<summary><![CDATA[<p>NOTES:</p>
+<content type='html'><![CDATA[<p>NOTES:</p>
 <ul>
 <li>compute: changed underlying actuation engine for <code>google_network_firewall_policy</code> and <code>google_region_network_firewall_policy</code>, there should be no user-facing impact (<a href="https://github.com/hashicorp/terraform-provider-google/pull/16837">#16837</a>)</li>
 </ul>
@@ -2451,7 +2451,7 @@ leading to failure to complete merkle sync without a full re-index. [<a href="ht
 <li>containerattached: fixed crash when updating a cluster to remove <code>admin_users</code> or <code>admin_groups</code> in <code>google_container_attached_cluster</code> (<a href="https://github.com/hashicorp/terraform-provider-google/pull/16852">#16852</a>)</li>
 <li>dialogflowcx: fixed a permadiff in the <code>git_integration_settings</code> field of <code>google_diagflow_cx_agent</code> (<a href="https://github.com/hashicorp/terraform-provider-google/pull/16803">#16803</a>)</li>
 <li>monitoring: fixed the index out of range crash in <code>dashboard_json</code> for the resource <code>google_monitoring_dashboard</code> (<a href="https://github.com/hashicorp/terraform-provider-google/pull/16792">#16792</a>)</li>
-</ul>]]></summary>
+</ul>]]></content>
 <author><name>github-actions[bot]</name></author>
 </entry>
 <entry>
@@ -2459,7 +2459,7 @@ leading to failure to complete merkle sync without a full re-index. [<a href="ht
 <link href='https://github.com/hashicorp/terraform-provider-azurerm/releases/tag/v3.86.0'/>
 <id>tag:github.com,2008:Repository/93446042/v3.86.0</id>
 <updated>2024-01-05T05:59:54Z</updated>
-<summary><![CDATA[<p>FEATURES:</p>
+<content type='html'><![CDATA[<p>FEATURES:</p>
 <ul>
 <li>New Data Source: <code>azurerm_dashboard_grafana</code> (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/24243">#24243</a>)</li>
 <li>New Resource: <code>azurerm_log_analytics_workspace_table</code> (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/24229">#24229</a>)</li>
@@ -2495,7 +2495,7 @@ leading to failure to complete merkle sync without a full re-index. [<a href="ht
 <li><code>azurerm_windows_virtual_machine</code> - the <code>additional_capabilities.0.ultra_ssd_enabled</code> can now be changed during the update (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/24274">#24274</a>)</li>
 <li><code>azurerm_scheduled_query_rules_alert</code> - changing the <code>data_source_id</code> now creates a new resource (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/24327">#24327</a>)</li>
 <li><code>azurerm_scheduled_query_rules_log</code> - changing the <code>data_source_id</code> now creates a new resource (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/24327">#24327</a>)</li>
-</ul>]]></summary>
+</ul>]]></content>
 <author><name>github-actions[bot]</name></author>
 </entry>
 <entry>
@@ -2503,7 +2503,7 @@ leading to failure to complete merkle sync without a full re-index. [<a href="ht
 <link href='https://github.com/terraform-docs/terraform-docs/releases/tag/v0.16.0'/>
 <id>tag:github.com,2008:Repository/60978152/v0.16.0</id>
 <updated>2023-12-20T04:55:56Z</updated>
-<summary><![CDATA[<h2>Changelog</h2>
+<content type='html'><![CDATA[<h2>Changelog</h2>
 <h3>Features</h3>
 <p><a class="commit-link" href="https://github.com/terraform-docs/terraform-docs/commit/f61375077eacee7aa9010ffbb6c576e3fdf5783a"><tt>f613750</tt></a> Add 'HideEmpy' section bool flag<br />
 <a class="commit-link" href="https://github.com/terraform-docs/terraform-docs/commit/6f97f6767e2c0319ef6568f10e1323f3108cb8f1"><tt>6f97f67</tt></a> Add abitlity to partially override config from submodules<br />
@@ -2541,7 +2541,7 @@ leading to failure to complete merkle sync without a full re-index. [<a href="ht
 <li><a class="user-mention notranslate" href="https://github.com/katsadim">@katsadim</a></li>
 <li>@poojitha-bikki</li>
 <li><a class="user-mention notranslate" href="https://github.com/u5surf">@u5surf</a></li>
-</ul>]]></summary>
+</ul>]]></content>
 <author><name>tf-docs-bot</name></author>
 </entry>
 <entry>
@@ -2549,7 +2549,7 @@ leading to failure to complete merkle sync without a full re-index. [<a href="ht
 <link href='https://github.com/terraform-docs/terraform-docs/releases/tag/v0.17.0'/>
 <id>tag:github.com,2008:Repository/60978152/v0.17.0</id>
 <updated>2023-12-20T04:55:19Z</updated>
-<summary><![CDATA[<h2>Changelog</h2>
+<content type='html'><![CDATA[<h2>Changelog</h2>
 <h3>Features</h3>
 <ul>
 <li><a class="commit-link" href="https://github.com/terraform-docs/terraform-docs/commit/38a327a66c08c13d47805b42119f1e494bb72c82"><tt>38a327a</tt></a> Add fish shell completion</li>
@@ -2611,7 +2611,7 @@ leading to failure to complete merkle sync without a full re-index. [<a href="ht
 <li><a class="user-mention notranslate" href="https://github.com/tbriot">@tbriot</a></li>
 <li><a class="user-mention notranslate" href="https://github.com/x4e-jonas">@x4e-jonas</a></li>
 <li><a class="user-mention notranslate" href="https://github.com/yutaro1985">@yutaro1985</a></li>
-</ul>]]></summary>
+</ul>]]></content>
 <author><name>tf-docs-bot</name></author>
 </entry>
 <entry>
@@ -2619,7 +2619,7 @@ leading to failure to complete merkle sync without a full re-index. [<a href="ht
 <link href='https://github.com/terraform-docs/terraform-docs/releases/tag/v0.13.0'/>
 <id>tag:github.com,2008:Repository/60978152/v0.13.0</id>
 <updated>2023-12-19T19:02:17Z</updated>
-<summary><![CDATA[<h2>Notable Updates</h2>
+<content type='html'><![CDATA[<h2>Notable Updates</h2>
 <p>The most notable changes in this release are:</p>
 <ul>
 <li>
@@ -2739,7 +2739,7 @@ $ terraform-docs --hide header --hide providers <span class="pl-k">&lt;</span>fo
 <li><a class="user-mention notranslate" href="https://github.com/khos2ow">@khos2ow</a></li>
 <li><a class="user-mention notranslate" href="https://github.com/mikiya771">@mikiya771</a></li>
 <li><a class="user-mention notranslate" href="https://github.com/pujan14">@pujan14</a></li>
-</ul>]]></summary>
+</ul>]]></content>
 <author><name>tf-docs-bot</name></author>
 </entry>
 <entry>
@@ -2747,7 +2747,7 @@ $ terraform-docs --hide header --hide providers <span class="pl-k">&lt;</span>fo
 <link href='https://github.com/terraform-docs/terraform-docs/releases/tag/v0.15.0'/>
 <id>tag:github.com,2008:Repository/60978152/v0.15.0</id>
 <updated>2021-08-11T00:32:20Z</updated>
-<summary><![CDATA[<h2>Notable Updates</h2>
+<content type='html'><![CDATA[<h2>Notable Updates</h2>
 <p>The most notable changes in this release are:</p>
 <ul>
 <li>
@@ -2829,7 +2829,7 @@ $ terraform-docs --hide header --hide providers <span class="pl-k">&lt;</span>fo
 <li><a class="user-mention notranslate" href="https://github.com/jeanbaptistebeck">@jeanbaptistebeck</a></li>
 <li><a class="user-mention notranslate" href="https://github.com/khos2ow">@khos2ow</a></li>
 <li><a class="user-mention notranslate" href="https://github.com/rickhlx">@rickhlx</a></li>
-</ul>]]></summary>
+</ul>]]></content>
 <author><name>tf-docs-bot</name></author>
 </entry>
 <entry>
@@ -2837,7 +2837,7 @@ $ terraform-docs --hide header --hide providers <span class="pl-k">&lt;</span>fo
 <link href='https://github.com/terraform-docs/terraform-docs/releases/tag/v0.14.0'/>
 <id>tag:github.com,2008:Repository/60978152/v0.14.0</id>
 <updated>2021-08-10T23:30:39Z</updated>
-<summary><![CDATA[<h2>Notable Updates</h2>
+<content type='html'><![CDATA[<h2>Notable Updates</h2>
 <p>The most notable changes in this release are:</p>
 <ul>
 <li>
@@ -2942,7 +2942,7 @@ $ terraform-docs --hide header --hide providers <span class="pl-k">&lt;</span>fo
 <li><a class="user-mention notranslate" href="https://github.com/edgarsandi">@edgarsandi</a></li>
 <li><a class="user-mention notranslate" href="https://github.com/khos2ow">@khos2ow</a></li>
 <li>@lokkersp</li>
-</ul>]]></summary>
+</ul>]]></content>
 <author><name>tf-docs-bot</name></author>
 </entry>
 <entry>
@@ -2950,7 +2950,7 @@ $ terraform-docs --hide header --hide providers <span class="pl-k">&lt;</span>fo
 <link href='https://github.com/terraform-docs/terraform-docs/releases/tag/v0.12.0'/>
 <id>tag:github.com,2008:Repository/60978152/v0.12.0</id>
 <updated>2021-07-27T17:56:59Z</updated>
-<summary><![CDATA[<h2>Notable Updates</h2>
+<content type='html'><![CDATA[<h2>Notable Updates</h2>
 <p>The most notable changes in this release are:</p>
 <ul>
 <li>
@@ -3014,7 +3014,7 @@ $ terraform-docs --hide header --hide providers <span class="pl-k">&lt;</span>fo
 <li><a class="user-mention notranslate" href="https://github.com/nitrocode">@nitrocode</a></li>
 <li><a class="user-mention notranslate" href="https://github.com/si-c613">@si-c613</a></li>
 <li><a class="user-mention notranslate" href="https://github.com/tpansino">@tpansino</a></li>
-</ul>]]></summary>
+</ul>]]></content>
 <author><name>tf-docs-bot</name></author>
 </entry>
 <entry>
@@ -3022,7 +3022,7 @@ $ terraform-docs --hide header --hide providers <span class="pl-k">&lt;</span>fo
 <link href='https://github.com/terraform-docs/terraform-docs/releases/tag/v0.12.0-beta.1'/>
 <id>tag:github.com,2008:Repository/60978152/v0.12.0-beta.1</id>
 <updated>2021-06-01T21:26:05Z</updated>
-<summary><![CDATA[<h2>Notable Updates</h2>
+<content type='html'><![CDATA[<h2>Notable Updates</h2>
 <p>terraform-docs v0.12.0-beta.1 is a pre-release. It is to help gather feedback from the community as well as give users a chance to test terraform-docs in staging environments before v0.12.0 is officially released.</p>
 <h2>Changelog</h2>
 <h3>Features</h3>
@@ -3034,7 +3034,7 @@ $ terraform-docs --hide header --hide providers <span class="pl-k">&lt;</span>fo
 <h2>Docker images</h2>
 <ul>
 <li><code>docker pull quay.io/terraform-docs/terraform-docs:0.12.0-beta.1</code></li>
-</ul>]]></summary>
+</ul>]]></content>
 <author><name>github-actions[bot]</name></author>
 </entry>
 <entry>
@@ -3042,7 +3042,7 @@ $ terraform-docs --hide header --hide providers <span class="pl-k">&lt;</span>fo
 <link href='https://github.com/terraform-docs/terraform-docs/releases/tag/v0.12.1'/>
 <id>tag:github.com,2008:Repository/60978152/v0.12.1</id>
 <updated>2021-06-01T21:25:28Z</updated>
-<summary><![CDATA[<h2>Changelog</h2>
+<content type='html'><![CDATA[<h2>Changelog</h2>
 <p>This is a small patch over <a href="https://github.com/terraform-docs/terraform-docs/releases/tag/v0.12.0">v0.12.0</a>. It fixes missing <code>footer-from</code> from CLI and config (<a class="issue-link js-issue-link" href="https://github.com/terraform-docs/terraform-docs/issues/449">#449</a>). You can ignore updating to this version if you are not using footer in your module output.</p>
 <h3>Bug Fixes</h3>
 <p><a class="commit-link" href="https://github.com/terraform-docs/terraform-docs/commit/7a6f6c163255aed59e09f96765db491dee546cb8"><tt>7a6f6c1</tt></a> Fix missing footer-from if set via CLI flag or config<br />
@@ -3057,7 +3057,7 @@ $ terraform-docs --hide header --hide providers <span class="pl-k">&lt;</span>fo
 <ul>
 <li><a class="user-mention notranslate" href="https://github.com/asobrien">@asobrien</a></li>
 <li><a class="user-mention notranslate" href="https://github.com/khos2ow">@khos2ow</a></li>
-</ul>]]></summary>
+</ul>]]></content>
 <author><name>tf-docs-bot</name></author>
 </entry>
 <entry>
@@ -3065,7 +3065,7 @@ $ terraform-docs --hide header --hide providers <span class="pl-k">&lt;</span>fo
 <link href='https://github.com/terraform-docs/terraform-docs/releases/tag/v0.14.1'/>
 <id>tag:github.com,2008:Repository/60978152/v0.14.1</id>
 <updated>2021-06-01T21:24:55Z</updated>
-<summary><![CDATA[<h2>Changelog</h2>
+<content type='html'><![CDATA[<h2>Changelog</h2>
 <p>This is a small patch over <a href="https://github.com/terraform-docs/terraform-docs/releases/tag/v0.14.0">v0.14.0</a>. It fixes <code>base template not found</code> error on Windows. You can ignore updating to this version if you are not running terraform-docs on Windows.</p>
 <h3>Bug Fixes</h3>
 <p><a class="commit-link" href="https://github.com/terraform-docs/terraform-docs/commit/30b429dc838371546a30dfa07e8fdcc224eb9a14"><tt>30b429d</tt></a> Fix base template not found on Windows</p>
@@ -3073,7 +3073,7 @@ $ terraform-docs --hide header --hide providers <span class="pl-k">&lt;</span>fo
 <ul>
 <li><code>docker pull quay.io/terraform-docs/terraform-docs:latest</code></li>
 <li><code>docker pull quay.io/terraform-docs/terraform-docs:0.14.1</code></li>
-</ul>]]></summary>
+</ul>]]></content>
 <author><name>tf-docs-bot</name></author>
 </entry>
 <entry>
@@ -3081,7 +3081,7 @@ $ terraform-docs --hide header --hide providers <span class="pl-k">&lt;</span>fo
 <link href='https://github.com/terraform-docs/terraform-docs/releases/tag/v0.11.2'/>
 <id>tag:github.com,2008:Repository/60978152/v0.11.2</id>
 <updated>2021-02-23T00:04:46Z</updated>
-<summary><![CDATA[<h2>Changelog</h2>
+<content type='html'><![CDATA[<h2>Changelog</h2>
 <h3>Bug Fixes</h3>
 <p><a class="commit-link" href="https://github.com/terraform-docs/terraform-docs/commit/09ab491e69210a231505cfac8bc96a51573f30ba"><tt>09ab491</tt></a> Fixed lexicographic sorting of resources<br />
 <a class="commit-link" href="https://github.com/terraform-docs/terraform-docs/commit/fef403576cc2f2dcd4574d255f092daeb05b3616"><tt>fef4035</tt></a> Use 'latest' as resource link if not a fixed version</p>
@@ -3095,7 +3095,7 @@ $ terraform-docs --hide header --hide providers <span class="pl-k">&lt;</span>fo
 <ul>
 <li><a class="user-mention notranslate" href="https://github.com/khos2ow">@khos2ow</a></li>
 <li><a class="user-mention notranslate" href="https://github.com/sergei-ivanov">@sergei-ivanov</a></li>
-</ul>]]></summary>
+</ul>]]></content>
 <author><name>tf-docs-bot</name></author>
 </entry>
 </feed>
