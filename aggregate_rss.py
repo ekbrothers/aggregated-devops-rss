@@ -7,7 +7,6 @@ feeds = {
     "https://github.com/hashicorp/terraform/releases.atom": "Terraform CLI",
     "https://github.com/hashicorp/terraform-provider-google/releases.atom": "GCP Provider",
     "https://github.com/hashicorp/terraform-provider-azurerm/releases.atom": "AzureRM Provider",
-    "https://github.com/hashicorp/terraform-provider-aws/releases.atom": "AWS Provider",
     "https://github.com/hashicorp/vault/releases.atom": "Vault",
     "https://github.com/terraform-docs/terraform-docs/releases.atom": "terraform-docs",
 }
