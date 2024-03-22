@@ -2,9 +2,196 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 <title>Aggregated GitHub Releases</title>
 <link href="https://example.com/feed.xml" rel="self"/>
-<updated>2024-03-15T15:04:38Z</updated>
+<updated>2024-03-22T15:04:45Z</updated>
 <author><name>Aggregated Feed</name></author>
 <id>urn:uuid:aggregated-feed</id>
+<entry>
+<title>AzureRM Provider Release: v3.97.1</title>
+<link href='https://github.com/hashicorp/terraform-provider-azurerm/releases/tag/v3.97.1'/>
+<id>tag:github.com,2008:Repository/93446042/v3.97.1</id>
+<updated>2024-03-22T09:22:00Z</updated>
+<content type='html'><![CDATA[<p>ENHANCEMENTS:</p>
+<ul>
+<li><code>azurerm_nginx_deployment</code> - support for the <code>configuration</code> block (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/24276">#24276</a>)</li>
+</ul>
+<p>BUG FIXES:</p>
+<ul>
+<li><code>azurerm_data_factory_integration_runtime_self_hosted</code> - ensure that autorizationh keys are exported (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/25246">#25246</a>)</li>
+<li><code>azurerm_storage_account</code> - defaulting the value for <code>dns_endpoint_type</code> to <code>Standard</code> when it's not returned from the Azure API (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/25367">#25367</a>)</li>
+</ul>]]></content>
+<author><name>github-actions[bot]</name></author>
+</entry>
+<entry>
+<title>AzureRM Provider Release: v3.97.0</title>
+<link href='https://github.com/hashicorp/terraform-provider-azurerm/releases/tag/v3.97.0'/>
+<id>tag:github.com,2008:Repository/93446042/v3.97.0</id>
+<updated>2024-03-22T05:32:41Z</updated>
+<content type='html'><![CDATA[<p>BREAKING CHANGES:</p>
+<ul>
+<li><code>azurerm_linux_function_app</code> - <code>app_settings["WEBSITE_RUN_FROM_PACKAGE"]</code> must be added to <code>ignore_changes</code> for deployments where an external tool modifies the <code>WEBSITE_RUN_FROM_PACKAGE</code> property in the <code>app_settings</code> block. (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/24848">#24848</a>)</li>
+<li><code>azurerm_linux_function_app_slot</code> - <code>app_settings["WEBSITE_RUN_FROM_PACKAGE"]</code> must be added to <code>ignore_changes</code> for deployments where an external tool modifies the <code>WEBSITE_RUN_FROM_PACKAGE</code> property in the <code>app_settings</code> block. (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/24848">#24848</a>)</li>
+</ul>
+<p>FEATURES:</p>
+<ul>
+<li>New Resource: <code>azurerm_elastic_san_volume</code> (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/24802">#24802</a>)</li>
+</ul>
+<p>ENHANCEMENTS:</p>
+<ul>
+<li>dependencies: updating to <code>v0.25.3</code> of <code>github.com/tombuildsstuff/giovanni</code> (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/25362">#25362</a>)</li>
+<li>dependencies: updating to <code>v0.20240321.1145953</code> of <code>github.com/hashicorp/go-azure-sdk</code> (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/25332">#25332</a>)</li>
+<li>dependencies: updating to <code>v0.25.2</code> of <code>github.com/tombuildsstuff/giovanni</code> (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/25305">#25305</a>)</li>
+<li><code>azurestackhci</code>: updating to API Version <code>2024-01-01</code> (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/25279">#25279</a>)</li>
+<li><code>monitor/scheduledqueryrules</code>: updatingt to API version <code>2023-03-15-preview</code> (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/25350">#25350</a>)</li>
+<li><code>cosmosdb</code>: updating to use the transport layer from <code>hashicorp/go-azure-sdk</code> rather than <code>Azure/go-autorest</code> (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/25166">#25166</a>)</li>
+<li>Data Source <code>azurerm_stack_hci_cluster</code>: refactoring the association to use <code>hashicorp/go-azure-sdk</code> (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/25293">#25293</a>)</li>
+<li><code>azurerm_app_configuration</code> - support for Environments other than Azure Public (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/25271">#25271</a>)</li>
+<li><code>azurerm_automanage_configuration</code> - refactoring to use <code>hashicorp/go-azure-sdk</code> (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/25293">#25293</a>)</li>
+<li><code>azurerm_container_app_environment</code> - add support for <code>Consumption</code> workload profile (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/25285">#25285</a>)</li>
+<li><code>azurerm_cosmosdb_postgresql_cluster</code> - expose list of server names and FQDN in the <code>servers</code> block (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/25240">#25240</a>)</li>
+<li><code>azurerm_data_share</code> - hyphens are now allowed in the resource's name (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/25242">#25242</a>)</li>
+<li><code>azurerm_data_factory_integration_runtime_azure_ssis</code> - support for the <code>copy_compute_scale</code> and <code>pipeline_external_compute_scale</code> blocks (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/25281">#25281</a>)</li>
+<li><code>azurerm_healthcare_service</code> - support for the <code>identity</code> and <code>configuration_export_storage_account_name</code> properties (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/25193">#25193</a>)</li>
+<li><code>azurerm_nginx_deployment</code> - support the <code>auto_scale_profile</code> block (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/24950">#24950</a>)</li>
+<li><code>azurerm_netapp_account_resource</code> - support for the <code>kerberos_ad_name</code>, <code>kerberos_kdc_ip property</code>, <code>enable_aes_encryption</code>, <code>local_nfs_users_with_ldap_allowed</code>, <code>server_root_ca_certificate</code>, <code>ldap_over_tls_enabled</code>, and <code>ldap_signing_enabled</code> properties (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/25340">#25340</a>)</li>
+<li><code>azurerm_netapp_account_resource</code> - support for [Support for Azure Netapp Files - AD Site Name <a class="issue-link js-issue-link" href="https://github.com/hashicorp/terraform-provider-azurerm/issues/12462">#12462</a>] via the <code>site_name</code> property (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/25340">#25340</a>)</li>
+<li><code>azurerm_stack_hci_cluster</code>: refactoring the association to use <code>hashicorp/go-azure-sdk</code> (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/25293">#25293</a>)</li>
+<li><code>azurerm_storage_account</code> - support for the <code>dns_endpoint_type</code> property (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/22583">#22583</a>)</li>
+<li><code>azurerm_storage_blob_inventory_policy</code> -  refactoring to use <code>hashicorp/go-azure-sdk</code> (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/25268">#25268</a>)</li>
+<li><code>azurerm_synapse_spark_pool</code> - added support for <code>3.4</code> (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/25319">#25319</a>)</li>
+</ul>
+<p>BUG FIXES:</p>
+<ul>
+<li>Data Source: <code>azurerm_storage_blob</code> - fix a bug that incorrectly parsed the endpoint in the resource ID (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/25283">#25283</a>)</li>
+<li>Data Source: <code>azurerm_storage_table_entity</code> - fixing a regression when parsing the table endpoint (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/25307">#25307</a>)</li>
+<li><code>netapp_account_resource</code> - correct the <code>smb_server_name</code> property validation (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/25340">#25340</a>)</li>
+<li><code>azurerm_backup_policy_file_share</code> - prevent a bug when the <code>include_last_days</code> property does not work when <code>days</code> is empty (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/25280">#25280</a>)</li>
+<li><code>azurerm_backup_policy_vm</code> - prevent a bug when the <code>include_last_days</code> property does not work when <code>days</code> is empty (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/25280">#25280</a>)</li>
+<li><code>azurerm_container_app_custom_domain</code> - prevent an issue where the secret was not being passed through (<a class="issue-link js-issue-link" href="https://github.com/hashicorp/terraform-provider-azurerm/issues/25196">#25196</a>) (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/25251">#25251</a>)</li>
+<li><code>azurerm_data_protection_backup_instance_kubernetes_cluster</code> - prevent the protection errosr <code>ScenarioPluginInvalidWorkflowDataRequest</code> and <code>UserErrorKubernetesBackupExtensionUnhealthy</code> [azurerm_data_protection_backup_instance_kubernetes_cluster is created with message "Fix protection error for the backup instance" and code ScenarioPluginInvalidWorkflowDataRequest <a class="issue-link js-issue-link" href="https://github.com/hashicorp/terraform-provider-azurerm/issues/25294">#25294</a>] (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/25345">#25345</a>)</li>
+<li><code>azurerm_purview_account</code> - will now allow for PurView accounts with missing or disabled eventhubs without keys (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/25301">#25301</a>)</li>
+<li><code>azurerm_storage_account</code> - fix a crash when the storage account becomes unavailable whilst reading (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/25332">#25332</a>)</li>
+<li><code>azurerm_storage_blob</code> - fixing a regression where blobs within a nested directory wouldn't be parsed correctly (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/25305">#25305</a>)</li>
+<li><code>azurerm_storage_data_lake_gen2_path</code> - fixing a bug where there was no timeout available during import (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/25282">#25282</a>)</li>
+<li><code>azurerm_storage_queue</code> - fixing a bug where the Table URI was obtained rather than the Queue URI (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/25262">#25262</a>)</li>
+<li><code>azurerm_subscription</code> - fixing an issue when creating a subscription alias (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/25181">#25181</a>)</li>
+</ul>]]></content>
+<author><name>github-actions[bot]</name></author>
+</entry>
+<entry>
+<title>GCP Provider Release: v5.21.0</title>
+<link href='https://github.com/hashicorp/terraform-provider-google/releases/tag/v5.21.0'/>
+<id>tag:github.com,2008:Repository/93446075/v5.21.0</id>
+<updated>2024-03-21T16:13:07Z</updated>
+<content type='html'><![CDATA[<p>FEATURES:</p>
+<ul>
+<li><strong>New Data Source:</strong> <code>google_apphub_discovered_service</code> (<a href="https://github.com/hashicorp/terraform-provider-google/pull/17548">#17548</a>)</li>
+<li><strong>New Data Source:</strong> <code>google_apphub_discovered_workload</code> (<a href="https://github.com/hashicorp/terraform-provider-google/pull/17553">#17553</a>)</li>
+<li><strong>New Data Source:</strong> <code>google_cloud_quotas_quota_info</code> (<a href="https://github.com/hashicorp/terraform-provider-google/pull/17564">#17564</a>)</li>
+<li><strong>New Resource:</strong> <code>google_apphub_workload</code> (<a href="https://github.com/hashicorp/terraform-provider-google/pull/17561">#17561</a>)</li>
+<li><strong>New Resource:</strong> <code>google_firebase_app_check_device_check_config</code> (<a href="https://github.com/hashicorp/terraform-provider-google/pull/17517">#17517</a>)</li>
+<li><strong>New Resource:</strong> <code>google_iap_tunnel_dest_group</code> (<a href="https://github.com/hashicorp/terraform-provider-google/pull/17533">#17533</a>)</li>
+<li><strong>New Resource:</strong> <code>google_kms_ekm_connection</code> (<a href="https://github.com/hashicorp/terraform-provider-google/pull/17512">#17512</a>)</li>
+<li><strong>New Resource:</strong> <code>google_apphub_application</code> (<a href="https://github.com/hashicorp/terraform-provider-google/pull/17499">#17499</a>)</li>
+<li><strong>New Resource:</strong> <code>google_apphub_service</code> (<a href="https://github.com/hashicorp/terraform-provider-google/pull/17562">#17562</a>)</li>
+<li><strong>New Resource:</strong> <code>google_apphub_service_project_attachment</code> (<a href="https://github.com/hashicorp/terraform-provider-google/pull/17536">#17536</a>)</li>
+<li><strong>New Resource:</strong> <code>google_network_security_firewall_endpoint_association</code> (<a href="https://github.com/hashicorp/terraform-provider-google/pull/17540">#17540</a>)</li>
+</ul>
+<p>IMPROVEMENTS:</p>
+<ul>
+<li>cloudrunv2: added support for <code>scaling.min_instance_count</code> in <code>google_cloud_run_v2_service</code>. (<a href="https://github.com/hashicorp/terraform-provider-google/pull/17501">#17501</a>)</li>
+<li>compute: added <code>metric.single_instance_assignment</code> and <code>metric.filter</code> to <code>google_compute_region_autoscaler</code> (<a href="https://github.com/hashicorp/terraform-provider-google/pull/17519">#17519</a>)</li>
+<li>container: added <code>queued_provisioning</code> to <code>google_container_node_pool</code> (<a href="https://github.com/hashicorp/terraform-provider-google/pull/17549">#17549</a>)</li>
+<li>gkeonprem: allowed <code>vcenter_network</code> to be set in <code>google_gkeonprem_vmware_cluster</code>, previously it was output-only (<a href="https://github.com/hashicorp/terraform-provider-google/pull/17505">#17505</a>)</li>
+<li>workstations: added support for <code>ephemeral_directories</code> in <code>google_workstations_workstation_config</code> (<a href="https://github.com/hashicorp/terraform-provider-google/pull/17515">#17515</a>)</li>
+</ul>
+<p>BUG FIXES:</p>
+<ul>
+<li>compute: allowed sending empty values for <code>SERVERLESS</code> in <code>google_compute_region_network_endpoint_group</code> resource (<a href="https://github.com/hashicorp/terraform-provider-google/pull/17500">#17500</a>)</li>
+<li>notebooks: fixed an issue where default tags would cause a diff recreating <code>google_notebooks_instance</code> resources (<a href="https://github.com/hashicorp/terraform-provider-google/pull/17559">#17559</a>)</li>
+<li>storage: fixed an issue where two or more lifecycle rules with different values of <code>no_age</code> field always generates change in <code>google_storage_bucket</code> resource. (<a href="https://github.com/hashicorp/terraform-provider-google/pull/17513">#17513</a>)</li>
+</ul>]]></content>
+<author><name>github-actions[bot]</name></author>
+</entry>
+<entry>
+<title>Terraform CLI Release: v1.8.0-rc1</title>
+<link href='https://github.com/hashicorp/terraform/releases/tag/v1.8.0-rc1'/>
+<id>tag:github.com,2008:Repository/17728164/v1.8.0-rc1</id>
+<updated>2024-03-20T20:54:19Z</updated>
+<content type='html'><![CDATA[<h2>1.8.0-rc1 (March 20 2024)</h2>
+<p>If you are upgrading from Terraform v1.7 or earlier, please refer to<br />
+<a href="https://developer.hashicorp.com/terraform/language/v1.8.x/upgrade-guides" rel="nofollow">the Terraform v1.8 Upgrade Guide</a>.</p>
+<p>NEW FEATURES:</p>
+<ul>
+<li>
+<p>Providers can now offer functions which can be used from within the Terraform configuration language.</p>
+<p>The syntax for calling a provider-contributed function is <code>provider::provider_name::function_name()</code>. (<a href="https://github.com/hashicorp/terraform/issues/34394">#34394</a>)</p>
+</li>
+<li>
+<p>Providers can now transfer the ownership of a remote object between resources of different types, for situations where there are two different resource types that represent the same remote object type.</p>
+<p>This extends the <code>moved</code> block behavior to support moving between two resources of different types only if the provider for the target resource type declares that it can convert from the source resource type. Refer to provider documentation for details on which pairs of resource types are supported.</p>
+</li>
+<li>
+<p>New <code>issensitive</code> function returns true if the given value is marked as sensitive.</p>
+</li>
+</ul>
+<p>ENHANCEMENTS:</p>
+<ul>
+<li>
+<p><code>terraform test</code>: File-level variables can now refer to global variables. (<a href="https://github.com/hashicorp/terraform/issues/34699">#34699</a>)</p>
+</li>
+<li>
+<p>When generating configuration based on <code>import</code> blocks, Terraform will detect strings that contain valid JSON syntax and generate them as calls to the <code>jsonencode</code> function, rather than generating a single string. This is primarily motivated by readability, but might also be useful if you need to replace part of the literal value with an expression as you generalize your module beyond the one example used for importing.</p>
+</li>
+<li>
+<p><code>terraform plan</code> now uses a different presentation for describing changes to lists where the old and new lists have the same length. It now compares the elements with correlated indices and shows a separate diff for each one, rather than trying to show a diff for the list as a whole. The behavior is unchanged for lists of different lengths.</p>
+</li>
+<li>
+<p><code>terraform providers lock</code> accepts a new boolean option <code>-enable-plugin-cache</code>. If specified, and if a <a href="https://developer.hashicorp.com/terraform/cli/config/config-file#provider-plugin-cache" rel="nofollow">global plugin cache</a> is configured, Terraform will use the cache in the provider lock process. (<a href="https://github.com/hashicorp/terraform/issues/34632">#34632</a>)</p>
+</li>
+<li>
+<p>built-in "terraform" provider: new <code>decode_tfvars</code>, <code>encode_tfvars</code>, and <code>encode_expr</code> functions, for unusual situations where it's helpful to manually generate or read from Terraform's "tfvars" format. (<a href="https://github.com/hashicorp/terraform/issues/34718">#34718</a>)</p>
+</li>
+<li>
+<p><code>terraform show</code>'s JSON rendering of a plan now includes two explicit flags <code>"applyable"</code> and <code>"complete"</code>, which both summarize characteristics of a plan that were previously only inferrable by consumers replicating some of Terraform Core's own logic. (<a href="https://github.com/hashicorp/terraform/issues/34642">#34642</a>)</p>
+<p><code>"applyable"</code> means that it makes sense for a wrapping automation to offer to apply this plan.</p>
+<p><code>"complete"</code> means that applying this plan is expected to achieve convergence between desired and actual state. If this flag is present and set to <code>false</code> then wrapping automations should ideally encourage an operator to run another plan/apply round to continue making progress toward convergence.</p>
+</li>
+</ul>
+<p>BUG FIXES:</p>
+<ul>
+<li>core: Sensitive values will now be tracked more accurately in state and plans, preventing unexpected updates with no apparent changes. (<a href="https://github.com/hashicorp/terraform/issues/34567">#34567</a>)</li>
+<li>core: Fix incorrect error message when using in invalid <code>iterator</code> argument within a dynamic block. (<a href="https://github.com/hashicorp/terraform/issues/34751">#34751</a>)</li>
+<li>core: Fixed edge-case bug that could cause loss of floating point precision when round-tripping due to incorrectly using a MessagePack integer to represent a large non-integral number. (<a href="https://github.com/hashicorp/terraform/issues/24576">#24576</a>)</li>
+<li>config: Converting from an unknown map value to an object type now correctly handles the situation where the map element type disagrees with an optional attribute of the target type, since when a map value is unknown we don't yet know which keys it has and thus cannot predict what subset of the elements will get converted as attributes in the resulting object. (<a href="https://github.com/hashicorp/terraform/issues/34756">#34756</a>)</li>
+<li>cloud: Fixed unparsed color codes in policy failure error messages. (<a href="https://github.com/hashicorp/terraform/issues/34473">#34473</a>)</li>
+</ul>
+<h2>Previous Releases</h2>
+<p>For information on prior major and minor releases, see their changelogs:</p>
+<ul>
+<li><a href="https://github.com/hashicorp/terraform/blob/v1.7/CHANGELOG.md">v1.7</a></li>
+<li><a href="https://github.com/hashicorp/terraform/blob/v1.6/CHANGELOG.md">v1.6</a></li>
+<li><a href="https://github.com/hashicorp/terraform/blob/v1.5/CHANGELOG.md">v1.5</a></li>
+<li><a href="https://github.com/hashicorp/terraform/blob/v1.4/CHANGELOG.md">v1.4</a></li>
+<li><a href="https://github.com/hashicorp/terraform/blob/v1.3/CHANGELOG.md">v1.3</a></li>
+<li><a href="https://github.com/hashicorp/terraform/blob/v1.2/CHANGELOG.md">v1.2</a></li>
+<li><a href="https://github.com/hashicorp/terraform/blob/v1.1/CHANGELOG.md">v1.1</a></li>
+<li><a href="https://github.com/hashicorp/terraform/blob/v1.0/CHANGELOG.md">v1.0</a></li>
+<li><a href="https://github.com/hashicorp/terraform/blob/v0.15/CHANGELOG.md">v0.15</a></li>
+<li><a href="https://github.com/hashicorp/terraform/blob/v0.14/CHANGELOG.md">v0.14</a></li>
+<li><a href="https://github.com/hashicorp/terraform/blob/v0.13/CHANGELOG.md">v0.13</a></li>
+<li><a href="https://github.com/hashicorp/terraform/blob/v0.12/CHANGELOG.md">v0.12</a></li>
+<li><a href="https://github.com/hashicorp/terraform/blob/v0.11/CHANGELOG.md">v0.11 and earlier</a></li>
+</ul>]]></content>
+<author><name>hc-github-team-es-release-engineering</name></author>
+</entry>
+<entry>
+<title>Vault Release: api/v1.12.2</title>
+<link href='https://github.com/hashicorp/vault/releases/tag/api%2Fv1.12.2'/>
+<id>tag:github.com,2008:Repository/31288958/api/v1.12.2</id>
+<updated>2024-03-18T17:11:42Z</updated>
+<content type='html'><![CDATA[<p>document that LISTs with no results return 404 (<a class="issue-link js-issue-link" href="https://github.com/hashicorp/vault/pull/25989">#25989</a>)</p>]]></content>
+<author><name>ccapurso</name></author>
+</entry>
 <entry>
 <title>AzureRM Provider Release: v3.96.0</title>
 <link href='https://github.com/hashicorp/terraform-provider-azurerm/releases/tag/v3.96.0'/>
@@ -1850,14 +2037,6 @@ leading to failure to complete merkle sync without a full re-index. [<a href="ht
 <author><name>github-actions[bot]</name></author>
 </entry>
 <entry>
-<title>Vault Release: api/auth/userpass/v0.6.0</title>
-<link href='https://github.com/hashicorp/vault/releases/tag/api%2Fauth%2Fuserpass%2Fv0.6.0'/>
-<id>tag:github.com,2008:Repository/31288958/api/auth/userpass/v0.6.0</id>
-<updated>2024-02-08T15:46:33Z</updated>
-<content type='html'><![CDATA[<p>Update Vault auth submodule API versions for 1.16 (<a class="issue-link js-issue-link" href="https://github.com/hashicorp/vault/pull/25290">#25290</a>)</p>]]></content>
-<author><name>VioletHynes</name></author>
-</entry>
-<entry>
 <title>Terraform CLI Release: v1.7.3</title>
 <link href='https://github.com/hashicorp/terraform/releases/tag/v1.7.3'/>
 <id>tag:github.com,2008:Repository/17728164/v1.7.3</id>
@@ -2160,19 +2339,6 @@ leading to failure to complete merkle sync without a full re-index. [<a href="ht
 <author><name>github-actions[bot]</name></author>
 </entry>
 <entry>
-<title>Terraform CLI Release: v1.7.1</title>
-<link href='https://github.com/hashicorp/terraform/releases/tag/v1.7.1'/>
-<id>tag:github.com,2008:Repository/17728164/v1.7.1</id>
-<updated>2024-01-24T12:36:42Z</updated>
-<content type='html'><![CDATA[<h2>1.7.1 (January 24, 2024)</h2>
-<p>BUG FIXES:</p>
-<ul>
-<li><code>terraform test</code>: Fix crash when referencing variables or functions within the file level <code>variables</code> block. (<a href="https://github.com/hashicorp/terraform/issues/34531">#34531</a>)</li>
-<li><code>terraform test</code>: Fix crash when <code>override_module</code> block was missing the <code>outputs</code> attribute. (<a href="https://github.com/hashicorp/terraform/issues/34563">#34563</a>)</li>
-</ul>]]></content>
-<author><name>hc-github-team-es-release-engineering</name></author>
-</entry>
-<entry>
 <title>GCP Provider Release: v5.13.0</title>
 <link href='https://github.com/hashicorp/terraform-provider-google/releases/tag/v5.13.0'/>
 <id>tag:github.com,2008:Repository/93446075/v5.13.0</id>
@@ -2206,41 +2372,6 @@ leading to failure to complete merkle sync without a full re-index. [<a href="ht
 <li>networkservices: fixed a perma-diff on <code>addresses</code> field in <code>google_network_services_gateway</code> resource (<a href="https://github.com/hashicorp/terraform-provider-google/pull/17035">#17035</a>)</li>
 <li>provider: fixed <code>universe_domain</code> behavior to correctly throw an error when explicitly configured <code>universe_domain</code> values did not match credentials assumed to be in the default universe (<a href="https://github.com/hashicorp/terraform-provider-google/pull/17014">#17014</a>)</li>
 <li>spanner: fixed error when adding <code>autoscaling_config</code> to an existing <code>google_spanner_instance</code> resource (<a href="https://github.com/hashicorp/terraform-provider-google/pull/17033">#17033</a>)</li>
-</ul>]]></content>
-<author><name>github-actions[bot]</name></author>
-</entry>
-<entry>
-<title>AzureRM Provider Release: v3.88.0</title>
-<link href='https://github.com/hashicorp/terraform-provider-azurerm/releases/tag/v3.88.0'/>
-<id>tag:github.com,2008:Repository/93446042/v3.88.0</id>
-<updated>2024-01-19T02:02:24Z</updated>
-<content type='html'><![CDATA[<p>FEATURES:</p>
-<ul>
-<li>New Data Source: <code>azurerm_nginx_deployment</code> (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/24492">#24492</a>)</li>
-<li>New Resource: <code>azurerm_spring_cloud_dynatrace_application_performance_monitoring</code> (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/23889">#23889</a>)</li>
-<li>New Resource: <code>azurerm_virtual_machine_run_command</code> (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/23377">#23377</a>)</li>
-</ul>
-<p>ENHANCEMENTS:</p>
-<ul>
-<li>dependencies: updating to <code>v0.20240117.1163544</code> of <code>github.com/hashicorp/go-azure-sdk</code> (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/24481">#24481</a>)</li>
-<li>dependencies: updating to <code>v0.65.1</code> of <code>github.com/hashicorp/go-azure-helpers</code> (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/24479">#24479</a>)</li>
-<li><code>datashare</code>: updating to use the base layer from <code>hashicorp/go-azure-sdk</code> rather than <code>Azure/go-autorest</code> (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/24481">#24481</a>)</li>
-<li><code>kusto</code>: updating to use the base layer from <code>hashicorp/go-azure-sdk</code> rather than <code>Azure/go-autorest</code> (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/24477">#24477</a>)</li>
-<li>Data Source: <code>azurerm_application_gateway</code> - support for the <code>trusted_client_certificate.data</code> property (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/24474">#24474</a>)</li>
-<li><code>azurerm_service_plan</code>: refactoring to use <code>hashicorp/go-azure-sdk</code> (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/24483">#24483</a>)</li>
-<li><code>azurerm_container_group</code> - support for the <code>priority</code> property (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/24374">#24374</a>)</li>
-<li><code>azurerm_mssql_managed_database</code> - support for the <code>point_in_time_restore</code> property (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/24535">#24535</a>)</li>
-<li><code>azurerm_mssql_managed_instance</code> - now exports the <code>dns_zone</code> attribute (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/24435">#24435</a>)</li>
-<li><code>azurerm_linux_web_app_slot</code> - support for setting <code>python_version</code> to <code>3.12</code> (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/24363">#24363</a>)</li>
-<li><code>azurerm_linux_web_app</code> - support for setting <code>python_version</code> to <code>3.12</code> (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/24363">#24363</a>)</li>
-<li><code>azurerm_linux_function_app_slot</code> - support for setting <code>python_version</code> to <code>3.12</code> (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/24363">#24363</a>)</li>
-<li><code>azurerm_linux_function_app</code> - support for setting <code>python_version</code> to <code>3.12</code> (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/24363">#24363</a>)</li>
-</ul>
-<p>BUG FIXES:</p>
-<ul>
-<li><code>azurerm_application_gateway</code> - the <code>components</code> property within the <code>url</code> block is no longer computed (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/24480">#24480</a>)</li>
-<li><code>azurerm_cdn_frontdoor_route</code> - prevent an issue where <code>cdn_frontdoor_origin_path</code> gets removed on update if unchanged. (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/24488">#24488</a>)</li>
-<li><code>azurerm_cognitive_account</code> - fixing support for the <code>DC0</code> SKU (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/24526">#24526</a>)</li>
 </ul>]]></content>
 <author><name>github-actions[bot]</name></author>
 </entry>
@@ -2280,109 +2411,6 @@ leading to failure to complete merkle sync without a full re-index. [<a href="ht
 <li>edgecontainer: fixed resource import on <code>google_edgecontainer_vpn_connection</code> resource (<a href="https://github.com/hashicorp/terraform-provider-google/pull/16948">#16948</a>)</li>
 <li>servicemanagement: fixed an issue where an inconsistent plan would be created when certain fields such as <code>openapi_config</code>, <code>grpc_config</code>, and <code>protoc_output_base64</code>, had computed values in <code>google_endpoints_service</code> resource (<a href="https://github.com/hashicorp/terraform-provider-google/pull/16946">#16946</a>)</li>
 <li>storage: fixed an issue where retry timeout wasn't being utilized when creating <code>google_storage_bucket</code> resource (<a href="https://github.com/hashicorp/terraform-provider-google/pull/16902">#16902</a>)</li>
-</ul>]]></content>
-<author><name>github-actions[bot]</name></author>
-</entry>
-<entry>
-<title>AzureRM Provider Release: v3.87.0</title>
-<link href='https://github.com/hashicorp/terraform-provider-azurerm/releases/tag/v3.87.0'/>
-<id>tag:github.com,2008:Repository/93446042/v3.87.0</id>
-<updated>2024-01-12T22:16:17Z</updated>
-<content type='html'><![CDATA[<p>ENHANCEMENTS:</p>
-<ul>
-<li>dependencies: updating to <code>v0.20240112.1095456</code> of <code>github.com/hashicorp/go-azure-sdk</code> [<a class="issue-link js-issue-link" href="https://github.com/hashicorp/terraform-provider-azurerm/pull/24477">GH-24477</a>]</li>
-<li>dependencies: updating to <code>v0.65.1</code> of <code>github.com/hashicorp/go-azure-helpers</code> [<a class="issue-link js-issue-link" href="https://github.com/hashicorp/terraform-provider-azurerm/pull/24479">GH-24479</a>]</li>
-<li><code>kusto</code>: updating to use the base layer from <code>hashicorp/go-azure-sdk</code> rather than <code>Azure/go-autorest</code> [<a class="issue-link js-issue-link" href="https://github.com/hashicorp/terraform-provider-azurerm/pull/24477">GH-24477</a>]</li>
-<li><code>azurerm_container_group</code> - support for the <code>priority</code> property [<a class="issue-link js-issue-link" href="https://github.com/hashicorp/terraform-provider-azurerm/pull/24374">GH-24374</a>]</li>
-<li>Data Source: <code>azurerm_application_gateway</code> - support for the <code>trusted_client_certificate.data</code> property [<a class="issue-link js-issue-link" href="https://github.com/hashicorp/terraform-provider-azurerm/pull/24474">GH-24474</a>]</li>
-</ul>
-<h2>3.87.0 (January 11, 2024)</h2>
-<p>FEATURES:</p>
-<ul>
-<li>New Data Source: <code>azurerm_network_manager</code> (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/24398">#24398</a>)</li>
-<li>New Resource: <code>azurerm_security_center_server_vulnerability_assessments_setting</code> (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/24299">#24299</a>)</li>
-</ul>
-<p>ENHANCEMENTS:</p>
-<ul>
-<li>dependencies: updating to <code>v0.20240111.1094251</code> of <code>github.com/hashicorp/go-azure-sdk</code> (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/24463">#24463</a>)</li>
-<li>Data Source: <code>azurerm_mssql_database</code> - support for <code>identity</code>, <code>transparent_data_encryption_enabled</code>, <code>transparent_data_encryption_key_vault_key_id</code> and <code>transparent_data_encryption_key_automatic_rotation_enabled</code> (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/24412">#24412</a>)</li>
-<li>Data Source: <code>azurerm_mssql_server</code> - support for <code>transparent_data_encryption_key_vault_key_id</code> (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/24412">#24412</a>)</li>
-<li><code>machinelearning</code>: updating to API Version <code>2023-10-01</code> (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/24416">#24416</a>)</li>
-<li><code>paloaltonetworks</code>: updating to API Version <code>2023-09-01</code> (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/24290">#24290</a>)</li>
-<li><code>azurerm_container_app</code> - update create time validations for <code>ingress.0.traffic_weight</code> (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/24042">#24042</a>)</li>
-<li><code>azurerm_container_app</code>- support for the <code>ip_security_restriction</code> block (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/23870">#23870</a>)</li>
-<li><code>azurerm_kubernetes_cluster</code> - properties in <code>default_node_pool.linux_os_config.sysctl_config</code> are now updateable via node pool cycling (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/24397">#24397</a>)</li>
-<li><code>azurerm_linux_web_app</code> - support the <code>VS2022</code> value for the <code>remote_debugging_version</code> property (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/24407">#24407</a>)</li>
-<li><code>azurerm_mssql_database</code> - support for <code>identity</code>, <code>transparent_data_encryption_key_vault_key_id</code> and <code>transparent_data_encryption_key_automatic_rotation_enabled</code> (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/24412">#24412</a>)</li>
-<li><code>azurerm_postgres_flexible_server</code> - the <code>sku_name</code> property now supports being set to <code>MO_Standard_E96ds_v5</code> (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/24367">#24367</a>)</li>
-<li><code>azurerm_role_assignment</code> - support for the <code>principal_type</code> property (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/24271">#24271</a>)</li>
-<li><code>azurerm_windows_web_app</code> - support the <code>VS2022</code> value for the <code>remote_debugging_version</code> property (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/24407">#24407</a>)</li>
-<li><code>azurerm_cdn_frontdoor_firewall_policy</code> - support for <code>request_body_check_enabled</code> property (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/24406">#24406</a>)</li>
-</ul>
-<p>BUG FIXES:</p>
-<ul>
-<li>Data Source: <code>azurerm_role_definition</code> - fix <code>role_definition_id</code> (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/24418">#24418</a>)</li>
-<li><code>azurerm_api_management</code> - the <code>sku_name</code> property can now be updated (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/24431">#24431</a>)</li>
-<li><code>azurerm_arc_kubernetes_flux_configuration</code> - prevent a bug where certain sensitive properties for <code>bucket</code> and <code>git_repository</code> were being overwritten after an update to the resource is made (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/24066">#24066</a>)</li>
-<li><code>azurerm_kubernetes_flux_configuration</code> - prevent a bug where certain sensitive properties for <code>bucket</code> and <code>git_repository</code> were being overwritten after an update to the resource is made (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/24066">#24066</a>)</li>
-<li><code>azure_linux_web_app</code> - prevent a bug in App Service processing of <code>application_stack</code> in updates to <code>site_config</code> (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/24424">#24424</a>)</li>
-<li><code>azure_linux_web_app_slot</code> - Fix bug in App Service processing of <code>application_stack</code> in updates to <code>site_config</code> (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/24424">#24424</a>)</li>
-<li><code>azurerm_network_manager_deployment</code> - update creation wait logic to better tolerate the api returning not found (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/24330">#24330</a>)</li>
-<li><code>azurerm_virtual_machine_data_disk_attachment</code> - do not update applications profile with disks (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/24145">#24145</a>)</li>
-<li><code>azure_windows_web_app</code> - prevent a bug in App Service processing of <code>application_stack</code> in updates to <code>site_config</code> (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/24424">#24424</a>)</li>
-<li><code>azure_windows_web_app_slot</code> - prevent a bug in App Service processing of <code>application_stack</code> in updates to <code>site_config</code> (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/24424">#24424</a>)</li>
-<li><code>azurerm_maintenance_configuration</code> - set the <code>reboot</code> property in flatten from <code>AlwaysReboot</code> to <code>Always</code> (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/24376">#24376</a>)</li>
-<li><code>azurerm_container_app_environment</code> - the <code>workload_profile</code> property can now be updated (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/24409">#24409</a>)</li>
-</ul>]]></content>
-<author><name>github-actions[bot]</name></author>
-</entry>
-<entry>
-<title>GCP Provider Release: v5.11.0</title>
-<link href='https://github.com/hashicorp/terraform-provider-google/releases/tag/v5.11.0'/>
-<id>tag:github.com,2008:Repository/93446075/v5.11.0</id>
-<updated>2024-01-08T22:55:33Z</updated>
-<content type='html'><![CDATA[<p>NOTES:</p>
-<ul>
-<li>compute: changed underlying actuation engine for <code>google_network_firewall_policy</code> and <code>google_region_network_firewall_policy</code>, there should be no user-facing impact (<a href="https://github.com/hashicorp/terraform-provider-google/pull/16837">#16837</a>)</li>
-</ul>
-<p>DEPRECATIONS:</p>
-<ul>
-<li>gkehub2: deprecated field <code>configmanagement.config_sync.oci.version</code> in <code>google_gke_hub_feature</code> resource (<a href="https://github.com/hashicorp/terraform-provider-google/pull/16818">#16818</a>)</li>
-</ul>
-<p>FEATURES:</p>
-<ul>
-<li><strong>New Data Source:</strong> <code>google_compute_reservation</code> (<a href="https://github.com/hashicorp/terraform-provider-google/pull/16860">#16860</a>)</li>
-<li><strong>New Resource:</strong> <code>google_integration_connectors_endpoint_attachment</code> (<a href="https://github.com/hashicorp/terraform-provider-google/pull/16822">#16822</a>)</li>
-<li><strong>New Resource:</strong> <code>google_logging_folder_settings</code> (<a href="https://github.com/hashicorp/terraform-provider-google/pull/16800">#16800</a>)</li>
-<li><strong>New Resource:</strong> <code>google_logging_organization_settings</code> (<a href="https://github.com/hashicorp/terraform-provider-google/pull/16800">#16800</a>)</li>
-<li><strong>New Resource:</strong> <code>google_netapp_active_directory</code> (<a href="https://github.com/hashicorp/terraform-provider-google/pull/16844">#16844</a>)</li>
-<li><strong>New Resource:</strong> <code>google_vertex_ai_feature_online_store</code> (<a href="https://github.com/hashicorp/terraform-provider-google/pull/16840">#16840</a>)</li>
-<li><strong>New Resource:</strong> <code>google_vertex_ai_feature_group</code> (<a href="https://github.com/hashicorp/terraform-provider-google/pull/16842">#16842</a>)</li>
-<li><strong>New Resource:</strong> <code>google_netapp_backup_vault</code> (<a href="https://github.com/hashicorp/terraform-provider-google/pull/16876">#16876</a>)</li>
-</ul>
-<p>IMPROVEMENTS:</p>
-<ul>
-<li>bigqueryanalyticshub: added <code>restricted_export_config</code> field to <code>google_bigquery_analytics_hub_listing </code> resource (<a href="https://github.com/hashicorp/terraform-provider-google/pull/16850">#16850</a>)</li>
-<li>composer: added support for <code>composer_internal_ipv4_cidr_block</code> field to <code>google_composer_environment</code> (<a href="https://github.com/hashicorp/terraform-provider-google/pull/16815">#16815</a>)</li>
-<li>compute: added <code>provisioned_iops</code>and <code>provisioned_throughput</code> fields under <code>boot_disk.initialize_params</code> to <code>google_compute_instance</code> resource (<a href="https://github.com/hashicorp/terraform-provider-google/pull/16871">#16871</a>)</li>
-<li>compute: added <code>resource_manager_tags</code> and <code>disk.resource_manager_tags</code> for <code>google_compute_instance_template</code> (<a href="https://github.com/hashicorp/terraform-provider-google/pull/16889">#16889</a>)</li>
-<li>compute: added <code>resource_manager_tags</code> and <code>disk.resource_manager_tags</code> for <code>google_compute_region_instance_template</code> (<a href="https://github.com/hashicorp/terraform-provider-google/pull/16889">#16889</a>)</li>
-<li>dataproc: added <code>auxiliary_node_groups</code> field to <code>google_dataproc_cluster</code> resource (<a href="https://github.com/hashicorp/terraform-provider-google/pull/16798">#16798</a>)</li>
-<li>edgecontainer: increased default timeout on <code>google_edgecontainer_cluster</code>, <code>google_edgecontainer_node_pool</code> to 480m from 60m (<a href="https://github.com/hashicorp/terraform-provider-google/pull/16886">#16886</a>)</li>
-<li>gkehub2: added field <code>version</code> under <code>configmanagement</code> in <code>google_gke_hub_feature</code> resource (<a href="https://github.com/hashicorp/terraform-provider-google/pull/16818">#16818</a>)</li>
-<li>kms: added output-only field <code>primary</code> to <code>google_kms_crypto_key</code> (<a href="https://github.com/hashicorp/terraform-provider-google/pull/16845">#16845</a>)</li>
-<li>metastore: added <code>endpoint_protocol</code>, <code>metadata_integration</code>, and <code>auxiliary_versions</code> to <code>google_dataproc_metastore_service</code> (<a href="https://github.com/hashicorp/terraform-provider-google/pull/16823">#16823</a>)</li>
-<li>sql: added support for IAM GROUP authentication in the <code>type</code> field of <code>google_sql_user</code> (<a href="https://github.com/hashicorp/terraform-provider-google/pull/16853">#16853</a>)</li>
-<li>storagetransfer: made <code>name</code> field settable on <code>google_storage_transfer_job</code> (<a href="https://github.com/hashicorp/terraform-provider-google/pull/16838">#16838</a>)</li>
-</ul>
-<p>BUG FIXES:</p>
-<ul>
-<li>container: added check that <code>node_version</code> and <code>min_master_version</code> are the same on create of <code>google_container_cluster</code>, when running terraform plan (<a href="https://github.com/hashicorp/terraform-provider-google/pull/16817">#16817</a>)</li>
-<li>container: fixed a bug where disabling PDCSI addon <code>gce_persistent_disk_csi_driver_config</code> during creation will result in permadiff in <code>google_container_cluster</code> resource (<a href="https://github.com/hashicorp/terraform-provider-google/pull/16794">#16794</a>)</li>
-<li>container: fixed an issue in which migrating from the deprecated Binauthz enablement bool to the new evaluation mode enum inadvertently caused two cluster update events, instead of none. (<a href="https://github.com/hashicorp/terraform-provider-google/pull/16851">#16851</a>)</li>
-<li>containerattached: fixed crash when updating a cluster to remove <code>admin_users</code> or <code>admin_groups</code> in <code>google_container_attached_cluster</code> (<a href="https://github.com/hashicorp/terraform-provider-google/pull/16852">#16852</a>)</li>
-<li>dialogflowcx: fixed a permadiff in the <code>git_integration_settings</code> field of <code>google_diagflow_cx_agent</code> (<a href="https://github.com/hashicorp/terraform-provider-google/pull/16803">#16803</a>)</li>
-<li>monitoring: fixed the index out of range crash in <code>dashboard_json</code> for the resource <code>google_monitoring_dashboard</code> (<a href="https://github.com/hashicorp/terraform-provider-google/pull/16792">#16792</a>)</li>
 </ul>]]></content>
 <author><name>github-actions[bot]</name></author>
 </entry>
