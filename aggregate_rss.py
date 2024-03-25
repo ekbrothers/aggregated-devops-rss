@@ -9,6 +9,8 @@ feeds = {
     "https://github.com/hashicorp/terraform-provider-azurerm/releases.atom": "AzureRM Provider",
     "https://github.com/hashicorp/vault/releases.atom": "Vault",
     "https://github.com/terraform-docs/terraform-docs/releases.atom": "terraform-docs",
+    "https://www.githubstatus.com/history.atom": "GitHub Status",
+    "https://status.hashicorp.com/history.atom": "Hashicorp Status",
 }
 
 entries = []
