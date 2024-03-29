@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 <title>Aggregated GitHub Releases</title>
 <link href="https://example.com/feed.xml" rel="self"/>
-<updated>2024-03-25T15:40:16Z</updated>
+<updated>2024-03-29T15:04:46Z</updated>
 <author><name>Aggregated Feed</name></author>
 <id>urn:uuid:aggregated-feed</id>
 <entry>
@@ -11,6 +11,75 @@
 <id>tag:status.hashicorp.com,2005:Incident/20280151</id>
 <updated>2024-04-21T17:00:00Z</updated>
 <content type='html'><![CDATA[<p><strong>THIS IS A SCHEDULED EVENT Apr <var>21</var>, <var>17:00</var> - <var>21:00</var> UTC</strong></p><p><small>Mar <var>16</var>, <var>23:29</var> UTC</small><br /><strong>Scheduled</strong> - Terraform Cloud and Terraform Public Registry will undergo scheduled maintenance on Sunday, April 21st beginning at 17:00 UTC. We expect this maintenance to complete within 4 hours.<br /><br />During this time, these services will be unavailable until the maintenance completes. We'll post updates as necessary throughout the maintenance period.</p>]]></content>
+<author><name>No author available</name></author>
+</entry>
+<entry>
+<title>GCP Provider Release: v5.22.0</title>
+<link href='https://github.com/hashicorp/terraform-provider-google/releases/tag/v5.22.0'/>
+<id>tag:github.com,2008:Repository/93446075/v5.22.0</id>
+<updated>2024-03-29T00:20:29Z</updated>
+<content type='html'><![CDATA[<p>BREAKING CHANGES:</p>
+<ul>
+<li>networksecurity: added required field <code>billing_project_id</code> to <code>google_network_security_firewall_endpoint</code> resource. Any configuration without <code>billing_project_id</code> specified will cause resource creation fail (beta) (<a href="https://github.com/hashicorp/terraform-provider-google/pull/17630">#17630</a>)</li>
+</ul>
+<p>FEATURES:</p>
+<ul>
+<li><strong>New Data Source:</strong> <code>google_cloud_quotas_quota_info</code> (<a href="https://github.com/hashicorp/terraform-provider-google/pull/17564">#17564</a>)</li>
+<li><strong>New Data Source:</strong> <code>google_cloud_quotas_quota_infos</code> (<a href="https://github.com/hashicorp/terraform-provider-google/pull/17617">#17617</a>)</li>
+<li><strong>New Resource:</strong> <code>google_access_context_manager_service_perimeter_dry_run_resource</code> (<a href="https://github.com/hashicorp/terraform-provider-google/pull/17614">#17614</a>)</li>
+</ul>
+<p>IMPROVEMENTS:</p>
+<ul>
+<li>accesscontextmanager: supported managing service perimeter dry run resources outside the perimeter via new resource <code>google_access_context_manager_service_perimeter_dry_run_resource</code> (<a href="https://github.com/hashicorp/terraform-provider-google/pull/17614">#17614</a>)</li>
+<li>cloudrunv2: added plan-time validation to restrict number of ports to 1 in <code>google_cloud_run_v2_service</code> (<a href="https://github.com/hashicorp/terraform-provider-google/pull/17594">#17594</a>)</li>
+<li>composer: added field <code>count</code> to validate number of DAG processors in <code>google_composer_environment</code> (<a href="https://github.com/hashicorp/terraform-provider-google/pull/17625">#17625</a>)</li>
+<li>compute: added enumeration value <code>SEV_LIVE_MIGRATABLE_V2</code> for the <code>guest_os_features</code> of <code>google_compute_disk</code> (<a href="https://github.com/hashicorp/terraform-provider-google/pull/17629">#17629</a>)</li>
+<li>compute: added <code>status.all_instances_config.revision</code> field to <code>google_compute_instance_group_manager</code> and <code>google_compute_region_instance_group_manager</code> (<a href="https://github.com/hashicorp/terraform-provider-google/pull/17595">#17595</a>)</li>
+<li>compute: added field <code>path_template_match</code> to resource <code>google_compute_region_url_map</code> (<a href="https://github.com/hashicorp/terraform-provider-google/pull/17571">#17571</a>)</li>
+<li>compute: added field <code>path_template_rewrite</code> to resource <code>google_compute_region_url_map</code> (<a href="https://github.com/hashicorp/terraform-provider-google/pull/17571">#17571</a>)</li>
+<li>pubsub: added <code>ingestion_data_source_settings</code> field to <code>google_pubsub_topic</code> resource (<a href="https://github.com/hashicorp/terraform-provider-google/pull/17604">#17604</a>)</li>
+<li>storage: added 'soft_delete_policy' to 'google_storage_bucket' resource (<a href="https://github.com/hashicorp/terraform-provider-google/pull/17624">#17624</a>)</li>
+</ul>
+<p>BUG FIXES:</p>
+<ul>
+<li>accesscontextmanager: fixed an issue with <code>access_context_manager_service_perimeter_ingress_policy</code> and <code>access_context_manager_service_perimeter_egress_policy</code> where updates could not be applied after initial creation. Any updates applied to these resources will now involve their recreation. To ensure that new policies are added before old ones are removed, add a <code>lifecycle</code> block with <code>create_before_destroy = true</code> to your resource configuration alongside other updates. (<a href="https://github.com/hashicorp/terraform-provider-google/pull/17596">#17596</a>)</li>
+<li>firebase: made the <code>google_firebase_android_app</code> resource's <code>package_name</code> field required and immutable. This prevents API errors encountered by users who attempted to update or leave that field unset in their configurations. (<a href="https://github.com/hashicorp/terraform-provider-google/pull/17585">#17585</a>)</li>
+<li>spanner: removed validation function for the field <code>version_retention_period</code> in the resource <code>google_spanner_database</code> and directly returned error from backend (<a href="https://github.com/hashicorp/terraform-provider-google/pull/17621">#17621</a>)</li>
+</ul>]]></content>
+<author><name>github-actions[bot]</name></author>
+</entry>
+<entry>
+<title>Hashicorp Status Release: Emergency Maintenance</title>
+<link href='https://status.hashicorp.com/incidents/2l88vc756nyd'/>
+<id>tag:status.hashicorp.com,2005:Incident/20381640</id>
+<updated>2024-03-28T00:18:28Z</updated>
+<content type='html'><![CDATA[<p><small>Mar <var>28</var>, <var>00:18</var> UTC</small><br /><strong>Resolved</strong> - HCP Emergency Maintenance is now complete.</p><p><small>Mar <var>27</var>, <var>23:29</var> UTC</small><br /><strong>Update</strong> - HCP Boundary Maintenance is still ongoing and is expected to complete in 1 hour 00:30 UTC. During this time, HCP Boundary sessions may disconnect unexpectedly, but reconnecting will be possible. We will continue to post updates as necessary throughout the maintenance period.</p><p><small>Mar <var>27</var>, <var>20:30</var> UTC</small><br /><strong>Identified</strong> - HCP Boundary will undergo emergency maintenance on 27, March, 2024 beginning at 20:30 UTC . We expect this maintenance to be complete within three hours. During this time, HCP Boundary sessions may disconnect unexpectedly, but reconnecting will be possible. We will post updates as necessary throughout the maintenance period.</p>]]></content>
+<author><name>No author available</name></author>
+</entry>
+<entry>
+<title>Hashicorp Status Release: HCP Boundary Maintenance:  March 2024</title>
+<link href='https://status.hashicorp.com/incidents/pm9hy3s6gvyz'/>
+<id>tag:status.hashicorp.com,2005:Incident/20237260</id>
+<updated>2024-03-27T20:30:39Z</updated>
+<content type='html'><![CDATA[<p><small>Mar <var>13</var>, <var>20:32</var> UTC</small><br /><strong>Identified</strong> - HCP Boundary will undergo planned database maintenance on Saturday, March 30th beginning at 14:00 UTC. We expect this maintenance to be completed within 1 hour.<br /><br />During this time, HCP Boundary and all Boundary clusters will be unavailable. Sessions will be dropped and session establishment will fail until the maintenance completes. We will post updates as necessary throughout the maintenance period.</p>]]></content>
+<author><name>No author available</name></author>
+</entry>
+<entry>
+<title>Vault Release: v1.16.0</title>
+<link href='https://github.com/hashicorp/vault/releases/tag/v1.16.0'/>
+<id>tag:github.com,2008:Repository/31288958/v1.16.0</id>
+<updated>2024-03-26T17:18:34Z</updated>
+<content type='html'><![CDATA[<p>[VAULT-25372] This is an automated pull request to build all artifact…</p>
+
+<p>…s for a release (<a class="issue-link js-issue-link" href="https://github.com/hashicorp/vault/pull/26138">#26138</a>)</p>]]></content>
+<author><name>hc-github-team-es-release-engineering</name></author>
+</entry>
+<entry>
+<title>Hashicorp Status Release: Terraform Cloud Degradation</title>
+<link href='https://status.hashicorp.com/incidents/94hxnksdgc4h'/>
+<id>tag:status.hashicorp.com,2005:Incident/20354315</id>
+<updated>2024-03-25T17:30:00Z</updated>
+<content type='html'><![CDATA[<p><small>Mar <var>25</var>, <var>17:30</var> UTC</small><br /><strong>Resolved</strong> - Terraform Cloud engineers deployed a routine database migration that renamed an unused column. While the engineering team believed the change to be safe, it resulted in application errors during the deployment window. During this time there was an increase in error rates and latency. The issue has since been resolved.</p>]]></content>
 <author><name>No author available</name></author>
 </entry>
 <entry>
@@ -310,14 +379,6 @@
 <updated>2024-03-13T20:34:23Z</updated>
 <content type='html'><![CDATA[<p>api v1.12.1</p>]]></content>
 <author><name>tomhjp</name></author>
-</entry>
-<entry>
-<title>Hashicorp Status Release: HCP Boundary Maintenance:  March 2024</title>
-<link href='https://status.hashicorp.com/incidents/pm9hy3s6gvyz'/>
-<id>tag:status.hashicorp.com,2005:Incident/20237260</id>
-<updated>2024-03-13T20:32:36Z</updated>
-<content type='html'><![CDATA[<p><small>Mar <var>13</var>, <var>20:32</var> UTC</small><br /><strong>Identified</strong> - HCP Boundary will undergo planned database maintenance on Saturday, March 30th beginning at 14:00 UTC. We expect this maintenance to be completed within 1 hour.<br /><br />During this time, HCP Boundary and all Boundary clusters will be unavailable. Sessions will be dropped and session establishment will fail until the maintenance completes. We will post updates as necessary throughout the maintenance period.</p>]]></content>
-<author><name>No author available</name></author>
 </entry>
 <entry>
 <title>Vault Release: v1.16.0-rc3</title>
@@ -2323,14 +2384,6 @@ leading to failure to complete merkle sync without a full re-index. [<a href="ht
 <author><name>ryancragun</name></author>
 </entry>
 <entry>
-<title>Vault Release: api/v1.12.0: ci: fix status result determination (#25268)</title>
-<link href='https://github.com/hashicorp/vault/releases/tag/api%2Fv1.12.0'/>
-<id>tag:github.com,2008:Repository/31288958/api/v1.12.0</id>
-<updated>2024-02-08T01:28:54Z</updated>
-<content type='html'><![CDATA[<p>Signed-off-by: Ryan Cragun <a href="mailto:me@ryan.ec">me@ryan.ec</a></p>]]></content>
-<author><name>ryancragun</name></author>
-</entry>
-<entry>
 <title>GCP Provider Release: v5.15.0</title>
 <link href='https://github.com/hashicorp/terraform-provider-google/releases/tag/v5.15.0'/>
 <id>tag:github.com,2008:Repository/93446075/v5.15.0</id>
@@ -2733,61 +2786,6 @@ leading to failure to complete merkle sync without a full re-index. [<a href="ht
 <id>tag:www.githubstatus.com,2005:Incident/19780875</id>
 <updated>2024-01-21T06:19:52Z</updated>
 <content type='html'><![CDATA[<p><small>Jan <var>21</var>, <var>06:19</var> UTC</small><br /><strong>Resolved</strong> - On 2024-01-21 from 02:05 UTC to 06:19 UTC, GitHub Hosted Runners experienced increased error rates from our main cloud service provider. The errors were initially limited to a single region and we were able to route around the issue by transparently failing over to other regions. However, errors gradually expanded across all regions we deploy to and led to our available compute capacity being exhausted.<br /><br />During the incident, up to 35% of Actions jobs using Larger Runners and 2% of Actions jobs using GitHub Hosted Runners overall may have experienced intermittent delays in starting. Once the issue was resolved by our cloud service provider, our systems made a full recovery without intervention.<br /><br />We’re working closely with our service provider to understand the cause of the outage and mitigations we can put in place. We’re also working to increase our resilience to outages of this nature by expanding the regions we deploy to beyond the existing set, especially for Larger Runners.</p><p><small>Jan <var>21</var>, <var>05:54</var> UTC</small><br /><strong>Update</strong> - We've applied a mitigation to fix the issues with queuing and running Actions jobs. We are seeing improvements in telemetry and are monitoring for full recovery.</p><p><small>Jan <var>21</var>, <var>05:26</var> UTC</small><br /><strong>Update</strong> - We have mitigated the issues impacting Actions Larger Runners. We are still experiencing delays starting normal jobs, and are continuing to investigate.</p><p><small>Jan <var>21</var>, <var>04:53</var> UTC</small><br /><strong>Update</strong> - The team has identified the cause of the issues with Actions Larger Runners and has begun mitigation.</p><p><small>Jan <var>21</var>, <var>04:16</var> UTC</small><br /><strong>Update</strong> - The team continues to investigate issues with some Actions jobs being queued for a long time and a percentage of jobs failing. We will continue providing updates on the progress towards mitigation.</p><p><small>Jan <var>21</var>, <var>03:45</var> UTC</small><br /><strong>Investigating</strong> - We are investigating reports of degraded performance for Actions</p>]]></content>
-<author><name>No author available</name></author>
-</entry>
-<entry>
-<title>GCP Provider Release: v5.12.0</title>
-<link href='https://github.com/hashicorp/terraform-provider-google/releases/tag/v5.12.0'/>
-<id>tag:github.com,2008:Repository/93446075/v5.12.0</id>
-<updated>2024-01-16T19:33:44Z</updated>
-<content type='html'><![CDATA[<p>FEATURES:</p>
-<ul>
-<li><strong>New Data Source:</strong> <code>google_dns_managed_zones</code> (<a href="https://github.com/hashicorp/terraform-provider-google/pull/16949">#16949</a>)</li>
-<li><strong>New Data Source:</strong> <code>google_filestore_instance</code> (<a href="https://github.com/hashicorp/terraform-provider-google/pull/16931">#16931</a>)</li>
-<li><strong>New Data Source:</strong> <code>google_vmwareengine_external_access_rule</code> (<a href="https://github.com/hashicorp/terraform-provider-google/pull/16912">#16912</a>)</li>
-<li><strong>New Resource:</strong> <code>google_clouddomains_registration</code> (<a href="https://github.com/hashicorp/terraform-provider-google/pull/16947">#16947</a>)</li>
-<li><strong>New Resource:</strong> <code>google_netapp_kmsconfig</code> (<a href="https://github.com/hashicorp/terraform-provider-google/pull/16945">#16945</a>)</li>
-<li><strong>New Resource:</strong> <code>google_vertex_ai_feature_online_store_featureview</code> (<a href="https://github.com/hashicorp/terraform-provider-google/pull/16930">#16930</a>)</li>
-<li><strong>New Resource:</strong> <code>google_vmwareengine_external_access_rule</code> (<a href="https://github.com/hashicorp/terraform-provider-google/pull/16912">#16912</a>)</li>
-</ul>
-<p>IMPROVEMENTS:</p>
-<ul>
-<li>compute: added <code>md5_authentication_key</code> field to <code>google_compute_router_peer</code> resource (<a href="https://github.com/hashicorp/terraform-provider-google/pull/16923">#16923</a>)</li>
-<li>compute: added in-place update support to <code>params.resource_manager_tags</code> field in <code>google_compute_instance</code> resource (<a href="https://github.com/hashicorp/terraform-provider-google/pull/16942">#16942</a>)</li>
-<li>compute: added in-place update support to <code>description</code> field in <code>google_compute_instance</code> resource (<a href="https://github.com/hashicorp/terraform-provider-google/pull/16900">#16900</a>)</li>
-<li>gkehub: added <code>policycontroller</code> field to <code>google_gke_hub_feature_membership</code> resource (<a href="https://github.com/hashicorp/terraform-provider-google/pull/16916">#16916</a>)</li>
-<li>gkehub2: added <code>clusterupgrade</code> field to <code>google_gke_hub_feature</code> resource (<a href="https://github.com/hashicorp/terraform-provider-google/pull/16951">#16951</a>)</li>
-<li>gkeonprem: added in-place update support to <code>vsphere_config</code> field and added <code>host_groups</code> field in <code>google_gkeonprem_vmware_node_pool</code> resource (<a href="https://github.com/hashicorp/terraform-provider-google/pull/16896">#16896</a>)</li>
-<li>iam: added <code>create_ignore_already_exists</code> field to <code>google_service_account</code> resource. If <code>ignore_create_already_exists</code> is set to true, resource creation would succeed when response error is 409 <code>ALREADY_EXISTS</code>. (<a href="https://github.com/hashicorp/terraform-provider-google/pull/16927">#16927</a>)</li>
-<li>servicenetworking: added field <code>deletion_policy</code> to <code>google_service_networking_connection</code> (<a href="https://github.com/hashicorp/terraform-provider-google/pull/16944">#16944</a>)</li>
-<li>sql: set <code>replica_configuration</code>, <code>ca_cert</code>, and <code>server_ca_cert</code> fields to be sensitive in <code>google_sql_instance</code> and <code>google_sql_ssl_cert</code> resources (<a href="https://github.com/hashicorp/terraform-provider-google/pull/16932">#16932</a>)</li>
-</ul>
-<p>BUG FIXES:</p>
-<ul>
-<li>bigquery: fixed perma-diff of <code>encryption_configuration</code> when API returns an empty object on <code>google_bigquery_table</code> resource (<a href="https://github.com/hashicorp/terraform-provider-google/pull/16926">#16926</a>)</li>
-<li>compute: fixed an issue where the provider would <code>wait_for_instances</code> if set before deleting on <code>google_compute_instance_group_manager</code> and <code>google_compute_region_instance_group_manager</code> resources (<a href="https://github.com/hashicorp/terraform-provider-google/pull/16943">#16943</a>)</li>
-<li>compute: fixed perma-diff that reordered <code>stateful_external_ip</code> and <code>stateful_internal_ip</code> blocks on <code>google_compute_instance_group_manager</code> and <code>google_compute_region_instance_group_manager</code> resources (<a href="https://github.com/hashicorp/terraform-provider-google/pull/16910">#16910</a>)</li>
-<li>datapipeline: fixed perma-diff of <code>scheduler_service_account_email</code> when it's not explicitly specified in <code>google_data_pipeline_pipeline</code> resource (<a href="https://github.com/hashicorp/terraform-provider-google/pull/16917">#16917</a>)</li>
-<li>edgecontainer: fixed resource import on <code>google_edgecontainer_vpn_connection</code> resource (<a href="https://github.com/hashicorp/terraform-provider-google/pull/16948">#16948</a>)</li>
-<li>servicemanagement: fixed an issue where an inconsistent plan would be created when certain fields such as <code>openapi_config</code>, <code>grpc_config</code>, and <code>protoc_output_base64</code>, had computed values in <code>google_endpoints_service</code> resource (<a href="https://github.com/hashicorp/terraform-provider-google/pull/16946">#16946</a>)</li>
-<li>storage: fixed an issue where retry timeout wasn't being utilized when creating <code>google_storage_bucket</code> resource (<a href="https://github.com/hashicorp/terraform-provider-google/pull/16902">#16902</a>)</li>
-</ul>]]></content>
-<author><name>github-actions[bot]</name></author>
-</entry>
-<entry>
-<title>Hashicorp Status Release: HCP CLIs Fail to Refresh Token</title>
-<link href='https://status.hashicorp.com/incidents/3m2n1kw1km9g'/>
-<id>tag:status.hashicorp.com,2005:Incident/19680704</id>
-<updated>2024-01-11T22:33:59Z</updated>
-<content type='html'><![CDATA[<p><small>Jan <var>11</var>, <var>22:33</var> UTC</small><br /><strong>Resolved</strong> - We've identified the root cause and will fix this in a future release. There is a workaround logging out and back in with your CLI if you run into unexpected errors. <br /><br />If you're using `vlt`, then run `vlt logout` and `vlt login`.<br /><br />If you're using the Terraform HCP provider, then delete your `$HOME/.config/hcp/` which will prompt you to log back in on your next run.</p><p><small>Jan <var>11</var>, <var>18:57</var> UTC</small><br /><strong>Investigating</strong> - We've found a known bug in which HCP CLIs after one hour of inactivity fail to reauthenticate and refresh. <br /><br />To circumvent this bug, try logging out and logging back in again if you receive unexpected error.</p>]]></content>
-<author><name>No author available</name></author>
-</entry>
-<entry>
-<title>Hashicorp Status Release: Removing End-of-Life Linux Distributions</title>
-<link href='https://status.hashicorp.com/incidents/0tc4tpngwjkm'/>
-<id>tag:status.hashicorp.com,2005:Incident/19110939</id>
-<updated>2024-01-11T01:01:50Z</updated>
-<content type='html'><![CDATA[<p><small>Jan <var>11</var>, <var>01:01</var> UTC</small><br /><strong>Completed</strong> - The scheduled maintenance has been completed.</p><p><small>Jan <var>10</var>, <var>21:34</var> UTC</small><br /><strong>Update</strong> - Scheduled maintenance is still in progress. We will provide updates as necessary.</p><p><small>Jan <var>10</var>, <var>17:27</var> UTC</small><br /><strong>Update</strong> - Scheduled maintenance is still in progress. We will provide updates as necessary.</p><p><small>Jan <var>10</var>, <var>17:00</var> UTC</small><br /><strong>In progress</strong> - Scheduled maintenance is currently in progress. We will provide updates as necessary.</p><p><small>Nov <var>13</var>, <var>20:33</var> UTC</small><br /><strong>Scheduled</strong> - Back in October, HashiCorp announced that we will be removing End-Of-Life distro versions and minor versions of RHEL from apt|rpm.hashicorp.com on Wednesday, January 10th, 2023 in this blogpost (https://www.hashicorp.com/blog/announcing-the-linux-package-archive-site). As a user of ours, it’s imperative that we ensure that we reduce disruption to your existing systems. If you are impacted by this effort, please take some time to migrate your systems to a current OS version of your distribution/software.<br /><br />We have created https://archive.releases.hashicorp.com/ if your system cannot be updated to a current version within the next two months, please redirect your downloads to the archive site which hosts the EOL/minor RHEL versions. If you have any questions, please raise an issue on https://discuss.hashicorp.com/ <br /><br /><br />Thank you, <br /><br />HashiCorp</p>]]></content>
 <author><name>No author available</name></author>
 </entry>
 <entry>
