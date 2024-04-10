@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 <title>Aggregated GitHub Releases</title>
 <link href="https://example.com/feed.xml" rel="self"/>
-<updated>2024-04-05T15:04:42Z</updated>
+<updated>2024-04-10T13:52:08Z</updated>
 <author><name>Aggregated Feed</name></author>
 <id>urn:uuid:aggregated-feed</id>
 <entry>
@@ -14,11 +14,73 @@
 <author><name>No author available</name></author>
 </entry>
 <entry>
+<title>GitHub Status Release: Incident with Issues and Pull Requests</title>
+<link href='https://www.githubstatus.com/incidents/k7bc8pkxpmbp'/>
+<id>tag:www.githubstatus.com,2005:Incident/20494482</id>
+<updated>2024-04-10T09:38:36Z</updated>
+<content type='html'><![CDATA[<p><small>Apr <var>10</var>, <var>09:38</var> UTC</small><br /><strong>Resolved</strong> - This incident has been resolved.</p><p><small>Apr <var>10</var>, <var>09:38</var> UTC</small><br /><strong>Update</strong> - Issues and Pull Requests are operating normally.</p><p><small>Apr <var>10</var>, <var>09:38</var> UTC</small><br /><strong>Update</strong> - The mitigation rolled out has successfully resolved the issue. We have seen failure rates reduce and normal service return across all affected features.</p><p><small>Apr <var>10</var>, <var>09:30</var> UTC</small><br /><strong>Update</strong> - We are aware of impact across a number of GitHub features. This is primarily seen to be impacting write actions for Issues, Repositories and Pull Requests. Additionally we are seeing increased failure rates for search queries.<br /><br />Our team has rolled out a mitigation and is monitoring for recovery.</p><p><small>Apr <var>10</var>, <var>09:22</var> UTC</small><br /><strong>Investigating</strong> - We are investigating reports of degraded availability for Issues and Pull Requests</p>]]></content>
+<author><name>No author available</name></author>
+</entry>
+<entry>
+<title>GitHub Status Release: Incident with Actions</title>
+<link href='https://www.githubstatus.com/incidents/xcjgp37zx5dt'/>
+<id>tag:www.githubstatus.com,2005:Incident/20489412</id>
+<updated>2024-04-09T20:17:07Z</updated>
+<content type='html'><![CDATA[<p><small>Apr <var> 9</var>, <var>20:17</var> UTC</small><br /><strong>Resolved</strong> - This incident has been resolved.</p><p><small>Apr <var> 9</var>, <var>19:43</var> UTC</small><br /><strong>Update</strong> - We continue to work to resolve issues with repositories not being able to enable Actions and Actions network configuration setup not working properly. We have confirmed a fix and are in the process of deploying it to production. Another update will be shared within the next 30 minutes.</p><p><small>Apr <var> 9</var>, <var>19:06</var> UTC</small><br /><strong>Update</strong> - We continue to work to resolve issues with repositories not being able to enable Actions and Actions network configuration setup not working properly. We will provide additional information shortly.</p><p><small>Apr <var> 9</var>, <var>18:36</var> UTC</small><br /><strong>Update</strong> - We are aware of issues with repositories not being able to enable Actions. We are in the process of restoring full functionality and will provide additional information shortly.</p><p><small>Apr <var> 9</var>, <var>18:36</var> UTC</small><br /><strong>Investigating</strong> - We are investigating reports of degraded performance for Actions</p>]]></content>
+<author><name>No author available</name></author>
+</entry>
+<entry>
+<title>GitHub Status Release: We are investigating reports of degraded performance.</title>
+<link href='https://www.githubstatus.com/incidents/6tgmk1j7b4rn'/>
+<id>tag:www.githubstatus.com,2005:Incident/20483650</id>
+<updated>2024-04-09T05:10:21Z</updated>
+<content type='html'><![CDATA[<p><small>Apr <var> 9</var>, <var>05:10</var> UTC</small><br /><strong>Resolved</strong> - This incident has been resolved.</p><p><small>Apr <var> 9</var>, <var>04:51</var> UTC</small><br /><strong>Update</strong> - We are investigating reports of issues with downloading NPM packages. We will continue to keep users updated on progress towards mitigation.</p><p><small>Apr <var> 9</var>, <var>04:32</var> UTC</small><br /><strong>Investigating</strong> - We are currently investigating this issue.</p>]]></content>
+<author><name>No author available</name></author>
+</entry>
+<entry>
+<title>GCP Provider Release: v5.24.0</title>
+<link href='https://github.com/hashicorp/terraform-provider-google/releases/tag/v5.24.0'/>
+<id>tag:github.com,2008:Repository/93446075/v5.24.0</id>
+<updated>2024-04-08T16:54:31Z</updated>
+<content type='html'><![CDATA[<p>IMPROVEMENTS:</p>
+<ul>
+<li>container: added <code>enable_cilium_clusterwide_network_policy</code> field to <code>google_container_cluster</code> resource (<a href="https://github.com/hashicorp/terraform-provider-google/pull/17738">#17738</a>)</li>
+<li>container: added <code>node_pool_auto_config.resource_manager_tags</code> field to <code>google_container_cluster</code> resource (<a href="https://github.com/hashicorp/terraform-provider-google/pull/17715">#17715</a>)</li>
+<li>gkeonprem: added <code>disable_bundled_ingress</code> field to <code>google_gkeonprem_vmware_cluster</code> resource (<a href="https://github.com/hashicorp/terraform-provider-google/pull/17718">#17718</a>)</li>
+<li>redis: added <code>node_type</code> and <code>precise_size_gb</code> fields to <code>google_redis_cluster</code> (<a href="https://github.com/hashicorp/terraform-provider-google/pull/17742">#17742</a>)</li>
+<li>storage: added <code>project_number</code> attribute to <code>google_storage_bucket</code> resource and data source (<a href="https://github.com/hashicorp/terraform-provider-google/pull/17719">#17719</a>)</li>
+<li>storage: added ability to provide <code>project</code> argument to <code>google_storage_bucket</code> data source. This will not impact reading the resource's data, instead this helps users avoid calls to the Compute API within the data source. (<a href="https://github.com/hashicorp/terraform-provider-google/pull/17719">#17719</a>)</li>
+</ul>
+<p>BUG FIXES:</p>
+<ul>
+<li>appengine: fixed a crash in <code>google_app_engine_flexible_app_version</code> due to the <code>deployment</code> field not being returned by the API (<a href="https://github.com/hashicorp/terraform-provider-google/pull/17744">#17744</a>)</li>
+<li>bigquery: fixed a crash when <code>google_bigquery_table</code> had a <code>primary_key.columns</code> entry set to <code>""</code> (<a href="https://github.com/hashicorp/terraform-provider-google/pull/17721">#17721</a>)</li>
+<li>compute: fixed update scenarios on<code>google_compute_region_target_https_proxy</code> and <code>google_compute_target_https_proxy</code> resources. (<a href="https://github.com/hashicorp/terraform-provider-google/pull/17733">#17733</a>)</li>
+</ul>]]></content>
+<author><name>github-actions[bot]</name></author>
+</entry>
+<entry>
 <title>Hashicorp Status Release: Terraform Cloud Emergency Maintenance</title>
 <link href='https://status.hashicorp.com/incidents/b04b5y620pgr'/>
 <id>tag:status.hashicorp.com,2005:Incident/20432653</id>
-<updated>2024-04-07T18:00:00Z</updated>
-<content type='html'><![CDATA[<p><strong>THIS IS A SCHEDULED EVENT Apr <var>7</var>, <var>18:00</var> - <var>20:00</var> UTC</strong></p><p><small>Apr <var> 2</var>, <var>20:40</var> UTC</small><br /><strong>Scheduled</strong> - Terraform Cloud will undergo emergency maintenance on 7th April 2024 beginning at 18:00 UTC. We expect this maintenance to be complete within two hours. During this time, Terraform Cloud will be unavailable. We will post updates as necessary throughout the maintenance period.</p>]]></content>
+<updated>2024-04-07T20:00:02Z</updated>
+<content type='html'><![CDATA[<p><small>Apr <var> 7</var>, <var>20:00</var> UTC</small><br /><strong>Completed</strong> - The scheduled maintenance has been completed.</p><p><small>Apr <var> 7</var>, <var>19:12</var> UTC</small><br /><strong>Update</strong> - Scheduled maintenance is still in progress. We will provide updates as necessary.</p><p><small>Apr <var> 7</var>, <var>18:00</var> UTC</small><br /><strong>In progress</strong> - Scheduled maintenance is currently in progress. We will provide updates as necessary.</p><p><small>Apr <var> 2</var>, <var>20:40</var> UTC</small><br /><strong>Scheduled</strong> - Terraform Cloud will undergo emergency maintenance on 7th April 2024 beginning at 18:00 UTC. We expect this maintenance to be complete within two hours. During this time, Terraform Cloud will be unavailable. We will post updates as necessary throughout the maintenance period.</p>]]></content>
+<author><name>No author available</name></author>
+</entry>
+<entry>
+<title>GitHub Status Release: Incident with Pages</title>
+<link href='https://www.githubstatus.com/incidents/mxksyxp6t1b1'/>
+<id>tag:www.githubstatus.com,2005:Incident/20462209</id>
+<updated>2024-04-06T02:22:00Z</updated>
+<content type='html'><![CDATA[<p><small>Apr <var> 6</var>, <var>02:22</var> UTC</small><br /><strong>Resolved</strong> - On April 6, 2024, between 00:00:00 UTC and 02:20:05 UTC, access to Private Pages on the *.pages.github.io domain was degraded while the deployed TLS certificate was expired. Service was restored by uploading the renewed certificate to our CDN. This was due to a process error and a gap in our alerting. While the certificate was renewed and updated in our internal vault, it was not deployed to the CDN.<br /><br />We are working to reduce potential for errors in our certificate renewal process as well as adding the *.pages.github.io domain to our existing TLS alerting system.</p><p><small>Apr <var> 6</var>, <var>01:52</var> UTC</small><br /><strong>Update</strong> - We are investigating issues with private pages due to an expired certificate</p><p><small>Apr <var> 6</var>, <var>01:52</var> UTC</small><br /><strong>Investigating</strong> - We are investigating reports of degraded performance for Pages</p>]]></content>
+<author><name>No author available</name></author>
+</entry>
+<entry>
+<title>Hashicorp Status Release: Viewing HCP billing information may be impacted</title>
+<link href='https://status.hashicorp.com/incidents/gqb20b5ybh1k'/>
+<id>tag:status.hashicorp.com,2005:Incident/20459557</id>
+<updated>2024-04-05T19:32:41Z</updated>
+<content type='html'><![CDATA[<p><small>Apr <var> 5</var>, <var>19:32</var> UTC</small><br /><strong>Resolved</strong> - Our Engineering team has resolved the issue affecting user's ability to view their billing information in the portal.<br /><br />These systems should now be operating normally. If you continue to experience any problems, please open a ticket with our support team.</p><p><small>Apr <var> 5</var>, <var>18:07</var> UTC</small><br /><strong>Monitoring</strong> - Our Engineering team has implemented a fix to resolve the issue with viewing billing information in the portal.<br /><br />We are monitoring the situation closely and will post an update as soon as the issue is fully resolved.</p><p><small>Apr <var> 5</var>, <var>17:56</var> UTC</small><br /><strong>Investigating</strong> - Our engineering team is investigating an issue affecting customer's abilities to view their billing information in the portal.<br /><br />During this time, users may see an error message indicating that they can't view their most recent billing usage, and may be unable to perform other billing related tasks.<br /><br />We will share another update as soon as we have more information.</p>]]></content>
 <author><name>No author available</name></author>
 </entry>
 <entry>
@@ -26,7 +88,7 @@
 <link href='https://www.githubstatus.com/incidents/5ly0psff2s5d'/>
 <id>tag:www.githubstatus.com,2005:Incident/20455850</id>
 <updated>2024-04-05T09:18:10Z</updated>
-<content type='html'><![CDATA[<p><small>Apr <var> 5</var>, <var>09:18</var> UTC</small><br /><strong>Resolved</strong> - This incident has been resolved.</p><p><small>Apr <var> 5</var>, <var>09:17</var> UTC</small><br /><strong>Update</strong> - Pull Requests is operating normally.</p><p><small>Apr <var> 5</var>, <var>09:17</var> UTC</small><br /><strong>Update</strong> - Issues is operating normally.</p><p><small>Apr <var> 5</var>, <var>09:17</var> UTC</small><br /><strong>Update</strong> - API Requests is operating normally.</p><p><small>Apr <var> 5</var>, <var>09:17</var> UTC</small><br /><strong>Update</strong> - Codespaces is operating normally.</p><p><small>Apr <var> 5</var>, <var>09:17</var> UTC</small><br /><strong>Update</strong> - Actions is operating normally.</p><p><small>Apr <var> 5</var>, <var>09:17</var> UTC</small><br /><strong>Update</strong> - Pages is operating normally.</p><p><small>Apr <var> 5</var>, <var>09:17</var> UTC</small><br /><strong>Update</strong> - Actions is experiencing degraded performance. We are continuing to investigate.</p><p><small>Apr <var> 5</var>, <var>09:00</var> UTC</small><br /><strong>Update</strong> - We've reverted a change we believe caused this, are seeing initial indications of reduced errors, and are monitoring for full recovery</p><p><small>Apr <var> 5</var>, <var>08:59</var> UTC</small><br /><strong>Update</strong> - Pages is experiencing degraded performance. We are continuing to investigate.</p><p><small>Apr <var> 5</var>, <var>08:51</var> UTC</small><br /><strong>Update</strong> - We're seeing connection failures to some databases in two of three sites and are investigating.</p><p><small>Apr <var> 5</var>, <var>08:50</var> UTC</small><br /><strong>Update</strong> - Pull Requests is experiencing degraded performance. We are continuing to investigate.</p><p><small>Apr <var> 5</var>, <var>08:49</var> UTC</small><br /><strong>Update</strong> - Issues is experiencing degraded performance. We are continuing to investigate.</p><p><small>Apr <var> 5</var>, <var>08:49</var> UTC</small><br /><strong>Update</strong> - API Requests is experiencing degraded performance. We are continuing to investigate.</p><p><small>Apr <var> 5</var>, <var>08:49</var> UTC</small><br /><strong>Update</strong> - Codespaces is experiencing degraded performance. We are continuing to investigate.</p><p><small>Apr <var> 5</var>, <var>08:33</var> UTC</small><br /><strong>Investigating</strong> - We are investigating reports of degraded availability for Actions</p>]]></content>
+<content type='html'><![CDATA[<p><small>Apr <var> 5</var>, <var>09:18</var> UTC</small><br /><strong>Resolved</strong> - On April 5, 2024, between 8:11 and 8:58 UTC a number of GitHub services were degraded, returning error responses. Web request error rate peaked at 6%, API request error rate peaked at 10%. Actions had 103,660 workflow runs fail to start. <br /><br />A database load balancer change caused connection failures in one of our three data centers to various critical database clusters. The incident was mitigated once that change was rolled back.<br /><br />We have updated our deployment pipeline to better detect this problem in earlier stages of rollout to reduce impact to end users. <br /></p><p><small>Apr <var> 5</var>, <var>09:17</var> UTC</small><br /><strong>Update</strong> - Pull Requests is operating normally.</p><p><small>Apr <var> 5</var>, <var>09:17</var> UTC</small><br /><strong>Update</strong> - Issues is operating normally.</p><p><small>Apr <var> 5</var>, <var>09:17</var> UTC</small><br /><strong>Update</strong> - API Requests is operating normally.</p><p><small>Apr <var> 5</var>, <var>09:17</var> UTC</small><br /><strong>Update</strong> - Codespaces is operating normally.</p><p><small>Apr <var> 5</var>, <var>09:17</var> UTC</small><br /><strong>Update</strong> - Actions is operating normally.</p><p><small>Apr <var> 5</var>, <var>09:17</var> UTC</small><br /><strong>Update</strong> - Pages is operating normally.</p><p><small>Apr <var> 5</var>, <var>09:17</var> UTC</small><br /><strong>Update</strong> - Actions is experiencing degraded performance. We are continuing to investigate.</p><p><small>Apr <var> 5</var>, <var>09:00</var> UTC</small><br /><strong>Update</strong> - We've reverted a change we believe caused this, are seeing initial indications of reduced errors, and are monitoring for full recovery</p><p><small>Apr <var> 5</var>, <var>08:59</var> UTC</small><br /><strong>Update</strong> - Pages is experiencing degraded performance. We are continuing to investigate.</p><p><small>Apr <var> 5</var>, <var>08:51</var> UTC</small><br /><strong>Update</strong> - We're seeing connection failures to some databases in two of three sites and are investigating.</p><p><small>Apr <var> 5</var>, <var>08:50</var> UTC</small><br /><strong>Update</strong> - Pull Requests is experiencing degraded performance. We are continuing to investigate.</p><p><small>Apr <var> 5</var>, <var>08:49</var> UTC</small><br /><strong>Update</strong> - Issues is experiencing degraded performance. We are continuing to investigate.</p><p><small>Apr <var> 5</var>, <var>08:49</var> UTC</small><br /><strong>Update</strong> - API Requests is experiencing degraded performance. We are continuing to investigate.</p><p><small>Apr <var> 5</var>, <var>08:49</var> UTC</small><br /><strong>Update</strong> - Codespaces is experiencing degraded performance. We are continuing to investigate.</p><p><small>Apr <var> 5</var>, <var>08:33</var> UTC</small><br /><strong>Investigating</strong> - We are investigating reports of degraded availability for Actions</p>]]></content>
 <author><name>No author available</name></author>
 </entry>
 <entry>
@@ -2563,14 +2625,6 @@ data] to report to Hashicorp.</li>
 <author><name>No author available</name></author>
 </entry>
 <entry>
-<title>GitHub Status Release: We are investigating reports of degraded performance.</title>
-<link href='https://www.githubstatus.com/incidents/5y8b8lsqbbyq'/>
-<id>tag:www.githubstatus.com,2005:Incident/19876035</id>
-<updated>2024-01-31T14:57:16Z</updated>
-<content type='html'><![CDATA[<p><small>Jan <var>31</var>, <var>14:57</var> UTC</small><br /><strong>Resolved</strong> - This incident was the result of an infrastructure change that was made to our load balancers to prepare us for IPv6 enablement of GitHub.com. This change was deployed to a subset of our global edge sites.<br /><br />The change had the unintended consequence of causing IPv4 addresses to start being passed as an IPv4-mapped IPv6-compatible address to our IP Allow List functionality.<br /><br />For example 10.1.2.3 became ::ffff:10.1.2.3. While our IP Allow List functionality was developed with IPv6 in mind, it wasn't developed to handle these mapped addresses, and hence started blocking requests as it deemed these to be not in the defined list of allowed addresses. Request error rates peaked at 0.23% of all requests.<br /><br />We have so far identified three remediation items here:<br /><br />- Update the IP Allow List functionality to handle IPv4-mapped addresses.<br />- Audit the rest of our stack to confirm there are no further places this IPv4-mapped IPv6 addresses flaw exists.<br />- Improve our testing and monitoring processes to better catch these issues in the future.</p><p><small>Jan <var>31</var>, <var>14:56</var> UTC</small><br /><strong>Update</strong> - We have resolved the issue and confirmed all regions are now operating as expected.</p><p><small>Jan <var>31</var>, <var>14:49</var> UTC</small><br /><strong>Update</strong> - The fix for ip allow lists is currently rolling out; and we are awaiting confirmation from specific geographic regions.</p><p><small>Jan <var>31</var>, <var>14:33</var> UTC</small><br /><strong>Update</strong> - We are rolling out a fix to resolve the issues with IP allow lists. This should be resolved shortly.</p><p><small>Jan <var>31</var>, <var>14:14</var> UTC</small><br /><strong>Update</strong> - Some customers are experiencing issues with IP allow lists.</p><p><small>Jan <var>31</var>, <var>14:14</var> UTC</small><br /><strong>Investigating</strong> - We are currently investigating this issue.</p>]]></content>
-<author><name>No author available</name></author>
-</entry>
-<entry>
 <title>Hashicorp Status Release: Terraform Cloud Degredation</title>
 <link href='https://status.hashicorp.com/incidents/1wlrz7p36n0x'/>
 <id>tag:status.hashicorp.com,2005:Incident/19868901</id>
@@ -2579,70 +2633,11 @@ data] to report to Hashicorp.</li>
 <author><name>No author available</name></author>
 </entry>
 <entry>
-<title>GCP Provider Release: v5.14.0</title>
-<link href='https://github.com/hashicorp/terraform-provider-google/releases/tag/v5.14.0'/>
-<id>tag:github.com,2008:Repository/93446075/v5.14.0</id>
-<updated>2024-01-29T19:44:24Z</updated>
-<content type='html'><![CDATA[<p>FEATURES:</p>
-<ul>
-<li><strong>New Resource:</strong> <code>google_discovery_engine_data_store</code> (<a href="https://github.com/hashicorp/terraform-provider-google/pull/17084">#17084</a>)</li>
-<li><strong>New Resource:</strong> <code>google_securityposture_posture_deployment</code> (<a href="https://github.com/hashicorp/terraform-provider-google/pull/17085">#17085</a>)</li>
-<li><strong>New Resource:</strong> <code>google_securityposture_posture</code> (<a href="https://github.com/hashicorp/terraform-provider-google/pull/17079">#17079</a>)</li>
-</ul>
-<p>IMPROVEMENTS:</p>
-<ul>
-<li>artifactregistry: promoted <code>cleanup_policies</code> and <code>cleanup_policy_dry_run</code> fields to GA for <code>google_artifactregistry_repository</code> resource (<a href="https://github.com/hashicorp/terraform-provider-google/pull/17074">#17074</a>)</li>
-<li>composer: added <code>data_retention_config</code> field to <code>google_composer_environment</code> resource (<a href="https://github.com/hashicorp/terraform-provider-google/pull/17050">#17050</a>)</li>
-<li>logging: updated the <code>google_logging_project_bucket_config</code> resource to be created using the asynchronous create method (<a href="https://github.com/hashicorp/terraform-provider-google/pull/17067">#17067</a>)</li>
-<li>pubsub: added <code>use_table_schema</code> field to <code>google_pubsub_subscription</code> resource (<a href="https://github.com/hashicorp/terraform-provider-google/pull/17054">#17054</a>)</li>
-<li>workflows: added <code>call_log_level</code> field to <code>google_workflows_workflow</code> resource (<a href="https://github.com/hashicorp/terraform-provider-google/pull/17051">#17051</a>)</li>
-</ul>
-<p>BUG FIXES:</p>
-<ul>
-<li>cloudfunctions2: fixed permadiff when <code>build_config.docker_repository</code> field is not specified on <code>google_cloudfunctions2_function</code> resource (<a href="https://github.com/hashicorp/terraform-provider-google/pull/17072">#17072</a>)</li>
-<li>compute: fixed error when <code>iap</code> field is unset for <code>google_compute_region_backend_service</code> resource (<a href="https://github.com/hashicorp/terraform-provider-google/pull/17071">#17071</a>)</li>
-<li>eventarc: fixed error when setting <code>destination.cloud_function</code> field on <code>google_eventarc_trigger</code> resource by making it output-only (<a href="https://github.com/hashicorp/terraform-provider-google/pull/17052">#17052</a>)</li>
-</ul>]]></content>
-<author><name>github-actions[bot]</name></author>
-</entry>
-<entry>
-<title>GitHub Status Release: We are investigating reports of degraded performance.</title>
-<link href='https://www.githubstatus.com/incidents/g6drnqm54qd4'/>
-<id>tag:www.githubstatus.com,2005:Incident/19850844</id>
-<updated>2024-01-28T14:42:55Z</updated>
-<content type='html'><![CDATA[<p><small>Jan <var>28</var>, <var>14:42</var> UTC</small><br /><strong>Resolved</strong> - On January 28, 2024, between 01:00 UTC and 14:00 UTC the Avatars service was degraded and could not return all avatar images requested by users, instead it would return a default, fallback avatar image. This incident impacted, at peak time 6% of the requests for viewing Avatars. Requests that were impacted did not prevent the users from continuing to use any GitHub services. This was due to an issue with the Avatars service connecting to a database host.<br /><br /> We mitigated the incident by restarting the malfunctioning hosts that were not able to return the user avatar images.<br /><br /> We are working to improve alerting and monitoring of our services to reduce our time to detection and mitigation.</p><p><small>Jan <var>28</var>, <var>14:27</var> UTC</small><br /><strong>Update</strong> - We have mitigated all customer impact. We are no longer serving fallback avatar icons when loading web pages for some customers. We continue to monitor the results.</p><p><small>Jan <var>28</var>, <var>13:57</var> UTC</small><br /><strong>Update</strong> - A fix has been implemented for customers seeing the default avatar (octocat) when loading web pages and we are monitoring the results.</p><p><small>Jan <var>28</var>, <var>13:20</var> UTC</small><br /><strong>Update</strong> - Some requests for getting the Avatars are returning the fallback response instead of the asked avatar since they are having issues connecting to the Mysql host</p><p><small>Jan <var>28</var>, <var>13:20</var> UTC</small><br /><strong>Investigating</strong> - We are currently investigating this issue.</p>]]></content>
-<author><name>No author available</name></author>
-</entry>
-<entry>
 <title>Hashicorp Status Release: Terraform Cloud degradation</title>
 <link href='https://status.hashicorp.com/incidents/ljkkbd0x14sh'/>
 <id>tag:status.hashicorp.com,2005:Incident/19820038</id>
 <updated>2024-01-24T19:18:45Z</updated>
 <content type='html'><![CDATA[<p><small>Jan <var>24</var>, <var>19:18</var> UTC</small><br /><strong>Resolved</strong> - We have seen a full recovery of the Terraform Cloud system</p><p><small>Jan <var>24</var>, <var>18:10</var> UTC</small><br /><strong>Monitoring</strong> - We are now seeing the recovery of the Terraform Cloud systems and calls are succeeding. Our Support and Engineering teams will continue to monitor<br /><br />If you have any runs that are stuck, please cancel them and retry</p><p><small>Jan <var>24</var>, <var>17:50</var> UTC</small><br /><strong>Update</strong> - Terraform Cloud requests to include login, updates and runs currently are impacted<br />Impact is seen through call timeouts or degraded performance</p><p><small>Jan <var>24</var>, <var>17:22</var> UTC</small><br /><strong>Investigating</strong> - We are currently investigating an issue that is causing slow page response times and enqueued runs in Terraform Cloud.</p>]]></content>
-<author><name>No author available</name></author>
-</entry>
-<entry>
-<title>GitHub Status Release: We are investigating reports of degraded performance.</title>
-<link href='https://www.githubstatus.com/incidents/bsk6hmj0d7nv'/>
-<id>tag:www.githubstatus.com,2005:Incident/19807320</id>
-<updated>2024-01-23T18:53:29Z</updated>
-<content type='html'><![CDATA[<p><small>Jan <var>23</var>, <var>18:53</var> UTC</small><br /><strong>Resolved</strong> - On January 23, 2024 at 14:36 UTC, our internal metrics began showing an increase in exceptions originating from our live update service. Live updates to Issues, PRs, Actions, and Projects were failing, but refreshing the page successfully updated page content. We resolved the issue by rolling back a problematic dependency update and reenabled live updates at 18:53 UTC. <br /><br />We are working to improve alerting and monitoring of our live update service to reduce our time to detection and mitigation.</p><p><small>Jan <var>23</var>, <var>18:53</var> UTC</small><br /><strong>Update</strong> - Live updates have been restored and the system is operating normally.</p><p><small>Jan <var>23</var>, <var>18:14</var> UTC</small><br /><strong>Update</strong> - We have identified and are beginning to roll out a potential fix for issues with live updates to our Web UI that power automatic page updates such as the merge box on Pull Requests and updates to Projects.<br />Users will see actions spinning on the PR merge box for example. As a work around, please refresh the page to get the page updated while we work to fix the issue. We will provide further updates as we continue resolving the issue.</p><p><small>Jan <var>23</var>, <var>17:17</var> UTC</small><br /><strong>Update</strong> - We are continuing to investigate issues with live updates to our Web UI that power automatic page updates such as the merge box on Pull Requests and updates to Projects.<br />Users will see actions spinning on the PR merge box for example. As a work around, please refresh the page to get the page updated while we work to fix the issue. We will provide further updates as we continue resolving the issue.</p><p><small>Jan <var>23</var>, <var>16:37</var> UTC</small><br /><strong>Update</strong> - We are continuing to investigate intermittent issues with live updates to our Web UI that power automatic page updates such as the merge box on Pull Requests and updates to Projects. Users will see actions spinning on the PR merge box for example. As a work around, please refresh the page to get the page updated while we work to fix the issue. We will provide further updates as we continue resolving the issue.</p><p><small>Jan <var>23</var>, <var>15:59</var> UTC</small><br /><strong>Update</strong> - We are investigating intermittent issues with live updates to our Web UI that power automatic page updates such as the merge box on Pull Requests. Users will intermittently see actions spinning on the PR merge box for example. As a work around, please refresh the page to get the page updated while we work to fix the issue. We will provide further updates as we continue resolving the issue.</p><p><small>Jan <var>23</var>, <var>15:50</var> UTC</small><br /><strong>Investigating</strong> - We are currently investigating this issue.</p>]]></content>
-<author><name>No author available</name></author>
-</entry>
-<entry>
-<title>Hashicorp Status Release: Terraform Cloud outage</title>
-<link href='https://status.hashicorp.com/incidents/h0kbmpc855nl'/>
-<id>tag:status.hashicorp.com,2005:Incident/19797097</id>
-<updated>2024-01-22T22:34:09Z</updated>
-<content type='html'><![CDATA[<p><small>Jan <var>22</var>, <var>22:34</var> UTC</small><br /><strong>Resolved</strong> - This incident has been resolved. If any runs are failing to proceed in your workspaces, they may have to be cancelled and retried.</p><p><small>Jan <var>22</var>, <var>21:45</var> UTC</small><br /><strong>Monitoring</strong> - A fix has been implemented and we are monitoring the results.</p><p><small>Jan <var>22</var>, <var>19:53</var> UTC</small><br /><strong>Identified</strong> - The issue has been identified and a fix is being implemented.</p><p><small>Jan <var>22</var>, <var>18:27</var> UTC</small><br /><strong>Investigating</strong> - We are currently investigating this issue.</p>]]></content>
-<author><name>No author available</name></author>
-</entry>
-<entry>
-<title>GitHub Status Release: Incident with Codespaces</title>
-<link href='https://www.githubstatus.com/incidents/7ck5966p1073'/>
-<id>tag:www.githubstatus.com,2005:Incident/19780832</id>
-<updated>2024-01-21T09:34:34Z</updated>
-<content type='html'><![CDATA[<p><small>Jan <var>21</var>, <var>09:34</var> UTC</small><br /><strong>Resolved</strong> - On 2024-01-21 at 3:38 UTC, we experienced an incident that affected customers using Codespaces. Customers encountered issues creating and resuming Codespaces in multiple regions due to operational issues with compute and storage resources.<br /><br />Around 25% of customers were impacted, primarily in East US and West Europe. We re-routed traffic for Codespace creations to less impacted regions, but existing Codespaces in these regions may have been unable to resume during the incident.<br /><br />By 7:30 UTC, we had recovered connectivity to all regions except West Europe, which had an extended recovery time due to increased load in that particular region. The incident was resolved on 2024-01-21 at 9:34 UTC once Codespace creations and resumes were working normally in all regions.</p><p><small>Jan <var>21</var>, <var>09:32</var> UTC</small><br /><strong>Update</strong> - We continue to work on mitigating the issues with Codespace resumes in West Europe.</p><p><small>Jan <var>21</var>, <var>08:58</var> UTC</small><br /><strong>Update</strong> - We continue to work on mitigating the issues with Codespace resumes in West Europe.</p><p><small>Jan <var>21</var>, <var>08:27</var> UTC</small><br /><strong>Update</strong> - We continue to work on mitigating the issues with Codespace resumes in West Europe.</p><p><small>Jan <var>21</var>, <var>07:55</var> UTC</small><br /><strong>Update</strong> - Codespace creation has fully recovered in all regions. We are still mitigating issues with Codespace resumes in West Europe.</p><p><small>Jan <var>21</var>, <var>07:24</var> UTC</small><br /><strong>Update</strong> - We continue to see recovery in most regions. We are still working on mitigating the issue impacting customers in West Europe.</p><p><small>Jan <var>21</var>, <var>06:50</var> UTC</small><br /><strong>Update</strong> - We are continuing to monitor recovery in the affected regions.</p><p><small>Jan <var>21</var>, <var>06:15</var> UTC</small><br /><strong>Update</strong> - We are seeing signs of recovery in the affected regions.</p><p><small>Jan <var>21</var>, <var>06:15</var> UTC</small><br /><strong>Update</strong> - Codespaces is experiencing degraded performance. We are continuing to investigate.</p><p><small>Jan <var>21</var>, <var>06:00</var> UTC</small><br /><strong>Update</strong> - We continue to work on mitigating the underlying the issue impacting Codespaces customers.</p><p><small>Jan <var>21</var>, <var>05:24</var> UTC</small><br /><strong>Update</strong> - We continue to work on mitigating the underlying the issue impacting Codespaces customers.</p><p><small>Jan <var>21</var>, <var>04:50</var> UTC</small><br /><strong>Update</strong> - Around 15% of Codespaces customers are unable to create or resume their codespaces. We are continuing efforts to mitigate the issue.</p><p><small>Jan <var>21</var>, <var>04:21</var> UTC</small><br /><strong>Update</strong> - Codespaces is experiencing degraded availability. We are continuing to investigate.</p><p><small>Jan <var>21</var>, <var>04:15</var> UTC</small><br /><strong>Update</strong> - We have identified the issue impacting Codespaces customers in multiple regions and are working on mitigation.</p><p><small>Jan <var>21</var>, <var>03:38</var> UTC</small><br /><strong>Update</strong> - We are experiencing elevated error rates in multiple regions and are currently investigating.</p><p><small>Jan <var>21</var>, <var>03:38</var> UTC</small><br /><strong>Investigating</strong> - We are investigating reports of degraded performance for Codespaces</p>]]></content>
 <author><name>No author available</name></author>
 </entry>
 <entry>
