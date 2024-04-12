@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 <title>Aggregated GitHub Releases</title>
 <link href="https://example.com/feed.xml" rel="self"/>
-<updated>2024-04-10T13:53:59Z</updated>
+<updated>2024-04-12T15:04:54Z</updated>
 <author><name>Aggregated Feed</name></author>
 <id>urn:uuid:aggregated-feed</id>
 <entry>
@@ -11,6 +11,166 @@
 <id>tag:status.hashicorp.com,2005:Incident/20280151</id>
 <updated>2024-04-21T17:00:00Z</updated>
 <content type='html'><![CDATA[<p><strong>THIS IS A SCHEDULED EVENT Apr <var>21</var>, <var>17:00</var> - <var>21:00</var> UTC</strong></p><p><small>Mar <var>16</var>, <var>23:29</var> UTC</small><br /><strong>Scheduled</strong> - Terraform Cloud and Terraform Public Registry will undergo scheduled maintenance on Sunday, April 21st beginning at 17:00 UTC. We expect this maintenance to complete within 4 hours.<br /><br />During this time, these services will be unavailable until the maintenance completes. We'll post updates as necessary throughout the maintenance period.</p>]]></content>
+<author><name>No author available</name></author>
+</entry>
+<entry>
+<title>AzureRM Provider Release: v3.99.0</title>
+<link href='https://github.com/hashicorp/terraform-provider-azurerm/releases/tag/v3.99.0'/>
+<id>tag:github.com,2008:Repository/93446042/v3.99.0</id>
+<updated>2024-04-12T01:35:38Z</updated>
+<content type='html'><![CDATA[<p>BREAKING CHANGE:</p>
+<ul>
+<li><code>azurerm_linux_web_app</code> - <code>site_config.0.application_stack.0.java_version</code> must be specified with <code>java_server</code> and <code>java_server_version</code> (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/25553">#25553</a>)</li>
+</ul>
+<p>ENHANCEMENTS:</p>
+<ul>
+<li>dependencies: updating to <code>v0.20240411.1104331</code> of <code>github.com/hashicorp/go-azure-sdk/resourcemanager</code> and <code>github.com/hashicorp/go-azure-sdk/sdk</code> (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/25546">#25546</a>)</li>
+<li>dependencies: updating to <code>v0.26.1</code> of <code>github.com/tombuildsstuff/giovanni</code> (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/25551">#25551</a>)</li>
+<li><code>azurerm_key_vault</code> - deprecate the <code>contact</code> property from v3.x provider and update properties to Computed &amp; Optional (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/25552">#25552</a>)</li>
+<li><code>azurerm_key_vault_certificate_contacts</code> - in v4.0 make the <code>contact</code> property optional to allow for deletion of contacts from the key vault (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/25552">#25552</a>)</li>
+<li><code>azurerm_signalr_service</code> - support for setting the <code>sku</code> property to <code>Premium_P2</code> (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/25578">#25578</a>)</li>
+<li><code>azurerm_snapshot</code> - support for the <code>network_access_policy</code> and <code>public_network_access_enabled</code> properties (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/25421">#25421</a>)</li>
+<li><code>azurerm_storage_account</code> - extend the support level of <code>(blob|queue|share)_properties</code> for Storage kind (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/25427">#25427</a>)</li>
+<li><code>azurerm_storage_blob</code> - support for the <code>encryption_scope</code> property (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/25551">#25551</a>)</li>
+<li><code>azurerm_storage_container</code> - support for the <code>default_encryption_scope</code> and <code>encryption_scope_override_enabled</code> properties (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/25551">#25551</a>)</li>
+<li><code>azurerm_storage_data_lake_gen2_filesystem</code> - support for the <code>default_encryption_scope</code> property (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/25551">#25551</a>)</li>
+<li><code>azurerm_subnet</code> - the <code>delegation.x.service_delegation.x.name</code> property now supports <code>Oracle.Database/networkAttachments</code> (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/25571">#25571</a>)</li>
+<li><code>azurerm_web_pubsub</code> - support setting the <code>sku</code> property to <code>Premium_P2</code> (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/25578">#25578</a>)</li>
+</ul>
+<p>BUG FIXES:</p>
+<ul>
+<li>provider: fix an issue where the provider was not correctly configured when using a custom metadata host (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/25546">#25546</a>)</li>
+<li>storage: fix a number of potential crashes during plan/apply with resources using the Storage data plane API (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/25525">#25525</a>)</li>
+<li><code>azurerm_application_insights</code> - fix issue where the wrong Application ID was set into the property <code>app_id</code> (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/25520">#25520</a>)</li>
+<li><code>azurerm_application_insights_api_key</code> - add a state migration to re-case static segments of the resource ID  (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/25567">#25567</a>)</li>
+<li><code>azurerm_container_app_environment_certificate</code> - the <code>subject_name</code> attribute is now correctly populated (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/25516">#25516</a>)</li>
+<li><code>azurerm_function_app_slot</code> - will now taint the resource when partially created (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/24520">#24520</a>)</li>
+<li><code>azurerm_linux_function_app</code> - will now taint the resource when partially created (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/24520">#24520</a>)</li>
+<li><code>azurerm_managed_disk</code> - filtering the Resource SKUs response to reduce the memory overhead, when determining whether a Managed Disk can be online resized or not (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/25549">#25549</a>)</li>
+<li><code>azurerm_monitor_alert_prometheus_rule_group</code> - the <code>severity</code> property is now set correctly when <code>0</code> (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/25408">#25408</a>)</li>
+<li><code>azurerm_monitor_smart_detector_alert_rule</code> - normalising the value for <code>id</code> within the <code>action_group</code> block (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/25559">#25559</a>)</li>
+<li><code>azurerm_redis_cache_access_policy_assignment</code> - the <code>object_id_alias</code> property now allows usernames (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/25523">#25523</a>)</li>
+<li><code>azurerm_windows_function_app</code> - will not taint the resource when partially created (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/24520">#24520</a>)</li>
+<li><code>azurerm_windows_function_app</code> - will not taint the resource when partially created (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/24520">#24520</a>)</li>
+</ul>
+<p>DEPRECATIONS:</p>
+<ul>
+<li><code>azurerm_cosmosdb_account</code> - the <code>connection_strings</code> property has been superseded by the primary and secondary connection strings for sql, mongodb and readonly (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/25510">#25510</a>)</li>
+<li><code>azurerm_cosmosdb_account</code> - the <code>enable_free_tier</code> property has been superseded by <code>free_tier_enabled</code> (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/25510">#25510</a>)</li>
+<li><code>azurerm_cosmosdb_account</code> - the <code>enable_multiple_write_locations</code> property  has been superseded by <code>multiple_write_locations_enabled</code> (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/25510">#25510</a>)</li>
+<li><code>azurerm_cosmosdb_account</code> - the <code>enable_automatic_failover</code> property has been superseded by <code>automatic_failover_enabled</code> (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/25510">#25510</a>)</li>
+</ul>]]></content>
+<author><name>github-actions[bot]</name></author>
+</entry>
+<entry>
+<title>Hashicorp Status Release: GitHub App webhooks not being processed</title>
+<link href='https://status.hashicorp.com/incidents/xmf4qx18b2jt'/>
+<id>tag:status.hashicorp.com,2005:Incident/20506529</id>
+<updated>2024-04-11T15:07:56Z</updated>
+<content type='html'><![CDATA[<p><small>Apr <var>11</var>, <var>15:07</var> UTC</small><br /><strong>Resolved</strong> - The issue has been resolved. Customers with a GitHub App who may have been impacted can retry now that the incident has passed by pushing a new commit.</p><p><small>Apr <var>11</var>, <var>14:54</var> UTC</small><br /><strong>Monitoring</strong> - Fix is deployed and we are currently monitoring.</p><p><small>Apr <var>11</var>, <var>14:34</var> UTC</small><br /><strong>Identified</strong> - GitHub App webhooks are not currently being processed. We have identified a fix and are in the process of remediating.</p>]]></content>
+<author><name>No author available</name></author>
+</entry>
+<entry>
+<title>Vault Release: sdk/v0.12.0: sdk: prepare for release (#26348)</title>
+<link href='https://github.com/hashicorp/vault/releases/tag/sdk%2Fv0.12.0'/>
+<id>tag:github.com,2008:Repository/31288958/sdk/v0.12.0</id>
+<updated>2024-04-11T14:50:58Z</updated>
+<content type='html'><![CDATA[<ul>
+<li>
+<p>sdk: prepare for release</p>
+</li>
+<li>
+<p>remove toolchain</p>
+</li>
+</ul>]]></content>
+<author><name>fairclothjm</name></author>
+</entry>
+<entry>
+<title>GitHub Status Release: Incident with Git Operations, API Requests, Actions, Pages, Issues and Copilot</title>
+<link href='https://www.githubstatus.com/incidents/9zq8p50p7tkh'/>
+<id>tag:www.githubstatus.com,2005:Incident/20498552</id>
+<updated>2024-04-10T19:03:05Z</updated>
+<content type='html'><![CDATA[<p><small>Apr <var>10</var>, <var>19:03</var> UTC</small><br /><strong>Update</strong> - On April 10, 2024, between 2024-04-10 18:33 UTC and 2024-04-10 19:03 UTC, several services were degraded due to the release of a compute-intensive database query that prevented a key database cluster from serving other queries. <br /><br />GitHub Actions saw delays and failures across the entire run life cycle and had a significant increase in the number of  timeouts in API requests. All Pages deployments failed for the duration of the incident. Git Systems saw approximately 12% of raw file download requests and 16% of repository archive download requests return HTTP 50X error codes for the duration of the incident. Issues experienced increased latency for issue creation and updates. Codespaces saw roughly 500 requests to create and resume a Codespace timeout during the incident.<br /><br />We mitigated the incident by rolling back the offending query. We are working to introduce measures to automatically detect compute-intensive queries in test runs during CI to prevent an issue like this one from recurring.</p><p><small>Apr <var>10</var>, <var>19:03</var> UTC</small><br /><strong>Investigating</strong> - Git Operations, API Requests, Actions, Pages, Issues and Copilot are operating normally.</p><p><small>Apr <var>10</var>, <var>19:03</var> UTC</small><br /><strong>Resolved</strong> - This incident has been resolved.</p><p><small>Apr <var>10</var>, <var>19:03</var> UTC</small><br /><strong>Update</strong> - Git Operations, API Requests, Actions, Pages, Issues and Copilot are operating normally.</p><p><small>Apr <var>10</var>, <var>19:01</var> UTC</small><br /><strong>Update</strong> - Copilot is experiencing degraded performance. We are continuing to investigate.</p><p><small>Apr <var>10</var>, <var>18:55</var> UTC</small><br /><strong>Update</strong> - We're aware of issues impacting multiple services and have rolled back the deployment. Systems appear to be recovering and we will continue to monitor.</p><p><small>Apr <var>10</var>, <var>18:53</var> UTC</small><br /><strong>Update</strong> - API Requests is experiencing degraded performance. We are continuing to investigate.</p><p><small>Apr <var>10</var>, <var>18:45</var> UTC</small><br /><strong>Update</strong> - Copilot is experiencing degraded availability. We are continuing to investigate.</p><p><small>Apr <var>10</var>, <var>18:42</var> UTC</small><br /><strong>Update</strong> - Issues is experiencing degraded performance. We are continuing to investigate.</p><p><small>Apr <var>10</var>, <var>18:42</var> UTC</small><br /><strong>Update</strong> - API Requests is experiencing degraded availability. We are continuing to investigate.</p><p><small>Apr <var>10</var>, <var>18:41</var> UTC</small><br /><strong>Investigating</strong> - We are investigating reports of degraded performance for Git Operations, API Requests, Actions and Pages</p>]]></content>
+<author><name>No author available</name></author>
+</entry>
+<entry>
+<title>Terraform CLI Release: v1.8.0</title>
+<link href='https://github.com/hashicorp/terraform/releases/tag/v1.8.0'/>
+<id>tag:github.com,2008:Repository/17728164/v1.8.0</id>
+<updated>2024-04-10T19:02:51Z</updated>
+<content type='html'><![CDATA[<h2>1.8.0 (April 10, 2024)</h2>
+<p>If you are upgrading from Terraform v1.7 or earlier, please refer to<br />
+<a href="https://developer.hashicorp.com/terraform/language/v1.8.x/upgrade-guides" rel="nofollow">the Terraform v1.8 Upgrade Guide</a>.</p>
+<p>NEW FEATURES:</p>
+<ul>
+<li>
+<p>Providers can now offer functions which can be used from within the Terraform configuration language.</p>
+<p>The syntax for calling a provider-contributed function is <code>provider::provider_name::function_name()</code>. (<a href="https://github.com/hashicorp/terraform/issues/34394">#34394</a>)</p>
+</li>
+<li>
+<p>Providers can now transfer the ownership of a remote object between resources of different types, for situations where there are two different resource types that represent the same remote object type.</p>
+<p>This extends the <code>moved</code> block behavior to support moving between two resources of different types only if the provider for the target resource type declares that it can convert from the source resource type. Refer to provider documentation for details on which pairs of resource types are supported.</p>
+</li>
+<li>
+<p>New <code>issensitive</code> function returns true if the given value is marked as sensitive.</p>
+</li>
+</ul>
+<p>ENHANCEMENTS:</p>
+<ul>
+<li>
+<p><code>terraform test</code>: File-level variables can now refer to global variables. (<a href="https://github.com/hashicorp/terraform/issues/34699">#34699</a>)</p>
+</li>
+<li>
+<p>When generating configuration based on <code>import</code> blocks, Terraform will detect strings that contain valid JSON syntax and generate them as calls to the <code>jsonencode</code> function, rather than generating a single string. This is primarily motivated by readability, but might also be useful if you need to replace part of the literal value with an expression as you generalize your module beyond the one example used for importing.</p>
+</li>
+<li>
+<p><code>terraform plan</code> now uses a different presentation for describing changes to lists where the old and new lists have the same length. It now compares the elements with correlated indices and shows a separate diff for each one, rather than trying to show a diff for the list as a whole. The behavior is unchanged for lists of different lengths.</p>
+</li>
+<li>
+<p><code>terraform providers lock</code> accepts a new boolean option <code>-enable-plugin-cache</code>. If specified, and if a <a href="https://developer.hashicorp.com/terraform/cli/config/config-file#provider-plugin-cache" rel="nofollow">global plugin cache</a> is configured, Terraform will use the cache in the provider lock process. (<a href="https://github.com/hashicorp/terraform/issues/34632">#34632</a>)</p>
+</li>
+<li>
+<p>built-in "terraform" provider: new <code>decode_tfvars</code>, <code>encode_tfvars</code>, and <code>encode_expr</code> functions, for unusual situations where it's helpful to manually generate or read from Terraform's "tfvars" format. (<a href="https://github.com/hashicorp/terraform/issues/34718">#34718</a>)</p>
+</li>
+<li>
+<p><code>terraform show</code>'s JSON rendering of a plan now includes two explicit flags <code>"applyable"</code> and <code>"complete"</code>, which both summarize characteristics of a plan that were previously only inferrable by consumers replicating some of Terraform Core's own logic. (<a href="https://github.com/hashicorp/terraform/issues/34642">#34642</a>)</p>
+<p><code>"applyable"</code> means that it makes sense for a wrapping automation to offer to apply this plan.</p>
+<p><code>"complete"</code> means that applying this plan is expected to achieve convergence between desired and actual state. If this flag is present and set to <code>false</code> then wrapping automations should ideally encourage an operator to run another plan/apply round to continue making progress toward convergence.</p>
+</li>
+</ul>
+<p>BUG FIXES:</p>
+<ul>
+<li>core: Sensitive values will now be tracked more accurately in state and plans, preventing unexpected updates with no apparent changes. (<a href="https://github.com/hashicorp/terraform/issues/34567">#34567</a>)</li>
+<li>core: Fix incorrect error message when using in invalid <code>iterator</code> argument within a dynamic block. (<a href="https://github.com/hashicorp/terraform/issues/34751">#34751</a>)</li>
+<li>core: Fixed edge-case bug that could cause loss of floating point precision when round-tripping due to incorrectly using a MessagePack integer to represent a large non-integral number. (<a href="https://github.com/hashicorp/terraform/issues/24576">#24576</a>)</li>
+<li>config: Converting from an unknown map value to an object type now correctly handles the situation where the map element type disagrees with an optional attribute of the target type, since when a map value is unknown we don't yet know which keys it has and thus cannot predict what subset of the elements will get converted as attributes in the resulting object. (<a href="https://github.com/hashicorp/terraform/issues/34756">#34756</a>)</li>
+<li>cloud: Fixed unparsed color codes in policy failure error messages. (<a href="https://github.com/hashicorp/terraform/issues/34473">#34473</a>)</li>
+</ul>
+<h2>Previous Releases</h2>
+<p>For information on prior major and minor releases, see their changelogs:</p>
+<ul>
+<li><a href="https://github.com/hashicorp/terraform/blob/v1.7/CHANGELOG.md">v1.7</a></li>
+<li><a href="https://github.com/hashicorp/terraform/blob/v1.6/CHANGELOG.md">v1.6</a></li>
+<li><a href="https://github.com/hashicorp/terraform/blob/v1.5/CHANGELOG.md">v1.5</a></li>
+<li><a href="https://github.com/hashicorp/terraform/blob/v1.4/CHANGELOG.md">v1.4</a></li>
+<li><a href="https://github.com/hashicorp/terraform/blob/v1.3/CHANGELOG.md">v1.3</a></li>
+<li><a href="https://github.com/hashicorp/terraform/blob/v1.2/CHANGELOG.md">v1.2</a></li>
+<li><a href="https://github.com/hashicorp/terraform/blob/v1.1/CHANGELOG.md">v1.1</a></li>
+<li><a href="https://github.com/hashicorp/terraform/blob/v1.0/CHANGELOG.md">v1.0</a></li>
+<li><a href="https://github.com/hashicorp/terraform/blob/v0.15/CHANGELOG.md">v0.15</a></li>
+<li><a href="https://github.com/hashicorp/terraform/blob/v0.14/CHANGELOG.md">v0.14</a></li>
+<li><a href="https://github.com/hashicorp/terraform/blob/v0.13/CHANGELOG.md">v0.13</a></li>
+<li><a href="https://github.com/hashicorp/terraform/blob/v0.12/CHANGELOG.md">v0.12</a></li>
+<li><a href="https://github.com/hashicorp/terraform/blob/v0.11/CHANGELOG.md">v0.11 and earlier</a></li>
+</ul>]]></content>
+<author><name>hc-github-team-es-release-engineering</name></author>
+</entry>
+<entry>
+<title>GitHub Status Release: Incident with Codespaces</title>
+<link href='https://www.githubstatus.com/incidents/gqb335zdyq82'/>
+<id>tag:www.githubstatus.com,2005:Incident/20497442</id>
+<updated>2024-04-10T18:07:51Z</updated>
+<content type='html'><![CDATA[<p><small>Apr <var>10</var>, <var>18:07</var> UTC</small><br /><strong>Resolved</strong> - This incident has been resolved.</p><p><small>Apr <var>10</var>, <var>17:31</var> UTC</small><br /><strong>Update</strong> - We have applied a fix and are continuing to monitor. This incident will remain open for now until we have confirmed that the service is fully restored.</p><p><small>Apr <var>10</var>, <var>16:56</var> UTC</small><br /><strong>Update</strong> - We believe we have identified the root cause of the issue and are working to fully restore the Codespaces service. We will provide another update within the next 30 minutes.</p><p><small>Apr <var>10</var>, <var>16:20</var> UTC</small><br /><strong>Update</strong> - We’re seeing issues related to connecting to Codespaces impacting a subset of users. We are actively investigating and will provide another update shortly.</p><p><small>Apr <var>10</var>, <var>16:12</var> UTC</small><br /><strong>Investigating</strong> - We are investigating reports of degraded performance for Codespaces</p>]]></content>
 <author><name>No author available</name></author>
 </entry>
 <entry>
@@ -26,7 +186,7 @@
 <link href='https://www.githubstatus.com/incidents/xcjgp37zx5dt'/>
 <id>tag:www.githubstatus.com,2005:Incident/20489412</id>
 <updated>2024-04-09T20:17:07Z</updated>
-<content type='html'><![CDATA[<p><small>Apr <var> 9</var>, <var>20:17</var> UTC</small><br /><strong>Resolved</strong> - This incident has been resolved.</p><p><small>Apr <var> 9</var>, <var>19:43</var> UTC</small><br /><strong>Update</strong> - We continue to work to resolve issues with repositories not being able to enable Actions and Actions network configuration setup not working properly. We have confirmed a fix and are in the process of deploying it to production. Another update will be shared within the next 30 minutes.</p><p><small>Apr <var> 9</var>, <var>19:06</var> UTC</small><br /><strong>Update</strong> - We continue to work to resolve issues with repositories not being able to enable Actions and Actions network configuration setup not working properly. We will provide additional information shortly.</p><p><small>Apr <var> 9</var>, <var>18:36</var> UTC</small><br /><strong>Update</strong> - We are aware of issues with repositories not being able to enable Actions. We are in the process of restoring full functionality and will provide additional information shortly.</p><p><small>Apr <var> 9</var>, <var>18:36</var> UTC</small><br /><strong>Investigating</strong> - We are investigating reports of degraded performance for Actions</p>]]></content>
+<content type='html'><![CDATA[<p><small>Apr <var> 9</var>, <var>20:17</var> UTC</small><br /><strong>Resolved</strong> - On April 9, 2024, between 18:00 and 20:17 UTC, Actions was degraded and had failures for new and existing customers. During this time, Actions failed to start for 5,426 new repositories, and 1% of runs for existing customers were delayed, with half of those failing due to an infrastructure error.<br /><br />The root cause was an expired certificate which caused authentication to fail between internal services. The incident was mitigated once the cert was rotated.<br /><br />We are working to improve our automation to ensure certs are rotated before expiration.</p><p><small>Apr <var> 9</var>, <var>19:43</var> UTC</small><br /><strong>Update</strong> - We continue to work to resolve issues with repositories not being able to enable Actions and Actions network configuration setup not working properly. We have confirmed a fix and are in the process of deploying it to production. Another update will be shared within the next 30 minutes.</p><p><small>Apr <var> 9</var>, <var>19:06</var> UTC</small><br /><strong>Update</strong> - We continue to work to resolve issues with repositories not being able to enable Actions and Actions network configuration setup not working properly. We will provide additional information shortly.</p><p><small>Apr <var> 9</var>, <var>18:36</var> UTC</small><br /><strong>Update</strong> - We are aware of issues with repositories not being able to enable Actions. We are in the process of restoring full functionality and will provide additional information shortly.</p><p><small>Apr <var> 9</var>, <var>18:36</var> UTC</small><br /><strong>Investigating</strong> - We are investigating reports of degraded performance for Actions</p>]]></content>
 <author><name>No author available</name></author>
 </entry>
 <entry>
@@ -686,7 +846,7 @@ leading to failure to complete merkle sync without a full re-index. [<a href="ht
 <link href='https://www.githubstatus.com/incidents/gqj5jrvzjb5h'/>
 <id>tag:www.githubstatus.com,2005:Incident/20443672</id>
 <updated>2024-04-04T01:10:27Z</updated>
-<content type='html'><![CDATA[<p><small>Apr <var> 4</var>, <var>01:10</var> UTC</small><br /><strong>Resolved</strong> - This incident has been resolved.</p><p><small>Apr <var> 4</var>, <var>01:09</var> UTC</small><br /><strong>Update</strong> - API Requests is operating normally.</p><p><small>Apr <var> 4</var>, <var>01:07</var> UTC</small><br /><strong>Update</strong> - Actions is operating normally.</p><p><small>Apr <var> 4</var>, <var>00:46</var> UTC</small><br /><strong>Update</strong> - We are seeing recovery in Actions workflows creation and accessing Actions statuses via the API.</p><p><small>Apr <var> 4</var>, <var>00:25</var> UTC</small><br /><strong>Update</strong> - Webhooks is experiencing degraded performance. We are continuing to investigate.</p><p><small>Apr <var> 4</var>, <var>00:12</var> UTC</small><br /><strong>Update</strong> - We are investigating Actions workflows failures and delays.</p><p><small>Apr <var> 4</var>, <var>00:06</var> UTC</small><br /><strong>Update</strong> - API Requests is experiencing degraded performance. We are continuing to investigate.</p><p><small>Apr <var> 3</var>, <var>23:59</var> UTC</small><br /><strong>Investigating</strong> - We are investigating reports of degraded performance for Actions</p>]]></content>
+<content type='html'><![CDATA[<p><small>Apr <var> 4</var>, <var>01:10</var> UTC</small><br /><strong>Resolved</strong> - Between April 3rd, 2024 23:15 UTC and April 4th, 2024 01:10 UTC, GitHub Actions experienced a partial infrastructure outage that led to degraded workflows (failed or delayed starts). Additionally, 0.15% of Webhook deliveries were degraded due to an unrelated spike in database latency in a single availability zone. SLOs for Actions were 90% during the incident, but this was not evenly distributed across customers. We statused green after a long stretch of recovered SLOs, starting at April 4th, 2024 00:35 UTC. During this incident, we also had issues with incident tooling (https://www.githubstatus.com/) failing to update the public status page and occasionally not loading.<br /><br />The incident was resolved after the infrastructure issue was mitigated at 2024-04-04 04:27 UTC.<br /><br />We are working to improve monitoring and processes in response to this incident. We are investigating how we can improve resilience and our communication with our infrastructure provider, and how we can better handle ongoing incidents that are no longer impacting SLOs. We are also improving our incident tooling to ensure that the public status page is updated in a timely manner.</p><p><small>Apr <var> 4</var>, <var>01:09</var> UTC</small><br /><strong>Update</strong> - API Requests is operating normally.</p><p><small>Apr <var> 4</var>, <var>01:07</var> UTC</small><br /><strong>Update</strong> - Actions is operating normally.</p><p><small>Apr <var> 4</var>, <var>00:46</var> UTC</small><br /><strong>Update</strong> - We are seeing recovery in Actions workflows creation and accessing Actions statuses via the API.</p><p><small>Apr <var> 4</var>, <var>00:25</var> UTC</small><br /><strong>Update</strong> - Webhooks is experiencing degraded performance. We are continuing to investigate.</p><p><small>Apr <var> 4</var>, <var>00:12</var> UTC</small><br /><strong>Update</strong> - We are investigating Actions workflows failures and delays.</p><p><small>Apr <var> 4</var>, <var>00:06</var> UTC</small><br /><strong>Update</strong> - API Requests is experiencing degraded performance. We are continuing to investigate.</p><p><small>Apr <var> 3</var>, <var>23:59</var> UTC</small><br /><strong>Investigating</strong> - We are investigating reports of degraded performance for Actions</p>]]></content>
 <author><name>No author available</name></author>
 </entry>
 <entry>
@@ -1852,45 +2012,6 @@ data] to report to Hashicorp.</li>
 <author><name>hc-github-team-es-release-engineering</name></author>
 </entry>
 <entry>
-<title>Vault Release: v1.14.10</title>
-<link href='https://github.com/hashicorp/vault/releases/tag/v1.14.10'/>
-<id>tag:github.com,2008:Repository/31288958/v1.14.10</id>
-<updated>2024-02-29T20:06:03Z</updated>
-<content type='html'><![CDATA[<h2>1.14.10</h2>
-<h3>February 29, 2024</h3>
-<p>SECURITY:</p>
-<ul>
-<li>auth/cert: compare public keys of trusted non-CA certificates with incoming<br />
-client certificates to prevent trusting certs with the same serial number<br />
-but not the same public/private key. [<a href="https://github.com/hashicorp/vault/pull/25649">GH-25649</a>]</li>
-</ul>
-<p>CHANGES:</p>
-<ul>
-<li>core: Bump Go version to 1.20.14.</li>
-</ul>
-<p>FEATURES:</p>
-<ul>
-<li><strong>Manual License Utilization Reporting</strong>: Added manual license<br />
-utilization reporting, which allows users to create manual exports of product-license [metering<br />
-data] to report to Hashicorp.</li>
-</ul>
-<p>IMPROVEMENTS:</p>
-<ul>
-<li>auth/cert: Cache trusted certs to reduce memory usage and improve performance of logins. [<a href="https://github.com/hashicorp/vault/pull/25421">GH-25421</a>]</li>
-<li>ui: redirect back to current route after reauthentication when token expires [<a href="https://github.com/hashicorp/vault/pull/25335">GH-25335</a>]</li>
-<li>ui: remove unnecessary OpenAPI calls for unmanaged auth methods [<a href="https://github.com/hashicorp/vault/pull/25364">GH-25364</a>]</li>
-</ul>
-<p>BUG FIXES:</p>
-<ul>
-<li>core (enterprise): Fix a deadlock that can occur on performance secondary clusters when there are many mounts and a mount is deleted or filtered [<a href="https://github.com/hashicorp/vault/pull/25448">GH-25448</a>]</li>
-<li>core/quotas: Deleting a namespace that contains a rate limit quota no longer breaks replication [<a href="https://github.com/hashicorp/vault/pull/25439">GH-25439</a>]</li>
-<li>secrets/transform (enterprise): guard against a panic looking up a token in exportable mode with barrier storage.</li>
-<li>secrets/transit: When provided an invalid input with hash_algorithm=none, a lock was not released properly before reporting an error leading to deadlocks on a subsequent key configuration update. [<a href="https://github.com/hashicorp/vault/pull/25336">GH-25336</a>]</li>
-<li>storage/file: Fixing spuriously deleting storage keys ending with .temp [<a href="https://github.com/hashicorp/vault/pull/25395">GH-25395</a>]</li>
-</ul>]]></content>
-<author><name>hc-github-team-es-release-engineering</name></author>
-</entry>
-<entry>
 <title>GitHub Status Release: Incident with Issues, Webhooks and Actions</title>
 <link href='https://www.githubstatus.com/incidents/5lc3f39mjcq8'/>
 <id>tag:www.githubstatus.com,2005:Incident/20105717</id>
@@ -2491,20 +2612,6 @@ data] to report to Hashicorp.</li>
 <author><name>github-actions[bot]</name></author>
 </entry>
 <entry>
-<title>Terraform CLI Release: v1.7.3</title>
-<link href='https://github.com/hashicorp/terraform/releases/tag/v1.7.3'/>
-<id>tag:github.com,2008:Repository/17728164/v1.7.3</id>
-<updated>2024-02-08T01:43:04Z</updated>
-<content type='html'><![CDATA[<h2>1.7.3 (February 7, 2024)</h2>
-<p>BUG FIXES:</p>
-<ul>
-<li><code>terraform test</code>: Fix crash when dynamic-typed attributes are not assigned values in mocks. (<a href="https://github.com/hashicorp/terraform/pull/34511">#34610</a>)</li>
-<li>provisioners/file: Fix panic when source is null. (<a href="https://github.com/hashicorp/terraform/pull/34621">#34621</a>)</li>
-<li><code>import</code>: Throw helpful error message if an import block is configured with an empty ID (<a href="https://github.com/hashicorp/terraform/pull/34625">34625</a>)</li>
-</ul>]]></content>
-<author><name>hc-github-team-es-release-engineering</name></author>
-</entry>
-<entry>
 <title>GCP Provider Release: v5.15.0</title>
 <link href='https://github.com/hashicorp/terraform-provider-google/releases/tag/v5.15.0'/>
 <id>tag:github.com,2008:Repository/93446075/v5.15.0</id>
@@ -2537,86 +2644,6 @@ data] to report to Hashicorp.</li>
 <author><name>github-actions[bot]</name></author>
 </entry>
 <entry>
-<title>GitHub Status Release: Incident with Git Operations</title>
-<link href='https://www.githubstatus.com/incidents/3k40h28fkb2r'/>
-<id>tag:www.githubstatus.com,2005:Incident/19910963</id>
-<updated>2024-02-05T09:53:13Z</updated>
-<content type='html'><![CDATA[<p><small>Feb <var> 5</var>, <var>09:53</var> UTC</small><br /><strong>Resolved</strong> - On 2024-02-05, from 09:26 to 13:20 UTC some GitHub customers experienced errors when trying to download raw files. An overloaded server exposed a bug, causing us to return HTTP 500 error codes.<br /><br />The issue was mitigated by disabling the server and re-routing traffic. We are implementing improvements to our routing logic to more quickly avoid troublesome hosts in the future. <br /></p><p><small>Feb <var> 5</var>, <var>09:40</var> UTC</small><br /><strong>Investigating</strong> - We are investigating reports of degraded performance for Git Operations</p>]]></content>
-<author><name>No author available</name></author>
-</entry>
-<entry>
-<title>AzureRM Provider Release: v3.90.0</title>
-<link href='https://github.com/hashicorp/terraform-provider-azurerm/releases/tag/v3.90.0'/>
-<id>tag:github.com,2008:Repository/93446042/v3.90.0</id>
-<updated>2024-02-02T01:40:21Z</updated>
-<content type='html'><![CDATA[<p>UPGRADE NOTES:</p>
-<ul>
-<li>provider - The provider will now automatically register the <code>AppConfiguration</code>, <code>DataFactory</code>, and <code>SignalRService</code> Resource Providers. When running Terraform with limited permissions, note that you must disable automatic Resource Provider Registration and ensure that any Resource Providers Terraform requires are registered. (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/24645">#24645</a>)</li>
-</ul>
-<p>FEATURES:</p>
-<ul>
-<li><strong>New Data Source</strong>: <code>azurerm_nginx_configuration</code> (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/24642">#24642</a>)</li>
-<li><strong>New Data Source</strong>: <code>azurerm_virtual_desktop_workspace</code> (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/24732">#24732</a>)</li>
-<li><strong>New Resource</strong>: <code>azurerm_kubernetes_fleet_update_strategy</code> (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/24328">#24328</a>)</li>
-<li><strong>New Resource</strong>: <code>azurerm_site_recovery_vmware_replicated_vm</code> (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/22477">#22477</a>)</li>
-<li><strong>New Resource</strong>: <code>azurerm_spring_cloud_new_relic_application_performance_monitoring</code> (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/24699">#24699</a>)</li>
-</ul>
-<p>ENHANCEMENTS:</p>
-<ul>
-<li>provider: registering the Resource Provider <code>Microsoft.AppConfiguration</code> (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/24645">#24645</a>)</li>
-<li>provider: registering the Resource Provider <code>Microsoft.DataFactory</code> (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/24645">#24645</a>)</li>
-<li>provider: registering the Resource Provider <code>Microsoft.SignalRService</code> (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/24645">#24645</a>)</li>
-<li>provider: the Provider is now built using Go 1.21.6 (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/24653">#24653</a>)</li>
-<li>dependencies: the dependency <code>github.com/hashicorp/go-azure-sdk</code> has been split into multiple Go Modules - and as such will be referred to by those paths going forwards (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/24636">#24636</a>)</li>
-<li>dependencies: updating to ``v0.20240201.1064937<code>of</code>github.com/hashicorp/go-azure-sdk/resource-manager` (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/24738">#24738</a>)</li>
-<li>dependencies: updating to <code>v0.20240201.1064937</code> of <code>github.com/hashicorp/go-azure-sdk/sdk</code> (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/24738">#24738</a>)</li>
-<li><code>appservice</code>:  update to <code>go-azure-sdk</code> and API version <code>2023-01-01</code> (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/24688">#24688</a>)</li>
-<li><code>datafactory</code>: updating to use <code>tombuildsstuff/kermit</code> (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/24675">#24675</a>)</li>
-<li><code>hdinsight</code>: refactoring to use <code>github.com/hashicorp/go-azure-sdk/resource-manager</code> (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/24011">#24011</a>)</li>
-<li><code>hdinsight</code>: updating to API Version <code>2021-06-01</code> (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/24011">#24011</a>)</li>
-<li><code>loadbalancer</code>: updating to use <code>hashicorp/go-azure-sdk</code> (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/24291">#24291</a>)</li>
-<li><code>nginx</code>: updating to API Version <code>2023-09-01</code> (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/24640">#24640</a>)</li>
-<li><code>servicefabricmanagedcluster</code>: updating to use the base layer from <code>hashicorp/go-azure-sdk</code> rather than <code>Azure/go-autorest</code> (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/24654">#24654</a>)</li>
-<li><code>springcloud</code>: updating to use API Version <code>2023-11-01-preview</code> (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/24690">#24690</a>)</li>
-<li><code>subscriptions</code>: refactoring to use <code>hashicorp/go-azure-sdk</code> (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/24663">#24663</a>)</li>
-<li>Data Source: <code>azurerm_stream_analytics_job</code> - support for User Assigned Identities (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/24738">#24738</a>)</li>
-<li><code>azurerm_cosmosdb_account</code> - support for the <code>gremlin_database</code> and <code>tables_to_restore</code> properties (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/24627">#24627</a>)</li>
-<li><code>azurerm_bot_channel_email</code> - support for the <code>magic_code</code> property (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/23129">#23129</a>)</li>
-<li><code>azurerm_cosmosdb_account</code> - support for the <code>partition_merge_enabled</code> property (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/24615">#24615</a>)</li>
-<li><code>azurerm_mssql_managed_database</code> - support for the <code>immutable_backups_enabled</code> property (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/24745">#24745</a>)</li>
-<li><code>azurerm_mssql_database</code> - support for the <code>immutable_backups_enabled</code> property (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/24745">#24745</a>)</li>
-<li><code>azurerm_palo_alto_next_generation_firewall_virtual_hub_panorama</code> - support for the <code>trusted_address_ranges</code> property (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/24459">#24459</a>)</li>
-<li><code>azurerm_palo_alto_next_generation_firewall_virtual_network_local_rulestack</code> - support for the <code>trusted_address_ranges</code> property (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/24459">#24459</a>)</li>
-<li><code>azurerm_palo_alto_next_generation_firewall_virtual_network_panorama</code> - support for the <code>trusted_address_ranges</code> property (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/24459">#24459</a>)</li>
-<li><code>azurerm_servicebus_namespace</code> - updating to use API Version <code>2022-10-01-preview</code> (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/24650">#24650</a>)</li>
-<li><code>azurerm_spring_cloud_api_portal</code> - support for the <code>api_try_out_enabled</code> property (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/24696">#24696</a>)</li>
-<li><code>azurerm_spring_cloud_gateway</code> - support for the <code>local_response_cache_per_route</code> and <code>local_response_cache_per_instance</code> properties (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/24697">#24697</a>)</li>
-<li><code>azurerm_stream_analytics_job</code> - support for User Assigned Identities (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/24738">#24738</a>)</li>
-<li><code>azurerm_subscription</code> - refactoring to use <code>hashicorp/go-azure-sdk</code> to set tags on the subscription (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/24734">#24734</a>)</li>
-<li><code>azurerm_virtual_desktop_workspace</code> - correctly validate the <code>name</code> property (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/24668">#24668</a>)</li>
-</ul>
-<p>BUG FIXES:</p>
-<ul>
-<li>provider: skip registration for resource providers that are unavailable (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/24571">#24571</a>)</li>
-<li><code>azurerm_app_configuration</code> - no longer require <code>lifecycle_ignore_changes</code> for the <code>value</code> property when using a key vault reference (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/24702">#24702</a>)</li>
-<li><code>azurerm_app_service_managed_certificate</code> - fix casing issue in <code>app_service_plan_id</code> by parsing insensitively (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/24664">#24664</a>)</li>
-<li><code>azurerm_cognitive_deployment</code> - updates now include the <code>version</code> property (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/24700">#24700</a>)</li>
-<li><code>azurerm_dns_cname_record</code> - prevent casing issue in <code>target_resource_id</code> by parsing the ID insensitively (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/24181">#24181</a>)</li>
-<li><code>azurerm_mssql_managed_instance_failover_group</code> - prevent an issue when trying to create a failover group with a managed instance from a different subscription (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/24646">#24646</a>)</li>
-<li><code>azurerm_storage_account</code> - conditionally update properties only when needed (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/24669">#24669</a>)</li>
-<li><code>azurerm_storage_account</code> - change update order for <code>access_tier</code>to prevent errors when uploading blobs to the archive tier (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/22250">#22250</a>)</li>
-</ul>]]></content>
-<author><name>github-actions[bot]</name></author>
-</entry>
-<entry>
-<title>GitHub Status Release: We are investigating reports of degraded performance.</title>
-<link href='https://www.githubstatus.com/incidents/7k5wl5j4f1t4'/>
-<id>tag:www.githubstatus.com,2005:Incident/19881217</id>
-<updated>2024-02-01T04:41:36Z</updated>
-<content type='html'><![CDATA[<p><small>Feb <var> 1</var>, <var>04:41</var> UTC</small><br /><strong>Resolved</strong> - An update to our design system caused issues loading dynamic content in the global side navigation menu and in other page-specific sidebar navigation elements. Impacted users saw continuous loading spinners in place of dynamic menu content. User impact lasted from 0:55 UTC to 4:41 UTC on February 1st.<br /><br />We are working on a number of improvements in response to this incident. We are adding request volume monitors to sidebar navigation endpoints and making changes to our front end escalation paths to improve our time to detect and time to recovery for incidents of this nature. We have also begun work to improve both automated and manual testing for these types of changes in order to prevent recurrence.</p><p><small>Feb <var> 1</var>, <var>04:41</var> UTC</small><br /><strong>Update</strong> - This issue has been resolved. A reload of your browser window/tab may be required if you continue to experience issues with the collapsable navigation sidebars not loading.</p><p><small>Feb <var> 1</var>, <var>04:21</var> UTC</small><br /><strong>Update</strong> - We are in the process of deploying a remediation, and expect to see restoration of impacted functionality within the next hour.</p><p><small>Feb <var> 1</var>, <var>03:55</var> UTC</small><br /><strong>Update</strong> - We have identified an issue that is preventing some navigation components from loading while browsing GitHub.com, and are testing a remediation prior to deployment.</p><p><small>Feb <var> 1</var>, <var>03:14</var> UTC</small><br /><strong>Update</strong> - We are currently investigating reports of some components of the GitHub.com website not loading for some users.</p><p><small>Feb <var> 1</var>, <var>03:13</var> UTC</small><br /><strong>Investigating</strong> - We are currently investigating this issue.</p>]]></content>
-<author><name>No author available</name></author>
-</entry>
-<entry>
 <title>Hashicorp Status Release: Bug when creating HVD cluster and HVN simultaneously in Portal UI</title>
 <link href='https://status.hashicorp.com/incidents/rp1jfb56m5z4'/>
 <id>tag:status.hashicorp.com,2005:Incident/19878908</id>
@@ -2630,14 +2657,6 @@ data] to report to Hashicorp.</li>
 <id>tag:status.hashicorp.com,2005:Incident/19868901</id>
 <updated>2024-01-30T18:59:16Z</updated>
 <content type='html'><![CDATA[<p><small>Jan <var>30</var>, <var>18:59</var> UTC</small><br /><strong>Resolved</strong> - Mitigations were successful, and Terraform Cloud systems have returned to normal operations.</p><p><small>Jan <var>30</var>, <var>18:18</var> UTC</small><br /><strong>Monitoring</strong> - The engineering team has performed mitigations, and we're now seeing recovery of Terraform Cloud systems. Our support and engineering teams will continue to monitor.<br /><br />If you have any stuck runs, please cancel them and retry.</p><p><small>Jan <var>30</var>, <var>18:08</var> UTC</small><br /><strong>Update</strong> - We've spotted that something has gone wrong. We're currently investigating the issue, and will provide an update soon.</p><p><small>Jan <var>30</var>, <var>17:56</var> UTC</small><br /><strong>Investigating</strong> - Our engineering team is investigating an issues causing slow page response times and enqueued runs in Terraform Cloud.</p>]]></content>
-<author><name>No author available</name></author>
-</entry>
-<entry>
-<title>Hashicorp Status Release: Terraform Cloud degradation</title>
-<link href='https://status.hashicorp.com/incidents/ljkkbd0x14sh'/>
-<id>tag:status.hashicorp.com,2005:Incident/19820038</id>
-<updated>2024-01-24T19:18:45Z</updated>
-<content type='html'><![CDATA[<p><small>Jan <var>24</var>, <var>19:18</var> UTC</small><br /><strong>Resolved</strong> - We have seen a full recovery of the Terraform Cloud system</p><p><small>Jan <var>24</var>, <var>18:10</var> UTC</small><br /><strong>Monitoring</strong> - We are now seeing the recovery of the Terraform Cloud systems and calls are succeeding. Our Support and Engineering teams will continue to monitor<br /><br />If you have any runs that are stuck, please cancel them and retry</p><p><small>Jan <var>24</var>, <var>17:50</var> UTC</small><br /><strong>Update</strong> - Terraform Cloud requests to include login, updates and runs currently are impacted<br />Impact is seen through call timeouts or degraded performance</p><p><small>Jan <var>24</var>, <var>17:22</var> UTC</small><br /><strong>Investigating</strong> - We are currently investigating an issue that is causing slow page response times and enqueued runs in Terraform Cloud.</p>]]></content>
 <author><name>No author available</name></author>
 </entry>
 <entry>
