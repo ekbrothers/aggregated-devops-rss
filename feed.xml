@@ -2,9 +2,173 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 <title>Aggregated GitHub Releases</title>
 <link href="https://example.com/feed.xml" rel="self"/>
-<updated>2024-07-12T15:04:58Z</updated>
+<updated>2024-07-19T15:05:36Z</updated>
 <author><name>Aggregated Feed</name></author>
 <id>urn:uuid:aggregated-feed</id>
+<entry>
+<title>Hashicorp Status Release: HCP Boundary Scheduled Maintenance</title>
+<link href='https://status.hashicorp.com/incidents/v6rtddgyk7sb'/>
+<id>tag:status.hashicorp.com,2005:Incident/21431799</id>
+<updated>2024-07-20T14:00:00Z</updated>
+<content type='html'><![CDATA[<p><strong>THIS IS A SCHEDULED EVENT Jul <var>20</var>, <var>14:00</var> - <var>16:00</var> UTC</strong></p><p><small>Jul <var>16</var>, <var>17:00</var> UTC</small><br /><strong>Scheduled</strong> - HCP Boundary will undergo planned maintenance on Saturday, July 20th beginning at 14:00 UTC. We expect this maintenance to be complete within two hours. During this time, HCP Boundary sessions may disconnect unexpectedly. We will post updates as necessary throughout the maintenance period.</p>]]></content>
+<author><name>No author available</name></author>
+</entry>
+<entry>
+<title>AzureRM Provider Release: v3.113.0</title>
+<link href='https://github.com/hashicorp/terraform-provider-azurerm/releases/tag/v3.113.0'/>
+<id>tag:github.com,2008:Repository/93446042/v3.113.0</id>
+<updated>2024-07-19T05:29:47Z</updated>
+<content type='html'><![CDATA[<p>ENHANCEMENTS:</p>
+<ul>
+<li>dependencies: updating to <code>v0.20240715.1100358</code> of <code>hashicorp/go-azure-sdk</code> (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/26638">#26638</a>)</li>
+<li><code>storage</code> - updating to use <code>hashicorp/go-azure-sdk</code> (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/26218">#26218</a>)</li>
+</ul>
+<p>BUG FIXES:</p>
+<ul>
+<li><code>azurerm_storage_account</code> - fix a validation bug when replacing a StorageV2 account with a StorageV1 account (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/26639">#26639</a>)</li>
+<li><code>azurerm_storage_account</code> - resolve an issue refreshing blob or queue properties after recreation (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/26218">#26218</a>)</li>
+<li><code>azurerm_storage_account</code> - resolve an issue setting tags for an existing storage account where a policy mandates them (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/26218">#26218</a>)</li>
+<li><code>azurerm_storage_account</code> - fix a persistent diff with the <code>customer_managed_key</code> block (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/26218">#26218</a>)</li>
+<li><code>azurerm_storage_account</code> - resolve several consistency related issues when crreating a new storage account (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/26218">#26218</a>)</li>
+</ul>
+<p>DEPRECATIONS:</p>
+<ul>
+<li><code>azurerm_eventhub_namespace</code> - deprecate the <code>zone_redundant</code> field in v4.0 (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/26611">#26611</a>)</li>
+<li><code>azurerm_servicebus_namespace</code> - deprecate the <code>zone_redundant</code> field in v4.0 (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/26611">#26611</a>)</li>
+</ul>]]></content>
+<author><name>github-actions[bot]</name></author>
+</entry>
+<entry>
+<title>GitHub Status Release: Incident with Codespaces</title>
+<link href='https://www.githubstatus.com/incidents/9rrqvvf23fhc'/>
+<id>tag:www.githubstatus.com,2005:Incident/21458536</id>
+<updated>2024-07-19T04:47:22Z</updated>
+<content type='html'><![CDATA[<p><small>Jul <var>19</var>, <var>04:47</var> UTC</small><br /><strong>Resolved</strong> - This incident has been resolved.</p><p><small>Jul <var>19</var>, <var>03:54</var> UTC</small><br /><strong>Update</strong> - Codespaces is still recovering fully, but we can see the issue is trending positive. Please stop and start your Codespace, if impacted: https://docs.github.com/en/codespaces/developing-in-a-codespace/stopping-and-starting-a-codespace?tool=webui</p><p><small>Jul <var>19</var>, <var>03:17</var> UTC</small><br /><strong>Update</strong> - We are still investigating issues with Codespaces. Some users may not be able to connect to their Codespaces at this time. We will update you on mitigation progress.</p><p><small>Jul <var>19</var>, <var>02:43</var> UTC</small><br /><strong>Update</strong> - We are investigating issues with Codespaces. Some users may not be able to connect to their Codespaces at this time. We will update you on mitigation progress.</p><p><small>Jul <var>19</var>, <var>02:10</var> UTC</small><br /><strong>Investigating</strong> - We are investigating reports of degraded performance for Codespaces</p>]]></content>
+<author><name>No author available</name></author>
+</entry>
+<entry>
+<title>Hashicorp Status Release: Investigating HVD Azure Central US cluster unavailability</title>
+<link href='https://status.hashicorp.com/incidents/8g02l7tkp6lw'/>
+<id>tag:status.hashicorp.com,2005:Incident/21457083</id>
+<updated>2024-07-19T04:26:51Z</updated>
+<content type='html'><![CDATA[<p><small>Jul <var>19</var>, <var>04:26</var> UTC</small><br /><strong>Resolved</strong> - We have received another update from Azure provider verifying that all the Azure Storage clusters are recovered with their mitigation. On our side, all the impacted clusters are back up and healthy too.</p><p><small>Jul <var>19</var>, <var>04:07</var> UTC</small><br /><strong>Monitoring</strong> - We have received the latest update from Azure confirming that they have identified the underlying root of the issue on their end and have started implementing mitigation. <br /><br />We have already seen recovery of our affected Azure clusters in the Central US region and by now have verified that all impacted clusters are restored and are back healthy. We have left the incident open until we have formally received final green lights from Azure provider. All the affected clusters are healthy as of now.</p><p><small>Jul <var>19</var>, <var>02:28</var> UTC</small><br /><strong>Update</strong> - We have received the latest update from Azure confirming that they have found the issue and have started incremental mitigation which could be observed in the next 90 minutes. <br /><br />We have also already seen recovery of HCP Vault clusters in Azure Central US affected by this.</p><p><small>Jul <var>18</var>, <var>23:53</var> UTC</small><br /><strong>Update</strong> - We're continuing to investigate the Azure Central US issue with Microsoft and will provide an update when we have one.</p><p><small>Jul <var>18</var>, <var>23:08</var> UTC</small><br /><strong>Investigating</strong> - Our engineering team is investigating an issue with multiple HCP Vault Dedicated clusters in Azure Central US. Azure Service Health shows there is an ongoing incident with Microsoft Virtual Machines in this region.<br /><br />During this time, users with HCP Vault Dedicated clusters in Azure Central US may experience unavailability.<br /><br />We will share another update as soon as we have more information.</p>]]></content>
+<author><name>No author available</name></author>
+</entry>
+<entry>
+<title>GitHub Status Release: Issues enabling actions and running jobs on GitHub</title>
+<link href='https://www.githubstatus.com/incidents/m70hk23gx3nx'/>
+<id>tag:www.githubstatus.com,2005:Incident/21456889</id>
+<updated>2024-07-19T02:38:10Z</updated>
+<content type='html'><![CDATA[<p><small>Jul <var>19</var>, <var>02:38</var> UTC</small><br /><strong>Resolved</strong> - This incident has been resolved.</p><p><small>Jul <var>19</var>, <var>02:38</var> UTC</small><br /><strong>Update</strong> - Actions is operating normally.</p><p><small>Jul <var>19</var>, <var>02:25</var> UTC</small><br /><strong>Update</strong> - We have continued to apply mitigations to work around the outage. Customers may still experience run start delays for larger runners.</p><p><small>Jul <var>19</var>, <var>01:50</var> UTC</small><br /><strong>Update</strong> - We've applied a mitigation to work around the outage. Customers may still experience run start delays.</p><p><small>Jul <var>19</var>, <var>01:04</var> UTC</small><br /><strong>Update</strong> - We are making progress failing over to a different region to mitigate an outage.</p><p><small>Jul <var>19</var>, <var>00:30</var> UTC</small><br /><strong>Update</strong> - We continue to mitigate an outage by failing over to a different region.</p><p><small>Jul <var>19</var>, <var>00:24</var> UTC</small><br /><strong>Update</strong> - Pages is operating normally.</p><p><small>Jul <var>18</var>, <var>23:57</var> UTC</small><br /><strong>Update</strong> - We are working to mitigate an outage by failing over to a different region.</p><p><small>Jul <var>18</var>, <var>23:23</var> UTC</small><br /><strong>Update</strong> - Pages is experiencing degraded performance. We are continuing to investigate.</p><p><small>Jul <var>18</var>, <var>23:22</var> UTC</small><br /><strong>Update</strong> - Some actions customers may experience delays or failures in their runs. We continuing to investigate.</p><p><small>Jul <var>18</var>, <var>22:47</var> UTC</small><br /><strong>Investigating</strong> - We are investigating reports of degraded performance for Actions</p>]]></content>
+<author><name>No author available</name></author>
+</entry>
+<entry>
+<title>GitHub Status Release: Incident with Codespaces</title>
+<link href='https://www.githubstatus.com/incidents/lzyq3tjy07yq'/>
+<id>tag:www.githubstatus.com,2005:Incident/21443579</id>
+<updated>2024-07-17T18:13:11Z</updated>
+<content type='html'><![CDATA[<p><small>Jul <var>17</var>, <var>18:13</var> UTC</small><br /><strong>Resolved</strong> - This incident has been resolved.</p><p><small>Jul <var>17</var>, <var>17:56</var> UTC</small><br /><strong>Investigating</strong> - We are investigating reports of degraded performance for Codespaces</p>]]></content>
+<author><name>No author available</name></author>
+</entry>
+<entry>
+<title>GitHub Status Release: Incident with multiple GitHub services</title>
+<link href='https://www.githubstatus.com/incidents/88003ngctf1z'/>
+<id>tag:www.githubstatus.com,2005:Incident/21442737</id>
+<updated>2024-07-17T17:06:55Z</updated>
+<content type='html'><![CDATA[<p><small>Jul <var>17</var>, <var>17:06</var> UTC</small><br /><strong>Resolved</strong> - On July 17, 2024, between 16:15:31 UTC and 17:06:53 UTC, various GitHub services were degraded including Login, the GraphQL API, Issues, Pages and Packages. On average, the error rate was 0.3% for requests to github.com and the API, and 3.0% of requests for Packages. This incident was triggered by two unrelated events:<br /><br />- A planned testing event of an internal feature caused heavy loads on our databases, disrupting services across GitHub.<br />- A network configuration change deployed to support capacity expansion in a GitHub data center. <br /><br />We partially resolved the incident by aborting the testing event at 16:17 UTC and fully resolved the incident by rolling back the network configuration changes at 16:49 UTC. <br /><br />We have paused all planned capacity expansion activity within GitHub data centers until we have stabilized the root cause of this incident. In addition, we are reexamining our load testing practices so they can be done in a safer environment and making architectural changes to the feature that caused issues.<br /></p><p><small>Jul <var>17</var>, <var>17:06</var> UTC</small><br /><strong>Update</strong> - Git Operations is operating normally.</p><p><small>Jul <var>17</var>, <var>17:06</var> UTC</small><br /><strong>Update</strong> - Pages is operating normally.</p><p><small>Jul <var>17</var>, <var>17:06</var> UTC</small><br /><strong>Update</strong> - Packages is operating normally.</p><p><small>Jul <var>17</var>, <var>16:47</var> UTC</small><br /><strong>Update</strong> - We're continuing to investigate reports of issues with multiple services. We will continue to keep users updated on progress.</p><p><small>Jul <var>17</var>, <var>16:47</var> UTC</small><br /><strong>Update</strong> - Packages is experiencing degraded performance. We are continuing to investigate.</p><p><small>Jul <var>17</var>, <var>16:46</var> UTC</small><br /><strong>Update</strong> - Issues is operating normally.</p><p><small>Jul <var>17</var>, <var>16:30</var> UTC</small><br /><strong>Update</strong> - Pages is experiencing degraded performance. We are continuing to investigate.</p><p><small>Jul <var>17</var>, <var>16:28</var> UTC</small><br /><strong>Update</strong> - Issues is experiencing degraded performance. We are continuing to investigate.</p><p><small>Jul <var>17</var>, <var>16:24</var> UTC</small><br /><strong>Update</strong> - We are investigating reports of issues with service(s): Git, Actions, Rules and Permissions, SSH authentication, and Authorization.. We will continue to keep users updated on progress towards mitigation.</p><p><small>Jul <var>17</var>, <var>16:21</var> UTC</small><br /><strong>Investigating</strong> - We are investigating reports of degraded performance for Git Operations</p>]]></content>
+<author><name>No author available</name></author>
+</entry>
+<entry>
+<title>Hashicorp Status Release: HCP Terraform Latency Degredation</title>
+<link href='https://status.hashicorp.com/incidents/06jzb2grj8pt'/>
+<id>tag:status.hashicorp.com,2005:Incident/21441931</id>
+<updated>2024-07-17T16:22:24Z</updated>
+<content type='html'><![CDATA[<p><small>Jul <var>17</var>, <var>16:22</var> UTC</small><br /><strong>Resolved</strong> - The applied mitigations have successfully resolved the issue.<br /><br />During the incident customers may have noticed Terraform Runs failing due to the increased latency: those can now be retried.</p><p><small>Jul <var>17</var>, <var>15:38</var> UTC</small><br /><strong>Monitoring</strong> - Engineers have rolled back the problematic change, and have observed signs of recovery. We are currently monitoring the application to ensure a return to normal operation.</p><p><small>Jul <var>17</var>, <var>14:55</var> UTC</small><br /><strong>Identified</strong> - Our Engineering team has identified and is currently attempting to mitigate a change that has increased latency on HCP Terraform. Customers are likely experiencing large increases in latency across Workspace and Run api endpoints.</p>]]></content>
+<author><name>No author available</name></author>
+</entry>
+<entry>
+<title>Terraform CLI Release: v1.10.0-alpha20240717</title>
+<link href='https://github.com/hashicorp/terraform/releases/tag/v1.10.0-alpha20240717'/>
+<id>tag:github.com,2008:Repository/17728164/v1.10.0-alpha20240717</id>
+<updated>2024-07-17T09:35:16Z</updated>
+<content type='html'><![CDATA[<h2>1.10.0-alpha20240717 (July 17, 2024)</h2>
+<p>EXPERIMENTS:</p>
+<p>Experiments are only enabled in alpha releases of Terraform CLI. The following features are not yet available in stable releases.</p>
+<ul>
+<li><code>ephemeral_values</code>: This <a href="https://developer.hashicorp.com/terraform/language/settings#experimental-language-features" rel="nofollow">language experiment</a> introduces a new special kind of value which Terraform allows to change between the plan phase and the apply phase, and between plan/apply rounds. Ephemeral values are never persisted in saved plan files or state snapshots, and so can only be used in parts of the language that don't require values to persist in those artifacts. Ephemeral input values are the main initial example of this concept, allowing the use of input variables to provide dynamic credentials that must change between plan and apply.</li>
+<li><code>terraform test</code> accepts a new option <code>-junit-xml=FILENAME</code>. If specified, and if the test configuration is valid enough to begin executing, then Terraform writes a JUnit XML test result report to the given filename, describing similar information as included in the normal test output. (<a href="https://github.com/hashicorp/terraform/issues/34291">#34291</a>)</li>
+<li>The new command <code>terraform rpcapi</code> exposes some Terraform Core functionality through an RPC interface compatible with <a href="https://github.com/hashicorp/go-plugin"><code>go-plugin</code></a>. The exact RPC API exposed here is currently subject to change at any time, because it's here primarily as a vehicle to support the <a href="https://www.hashicorp.com/blog/terraform-stacks-explained" rel="nofollow">Terraform Stacks</a> private preview and so will be broken if necessary to respond to feedback from private preview participants, or possibly for other reasons. Do not use this mechanism yet outside of Terraform Stacks private preview.</li>
+<li>The experimental "deferred actions" feature, enabled by passing the <code>-allow-deferral</code> option to <code>terraform plan</code>, permits <code>count</code> and <code>for_each</code> arguments in <code>module</code>, <code>resource</code>, and <code>data</code> blocks to have unknown values and allows providers to react more flexibly to unknown values. This experiment is under active development, and so it's not yet useful to participate in this experiment</li>
+</ul>
+<h2>Previous Releases</h2>
+<p>For information on prior major and minor releases, refer to their changelogs:</p>
+<ul>
+<li><a href="https://github.com/hashicorp/terraform/blob/v1.9/CHANGELOG.md">v1.9</a></li>
+<li><a href="https://github.com/hashicorp/terraform/blob/v1.8/CHANGELOG.md">v1.8</a></li>
+<li><a href="https://github.com/hashicorp/terraform/blob/v1.7/CHANGELOG.md">v1.7</a></li>
+<li><a href="https://github.com/hashicorp/terraform/blob/v1.6/CHANGELOG.md">v1.6</a></li>
+<li><a href="https://github.com/hashicorp/terraform/blob/v1.5/CHANGELOG.md">v1.5</a></li>
+<li><a href="https://github.com/hashicorp/terraform/blob/v1.4/CHANGELOG.md">v1.4</a></li>
+<li><a href="https://github.com/hashicorp/terraform/blob/v1.3/CHANGELOG.md">v1.3</a></li>
+<li><a href="https://github.com/hashicorp/terraform/blob/v1.2/CHANGELOG.md">v1.2</a></li>
+<li><a href="https://github.com/hashicorp/terraform/blob/v1.1/CHANGELOG.md">v1.1</a></li>
+<li><a href="https://github.com/hashicorp/terraform/blob/v1.0/CHANGELOG.md">v1.0</a></li>
+<li><a href="https://github.com/hashicorp/terraform/blob/v0.15/CHANGELOG.md">v0.15</a></li>
+<li><a href="https://github.com/hashicorp/terraform/blob/v0.14/CHANGELOG.md">v0.14</a></li>
+<li><a href="https://github.com/hashicorp/terraform/blob/v0.13/CHANGELOG.md">v0.13</a></li>
+<li><a href="https://github.com/hashicorp/terraform/blob/v0.12/CHANGELOG.md">v0.12</a></li>
+<li><a href="https://github.com/hashicorp/terraform/blob/v0.11/CHANGELOG.md">v0.11 and earlier</a></li>
+</ul>]]></content>
+<author><name>hc-github-team-es-release-engineering</name></author>
+</entry>
+<entry>
+<title>Hashicorp Status Release: Project Creation Errors</title>
+<link href='https://status.hashicorp.com/incidents/m11tql1g4kj1'/>
+<id>tag:status.hashicorp.com,2005:Incident/21430256</id>
+<updated>2024-07-16T15:15:21Z</updated>
+<content type='html'><![CDATA[<p><small>Jul <var>16</var>, <var>15:15</var> UTC</small><br /><strong>Resolved</strong> - Our Engineering team has resolved the issue.<br /><br />These systems should now be operating normally. If you continue to experience any problems, please open a ticket with our support team.</p><p><small>Jul <var>16</var>, <var>15:00</var> UTC</small><br /><strong>Monitoring</strong> - Our Engineering team has implemented a fix to resolve the issue with new project creation.<br /><br />We are monitoring the situation closely and will post an update as soon as the issue is fully resolved.</p><p><small>Jul <var>16</var>, <var>14:07</var> UTC</small><br /><strong>Investigating</strong> - Our engineering team is investigating an increase in errors when creating new projects in HCP Terraform. Customers may experience 500 errors when creating new projects.<br /><br />We will share another update as soon as we have more information.</p>]]></content>
+<author><name>No author available</name></author>
+</entry>
+<entry>
+<title>GitHub Status Release: Disruption with some GitHub services</title>
+<link href='https://www.githubstatus.com/incidents/p55k2jdgsrgc'/>
+<id>tag:www.githubstatus.com,2005:Incident/21424650</id>
+<updated>2024-07-16T03:07:48Z</updated>
+<content type='html'><![CDATA[<p><small>Jul <var>16</var>, <var>03:07</var> UTC</small><br /><strong>Resolved</strong> - This incident has been resolved.</p><p><small>Jul <var>16</var>, <var>02:56</var> UTC</small><br /><strong>Update</strong> - Copilot chat is error rates are improving and we are continuing to monitor system health.</p><p><small>Jul <var>16</var>, <var>02:10</var> UTC</small><br /><strong>Update</strong> - Copilot chat is experiencing elevated error rates. We have identified the root cause and are working on remediation.</p><p><small>Jul <var>16</var>, <var>01:35</var> UTC</small><br /><strong>Update</strong> - Copilot chat is experiencing elevated error rates and we are currently investigating the issue.</p><p><small>Jul <var>16</var>, <var>00:53</var> UTC</small><br /><strong>Investigating</strong> - We are currently investigating this issue.</p>]]></content>
+<author><name>No author available</name></author>
+</entry>
+<entry>
+<title>GCP Provider Release: v5.38.0</title>
+<link href='https://github.com/hashicorp/terraform-provider-google/releases/tag/v5.38.0'/>
+<id>tag:github.com,2008:Repository/93446075/v5.38.0</id>
+<updated>2024-07-15T18:36:24Z</updated>
+<content type='html'><![CDATA[<p>FEATURES:</p>
+<ul>
+<li><strong>New Data Source:</strong> <code>google_gke_hub_membership_binding</code> (<a href="https://github.com/hashicorp/terraform-provider-google/pull/18680">#18680</a>)</li>
+<li><strong>New Data Source:</strong> <code>google_site_verification_token</code> (<a href="https://github.com/hashicorp/terraform-provider-google/pull/18688">#18688</a>)</li>
+<li><strong>New Resource:</strong> <code>google_scc_project_notification_config</code> (<a href="https://github.com/hashicorp/terraform-provider-google/pull/18682">#18682</a>)</li>
+</ul>
+<p>IMPROVEMENTS:</p>
+<ul>
+<li>compute: promoted <code>labels</code> field on <code>google_compute_global_address</code> resource from beta to GA (<a href="https://github.com/hashicorp/terraform-provider-google/pull/18646">#18646</a>)</li>
+<li>compute: made the <code>google_compute_resource_policy</code> resource updatable in-place (<a href="https://github.com/hashicorp/terraform-provider-google/pull/18673">#18673</a>)</li>
+<li>privilegedaccessmanager: promoted <code>google_privileged_access_manager_entitlement</code> resource from beta to GA (<a href="https://github.com/hashicorp/terraform-provider-google/pull/18686">#18686</a>)</li>
+<li>vertexai: added <code>project_number</code> field to <code>google_vertex_ai_feature_online_store_featureview</code> resource (<a href="https://github.com/hashicorp/terraform-provider-google/pull/18637">#18637</a>)</li>
+</ul>
+<p>BUG FIXES:</p>
+<ul>
+<li>cloudfunctions2: fixed permadiffs on <code>service_config.environment_variables</code> field in <code>google_cloudfunctions2_function</code> resource (<a href="https://github.com/hashicorp/terraform-provider-google/pull/18651">#18651</a>)</li>
+</ul>]]></content>
+<author><name>github-actions[bot]</name></author>
+</entry>
+<entry>
+<title>GitHub Status Release: Incident with Copilot</title>
+<link href='https://www.githubstatus.com/incidents/3483v9fw5pm3'/>
+<id>tag:www.githubstatus.com,2005:Incident/21398869</id>
+<updated>2024-07-13T19:27:03Z</updated>
+<content type='html'><![CDATA[<p><small>Jul <var>13</var>, <var>19:27</var> UTC</small><br /><strong>Resolved</strong> - This incident has been resolved.</p><p><small>Jul <var>13</var>, <var>19:26</var> UTC</small><br /><strong>Update</strong> - Copilot is operating normally.</p><p><small>Jul <var>13</var>, <var>18:01</var> UTC</small><br /><strong>Update</strong> - Our upstream provider continues to recover and we expect services to return to normal as more progress is made. We will provide another update by 20:00 UTC.</p><p><small>Jul <var>13</var>, <var>16:09</var> UTC</small><br /><strong>Update</strong> - Our upstream provider is making good progress recovering and we are validating that services are nearing normal operations. We will provide another update by 18:00 UTC.</p><p><small>Jul <var>13</var>, <var>11:18</var> UTC</small><br /><strong>Update</strong> - Our upstream provider is gradually recovering the service. We will provide another update at 23:00 UTC.</p><p><small>Jul <var>13</var>, <var>03:50</var> UTC</small><br /><strong>Update</strong> - We are continuing to wait on our upstream provider to see full recovery. We will provide another update at 11:00 UTC</p><p><small>Jul <var>13</var>, <var>03:20</var> UTC</small><br /><strong>Update</strong> - The error rate for Copilot chat requests remains steady at less than 10%. We are continuing to investigate with our upstream provider.</p><p><small>Jul <var>13</var>, <var>02:20</var> UTC</small><br /><strong>Update</strong> - Copilot is experiencing degraded performance. We are continuing to investigate.</p><p><small>Jul <var>13</var>, <var>02:19</var> UTC</small><br /><strong>Update</strong> - We have applied several mitigations to Copilot chat, reducing errors to less than 10% of all chat requests. We are continuing to investigate the issue with our upstream provider.</p><p><small>Jul <var>13</var>, <var>01:32</var> UTC</small><br /><strong>Update</strong> - Copilot chat is experiencing degraded performance, impacting up to 60% of all chat requests. We are continuing to investigate the issue with our upstream provider.</p><p><small>Jul <var>13</var>, <var>00:49</var> UTC</small><br /><strong>Update</strong> - Copilot chat is currently experiencing degraded performance, impacting up to 60% of all chat requests. We are investigating the issue.</p><p><small>Jul <var>13</var>, <var>00:29</var> UTC</small><br /><strong>Update</strong> - Copilot is experiencing degraded availability. We are continuing to investigate.</p><p><small>Jul <var>13</var>, <var>00:18</var> UTC</small><br /><strong>Update</strong> - Copilot API chat experiencing significant failures to backend services</p><p><small>Jul <var>13</var>, <var>00:18</var> UTC</small><br /><strong>Investigating</strong> - We are investigating reports of degraded performance for Copilot</p>]]></content>
+<author><name>No author available</name></author>
+</entry>
 <entry>
 <title>AzureRM Provider Release: v3.112.0</title>
 <link href='https://github.com/hashicorp/terraform-provider-azurerm/releases/tag/v3.112.0'/>
@@ -57,7 +221,7 @@
 <link href='https://www.githubstatus.com/incidents/9lmrb0ch7cnn'/>
 <id>tag:www.githubstatus.com,2005:Incident/21380971</id>
 <updated>2024-07-11T15:21:17Z</updated>
-<content type='html'><![CDATA[<p><small>Jul <var>11</var>, <var>15:21</var> UTC</small><br /><strong>Resolved</strong> - This incident has been resolved.</p><p><small>Jul <var>11</var>, <var>15:21</var> UTC</small><br /><strong>Update</strong> - Copilot is operating normally.</p><p><small>Jul <var>11</var>, <var>15:19</var> UTC</small><br /><strong>Update</strong> - We have mitigated the intermittent timeout errors impacting Copilot’s Chat functionality and expect the incident to be resolved shortly.</p><p><small>Jul <var>11</var>, <var>15:04</var> UTC</small><br /><strong>Update</strong> - We continue to investigate the cause of intermittent timeouts impacting Copilot’s Chat functionality. This is impacting a small fraction of customers. The timeout errors we are seeing has reduced back to healthy levels for the last 60 minutes but we are monitoring closely.</p><p><small>Jul <var>11</var>, <var>14:14</var> UTC</small><br /><strong>Update</strong> - We continue to investigate the cause of intermittent timeouts impacting Copilot’s Chat functionality. This is impacting a small fraction of customers. We will provide further updates as we continue resolving the issue.</p><p><small>Jul <var>11</var>, <var>13:32</var> UTC</small><br /><strong>Update</strong> - We continue to investigate the cause of intermittent timeouts impacting Copilot’s Chat functionality. This is impacting a small fraction of customers. We will provide further updates as we continue resolving the issue.</p><p><small>Jul <var>11</var>, <var>13:02</var> UTC</small><br /><strong>Update</strong> - Copilot's Chat functionality is experiencing intermittent timeouts, we are investigating the issue.</p><p><small>Jul <var>11</var>, <var>13:02</var> UTC</small><br /><strong>Investigating</strong> - We are investigating reports of degraded performance for Copilot</p>]]></content>
+<content type='html'><![CDATA[<p><small>Jul <var>11</var>, <var>15:21</var> UTC</small><br /><strong>Resolved</strong> - On July 11, 2024, between 10:20 UTC and 14:00 UTC Copilot Chat was degraded and experienced intermittent timeouts. This only impacted requests routed to one of our service region providers. The error rate peaked at 10% for all requests and 9% of users. This was due to host upgrades in an upstream service provider. While this was a planned event, processes and tooling was not in place to anticipate and mitigate this downtime. <br /><br /><br />We are working to improve our processes and tooling for future planned events and escalation paths with our upstream providers.<br /></p><p><small>Jul <var>11</var>, <var>15:21</var> UTC</small><br /><strong>Update</strong> - Copilot is operating normally.</p><p><small>Jul <var>11</var>, <var>15:19</var> UTC</small><br /><strong>Update</strong> - We have mitigated the intermittent timeout errors impacting Copilot’s Chat functionality and expect the incident to be resolved shortly.</p><p><small>Jul <var>11</var>, <var>15:04</var> UTC</small><br /><strong>Update</strong> - We continue to investigate the cause of intermittent timeouts impacting Copilot’s Chat functionality. This is impacting a small fraction of customers. The timeout errors we are seeing has reduced back to healthy levels for the last 60 minutes but we are monitoring closely.</p><p><small>Jul <var>11</var>, <var>14:14</var> UTC</small><br /><strong>Update</strong> - We continue to investigate the cause of intermittent timeouts impacting Copilot’s Chat functionality. This is impacting a small fraction of customers. We will provide further updates as we continue resolving the issue.</p><p><small>Jul <var>11</var>, <var>13:32</var> UTC</small><br /><strong>Update</strong> - We continue to investigate the cause of intermittent timeouts impacting Copilot’s Chat functionality. This is impacting a small fraction of customers. We will provide further updates as we continue resolving the issue.</p><p><small>Jul <var>11</var>, <var>13:02</var> UTC</small><br /><strong>Update</strong> - Copilot's Chat functionality is experiencing intermittent timeouts, we are investigating the issue.</p><p><small>Jul <var>11</var>, <var>13:02</var> UTC</small><br /><strong>Investigating</strong> - We are investigating reports of degraded performance for Copilot</p>]]></content>
 <author><name>No author available</name></author>
 </entry>
 <entry>
@@ -249,7 +413,7 @@ which causes the Vault TCP listener to close after receiving an untrusted upstre
 <link href='https://www.githubstatus.com/incidents/5dvz23w3gl38'/>
 <id>tag:www.githubstatus.com,2005:Incident/21289093</id>
 <updated>2024-07-02T19:24:49Z</updated>
-<content type='html'><![CDATA[<p><small>Jul <var> 2</var>, <var>19:24</var> UTC</small><br /><strong>Resolved</strong> - This incident has been resolved.</p><p><small>Jul <var> 2</var>, <var>19:24</var> UTC</small><br /><strong>Update</strong> - API Requests is operating normally.</p><p><small>Jul <var> 2</var>, <var>19:22</var> UTC</small><br /><strong>Update</strong> - The fix has been rolled out and our telemetry indicates that the errors with code search have resolved.</p><p><small>Jul <var> 2</var>, <var>19:18</var> UTC</small><br /><strong>Update</strong> - An issue with faulty data in an in-memory storage causes around one third of code search requests to fail. The team has identified the issue and is working on rolling out a fix.</p><p><small>Jul <var> 2</var>, <var>18:47</var> UTC</small><br /><strong>Update</strong> - API Requests is experiencing degraded performance. We are continuing to investigate.</p><p><small>Jul <var> 2</var>, <var>18:45</var> UTC</small><br /><strong>Investigating</strong> - We are currently investigating this issue.</p>]]></content>
+<content type='html'><![CDATA[<p><small>Jul <var> 2</var>, <var>19:24</var> UTC</small><br /><strong>Resolved</strong> - On July 02, 2024, between 18:21 UTC and 19:24 UTC the code search service was degraded and returned elevated 500 HTTP status responses. On average, the error rate was 38% of code search requests. This was due to a bad deployment causing some user's rate limit calculations to error while processing code search requests. This impacted approximately 2,000 users.<br />We mitigated the incident by rolling back the bad deployment along with resetting rate limits for all users.<br />We have identified and implemented updates in the testing of rate limit calculations to prevent this problem from happening again, and clarified deployment processes for verification before a full production rollout to minimize impact in the future.</p><p><small>Jul <var> 2</var>, <var>19:24</var> UTC</small><br /><strong>Update</strong> - API Requests is operating normally.</p><p><small>Jul <var> 2</var>, <var>19:22</var> UTC</small><br /><strong>Update</strong> - The fix has been rolled out and our telemetry indicates that the errors with code search have resolved.</p><p><small>Jul <var> 2</var>, <var>19:18</var> UTC</small><br /><strong>Update</strong> - An issue with faulty data in an in-memory storage causes around one third of code search requests to fail. The team has identified the issue and is working on rolling out a fix.</p><p><small>Jul <var> 2</var>, <var>18:47</var> UTC</small><br /><strong>Update</strong> - API Requests is experiencing degraded performance. We are continuing to investigate.</p><p><small>Jul <var> 2</var>, <var>18:45</var> UTC</small><br /><strong>Investigating</strong> - We are currently investigating this issue.</p>]]></content>
 <author><name>No author available</name></author>
 </entry>
 <entry>
@@ -257,7 +421,7 @@ which causes the Vault TCP listener to close after receiving an untrusted upstre
 <link href='https://www.githubstatus.com/incidents/4dq0ww5d0q7j'/>
 <id>tag:www.githubstatus.com,2005:Incident/21279789</id>
 <updated>2024-07-02T01:14:44Z</updated>
-<content type='html'><![CDATA[<p><small>Jul <var> 2</var>, <var>01:14</var> UTC</small><br /><strong>Resolved</strong> - This incident has been resolved.</p><p><small>Jul <var> 2</var>, <var>01:14</var> UTC</small><br /><strong>Update</strong> - As a result of rerouting traffic, we have seen overall network link health return to normal.</p><p><small>Jul <var> 2</var>, <var>00:52</var> UTC</small><br /><strong>Update</strong> - We are investigating connection issues with one of our network links. We are working to reroute traffic.</p><p><small>Jul <var> 2</var>, <var>00:15</var> UTC</small><br /><strong>Update</strong> - We are investigating intermittent network connection issues. These issues appear to be limited to customers hosted on AWS that are connecting to GitHub's network.</p><p><small>Jul <var> 1</var>, <var>23:32</var> UTC</small><br /><strong>Update</strong> - We're investigating reports of intermittent timeouts and connection errors for git clone operations.</p><p><small>Jul <var> 1</var>, <var>22:59</var> UTC</small><br /><strong>Investigating</strong> - We are investigating reports of degraded performance for Git Operations</p>]]></content>
+<content type='html'><![CDATA[<p><small>Jul <var> 2</var>, <var>01:14</var> UTC</small><br /><strong>Resolved</strong> - At approximately 19:20 UTC on July 1st, 2024, one of GitHub’s peering links to a public cloud provider began experiencing 5 - 20% packet loss. This resulted in intermittent network timeouts running Git operations for customers who run their own environments with that specific provider.<br /><br />Investigation pointed to an issue with the physical link. At 01:14 UTC we rerouted traffic away from the problematic link to other connections to resolve the incident. <br /></p><p><small>Jul <var> 2</var>, <var>01:14</var> UTC</small><br /><strong>Update</strong> - As a result of rerouting traffic, we have seen overall network link health return to normal.</p><p><small>Jul <var> 2</var>, <var>00:52</var> UTC</small><br /><strong>Update</strong> - We are investigating connection issues with one of our network links. We are working to reroute traffic.</p><p><small>Jul <var> 2</var>, <var>00:15</var> UTC</small><br /><strong>Update</strong> - We are investigating intermittent network connection issues. These issues appear to be limited to customers hosted on AWS that are connecting to GitHub's network.</p><p><small>Jul <var> 1</var>, <var>23:32</var> UTC</small><br /><strong>Update</strong> - We're investigating reports of intermittent timeouts and connection errors for git clone operations.</p><p><small>Jul <var> 1</var>, <var>22:59</var> UTC</small><br /><strong>Investigating</strong> - We are investigating reports of degraded performance for Git Operations</p>]]></content>
 <author><name>No author available</name></author>
 </entry>
 <entry>
@@ -1270,63 +1434,6 @@ in the <code>.terraform-docs.yml</code>:</p>
 <author><name>tf-docs-bot</name></author>
 </entry>
 <entry>
-<title>Terraform CLI Release: v1.9.0-beta1</title>
-<link href='https://github.com/hashicorp/terraform/releases/tag/v1.9.0-beta1'/>
-<id>tag:github.com,2008:Repository/17728164/v1.9.0-beta1</id>
-<updated>2024-05-31T12:27:17Z</updated>
-<content type='html'><![CDATA[<h2>1.9.0-beta1 (May 31, 2024)</h2>
-<p>NEW FEATURES:</p>
-<ul>
-<li><strong>Input variable validation rules can refer to other objects</strong>: Previously input variable validation rules could refer only to the variable being validated. Now they are general expressions, similar to those elsewhere in a module, which can refer to other input variables and to other objects such as data resources.</li>
-<li><strong><code>templatestring</code> function</strong>: a new built-in function which is similar to <code>templatefile</code> but designed to render templates obtained dynamically, such as from a data resource result.</li>
-</ul>
-<p>ENHANCEMENTS:</p>
-<ul>
-<li><code>terraform plan</code>: Improved presentation of OPA and Sentinel policy evaluations in HCP Terraform remote runs, for logical separation.</li>
-<li><code>terraform init</code> now accepts a <code>-json</code> option. If specified, enables the machine readable JSON output. (<a href="https://github.com/hashicorp/terraform/pull/34886">#34886</a>)</li>
-<li><code>terraform test</code>: Test runs can now pass sensitive values to input variables while preserving their dynamic sensitivity. Previously sensitivity would be preserved only for variables statically declared as being sensitive, using <code>sensitive = true</code>. (<a href="https://github.com/hashicorp/terraform/pull/35021">#35021</a>)</li>
-<li>config: Input variable validation rules can now refer to other objects in the same module. (<a href="https://github.com/hashicorp/terraform/pull/34955">#34955</a>)</li>
-<li>core: Performance improvement during graph building for configurations with an extremely large number of <code>resource</code> blocks. (<a href="https://github.com/hashicorp/terraform/pull/35088">#35088</a>)</li>
-<li>built-in <code>terraform</code> provider: Allows <code>moved</code> block refactoring from the <code>hashicorp/null</code> provider <code>null_resource</code> resource type to the <code>terraform_data</code> resource type. (<a href="https://github.com/hashicorp/terraform/pull/35163">#35163</a>)</li>
-<li><code>terraform output</code> with <code>cloud</code> block: Terraform no longer suggests that data loss could occur when outputs are not available. (<a href="https://github.com/hashicorp/terraform/issues/35143">#35143</a>)</li>
-<li><code>terraform console</code>: Now has basic support for multi-line input in interactive mode. (<a href="https://github.com/hashicorp/terraform/pull/34822">#34822</a>)<br />
-If an entered line contains opening parentheses/etc that are not closed, Terraform will await another line of input to complete the expression. This initial implementation is primarily intended to support pasting in multi-line expressions from elsewhere, rather than for manual multi-line editing, so the interactive editing support is currently limited.</li>
-<li>cli: Reduced copying of state to improve performance with larges numbers of resources. (<a href="https://github.com/hashicorp/terraform/issues/35164">#35164</a>)</li>
-<li><code>removed</code> blocks can now declare destroy-time provisioners which will be executed when the associated resource instances are destroyed. (<a href="https://github.com/hashicorp/terraform/issues/35230">#35230</a>)</li>
-</ul>
-<p>BUG FIXES:</p>
-<ul>
-<li><code>remote-exec</code> provisioner: Each remote connection will now be closed immediately after use. (<a href="https://github.com/hashicorp/terraform/issues/34137">#34137</a>)</li>
-<li>backend/s3: Fixed the digest value displayed for DynamoDB/S3 state checksum mismatches. (<a href="https://github.com/hashicorp/terraform/issues/34387">#34387</a>)</li>
-<li><code>terraform test</code>: Fix bug in which non-Hashicorp providers required by testing modules and initialised within the test files were assigned incorrect registry addresses. (<a href="https://github.com/hashicorp/terraform/issues/35161">#35161</a>)</li>
-<li>config: The <code>templatefile</code> function no longer returns a "panic" error if the template file path is marked as sensitive. Instead, the template rendering result is also marked as sensitive. (<a href="https://github.com/hashicorp/terraform/issues/35180">#35180</a>)</li>
-<li><code>terraform init</code>: When selecting a version for a provider that has both positive and negative version constraints for the same prerelease -- e.g. <code>1.2.0-beta.1, !1.2.0-beta.1</code> -- the negative constraint will now overrule the positive, for consistency with how negative constraints are handled otherwise. Previously Terraform would incorrectly treat the positive as overriding the negative if the specified version was a prerelease. (<a href="https://github.com/hashicorp/terraform/issues/35181">#35181</a>)</li>
-</ul>
-<p>UPGRADE NOTES:</p>
-<ul>
-<li><code>terraform test</code>: It is no longer valid to specify version constraints within provider blocks within .tftest.hcl files. Instead, version constraints must be supplied within the main configuration where the provider is in use.</li>
-</ul>
-<h2>Previous Releases</h2>
-<p>For information on prior major and minor releases, see their changelogs:</p>
-<ul>
-<li><a href="https://github.com/hashicorp/terraform/blob/v1.8/CHANGELOG.md">v1.8</a></li>
-<li><a href="https://github.com/hashicorp/terraform/blob/v1.7/CHANGELOG.md">v1.7</a></li>
-<li><a href="https://github.com/hashicorp/terraform/blob/v1.6/CHANGELOG.md">v1.6</a></li>
-<li><a href="https://github.com/hashicorp/terraform/blob/v1.5/CHANGELOG.md">v1.5</a></li>
-<li><a href="https://github.com/hashicorp/terraform/blob/v1.4/CHANGELOG.md">v1.4</a></li>
-<li><a href="https://github.com/hashicorp/terraform/blob/v1.3/CHANGELOG.md">v1.3</a></li>
-<li><a href="https://github.com/hashicorp/terraform/blob/v1.2/CHANGELOG.md">v1.2</a></li>
-<li><a href="https://github.com/hashicorp/terraform/blob/v1.1/CHANGELOG.md">v1.1</a></li>
-<li><a href="https://github.com/hashicorp/terraform/blob/v1.0/CHANGELOG.md">v1.0</a></li>
-<li><a href="https://github.com/hashicorp/terraform/blob/v0.15/CHANGELOG.md">v0.15</a></li>
-<li><a href="https://github.com/hashicorp/terraform/blob/v0.14/CHANGELOG.md">v0.14</a></li>
-<li><a href="https://github.com/hashicorp/terraform/blob/v0.13/CHANGELOG.md">v0.13</a></li>
-<li><a href="https://github.com/hashicorp/terraform/blob/v0.12/CHANGELOG.md">v0.12</a></li>
-<li><a href="https://github.com/hashicorp/terraform/blob/v0.11/CHANGELOG.md">v0.11 and earlier</a></li>
-</ul>]]></content>
-<author><name>hc-github-team-es-release-engineering</name></author>
-</entry>
-<entry>
 <title>AzureRM Provider Release: v3.106.0</title>
 <link href='https://github.com/hashicorp/terraform-provider-azurerm/releases/tag/v3.106.0'/>
 <id>tag:github.com,2008:Repository/93446042/v3.106.0</id>
@@ -1531,7 +1638,7 @@ new context, separate from the original will be used. [<a href="https://github.c
 <link href='https://www.githubstatus.com/incidents/k8nz2ljtvzv4'/>
 <id>tag:www.githubstatus.com,2005:Incident/20910208</id>
 <updated>2024-05-28T21:24:34Z</updated>
-<content type='html'><![CDATA[<p><small>May <var>28</var>, <var>21:24</var> UTC</small><br /><strong>Investigating</strong> - Codespaces is operating normally.</p><p><small>May <var>28</var>, <var>21:24</var> UTC</small><br /><strong>Resolved</strong> - This incident has been resolved.</p><p><small>May <var>28</var>, <var>21:19</var> UTC</small><br /><strong>Update</strong> - A fix has been applied and we are seeing some recovery. We will continue to monitor for a bit before marking this issue resolved.</p><p><small>May <var>28</var>, <var>20:53</var> UTC</small><br /><strong>Update</strong> - We are still investigating root cause and remediation options. In the meantime, here is a workaround to be able to pull images from DockerHub:<br /><br />1. Make a free DockerHub account at https://hub.docker.com (or use an existing account if you have one).<br />2. Create a DockerHub secret/PAT from https://hub.docker.com/settings/security (Read permission should be sufficient).<br />3. Go to https://github.com/settings/codespaces<br /><br />Add three Codespace secrets:<br /><br />- DOCKERHUB_CONTAINER_REGISTRY_PASSWORD (equal to the DockerHub PAT you created)<br />- DOCKERHUB_CONTAINER_REGISTRY_SERVER (equal to https://index.docker.io/v1/)<br />- DOCKERHUB_CONTAINER_REGISTRY_USER (equal to your DockerHub username)<br /><br />4. Make sure these secrets are set as visible to the target repo.<br />5. Create/rebuild your Codespace<br /><br />Steps above are distilled from the official docs: https://docs.github.com/en/codespaces/reference/allowing-your-codespace-to-access-a-private-registry#example-secrets</p><p><small>May <var>28</var>, <var>20:53</var> UTC</small><br /><strong>Update</strong> - <i>Duplicate update, same as above</i></p><p><small>May <var>28</var>, <var>20:23</var> UTC</small><br /><strong>Update</strong> - Some Codespaces are currently failing to be properly created for images hosted by DockerHub. Other registries should be unaffected. We are investigating root cause and will report back shortly.</p><p><small>May <var>28</var>, <var>20:17</var> UTC</small><br /><strong>Investigating</strong> - We are investigating reports of degraded performance for Codespaces</p>]]></content>
+<content type='html'><![CDATA[<p><small>May <var>28</var>, <var>21:24</var> UTC</small><br /><strong>Investigating</strong> - On 2024-05-28 between 18:30 and 21:30 UTC, the Codespaces service was degraded. Users with dev container configurations that depended on the DockerHub container registry were unable to create new codespaces unless they provided their own DockerHub registry credentials. We observed a rise of at most 6% of creations entering recovery mode due to this incident.<br /><br />The GitHub Codespaces team worked directly with Docker to mitigate and has engaged with Docker to prevent similar issues in the future.</p><p><small>May <var>28</var>, <var>21:24</var> UTC</small><br /><strong>Resolved</strong> - This incident has been resolved.</p><p><small>May <var>28</var>, <var>21:19</var> UTC</small><br /><strong>Update</strong> - A fix has been applied and we are seeing some recovery. We will continue to monitor for a bit before marking this issue resolved.</p><p><small>May <var>28</var>, <var>20:53</var> UTC</small><br /><strong>Update</strong> - We are still investigating root cause and remediation options. In the meantime, here is a workaround to be able to pull images from DockerHub:<br /><br />1. Make a free DockerHub account at https://hub.docker.com (or use an existing account if you have one).<br />2. Create a DockerHub secret/PAT from https://hub.docker.com/settings/security (Read permission should be sufficient).<br />3. Go to https://github.com/settings/codespaces<br /><br />Add three Codespace secrets:<br /><br />- DOCKERHUB_CONTAINER_REGISTRY_PASSWORD (equal to the DockerHub PAT you created)<br />- DOCKERHUB_CONTAINER_REGISTRY_SERVER (equal to https://index.docker.io/v1/)<br />- DOCKERHUB_CONTAINER_REGISTRY_USER (equal to your DockerHub username)<br /><br />4. Make sure these secrets are set as visible to the target repo.<br />5. Create/rebuild your Codespace<br /><br />Steps above are distilled from the official docs: https://docs.github.com/en/codespaces/reference/allowing-your-codespace-to-access-a-private-registry#example-secrets</p><p><small>May <var>28</var>, <var>20:53</var> UTC</small><br /><strong>Update</strong> - <i>Duplicate update, same as above</i></p><p><small>May <var>28</var>, <var>20:23</var> UTC</small><br /><strong>Update</strong> - Some Codespaces are currently failing to be properly created for images hosted by DockerHub. Other registries should be unaffected. We are investigating root cause and will report back shortly.</p><p><small>May <var>28</var>, <var>20:17</var> UTC</small><br /><strong>Investigating</strong> - We are investigating reports of degraded performance for Codespaces</p>]]></content>
 <author><name>No author available</name></author>
 </entry>
 <entry>
@@ -1687,48 +1794,6 @@ new context, separate from the original will be used. [<a href="https://github.c
 <author><name>No author available</name></author>
 </entry>
 <entry>
-<title>AzureRM Provider Release: v3.104.2</title>
-<link href='https://github.com/hashicorp/terraform-provider-azurerm/releases/tag/v3.104.2'/>
-<id>tag:github.com,2008:Repository/93446042/v3.104.2</id>
-<updated>2024-05-20T23:10:57Z</updated>
-<content type='html'><![CDATA[<p>NOTE: This is a re-release of <code>v3.104.1</code> to include missing changes, please refer to the changelog entries for <code>v3.104.1</code>.</p>]]></content>
-<author><name>github-actions[bot]</name></author>
-</entry>
-<entry>
-<title>GCP Provider Release: v5.30.0</title>
-<link href='https://github.com/hashicorp/terraform-provider-google/releases/tag/v5.30.0'/>
-<id>tag:github.com,2008:Repository/93446075/v5.30.0</id>
-<updated>2024-05-20T17:15:05Z</updated>
-<content type='html'><![CDATA[<p>FEATURES:</p>
-<ul>
-<li><strong>New Data Source:</strong> <code>google_cloud_asset_resources_search_all</code> (<a href="https://github.com/hashicorp/terraform-provider-google/pull/18129">#18129</a>)</li>
-<li><strong>New Resource:</strong> <code>google_compute_interconnect</code> (<a href="https://github.com/hashicorp/terraform-provider-google/pull/18064">#18064</a>)</li>
-<li><strong>New Resource:</strong> <code>google_network_services_lb_traffic_extension</code> (<a href="https://github.com/hashicorp/terraform-provider-google/pull/18138">#18138</a>)</li>
-</ul>
-<p>IMPROVEMENTS:</p>
-<ul>
-<li>compute:  added <code>kms_key_name</code> field to <code>google_bigquery_connection</code> resource (<a href="https://github.com/hashicorp/terraform-provider-google/pull/18057">#18057</a>)</li>
-<li>compute: added <code>auto_network_tier</code> field to <code>google_compute_router_nat</code> resource (<a href="https://github.com/hashicorp/terraform-provider-google/pull/18055">#18055</a>)</li>
-<li>compute: promoted <code>enable_ipv4</code>, <code>ipv4_nexthop_address</code> and <code>peer_ipv4_nexthop_address</code> fields in <code>google_compute_router_peer</code> resource to GA (<a href="https://github.com/hashicorp/terraform-provider-google/pull/18056">#18056</a>)</li>
-<li>compute: promoted <code>identifier_range</code> field in <code>google_compute_router</code> resource to GA (<a href="https://github.com/hashicorp/terraform-provider-google/pull/18056">#18056</a>)</li>
-<li>compute: promoted <code>ip_version</code> field in <code>google_compute_router_interface</code> resource to GA (<a href="https://github.com/hashicorp/terraform-provider-google/pull/18056">#18056</a>)</li>
-<li>container: added <code>KUBELET</code> and <code>CADVISOR</code> options to <code>monitoring_config.enable_components</code> in <code>google_container_cluster</code> resource (<a href="https://github.com/hashicorp/terraform-provider-google/pull/18090">#18090</a>)</li>
-<li>dataproc: added <code>local_ssd_interface</code> to <code>google_dataproc_cluster</code> resource (<a href="https://github.com/hashicorp/terraform-provider-google/pull/18137">#18137</a>)</li>
-<li>dataprocmetastore: promoted <code>google_dataproc_metastore_federation</code> to GA (<a href="https://github.com/hashicorp/terraform-provider-google/pull/18084">#18084</a>)</li>
-<li>dlp: added <code>cloud_sql_target</code> field to <code>google_data_loss_prevention_discovery_config</code> resource (<a href="https://github.com/hashicorp/terraform-provider-google/pull/18063">#18063</a>)</li>
-<li>netapp: added <code>FLEX</code> value to field <code>service_level</code> in <code>google_netapp_storage_pool</code> resource (<a href="https://github.com/hashicorp/terraform-provider-google/pull/18088">#18088</a>)</li>
-<li>networksecurity: added <code>trust_config</code>, <code>min_tls_version</code>, <code>tls_feature_profile</code> and <code>custom_tls_features</code> fields to <code>google_network_security_tls_inspection_policy</code> resource (<a href="https://github.com/hashicorp/terraform-provider-google/pull/18139">#18139</a>)</li>
-<li>networkservices: supported in-place update for <code>gateway_security_policy</code> and <code>certificate_urls</code> fields in <code>google_network_services_gateway</code> resource (<a href="https://github.com/hashicorp/terraform-provider-google/pull/18082">#18082</a>)</li>
-</ul>
-<p>BUG FIXES:</p>
-<ul>
-<li>compute: fixed a perma-diff on <code>machine_type</code> field in <code>google_compute_instance</code> resource (<a href="https://github.com/hashicorp/terraform-provider-google/pull/18071">#18071</a>)</li>
-<li>compute: fixed a perma-diff on <code>type</code> field in <code>google_compute_disk</code> resource (<a href="https://github.com/hashicorp/terraform-provider-google/pull/18071">#18071</a>)</li>
-<li>storage: fixed update issue for <code>lifecycle_rule.condition.custom_time_before</code> and <code>lifecycle_rule.condition.noncurrent_time_before</code> in <code>google_storage_bucket</code> resource (<a href="https://github.com/hashicorp/terraform-provider-google/pull/18127">#18127</a>)</li>
-</ul>]]></content>
-<author><name>github-actions[bot]</name></author>
-</entry>
-<entry>
 <title>GitHub Status Release: We are investigating reports of degraded performance.</title>
 <link href='https://www.githubstatus.com/incidents/915nn7rmqth9'/>
 <id>tag:www.githubstatus.com,2005:Incident/20833952</id>
@@ -1745,27 +1810,11 @@ new context, separate from the original will be used. [<a href="https://github.c
 <author><name>No author available</name></author>
 </entry>
 <entry>
-<title>GitHub Status Release: Incident with Actions</title>
-<link href='https://www.githubstatus.com/incidents/2bglpcjvg7xb'/>
-<id>tag:www.githubstatus.com,2005:Incident/20800199</id>
-<updated>2024-05-16T05:15:35Z</updated>
-<content type='html'><![CDATA[<p><small>May <var>16</var>, <var>05:15</var> UTC</small><br /><strong>Resolved</strong> - On May 16, 2024, between 4:10 UTC and 5:02 UTC customers experienced various delays in background jobs, primarily UI updates for Actions. This issue was due to degradation in our background job service affecting 22.4% of total jobs.  Across all affected services, the average job delay was 2m 22s.  Actions jobs themselves were unaffected, this issue affected the timeliness of UI updates, with an average delay of 11m 40s and a maximum of 20m 14s.<br /><br />This incident was due to a performance problem on a single processing node, where Actions UI updates were being processed.  Additionally, a misconfigured monitor did not alert immediately, resulting in a 25m late detection time and a 37m total increase in time to mitigate.   <br /><br />We mitigated the incident by removing the problem node from the cluster and service was restored.  No data was lost, and all jobs executed successfully.<br /><br />To reduce our time to detection and mitigation of issues like this one in the future, we have repaired our misconfigured monitor and added additional monitoring to this service. <br /></p><p><small>May <var>16</var>, <var>04:43</var> UTC</small><br /><strong>Investigating</strong> - We are investigating reports of degraded performance for Actions</p>]]></content>
-<author><name>No author available</name></author>
-</entry>
-<entry>
 <title>Hashicorp Status Release: HCP Terraform - Processing runs were slow for a small subset of customers</title>
 <link href='https://status.hashicorp.com/incidents/32d6t3nstn7g'/>
 <id>tag:status.hashicorp.com,2005:Incident/20795389</id>
 <updated>2024-05-15T15:29:14Z</updated>
 <content type='html'><![CDATA[<p><small>May <var>15</var>, <var>15:29</var> UTC</small><br /><strong>Resolved</strong> - On Wed 15th May 2024, between 04:00 and 14:28 UTC, a small subset of customers may have experienced slowness in HCP Terraform runs processing, due to saturation in one of our internal queueing systems.</p>]]></content>
-<author><name>No author available</name></author>
-</entry>
-<entry>
-<title>GitHub Status Release: We are investigating reports of degraded performance.</title>
-<link href='https://www.githubstatus.com/incidents/bfkxf0w61z1n'/>
-<id>tag:www.githubstatus.com,2005:Incident/20787399</id>
-<updated>2024-05-14T21:04:49Z</updated>
-<content type='html'><![CDATA[<p><small>May <var>14</var>, <var>21:04</var> UTC</small><br /><strong>Resolved</strong> - On May 14, 2024 between 18:00 UTC and 20:10 UTC, GitHub Actions performance was degraded and larger hosted runners using <code>linux-x64</code> images (Ubuntu20, Ubuntu22, Ubuntu24-beta) experienced longer than normal job start up times. Approximately 25% of all runs targeting larger hosted runners queued during this time were slow to start, with a median wait time of 1 minute, 55 seconds.<br /><br />The issue was caused by a downstream dependency overloading, which impacted our machine setup process. Each larger hosted runner job is run on a fresh VM, and one of the setup steps is installing the Actions agent. Up to the point of this incident, we would pull the latest agent version from the GitHub release and install it on the VM. However, during this incident the speciific GitHub release for the Linux x64 Actions agent became overloaded, and our agent downloads were severely throttled. This throttling led to timeouts during the download, and caused our hosted runner system to conclude the VMs were failing to start. We need the Actions agent online to start serving jobs, and with the download timing out, our service assumed the runner wasn't starting up successfully. This failure to start up led to those VMs being reset again and again instead of serving jobs. We mitigated the issue by falling back to a cached version of the Actions agent present on our image.<br /><br />We have further refined the fallback system to automatically use the cached agent binaries, and added new functionality to allow for easier agent downloading from other locations. Both of these measures should eliminate future impacts from similar downstream impact.</p><p><small>May <var>14</var>, <var>20:47</var> UTC</small><br /><strong>Update</strong> - We are seeing recovery for queue times on Actions Larger Runners and are continuing to monitor full recovery.</p><p><small>May <var>14</var>, <var>20:09</var> UTC</small><br /><strong>Update</strong> - We've applied a mitigation to fix the issues with queuing and running Actions jobs. We are seeing improvements in telemetry and are monitoring for full recovery.</p><p><small>May <var>14</var>, <var>19:16</var> UTC</small><br /><strong>Update</strong> - We are continuing to investigate long queue times for Actions Larger Runners</p><p><small>May <var>14</var>, <var>18:40</var> UTC</small><br /><strong>Update</strong> - We are investigating long queue times for Actions Larger Runners</p><p><small>May <var>14</var>, <var>18:37</var> UTC</small><br /><strong>Investigating</strong> - We are currently investigating this issue.</p>]]></content>
 <author><name>No author available</name></author>
 </entry>
 <entry>
@@ -1777,43 +1826,11 @@ new context, separate from the original will be used. [<a href="https://github.c
 <author><name>No author available</name></author>
 </entry>
 <entry>
-<title>GitHub Status Release: Incident with Actions</title>
-<link href='https://www.githubstatus.com/incidents/f7jl0mdd2jr5'/>
-<id>tag:www.githubstatus.com,2005:Incident/20778761</id>
-<updated>2024-05-13T20:10:42Z</updated>
-<content type='html'><![CDATA[<p><small>May <var>13</var>, <var>20:10</var> UTC</small><br /><strong>Resolved</strong> - On May 13, 2024, between 19:03 UTC and 19:57 UTC, some customers experienced delays in receiving status updates for in-progress GitHub Actions workflow runs. The root cause was identified to be a bug in the logic for checking the state of a configuration which would only manifest under very specific conditions and cause exceptions. These exceptions impacted the backend process for handling workflow run status updates and caused jobs with any annotations to not get updated properly. Jobs without any annotations were not affected. The affected jobs during the incident will get marked as failed after 24 hours, and affected customers will need to manually retry the jobs they want to execute.<br /><br />We resolved the incident by reverting the problematic change. We are enhancing our process for deploying changes and reassessing our monitoring of relevant subsystems to prevent similar issues in the future.<br /></p><p><small>May <var>13</var>, <var>20:10</var> UTC</small><br /><strong>Update</strong> - We are seeing signs of recovery for actions jobs</p><p><small>May <var>13</var>, <var>19:51</var> UTC</small><br /><strong>Investigating</strong> - We are investigating reports of degraded performance for Actions</p>]]></content>
-<author><name>No author available</name></author>
-</entry>
-<entry>
-<title>GitHub Status Release: Incident with Copilot</title>
-<link href='https://www.githubstatus.com/incidents/lpd7npwx7wb5'/>
-<id>tag:www.githubstatus.com,2005:Incident/20775725</id>
-<updated>2024-05-13T15:44:36Z</updated>
-<content type='html'><![CDATA[<p><small>May <var>13</var>, <var>15:44</var> UTC</small><br /><strong>Resolved</strong> - Incident Report: May 13, 2024 (lasting approximately 4 hours)<br /><br />On May 13 at 10:40 AM UTC, GitHub Copilot Chat began returning error responses to 6% of users. The problem was identified, and a status update was provided shortly after. A mitigation strategy was implemented by 14:30 UTC, which mitigated the impact.<br /><br />The root cause of the incident was a combination of issues in the request handling process. Specifically, some requests were malformed, which resulted in being incorrectly routed to the wrong deployment. That deployment wasn’t resilient to the malformed requests and resulted in errors.<br /><br />To mitigate the immediate impact, requests were routed away from the failing deployment. This temporarily reduced the number of errors while the underlying issue was investigated and resolved.<br /><br />To prevent similar incidents in the future, we have enhanced validation checks for incoming requests to ensure proper handling and routing. In addition, we upgraded backend systems to provide more robust error handling and observability.<br /></p><p><small>May <var>13</var>, <var>14:56</var> UTC</small><br /><strong>Update</strong> - We are applying configuration changes to mitigate impact to Copilot Chat users.</p><p><small>May <var>13</var>, <var>14:13</var> UTC</small><br /><strong>Update</strong> - We continue to investigate the root cause of elevated errors in Copilot Chat.</p><p><small>May <var>13</var>, <var>13:27</var> UTC</small><br /><strong>Update</strong> - Copilot is experiencing degraded performance. We are continuing to investigate.</p><p><small>May <var>13</var>, <var>13:24</var> UTC</small><br /><strong>Update</strong> - We are investigating an increase in exceptions impacting Copilot Chat usage from IDEs.</p><p><small>May <var>13</var>, <var>13:23</var> UTC</small><br /><strong>Investigating</strong> - We are currently investigating this issue.</p>]]></content>
-<author><name>No author available</name></author>
-</entry>
-<entry>
-<title>GitHub Status Release: Incident with Issues, API Requests and Pull Requests</title>
-<link href='https://www.githubstatus.com/incidents/tsrh60nkbchl'/>
-<id>tag:www.githubstatus.com,2005:Incident/20730441</id>
-<updated>2024-05-07T15:55:12Z</updated>
-<content type='html'><![CDATA[<p><small>May <var> 7</var>, <var>15:55</var> UTC</small><br /><strong>Resolved</strong> - Starting on May 7th, 2024 at 14:00 UTC, our elasticsearch cluster that powers Issues and Pull Requests became unresponsive correlating to a spike in usage.  This affected GitHub customers who were trying to search issues and pull requests.<br /><br />We mitigated this incident by adding additional cluster members which increased the resources available to the cluster.  We are working to add additional safeguards to our endpoints.  We are also continuing to investigate the root cause of the instability and if the index needs to be re-sharded for future risk mitigation.</p><p><small>May <var> 7</var>, <var>15:25</var> UTC</small><br /><strong>Update</strong> - We are seeing recovery, and are continuing to monitor issues and pull requests search results.</p><p><small>May <var> 7</var>, <var>15:00</var> UTC</small><br /><strong>Update</strong> - We’re investigating problems with our Issues and Pull Requests search cluster that are impacting result list pages and endpoints.</p><p><small>May <var> 7</var>, <var>14:24</var> UTC</small><br /><strong>Update</strong> - We're investigating page load problems with issues and pull requests.</p><p><small>May <var> 7</var>, <var>14:23</var> UTC</small><br /><strong>Investigating</strong> - We are investigating reports of degraded performance for Issues, API Requests and Pull Requests</p>]]></content>
-<author><name>No author available</name></author>
-</entry>
-<entry>
 <title>Hashicorp Status Release: Identified an incident with IAM Group Management</title>
 <link href='https://status.hashicorp.com/incidents/88njcm436m3x'/>
 <id>tag:status.hashicorp.com,2005:Incident/20722752</id>
 <updated>2024-05-06T22:01:08Z</updated>
 <content type='html'><![CDATA[<p><small>May <var> 6</var>, <var>22:01</var> UTC</small><br /><strong>Resolved</strong> - Our Engineering team has resolved the following issue: <br /><br />IAM Group Management Broken<br /><br />You can now manage groups and group membership. Groups can also once again be added and removed from Projects.<br /><br />These systems should now be operating normally. If you continue to experience any problems, please open a ticket with our support team.</p><p><small>May <var> 6</var>, <var>20:47</var> UTC</small><br /><strong>Monitoring</strong> - Our Engineering team has implemented a fix to resolve the issue with:<br /><br />Removal of members from an IAM Group.<br /><br />We are monitoring the situation closely and will post an update as soon as the issue is fully resolved.</p><p><small>May <var> 6</var>, <var>19:44</var> UTC</small><br /><strong>Identified</strong> - Our Engineering team has identified the cause for the following incident: <br /><br />IAM Group members cannot be removed from an IAM Group.<br /><br />We are actively working on a fix. Once we have additional information, we will share another update.</p><p><small>May <var> 6</var>, <var>18:35</var> UTC</small><br /><strong>Monitoring</strong> - Our Engineering team has implemented a fix to resolve the issue with:<br /><br />Management of IAM Groups<br /><br />We are monitoring the situation closely and will post an update as soon as the issue is fully resolved.</p><p><small>May <var> 6</var>, <var>17:19</var> UTC</small><br /><strong>Identified</strong> - Our Engineering team has identified the cause for the following incident: <br /><br />A feature flag conflict is preventing some users from editing IAM Groups or changing project assignments of IAM Groups.<br /><br />We are actively working on a fix. Once we have additional information, we will share another update.</p><p><small>May <var> 6</var>, <var>17:03</var> UTC</small><br /><strong>Investigating</strong> - Our engineering team is investigating an issue with the following:<br /><br />HCP Portal IAM Group Editing<br /><br />During this time, users may experience the following:<br /><br />Some users may be experiencing problems editing IAM Groups or changing project assignments of IAM Groups.<br /><br />We will share another update as soon as we have more information.</p>]]></content>
-<author><name>No author available</name></author>
-</entry>
-<entry>
-<title>GitHub Status Release: We are investigating reports of degraded performance.</title>
-<link href='https://www.githubstatus.com/incidents/6wlqmlpsn6by'/>
-<id>tag:www.githubstatus.com,2005:Incident/20693830</id>
-<updated>2024-05-03T02:45:29Z</updated>
-<content type='html'><![CDATA[<p><small>May <var> 3</var>, <var>02:45</var> UTC</small><br /><strong>Resolved</strong> - Starting on May 2, 2024 at 8:00 UTC through May 3 2:45 UTC the GitHub Enterprise Server (GHES) Azure Marketplace offering was degraded and customers were not able to create GHES VMs using our provided GHES images. This affected all GitHub customers that were attempting to deploy VMs in Azure using either the API or the Azure Portal. This was due to an incorrect configuration of our Azure Marketplace offering causing the images to be no longer visible to Azure users.<br /><br />We mitigated the incident by working with our partners in Azure to restore access to the affected images.<br /><br />We are working with our partners in Azure to add additional safeguards to ensure our images remain available to customers at all times. In addition, we continue to work with on restoring access to some older patch versions of GHES that remain unavailable at this time.</p><p><small>May <var> 3</var>, <var>02:37</var> UTC</small><br /><strong>Update</strong> - Azure Marketplace links have been restored and we are validating the images</p><p><small>May <var> 3</var>, <var>01:44</var> UTC</small><br /><strong>Update</strong> - Work is in progress to restore Azure Marketplace.</p><p><small>May <var> 3</var>, <var>01:05</var> UTC</small><br /><strong>Update</strong> - GHES Images on Azure are now restored and are available via the Azure CLI. Azure Marketplace listing is still not yet available. We will provide updates on the progress of the Azure Marketplace restoration.</p><p><small>May <var> 3</var>, <var>00:32</var> UTC</small><br /><strong>Update</strong> - Work is in progress to restore images. ETA is within 30 minutes.</p><p><small>May <var> 2</var>, <var>23:58</var> UTC</small><br /><strong>Update</strong> - Work is in progress to restore images, however there is no ETA yet for when restore will be complete</p><p><small>May <var> 2</var>, <var>23:17</var> UTC</small><br /><strong>Update</strong> - Work is in progress to restore images, however there is no ETA yet for when restore will be complete</p><p><small>May <var> 2</var>, <var>22:43</var> UTC</small><br /><strong>Update</strong> - Work in progress to restore images</p><p><small>May <var> 2</var>, <var>22:09</var> UTC</small><br /><strong>Update</strong> - We have identified the issue and are working to restore GHES VHD images.</p><p><small>May <var> 2</var>, <var>20:26</var> UTC</small><br /><strong>Update</strong> - We are actively engaged and working to mitigate the issue.</p><p><small>May <var> 2</var>, <var>19:48</var> UTC</small><br /><strong>Update</strong> - We have identified the root cause and are working to mitigate the issue.</p><p><small>May <var> 2</var>, <var>19:07</var> UTC</small><br /><strong>Update</strong> - Currently customers who use Azure Marketplace are unable to access GHES VHD images. This prevents customers who use Azure from spinning up new GHES instances (running instances are unaffected and are still able to hotpatch to new versions as well)</p><p><small>May <var> 2</var>, <var>19:07</var> UTC</small><br /><strong>Investigating</strong> - We are currently investigating this issue.</p>]]></content>
 <author><name>No author available</name></author>
 </entry>
 <entry>
@@ -1870,38 +1887,6 @@ new context, separate from the original will be used. [<a href="https://github.c
 <id>tag:status.hashicorp.com,2005:Incident/20459557</id>
 <updated>2024-04-05T19:32:41Z</updated>
 <content type='html'><![CDATA[<p><small>Apr <var> 5</var>, <var>19:32</var> UTC</small><br /><strong>Resolved</strong> - Our Engineering team has resolved the issue affecting user's ability to view their billing information in the portal.<br /><br />These systems should now be operating normally. If you continue to experience any problems, please open a ticket with our support team.</p><p><small>Apr <var> 5</var>, <var>18:07</var> UTC</small><br /><strong>Monitoring</strong> - Our Engineering team has implemented a fix to resolve the issue with viewing billing information in the portal.<br /><br />We are monitoring the situation closely and will post an update as soon as the issue is fully resolved.</p><p><small>Apr <var> 5</var>, <var>17:56</var> UTC</small><br /><strong>Investigating</strong> - Our engineering team is investigating an issue affecting customer's abilities to view their billing information in the portal.<br /><br />During this time, users may see an error message indicating that they can't view their most recent billing usage, and may be unable to perform other billing related tasks.<br /><br />We will share another update as soon as we have more information.</p>]]></content>
-<author><name>No author available</name></author>
-</entry>
-<entry>
-<title>Hashicorp Status Release: HCP Boundary Maintenance:  March 2024</title>
-<link href='https://status.hashicorp.com/incidents/pm9hy3s6gvyz'/>
-<id>tag:status.hashicorp.com,2005:Incident/20237260</id>
-<updated>2024-03-30T14:57:14Z</updated>
-<content type='html'><![CDATA[<p><small>Mar <var>30</var>, <var>14:57</var> UTC</small><br /><strong>Resolved</strong> - All maintenance was completed successfully. Service has been fully restored.</p><p><small>Mar <var>30</var>, <var>14:00</var> UTC</small><br /><strong>Update</strong> - The HCP Boundary maintenance is now beginning. We expect the maintenance will be completed within 1 hour.<br /><br />During this time, HCP Boundary and all Boundary clusters will be unavailable. Sessions will be dropped and session establishment will fail until the maintenance completes. We will post updates as necessary throughout the maintenance period.</p><p><small>Mar <var>13</var>, <var>20:32</var> UTC</small><br /><strong>Identified</strong> - HCP Boundary will undergo planned database maintenance on Saturday, March 30th beginning at 14:00 UTC. We expect this maintenance to be completed within 1 hour.<br /><br />During this time, HCP Boundary and all Boundary clusters will be unavailable. Sessions will be dropped and session establishment will fail until the maintenance completes. We will post updates as necessary throughout the maintenance period.</p>]]></content>
-<author><name>No author available</name></author>
-</entry>
-<entry>
-<title>Hashicorp Status Release: Emergency Maintenance</title>
-<link href='https://status.hashicorp.com/incidents/2l88vc756nyd'/>
-<id>tag:status.hashicorp.com,2005:Incident/20381640</id>
-<updated>2024-03-28T00:18:28Z</updated>
-<content type='html'><![CDATA[<p><small>Mar <var>28</var>, <var>00:18</var> UTC</small><br /><strong>Resolved</strong> - HCP Emergency Maintenance is now complete.</p><p><small>Mar <var>27</var>, <var>23:29</var> UTC</small><br /><strong>Update</strong> - HCP Boundary Maintenance is still ongoing and is expected to complete in 1 hour 00:30 UTC. During this time, HCP Boundary sessions may disconnect unexpectedly, but reconnecting will be possible. We will continue to post updates as necessary throughout the maintenance period.</p><p><small>Mar <var>27</var>, <var>20:30</var> UTC</small><br /><strong>Identified</strong> - HCP Boundary will undergo emergency maintenance on 27, March, 2024 beginning at 20:30 UTC . We expect this maintenance to be complete within three hours. During this time, HCP Boundary sessions may disconnect unexpectedly, but reconnecting will be possible. We will post updates as necessary throughout the maintenance period.</p>]]></content>
-<author><name>No author available</name></author>
-</entry>
-<entry>
-<title>Hashicorp Status Release: Terraform Cloud Degradation</title>
-<link href='https://status.hashicorp.com/incidents/94hxnksdgc4h'/>
-<id>tag:status.hashicorp.com,2005:Incident/20354315</id>
-<updated>2024-03-25T17:30:00Z</updated>
-<content type='html'><![CDATA[<p><small>Mar <var>25</var>, <var>17:30</var> UTC</small><br /><strong>Resolved</strong> - Terraform Cloud engineers deployed a routine database migration that renamed an unused column. While the engineering team believed the change to be safe, it resulted in application errors during the deployment window. During this time there was an increase in error rates and latency. The issue has since been resolved.</p>]]></content>
-<author><name>No author available</name></author>
-</entry>
-<entry>
-<title>Hashicorp Status Release: Stuck / Slow Runs and Slow API Calls</title>
-<link href='https://status.hashicorp.com/incidents/t62dzq30dqgr'/>
-<id>tag:status.hashicorp.com,2005:Incident/20302312</id>
-<updated>2024-03-19T16:52:56Z</updated>
-<content type='html'><![CDATA[<p><small>Mar <var>19</var>, <var>16:52</var> UTC</small><br /><strong>Resolved</strong> - All Terraform Cloud systems appear nominal.</p><p><small>Mar <var>19</var>, <var>16:19</var> UTC</small><br /><strong>Monitoring</strong> - Emergency maintenance was successful in addressing the database problem. We are continuing to monitor system health.</p><p><small>Mar <var>19</var>, <var>16:05</var> UTC</small><br /><strong>Identified</strong> - We have identified a database problem and are performing emergency maintenance to mitigate the issue.</p><p><small>Mar <var>19</var>, <var>15:40</var> UTC</small><br /><strong>Investigating</strong> - Our Engineering team is investigating problems with the responsiveness of the Terraform Cloud API and degraded Run Performance.</p>]]></content>
 <author><name>No author available</name></author>
 </entry>
 <entry>
