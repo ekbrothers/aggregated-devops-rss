@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 <title>Aggregated GitHub Releases</title>
 <link href="https://example.com/feed.xml" rel="self"/>
-<updated>2024-08-30T15:05:05Z</updated>
+<updated>2024-09-06T15:04:58Z</updated>
 <author><name>Aggregated Feed</name></author>
 <id>urn:uuid:aggregated-feed</id>
 <entry>
@@ -14,11 +14,156 @@
 <author><name>No author available</name></author>
 </entry>
 <entry>
+<title>AzureRM Provider Release: v4.1.0</title>
+<link href='https://github.com/hashicorp/terraform-provider-azurerm/releases/tag/v4.1.0'/>
+<id>tag:github.com,2008:Repository/93446042/v4.1.0</id>
+<updated>2024-09-06T02:54:43Z</updated>
+<content type='html'><![CDATA[<p>ENHANCEMENTS:</p>
+<ul>
+<li>dependencies - bump <code>hashicorp/go-azure-sdk</code> to <code>v0.20240903.1111904</code> (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/27268">#27268</a>)</li>
+<li>Virtual Machine Scale Sets - upgrade api version from <code>2024-03-01</code> to <code>2024-07-01</code> (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/27230">#27230</a>)</li>
+<li><code>hdinsights</code> - update the HDInsights Node definition validation of VM sizes to include new V5 types (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/27270">#27270</a>)</li>
+<li><code>azurerm_api_management_logger</code> - support for the <code>application_insights.connection_string</code> property (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/27137">#27137</a>)</li>
+<li><code>azurerm_bot_service_azure_bot</code> - will now send the value for the <code>developer_app_insights_api_key</code> property (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/27280">#27280</a>)</li>
+<li><code>azurerm_netapp_volume</code> - support for the <code>smb3_protocol_encryption_enabled</code> property (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/27228">#27228</a>)</li>
+<li><code>azurerm_subnet</code> - support <code>Microsoft.DevOpsInfrastructure</code> as delegation service (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/27259">#27259</a>)</li>
+</ul>
+<p>BUG FIXES:</p>
+<ul>
+<li><code>azurerm_mysql_flexible_server</code> - correctly set <code>source_server_id</code> in the state file (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/27295">#27295</a>)</li>
+<li><code>azurerm_cosmosdb_account</code> - the <code>ip_range_filter</code> property now supports IPV4 addresses (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/27208">#27208</a>)</li>
+<li><code>azurerm_cosmosdb_account</code> - added state migration for <code>ip_range_filter</code> underlying type change from <code>string</code> to <code>set</code> (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/27276">#27276</a>)</li>
+<li><code>azurerm_linux_virtual_machine</code> - the <code>admin_ssh_key.public_key</code> property now supports ed25519 ssh keys (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/27202">#27202</a>)</li>
+<li><code>azurerm_sentinel_automation_rule</code> - no longer panics when using <code>condition_json</code>  (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/27269">#27269</a>)</li>
+<li><code>azurerm_kubernetes_cluster</code> -  the <code>host_encryption_enabled</code> and <code>node_public_ip_enabled</code> properties are now set correctly (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/27218">#27218</a>)</li>
+</ul>]]></content>
+<author><name>github-actions[bot]</name></author>
+</entry>
+<entry>
+<title>Hashicorp Status Release: HCP Boundary September Scheduled Maintenance</title>
+<link href='https://status.hashicorp.com/incidents/q4clwpyn1xs4'/>
+<id>tag:status.hashicorp.com,2005:Incident/22067690</id>
+<updated>2024-09-05T20:41:51Z</updated>
+<content type='html'><![CDATA[<p><small>Sep <var> 5</var>, <var>20:41</var> UTC</small><br /><strong>Investigating</strong> - HCP Boundary will undergo planned maintenance on Saturday, September 14th beginning at 14:00 UTC. We expect this maintenance to be complete within four hours. During this time, HCP Boundary sessions may disconnect unexpectedly and new sessions may not be created. We will post updates as necessary throughout the maintenance period.</p>]]></content>
+<author><name>No author available</name></author>
+</entry>
+<entry>
+<title>GitHub Status Release: Disruption with some GitHub services</title>
+<link href='https://www.githubstatus.com/incidents/9dyp7zt86rp5'/>
+<id>tag:www.githubstatus.com,2005:Incident/22064375</id>
+<updated>2024-09-05T17:24:08Z</updated>
+<content type='html'><![CDATA[<p><small>Sep <var> 5</var>, <var>17:24</var> UTC</small><br /><strong>Resolved</strong> - This incident has been resolved.</p><p><small>Sep <var> 5</var>, <var>16:49</var> UTC</small><br /><strong>Update</strong> - We continue to work on making GitHub Connect setup available for customers that experienced errors since Sept 2.  We will share another update as we make progress.</p><p><small>Sep <var> 5</var>, <var>16:15</var> UTC</small><br /><strong>Update</strong> - We've reverted a related change and customers can now setup GitHub Connect again. However, customers who attempted to setup GitHub Connect after September 2nd that saw a 404 will see continued failures until we complete an additional repair step. We will provide additional updates as this work progresses.</p><p><small>Sep <var> 5</var>, <var>15:56</var> UTC</small><br /><strong>Update</strong> - Enterprise administrators are seeing failures in the form of 404s when attempting to setup GitHub Connect for the first time. Existing Connect setups are not impacted. We are working on a fix for this issue.</p><p><small>Sep <var> 5</var>, <var>15:55</var> UTC</small><br /><strong>Investigating</strong> - We are currently investigating this issue.</p>]]></content>
+<author><name>No author available</name></author>
+</entry>
+<entry>
+<title>Hashicorp Status Release: HCP Boundary September Maintenance</title>
+<link href='https://status.hashicorp.com/incidents/bf2ggjmrw2hz'/>
+<id>tag:status.hashicorp.com,2005:Incident/22038484</id>
+<updated>2024-09-05T08:52:34Z</updated>
+<content type='html'><![CDATA[<p><small>Sep <var> 5</var>, <var>08:52</var> UTC</small><br /><strong>Resolved</strong> - These systems should now be operating normally. If you continue to experience any problems, please open a ticket with our support team.</p><p><small>Sep <var> 3</var>, <var>20:16</var> UTC</small><br /><strong>Update</strong> - HCP Boundary will undergo planned maintenance on Saturday, September 14th beginning at 14:00 UTC. We expect this maintenance to be complete within two hours. During this time, HCP Boundary sessions may disconnect unexpectedly. We will post updates as necessary throughout the maintenance period.</p><p><small>Sep <var> 3</var>, <var>14:30</var> UTC</small><br /><strong>Investigating</strong> - HCP Boundary will undergo planned maintenance on Saturday, September 14th 20th beginning at 14:00 UTC. We expect this maintenance to be complete within two hours. During this time, HCP Boundary sessions may disconnect unexpectedly. We will post updates as necessary throughout the maintenance period.</p>]]></content>
+<author><name>No author available</name></author>
+</entry>
+<entry>
+<title>Hashicorp Status Release: HCP Portal Audit Log Viewer Errors</title>
+<link href='https://status.hashicorp.com/incidents/rxwxw4j8bvyr'/>
+<id>tag:status.hashicorp.com,2005:Incident/21797121</id>
+<updated>2024-09-05T00:00:24Z</updated>
+<content type='html'><![CDATA[<p><small>Sep <var> 5</var>, <var>00:00</var> UTC</small><br /><strong>Resolved</strong> - This incident has been resolved.</p><p><small>Sep <var> 4</var>, <var>23:57</var> UTC</small><br /><strong>Update</strong> - Our Engineering team has identified the cause for audit log viewing errors. We plan to perform a maintenance activity by 9/18 to resolve this issue.</p><p><small>Sep <var> 3</var>, <var>21:59</var> UTC</small><br /><strong>Identified</strong> - Our Engineering team has identified the cause for audit log viewing errors. We will provide an update once this issue is fully resolved.</p><p><small>Aug <var>22</var>, <var>18:35</var> UTC</small><br /><strong>Monitoring</strong> - Our Engineering team has implemented a fix to resolve audit log viewing and is monitoring the situation. Users may see intermittent audit log viewing failures as the system is recovering. We will post an update as soon as the issue is fully resolved.</p><p><small>Aug <var>22</var>, <var>16:44</var> UTC</small><br /><strong>Update</strong> - Our engineering team is continuing to investigate an issue with audit log viewing. During this time, users may experience intermittent audit log viewing failures, however audit log events are still being recorded. We will share another update as soon as we have more information.</p><p><small>Aug <var>19</var>, <var>03:57</var> UTC</small><br /><strong>Update</strong> - Audit event search remains degraded at this time. Events are continuing to be processed in the meanwhile.</p><p><small>Aug <var>19</var>, <var>02:21</var> UTC</small><br /><strong>Investigating</strong> - We're investigating increased latency for viewing consul cluster and HVS app audit events through the Portal.</p>]]></content>
+<author><name>No author available</name></author>
+</entry>
+<entry>
+<title>Hashicorp Status Release: HCP Terraform Latency Degradation</title>
+<link href='https://status.hashicorp.com/incidents/lx2j47kxxswb'/>
+<id>tag:status.hashicorp.com,2005:Incident/22055668</id>
+<updated>2024-09-04T23:33:52Z</updated>
+<content type='html'><![CDATA[<p><small>Sep <var> 4</var>, <var>23:33</var> UTC</small><br /><strong>Resolved</strong> - Our engineers have validated the healthy state of our systems</p><p><small>Sep <var> 4</var>, <var>23:01</var> UTC</small><br /><strong>Monitoring</strong> - The systems are beginning to show resolution and return to health. Our engineering team will continue to monitor</p><p><small>Sep <var> 4</var>, <var>22:36</var> UTC</small><br /><strong>Investigating</strong> - Our engineering team is investigating an issue with TFC Agents experiencing elevated latency and increased errors.<br /><br />During this time customers may experience Terraform Runs getting stuck, and we ask that you do not retry them at this time.<br /><br />We will share another update as soon as we have more information or in 30 minutes.</p>]]></content>
+<author><name>No author available</name></author>
+</entry>
+<entry>
+<title>GCP Provider Release: v6.1.0</title>
+<link href='https://github.com/hashicorp/terraform-provider-google/releases/tag/v6.1.0'/>
+<id>tag:github.com,2008:Repository/93446075/v6.1.0</id>
+<updated>2024-09-04T17:08:55Z</updated>
+<content type='html'><![CDATA[<p>FEATURES:</p>
+<ul>
+<li><strong>New Data Source:</strong> <code>google_kms_crypto_key_latest_version</code> (<a href="https://github.com/hashicorp/terraform-provider-google/pull/19249">#19249</a>)</li>
+<li><strong>New Data Source:</strong> <code>google_kms_crypto_key_versions</code> (<a href="https://github.com/hashicorp/terraform-provider-google/pull/19241">#19241</a>)</li>
+</ul>
+<p>IMPROVEMENTS:</p>
+<ul>
+<li>databasemigrationservice: added support in <code>google_database_migration_service_connection_profile</code> for creating DMS connection profiles that link to existing Cloud SQL instances/AlloyDB clusters. (<a href="https://github.com/hashicorp/terraform-provider-google/pull/19291">#19291</a>)</li>
+<li>alloydb: added <code>subscription_type</code> and <code>trial_metadata</code> field to <code>google_alloydb_cluster</code> resource (<a href="https://github.com/hashicorp/terraform-provider-google/pull/19262">#19262</a>)</li>
+<li>bigquery: added <code>encryption_configuration</code> field to <code>google_bigquery_data_transfer_config</code> resource (<a href="https://github.com/hashicorp/terraform-provider-google/pull/19267">#19267</a>)</li>
+<li>bigqueryanalyticshub: added <code>selected_resources</code>, and <code>restrict_direct_table_access</code> to <code>google_bigquery_analytics_hub_listing</code> resource (<a href="https://github.com/hashicorp/terraform-provider-google/pull/19244">#19244</a>)</li>
+<li>bigqueryanalyticshub: added <code>sharing_environment_config</code> to <code>google_bigquery_analytics_hub_data_exchange</code> resource (<a href="https://github.com/hashicorp/terraform-provider-google/pull/19244">#19244</a>)</li>
+<li>cloudtasks: added <code>http_target</code> field to <code>google_cloud_tasks_queue</code> resource (<a href="https://github.com/hashicorp/terraform-provider-google/pull/19253">#19253</a>)</li>
+<li>compute: added <code>accelerators</code> field to <code>google_compute_node_template</code> resource (<a href="https://github.com/hashicorp/terraform-provider-google/pull/19292">#19292</a>)</li>
+<li>compute: allowed disabling <code>server_tls_policy</code> during update in <code>google_compute_target_https_proxy</code> resources (<a href="https://github.com/hashicorp/terraform-provider-google/pull/19233">#19233</a>)</li>
+<li>container: added <code>secret_manager_config</code> field to <code>google_container_cluster</code> resource (ga) (<a href="https://github.com/hashicorp/terraform-provider-google/pull/19288">#19288</a>)</li>
+<li>datastream: added <code>transaction_logs</code> and <code>change_tables</code> to the <code>datastream_stream</code> resource (<a href="https://github.com/hashicorp/terraform-provider-google/pull/19248">#19248</a>)</li>
+<li>discoveryengine: added <code>chunking_config</code> and <code>layout_parsing_config</code> fields to <code>google_discovery_engine_data_store</code> resource (<a href="https://github.com/hashicorp/terraform-provider-google/pull/19274">#19274</a>)</li>
+<li>dlp: added <code>inspect_template_modified_cadence</code> field to <code>big_query_target</code> and <code>cloud_sql_target</code> in <code>google_data_loss_prevention_discovery_config</code> resource (<a href="https://github.com/hashicorp/terraform-provider-google/pull/19282">#19282</a>)</li>
+<li>dlp: added <code>tag_resources</code> field to <code>google_data_loss_prevention_discovery_config</code> resource (<a href="https://github.com/hashicorp/terraform-provider-google/pull/19282">#19282</a>)</li>
+<li>networksecurity: <code>google_network_security_client_tls_policy</code> in v1 (<a href="https://github.com/hashicorp/terraform-provider-google/pull/19293">#19293</a>)</li>
+</ul>
+<p>BUG FIXES:</p>
+<ul>
+<li>bigquery: fixed an error which could occur with email field values containing non-lower-case characters in <code>google_bigquery_dataset_access</code> resource (<a href="https://github.com/hashicorp/terraform-provider-google/pull/19259">#19259</a>)</li>
+<li>bigqueryanalyticshub: made <code>bigquery_dataset</code> immutable in <code>google_bigquery_analytics_hub_listing</code> as it was not updatable in the API. Now modifying the field in Terraform will correctly recreate the resource rather than causing Terraform to report it would attempt an invalid update. (<a href="https://github.com/hashicorp/terraform-provider-google/pull/19244">#19244</a>)</li>
+<li>container: fixed update inconsistency in <code>google_container_cluster</code> resource (<a href="https://github.com/hashicorp/terraform-provider-google/pull/19247">#19247</a>)</li>
+<li>pubsub: fixed a validation bug that didn't allow empty filter definitions for <code>google_pubsub_subscription</code> resources (<a href="https://github.com/hashicorp/terraform-provider-google/pull/19284">#19284</a>)</li>
+<li>resourcemanager: fixed a bug where data.google_client_config failed silently when inadequate credentials were used to configure the provider (<a href="https://github.com/hashicorp/terraform-provider-google/pull/19286">#19286</a>)</li>
+<li>sql: fixed importing <code>google_sql_user</code> where <code>host</code> is an IPv4 CIDR (<a href="https://github.com/hashicorp/terraform-provider-google/pull/19243">#19243</a>)</li>
+<li>sql: fixed overwriting of <code>name</code> field for IAM Group user in <code>google_sql_user</code> resource (<a href="https://github.com/hashicorp/terraform-provider-google/pull/19234">#19234</a>)</li>
+</ul>]]></content>
+<author><name>github-actions[bot]</name></author>
+</entry>
+<entry>
+<title>Hashicorp Status Release: Investigating an incident with private VCS providers on HCP Terraform</title>
+<link href='https://status.hashicorp.com/incidents/llqdcgr5vw7q'/>
+<id>tag:status.hashicorp.com,2005:Incident/22027905</id>
+<updated>2024-09-03T06:03:02Z</updated>
+<content type='html'><![CDATA[<p><small>Sep <var> 3</var>, <var>06:03</var> UTC</small><br /><strong>Resolved</strong> - Our Engineering team has resolved the issue. HCP Terraform private VCS providers should now be operating normally. If you continue to experience any problems, please open a ticket with our support team.</p><p><small>Sep <var> 2</var>, <var>14:50</var> UTC</small><br /><strong>Monitoring</strong> - Our Engineering team has implemented a fix to resolve issues with using private VCS providers on HCP Terraform and is monitoring the situation.</p><p><small>Sep <var> 2</var>, <var>14:36</var> UTC</small><br /><strong>Identified</strong> - Our Engineering team has implemented a fix to resolve issues with using private VCS providers on HCP Terraform and is monitoring the situation.<br /><br />We will share another update as soon as we have more information.</p><p><small>Sep <var> 2</var>, <var>14:07</var> UTC</small><br /><strong>Update</strong> - Our engineering team is continuing to investigate an issue with using private VCS providers on HCP Terraform.<br /><br />We will share another update as soon as we have more information.</p><p><small>Sep <var> 2</var>, <var>12:58</var> UTC</small><br /><strong>Investigating</strong> - Our engineering team is investigating an issue with using private VCS providers on HCP Terraform.<br /><br />We will share another update as soon as we have more information.</p>]]></content>
+<author><name>No author available</name></author>
+</entry>
+<entry>
+<title>Vault Release: v1.17.5</title>
+<link href='https://github.com/hashicorp/vault/releases/tag/v1.17.5'/>
+<id>tag:github.com,2008:Repository/31288958/v1.17.5</id>
+<updated>2024-08-31T01:16:13Z</updated>
+<content type='html'><![CDATA[<h2>1.17.5</h2>
+<h2>August 30, 2024</h2>
+<p>SECURITY:</p>
+<p>core/audit: fix regression where client tokens and token accessors were being<br />
+displayed in the audit log in plaintext <a href="https://discuss.hashicorp.com/t/hcsec-2024-18-vault-leaks-client-token-and-token-accessor-in-audit-devices" rel="nofollow">HCSEC-2024-18</a></p>
+<p>BUG FIXES:</p>
+<ul>
+<li>proxy/cache (enterprise): Fixed an issue where Proxy with static secret caching enabled would not correctly handle requests to older secret versions for KVv2 secrets. Proxy's static secret cache now properly handles all requests relating to older versions for KVv2 secrets. [<a href="https://github.com/hashicorp/vault/pull/28207">GH-28207</a>]</li>
+<li>ui: fixes renew-self being called right after login for non-renewable tokens [<a href="https://github.com/hashicorp/vault/pull/28204">GH-28204</a>]</li>
+</ul>]]></content>
+<author><name>hc-github-team-es-release-engineering</name></author>
+</entry>
+<entry>
+<title>GCP Provider Release: v5.43.1</title>
+<link href='https://github.com/hashicorp/terraform-provider-google/releases/tag/v5.43.1'/>
+<id>tag:github.com,2008:Repository/93446075/v5.43.1</id>
+<updated>2024-08-30T18:25:48Z</updated>
+<content type='html'><![CDATA[<p>NOTES:</p>
+<ul>
+<li>5.43.1 is a backport release, and some changes will not appear in 6.X series releases until 6.1.0</li>
+</ul>
+<p>BUG FIXES:</p>
+<ul>
+<li>pubsub: fixed a validation bug that didn't allow empty filter definitions for <code>google_pubsub_subscription</code> resources (<a href="https://github.com/hashicorp/terraform-provider-google/pull/19284">#19284</a>)</li>
+</ul>]]></content>
+<author><name>github-actions[bot]</name></author>
+</entry>
+<entry>
 <title>GitHub Status Release: Disruption with some GitHub services</title>
 <link href='https://www.githubstatus.com/incidents/djwfzglh2dyq'/>
 <id>tag:www.githubstatus.com,2005:Incident/21967456</id>
 <updated>2024-08-29T21:54:47Z</updated>
-<content type='html'><![CDATA[<p><small>Aug <var>29</var>, <var>21:54</var> UTC</small><br /><strong>Resolved</strong> - This incident has been resolved.</p><p><small>Aug <var>29</var>, <var>21:54</var> UTC</small><br /><strong>Update</strong> - The connectivity issues have been resolved and we are back to normal.</p><p><small>Aug <var>29</var>, <var>21:45</var> UTC</small><br /><strong>Update</strong> - We have implemented a potential fix and are continuing to monitor for success.</p><p><small>Aug <var>29</var>, <var>21:25</var> UTC</small><br /><strong>Update</strong> - We have isolated the symptom of the connectivity issues and are working to trace down the cause.</p><p><small>Aug <var>29</var>, <var>20:43</var> UTC</small><br /><strong>Update</strong> - While we have seen a reduction in reports of users having connectivity issues to GitHub.com, we are still investigating the issue.</p><p><small>Aug <var>29</var>, <var>20:07</var> UTC</small><br /><strong>Update</strong> - We are continuing to investigate issues with customers reporting temporary issues accessing GitHub.com</p><p><small>Aug <var>29</var>, <var>19:29</var> UTC</small><br /><strong>Update</strong> - We are getting reports of users who aren't able to access GitHub.com and are investigating.</p><p><small>Aug <var>29</var>, <var>19:29</var> UTC</small><br /><strong>Investigating</strong> - We are currently investigating this issue.</p>]]></content>
+<content type='html'><![CDATA[<p><small>Aug <var>29</var>, <var>21:54</var> UTC</small><br /><strong>Resolved</strong> - On August 29th, 2024, from 16:56 UTC to 21:42 UTC, we observed an elevated rate of traffic on our public edge, which triggered GitHub’s rate limiting protections. This resulted in <0.1% of users being identified as false-positives, which they experienced as intermittent connection timeouts. At 20:59 UTC the engineering team improved the system to remediate the false-positive identification of user traffic, and return to normal traffic operations.</p><p><small>Aug <var>29</var>, <var>21:54</var> UTC</small><br /><strong>Update</strong> - The connectivity issues have been resolved and we are back to normal.</p><p><small>Aug <var>29</var>, <var>21:45</var> UTC</small><br /><strong>Update</strong> - We have implemented a potential fix and are continuing to monitor for success.</p><p><small>Aug <var>29</var>, <var>21:25</var> UTC</small><br /><strong>Update</strong> - We have isolated the symptom of the connectivity issues and are working to trace down the cause.</p><p><small>Aug <var>29</var>, <var>20:43</var> UTC</small><br /><strong>Update</strong> - While we have seen a reduction in reports of users having connectivity issues to GitHub.com, we are still investigating the issue.</p><p><small>Aug <var>29</var>, <var>20:07</var> UTC</small><br /><strong>Update</strong> - We are continuing to investigate issues with customers reporting temporary issues accessing GitHub.com</p><p><small>Aug <var>29</var>, <var>19:29</var> UTC</small><br /><strong>Update</strong> - We are getting reports of users who aren't able to access GitHub.com and are investigating.</p><p><small>Aug <var>29</var>, <var>19:29</var> UTC</small><br /><strong>Investigating</strong> - We are currently investigating this issue.</p>]]></content>
 <author><name>No author available</name></author>
 </entry>
 <entry>
@@ -286,14 +431,6 @@ visibly sensible totals. [<a href="https://github.com/hashicorp/vault/pull/27547
 <p>For information on changes between the v1.44.0 and v1.0.0 releases, please see <a href="https://github.com/hashicorp/terraform-provider-azurerm/blob/main/CHANGELOG-v1.md">the previous v1.x changelog entries</a>.</p>
 <p>For information on changes prior to the v1.0.0 release, please see <a href="https://github.com/hashicorp/terraform-provider-azurerm/blob/main/CHANGELOG-v0.md">the v0.x changelog</a>.</p>]]></content>
 <author><name>github-actions[bot]</name></author>
-</entry>
-<entry>
-<title>Hashicorp Status Release: HCP Portal Increased latency viewing audit events</title>
-<link href='https://status.hashicorp.com/incidents/rxwxw4j8bvyr'/>
-<id>tag:status.hashicorp.com,2005:Incident/21797121</id>
-<updated>2024-08-22T18:35:20Z</updated>
-<content type='html'><![CDATA[<p><small>Aug <var>22</var>, <var>18:35</var> UTC</small><br /><strong>Monitoring</strong> - Our Engineering team has implemented a fix to resolve audit log viewing and is monitoring the situation. Users may see intermittent audit log viewing failures as the system is recovering. We will post an update as soon as the issue is fully resolved.</p><p><small>Aug <var>22</var>, <var>16:44</var> UTC</small><br /><strong>Update</strong> - Our engineering team is continuing to investigate an issue with audit log viewing. During this time, users may experience intermittent audit log viewing failures, however audit log events are still being recorded. We will share another update as soon as we have more information.</p><p><small>Aug <var>19</var>, <var>03:57</var> UTC</small><br /><strong>Update</strong> - Audit event search remains degraded at this time. Events are continuing to be processed in the meanwhile.</p><p><small>Aug <var>19</var>, <var>02:21</var> UTC</small><br /><strong>Investigating</strong> - We're investigating increased latency for viewing consul cluster and HVS app audit events through the Portal.</p>]]></content>
-<author><name>No author available</name></author>
 </entry>
 <entry>
 <title>GitHub Status Release: Incident with Actions</title>
@@ -1188,38 +1325,6 @@ use versioned plugins. [<a href="https://github.com/hashicorp/vault/pull/27881">
 <author><name>No author available</name></author>
 </entry>
 <entry>
-<title>GCP Provider Release: v5.38.0</title>
-<link href='https://github.com/hashicorp/terraform-provider-google/releases/tag/v5.38.0'/>
-<id>tag:github.com,2008:Repository/93446075/v5.38.0</id>
-<updated>2024-07-15T18:36:24Z</updated>
-<content type='html'><![CDATA[<p>FEATURES:</p>
-<ul>
-<li><strong>New Data Source:</strong> <code>google_gke_hub_membership_binding</code> (<a href="https://github.com/hashicorp/terraform-provider-google/pull/18680">#18680</a>)</li>
-<li><strong>New Data Source:</strong> <code>google_site_verification_token</code> (<a href="https://github.com/hashicorp/terraform-provider-google/pull/18688">#18688</a>)</li>
-<li><strong>New Resource:</strong> <code>google_scc_project_notification_config</code> (<a href="https://github.com/hashicorp/terraform-provider-google/pull/18682">#18682</a>)</li>
-</ul>
-<p>IMPROVEMENTS:</p>
-<ul>
-<li>compute: promoted <code>labels</code> field on <code>google_compute_global_address</code> resource from beta to GA (<a href="https://github.com/hashicorp/terraform-provider-google/pull/18646">#18646</a>)</li>
-<li>compute: made the <code>google_compute_resource_policy</code> resource updatable in-place (<a href="https://github.com/hashicorp/terraform-provider-google/pull/18673">#18673</a>)</li>
-<li>privilegedaccessmanager: promoted <code>google_privileged_access_manager_entitlement</code> resource from beta to GA (<a href="https://github.com/hashicorp/terraform-provider-google/pull/18686">#18686</a>)</li>
-<li>vertexai: added <code>project_number</code> field to <code>google_vertex_ai_feature_online_store_featureview</code> resource (<a href="https://github.com/hashicorp/terraform-provider-google/pull/18637">#18637</a>)</li>
-</ul>
-<p>BUG FIXES:</p>
-<ul>
-<li>cloudfunctions2: fixed permadiffs on <code>service_config.environment_variables</code> field in <code>google_cloudfunctions2_function</code> resource (<a href="https://github.com/hashicorp/terraform-provider-google/pull/18651">#18651</a>)</li>
-</ul>]]></content>
-<author><name>github-actions[bot]</name></author>
-</entry>
-<entry>
-<title>GitHub Status Release: Incident with Copilot</title>
-<link href='https://www.githubstatus.com/incidents/3483v9fw5pm3'/>
-<id>tag:www.githubstatus.com,2005:Incident/21398869</id>
-<updated>2024-07-13T19:27:03Z</updated>
-<content type='html'><![CDATA[<p><small>Jul <var>13</var>, <var>19:27</var> UTC</small><br /><strong>Resolved</strong> - On July 13, 2024 between 00:01 and 19:27 UTC the Copilot service was degraded. During this time period, Copilot code completions error rate peaked at 1.16% and Copilot Chat error rate peaked at 63%. Between 01:00 and 02:00 UTC we were able to reroute traffic for Chat to bring error rates below 6%. During the time of impact customers would have seen delayed responses, errors, or timeouts during requests. GitHub code scanning autofix jobs were also delayed during this incident. <br /><br />A resource cleanup job was scheduled by <a href="https://azure.status.microsoft/en-us/status/history?trackingid=4L44-3F0">Azure OpenAI (AOAI) service early July 13th</a> targeting a resource group thought to only contain unused resources. This resource group unintentionally contained critical, still in use, resources that were then removed. The cleanup job was halted before removing all resources in the resource group. Enough resources remained that GitHub was able to mitigate while resources were reconstructed.<br /><br />We are working with AOAI to ensure mitigation is in place to prevent future impact. In addition, we will improve traffic rerouting processes to reduce time to mitigate in the future.</p><p><small>Jul <var>13</var>, <var>19:26</var> UTC</small><br /><strong>Update</strong> - Copilot is operating normally.</p><p><small>Jul <var>13</var>, <var>18:01</var> UTC</small><br /><strong>Update</strong> - Our upstream provider continues to recover and we expect services to return to normal as more progress is made. We will provide another update by 20:00 UTC.</p><p><small>Jul <var>13</var>, <var>16:09</var> UTC</small><br /><strong>Update</strong> - Our upstream provider is making good progress recovering and we are validating that services are nearing normal operations. We will provide another update by 18:00 UTC.</p><p><small>Jul <var>13</var>, <var>11:18</var> UTC</small><br /><strong>Update</strong> - Our upstream provider is gradually recovering the service. We will provide another update at 23:00 UTC.</p><p><small>Jul <var>13</var>, <var>03:50</var> UTC</small><br /><strong>Update</strong> - We are continuing to wait on our upstream provider to see full recovery. We will provide another update at 11:00 UTC</p><p><small>Jul <var>13</var>, <var>03:20</var> UTC</small><br /><strong>Update</strong> - The error rate for Copilot chat requests remains steady at less than 10%. We are continuing to investigate with our upstream provider.</p><p><small>Jul <var>13</var>, <var>02:20</var> UTC</small><br /><strong>Update</strong> - Copilot is experiencing degraded performance. We are continuing to investigate.</p><p><small>Jul <var>13</var>, <var>02:19</var> UTC</small><br /><strong>Update</strong> - We have applied several mitigations to Copilot chat, reducing errors to less than 10% of all chat requests. We are continuing to investigate the issue with our upstream provider.</p><p><small>Jul <var>13</var>, <var>01:32</var> UTC</small><br /><strong>Update</strong> - Copilot chat is experiencing degraded performance, impacting up to 60% of all chat requests. We are continuing to investigate the issue with our upstream provider.</p><p><small>Jul <var>13</var>, <var>00:49</var> UTC</small><br /><strong>Update</strong> - Copilot chat is currently experiencing degraded performance, impacting up to 60% of all chat requests. We are investigating the issue.</p><p><small>Jul <var>13</var>, <var>00:29</var> UTC</small><br /><strong>Update</strong> - Copilot is experiencing degraded availability. We are continuing to investigate.</p><p><small>Jul <var>13</var>, <var>00:18</var> UTC</small><br /><strong>Update</strong> - Copilot API chat experiencing significant failures to backend services</p><p><small>Jul <var>13</var>, <var>00:18</var> UTC</small><br /><strong>Investigating</strong> - We are investigating reports of degraded performance for Copilot</p>]]></content>
-<author><name>No author available</name></author>
-</entry>
-<entry>
 <title>AzureRM Provider Release: v3.112.0</title>
 <link href='https://github.com/hashicorp/terraform-provider-azurerm/releases/tag/v3.112.0'/>
 <id>tag:github.com,2008:Repository/93446042/v3.112.0</id>
@@ -1335,38 +1440,6 @@ which causes the Vault TCP listener to close after receiving an untrusted upstre
 <author><name>No author available</name></author>
 </entry>
 <entry>
-<title>GCP Provider Release: v5.37.0</title>
-<link href='https://github.com/hashicorp/terraform-provider-google/releases/tag/v5.37.0'/>
-<id>tag:github.com,2008:Repository/93446075/v5.37.0</id>
-<updated>2024-07-08T17:33:44Z</updated>
-<content type='html'><![CDATA[<p>FEATURES:</p>
-<ul>
-<li><strong>New Data Source:</strong> <code>google_kms_crypto_keys</code> (<a href="https://github.com/hashicorp/terraform-provider-google/pull/18605">#18605</a>)</li>
-<li><strong>New Data Source:</strong> <code>google_kms_key_rings</code> (<a href="https://github.com/hashicorp/terraform-provider-google/pull/18611">#18611</a>)</li>
-<li><strong>New Resource:</strong> <code>google_scc_v2_organization_notification_config</code> (<a href="https://github.com/hashicorp/terraform-provider-google/pull/18594">#18594</a>)</li>
-<li><strong>New Resource:</strong> <code>google_secure_source_manager_repository</code> (<a href="https://github.com/hashicorp/terraform-provider-google/pull/18576">#18576</a>)</li>
-<li><strong>New Resource:</strong> <code>google_storage_managed_folder_iam</code> (<a href="https://github.com/hashicorp/terraform-provider-google/pull/18555">#18555</a>)</li>
-<li><strong>New Resource:</strong> <code>google_storage_managed_folder</code> (<a href="https://github.com/hashicorp/terraform-provider-google/pull/18555">#18555</a>)</li>
-</ul>
-<p>IMPROVEMENTS:</p>
-<ul>
-<li>certificatemanager: added <code>allowlisted_certificates</code> field to <code>google_certificate_manager_trust_config</code> resource (<a href="https://github.com/hashicorp/terraform-provider-google/pull/18587">#18587</a>)</li>
-<li>compute: added <code>max_run_duration</code> and <code>on_instance_stop_action</code> fields to <code>google_compute_instance</code>, <code>google_compute_instance_template</code>, and <code>google_compute_instance_from_machine_image</code> resources (<a href="https://github.com/hashicorp/terraform-provider-google/pull/18623">#18623</a>)</li>
-<li>dataplex: added <code>sql_assertion</code> field to <code>google_dataplex_datascan</code> resource (<a href="https://github.com/hashicorp/terraform-provider-google/pull/18559">#18559</a>)</li>
-<li>gkehub: added <code>fleet_default_member_config.configmanagement.config_sync.enabled</code> field to <code>google_gke_hub_feature</code> resource (<a href="https://github.com/hashicorp/terraform-provider-google/pull/18582">#18582</a>)</li>
-<li>netapp: added <code>zone</code> and <code>replica_zone</code> field to <code>google_netapp_storage_pool</code> resource (<a href="https://github.com/hashicorp/terraform-provider-google/pull/18609">#18609</a>)</li>
-<li>vertexai: added <code>project_number</code> field to <code>google_vertex_ai_feature_online_store_featureview</code> resource (<a href="https://github.com/hashicorp/terraform-provider-google/pull/18637">#18637</a>)</li>
-<li>workstations: added <code>host.gce_instance.vm_tags</code> field to <code>google_workstations_workstation_config</code> resource (<a href="https://github.com/hashicorp/terraform-provider-google/pull/18588">#18588</a>)</li>
-</ul>
-<p>BUG FIXES:</p>
-<ul>
-<li>compute: fixed a bug preventing the creation of <code>google_compute_autoscaler</code> and <code>google_compute_region_autoscaler</code> resources if both <code>autoscaling_policy.max_replicas</code> and <code>autoscaling_policy.min_replicas</code> were configured as zero. (<a href="https://github.com/hashicorp/terraform-provider-google/pull/18607">#18607</a>)</li>
-<li>resourcemanager: mitigated eventual consistency issues by adding a 10s wait after <code>google_service_account_key</code> resource creation (<a href="https://github.com/hashicorp/terraform-provider-google/pull/18566">#18566</a>)</li>
-<li>vertexai: fixed issue where updating "metadata" field could fail in <code>google_vertex_ai_index</code> resource (<a href="https://github.com/hashicorp/terraform-provider-google/pull/18632">#18632</a>)</li>
-</ul>]]></content>
-<author><name>github-actions[bot]</name></author>
-</entry>
-<entry>
 <title>Hashicorp Status Release: HCP Boundary - Increased latency and degraded performance</title>
 <link href='https://status.hashicorp.com/incidents/cqjq63d7gr13'/>
 <id>tag:status.hashicorp.com,2005:Incident/21342883</id>
@@ -1417,22 +1490,6 @@ which causes the Vault TCP listener to close after receiving an untrusted upstre
 <li><code>azurerm_virtual_network_gateway_connection</code> - split create and update function to fix lifecycle - ignore (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/26431">#26431</a>)</li>
 </ul>]]></content>
 <author><name>github-actions[bot]</name></author>
-</entry>
-<entry>
-<title>Hashicorp Status Release: Investigating HCP Boundary</title>
-<link href='https://status.hashicorp.com/incidents/ywlt1wy1yzc3'/>
-<id>tag:status.hashicorp.com,2005:Incident/21304425</id>
-<updated>2024-07-04T06:36:22Z</updated>
-<content type='html'><![CDATA[<p><small>Jul <var> 4</var>, <var>06:36</var> UTC</small><br /><strong>Resolved</strong> - HCP Boundary should now be operating normally. If you continue to experience any problems, please open a ticket with our support team</p><p><small>Jul <var> 4</var>, <var>06:09</var> UTC</small><br /><strong>Monitoring</strong> - A fix has been implemented and we are seeing normal performance return to impacted clusters. We are continuing to monitor the incident and will provide an update when we have more information.</p><p><small>Jul <var> 4</var>, <var>04:11</var> UTC</small><br /><strong>Investigating</strong> - Our engineering team is investigating an issue affecting HCP Boundary. Some users may experience elevated latency or degraded performance. We will share another update as soon as we have more information.</p>]]></content>
-<author><name>No author available</name></author>
-</entry>
-<entry>
-<title>Hashicorp Status Release: Identified an incident</title>
-<link href='https://status.hashicorp.com/incidents/xtvcf0c2dz7t'/>
-<id>tag:status.hashicorp.com,2005:Incident/21242588</id>
-<updated>2024-06-28T15:28:14Z</updated>
-<content type='html'><![CDATA[<p><small>Jun <var>28</var>, <var>15:28</var> UTC</small><br /><strong>Resolved</strong> - Our Engineering team has resolved the following issue: <br /><br />Previously identified API issues have been resolved.<br /><br />These systems should now be operating normally. If you continue to experience any problems, please open a ticket with our support team.</p><p><small>Jun <var>27</var>, <var>21:14</var> UTC</small><br /><strong>Identified</strong> - Our Engineering team has identified the cause for some API related issues.<br /><br />We are actively working on a fix. Once we have additional information, we will share another update.</p>]]></content>
-<author><name>No author available</name></author>
 </entry>
 <entry>
 <title>AzureRM Provider Release: v3.110.0</title>
@@ -1520,62 +1577,6 @@ If the existing context is cancelled a new context, will be used. [<a href="http
 <li>ui: Allow creation of session_token type roles for AWS secret backend [<a href="https://github.com/hashicorp/vault/pull/27424">GH-27424</a>]</li>
 </ul>]]></content>
 <author><name>hc-github-team-es-release-engineering</name></author>
-</entry>
-<entry>
-<title>Hashicorp Status Release: HVS Audit Logs Failures</title>
-<link href='https://status.hashicorp.com/incidents/xsdz47chkzyq'/>
-<id>tag:status.hashicorp.com,2005:Incident/21209521</id>
-<updated>2024-06-24T22:06:33Z</updated>
-<content type='html'><![CDATA[<p><small>Jun <var>24</var>, <var>22:06</var> UTC</small><br /><strong>Resolved</strong> - Our Engineering team has resolved the following issue: <br /><br />HVS Audit Logs are now visible on the HVS UI<br /><br />These systems should now be operating normally. If you continue to experience any problems, please open a ticket with our support team.</p><p><small>Jun <var>24</var>, <var>21:21</var> UTC</small><br /><strong>Identified</strong> - Our Engineering team has identified the cause for the following incident: <br /><br />### HVS Audit Logs are failing to load on the HVS UI<br /><br />We are actively working on a fix. Once we have additional information, we will share another update.</p>]]></content>
-<author><name>No author available</name></author>
-</entry>
-<entry>
-<title>AzureRM Provider Release: v3.109.0</title>
-<link href='https://github.com/hashicorp/terraform-provider-azurerm/releases/tag/v3.109.0'/>
-<id>tag:github.com,2008:Repository/93446042/v3.109.0</id>
-<updated>2024-06-21T04:49:27Z</updated>
-<content type='html'><![CDATA[<p>FEATURES:</p>
-<ul>
-<li><strong>New Data Source:</strong> <code>azurerm_automation_runbook</code> (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/26359">#26359</a>)</li>
-<li><strong>New Resource:</strong> <code>azurerm_data_protection_backup_instance_postgresql_flexible_server</code> (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/26249">#26249</a>)</li>
-<li><strong>New Resource:</strong> <code>azurerm_email_communication_service_domain</code> (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/26179">#26179</a>)</li>
-<li><strong>New Resource:</strong> <code>azurerm_system_center_virtual_machine_manager_cloud</code> (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/25429">#25429</a>)</li>
-<li><strong>New Resource:</strong> <code>azurerm_system_center_virtual_machine_manager_virtual_machine_template</code> (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/25449">#25449</a>)</li>
-<li><strong>New Resource:</strong> <code>azurerm_system_center_virtual_machine_manager_virtual_network</code> (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/25451">#25451</a>)</li>
-</ul>
-<p>ENHANCEMENTS:</p>
-<ul>
-<li>Data Source: <code>azurerm_hdinsight_cluster</code> - export the <code>cluster_id</code> attribute (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/26228">#26228</a>)</li>
-<li><code>azurerm_cosmosdb_sql_container</code> - support for the <code>partition_key_kind</code> and <code>partition_key_paths</code> properties (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/26372">#26372</a>)</li>
-<li><code>azurerm_data_protection_backup_instance_blob_storage</code> - support for the <code>storage_account_container_names</code> property (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/26232">#26232</a>)</li>
-<li><code>azurerm_virtual_network_peering</code> - support for the <code>peer_complete_virtual_networks_enabled</code>, <code>only_ipv6_peering_enabled</code>, <code>local_subnet_names</code>, and <code>remote_subnet_names</code> properties (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/26229">#26229</a>)</li>
-<li><code>azurerm_virtual_desktop_host_pool</code> - changing the <code>preferred_app_group_type</code> property no longer creates a new resource (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/26333">#26333</a>)</li>
-<li><code>azurerm_maps_account</code> - support for the <code>location</code>, <code>identity</code>, <code>cors</code> and <code>data_store</code> properties (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/26397">#26397</a>)</li>
-</ul>
-<p>BUG FIXES:</p>
-<ul>
-<li><code>azurerm_automation_job_schedule</code> - updates <code>azurerm_automation_job_schedule</code> to use a composite resource id and allows <code>azurerm_automation_runbook</code> to be updated without causing <code>azurerm_automation_job_schedule</code> to recreate (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/22164">#22164</a>)</li>
-<li><code>azurerm_databricks_workspace</code>- correctly allow disabling the default firewall (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/26339">#26339</a>)</li>
-<li><code>azurerm_virtual_hub_*</code> - spliting create and update so lifecycle ignore changes works correctly (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/26310">#26310</a>)</li>
-</ul>
-<p>DEPRECATIONS:</p>
-<ul>
-<li>Data Source: <code>azurerm_mariadb_server</code> - deprecated since the service is retiring. Please use <code>azurerm_mysql_flexible_server</code> instead (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/26354">#26354</a>)</li>
-<li><code>azurerm_mariadb_configuration</code> - deprecated since the service is retiring. Please use <code>azurerm_mysql_flexible_server_configuration</code> instead (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/26354">#26354</a>)</li>
-<li><code>azurerm_mariadb_database</code> - deprecated since the service is retiring. Please use <code>azurerm_mysql_flexible_database</code> instead (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/26354">#26354</a>)</li>
-<li><code>azurerm_mariadb_firewall_rule</code> - deprecated since the service is retiring. Please use <code>azurerm_mysql_flexible_server_firewall_rule</code> instead (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/26354">#26354</a>)</li>
-<li><code>azurerm_mariadb_server</code> - deprecated since the service is retiring. Please use <code>azurerm_mysql_flexible_server</code> instead (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/26354">#26354</a>)</li>
-<li><code>azurerm_mariadb_virtual_network_rule</code> - deprecated since the service is retiring (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/26354">#26354</a>)</li>
-</ul>]]></content>
-<author><name>github-actions[bot]</name></author>
-</entry>
-<entry>
-<title>Hashicorp Status Release: HCP Boundary Scheduled Maintenance</title>
-<link href='https://status.hashicorp.com/incidents/7tgmxdckx9sz'/>
-<id>tag:status.hashicorp.com,2005:Incident/21037891</id>
-<updated>2024-06-16T16:00:02Z</updated>
-<content type='html'><![CDATA[<p><small>Jun <var>16</var>, <var>16:00</var> UTC</small><br /><strong>Completed</strong> - The scheduled maintenance has been completed.</p><p><small>Jun <var>16</var>, <var>13:00</var> UTC</small><br /><strong>In progress</strong> - Scheduled maintenance is currently in progress. We will provide updates as necessary.</p><p><small>Jun <var> 7</var>, <var>20:10</var> UTC</small><br /><strong>Scheduled</strong> - HCP Boundary will undergo planned maintenance on Sunday, June 16th, beginning at 13:00 UTC. We expect this maintenance to be completed within three hours. During this time, HCP boundary sessions may disconnect unexpectedly. We will post updates as necessary throughout the maintenance period.</p>]]></content>
-<author><name>No author available</name></author>
 </entry>
 <entry>
 <title>Vault Release: v1.17.0</title>
@@ -2015,21 +2016,6 @@ new context, separate from the original will be used. [<a href="https://github.c
 
 <p>…s for a release (<a class="issue-link js-issue-link" href="https://github.com/hashicorp/vault/pull/27253">#27253</a>)</p>]]></content>
 <author><name>hc-github-team-es-release-engineering</name></author>
-</entry>
-<entry>
-<title>Vault Release: sdk/v0.13.0: update vault auth submodules to api/v1.14.0 (#27190)</title>
-<link href='https://github.com/hashicorp/vault/releases/tag/sdk%2Fv0.13.0'/>
-<id>tag:github.com,2008:Repository/31288958/sdk/v0.13.0</id>
-<updated>2024-05-23T15:00:55Z</updated>
-<content type='html'><![CDATA[<ul>
-<li>
-<p>update vault auth submodules to api/v1.14.0</p>
-</li>
-<li>
-<p>go mod tidy in repo root</p>
-</li>
-</ul>]]></content>
-<author><name>peteski22</name></author>
 </entry>
 <entry>
 <title>terraform-docs Release: v0.16.0</title>
