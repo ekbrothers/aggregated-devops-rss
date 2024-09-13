@@ -2,15 +2,245 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 <title>Aggregated GitHub Releases</title>
 <link href="https://example.com/feed.xml" rel="self"/>
-<updated>2024-09-06T15:04:58Z</updated>
+<updated>2024-09-13T15:05:02Z</updated>
 <author><name>Aggregated Feed</name></author>
 <id>urn:uuid:aggregated-feed</id>
 <entry>
-<title>Hashicorp Status Release: Scheduled Maintenance | HCP Terraform and Terraform Public Registry</title>
-<link href='https://status.hashicorp.com/incidents/vbn17gb59fwx'/>
-<id>tag:status.hashicorp.com,2005:Incident/21696715</id>
-<updated>2024-09-08T17:00:00Z</updated>
-<content type='html'><![CDATA[<p><strong>THIS IS A SCHEDULED EVENT Sep <var>8</var>, <var>17:00</var> - <var>21:00</var> UTC</strong></p><p><small>Aug <var> 9</var>, <var>16:50</var> UTC</small><br /><strong>Scheduled</strong> - HCP Terraform and Terraform Public Registry will undergo scheduled maintenance on Sunday, September 8th beginning at 17:00 UTC. We expect this maintenance to complete within 4 hours.<br /><br />During this time, these services will be unavailable until the maintenance completes. We'll post updates as necessary throughout the maintenance period.</p>]]></content>
+<title>GitHub Status Release: Processing delays to some Issues, Pull Requests and Webhooks</title>
+<link href='https://www.githubstatus.com/incidents/v677w7xlvkss'/>
+<id>tag:www.githubstatus.com,2005:Incident/22152566</id>
+<updated>2024-09-13T07:13:24Z</updated>
+<content type='html'><![CDATA[<p><small>Sep <var>13</var>, <var>07:13</var> UTC</small><br /><strong>Resolved</strong> - This incident has been resolved.</p><p><small>Sep <var>13</var>, <var>06:49</var> UTC</small><br /><strong>Update</strong> - We are seeing improvements in telemetry and are monitoring the delivery of delayed Webhooks and Actions job statuses.</p><p><small>Sep <var>13</var>, <var>06:23</var> UTC</small><br /><strong>Update</strong> - We've applied a mitigation to fix the issues being experienced in some cases with delays to webhook deliveries, and the delayed reporting of the outcome of some running Actions jobs. We are monitoring for full recovery.</p><p><small>Sep <var>13</var>, <var>05:59</var> UTC</small><br /><strong>Update</strong> - Actions is experiencing degraded performance. We are continuing to investigate.</p><p><small>Sep <var>13</var>, <var>05:42</var> UTC</small><br /><strong>Investigating</strong> - We are investigating reports of degraded performance for Issues, Pull Requests and Webhooks</p>]]></content>
+<author><name>No author available</name></author>
+</entry>
+<entry>
+<title>AzureRM Provider Release: v4.2.0</title>
+<link href='https://github.com/hashicorp/terraform-provider-azurerm/releases/tag/v4.2.0'/>
+<id>tag:github.com,2008:Repository/93446042/v4.2.0</id>
+<updated>2024-09-13T04:16:51Z</updated>
+<content type='html'><![CDATA[<p>FEATURES:</p>
+<ul>
+<li><strong>New Resource</strong>: <code>azurerm_arc_machine</code> (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/26647">#26647</a>)</li>
+<li><strong>New Resource</strong>: <code>azurerm_arc_machine_automanage_configuration_assignment</code> (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/26657">#26657</a>)</li>
+</ul>
+<p>ENHANCEMENTS:</p>
+<ul>
+<li><code>network/bastionhosts</code> - upgrade api version from <code>2023-11-01</code> to <code>2024-01-01</code> (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/27277">#27277</a>)</li>
+<li><code>recoveryservices</code> - upgrade <code>recoveryservicessiterecovery</code> from <code>2022-10-0</code>1 to <code>2024-04-01</code> (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/27281">#27281</a>)</li>
+<li><code>azurerm_data_protection_backup_vault</code> - support for the <code>property cross_region_restore_enabled</code> property (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/27197">#27197</a>)</li>
+<li><code>azurem_mssql_managed_instance</code> - support for the <code>service_principal_type</code> property (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/27240">#27240</a>)</li>
+</ul>
+<p>BUG FIXES:</p>
+<ul>
+<li><code>azurerm_cosmosdb_account</code> - fix crash during state migration (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/27302">#27302</a>)</li>
+<li><code>azurerm_servicebus_queue</code> - fix defaults of the <code>default_message_ttl</code> and <code>auto_delete_on_idle</code> properties (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/27305">#27305</a>)</li>
+</ul>]]></content>
+<author><name>github-actions[bot]</name></author>
+</entry>
+<entry>
+<title>Terraform CLI Release: v1.10.0-alpha20240911</title>
+<link href='https://github.com/hashicorp/terraform/releases/tag/v1.10.0-alpha20240911'/>
+<id>tag:github.com,2008:Repository/17728164/v1.10.0-alpha20240911</id>
+<updated>2024-09-11T13:16:36Z</updated>
+<content type='html'><![CDATA[<h2>1.10.0-alpha20240911 (September 11, 2024)</h2>
+<p>NEW FEATURES:</p>
+<ul>
+<li><strong>Ephemeral values</strong>: Input variables and outputs can now be defined as ephemeral. Ephemeral values may only be used in certain contexts in Terraform configuration, and are not persisted to the plan or state files.
+<ul>
+<li><code>terraform output -json</code> now displays ephemeral outputs. The value of an ephemeral output is always <code>null</code> unless a plan or apply is being run. Note that <code>terraform output</code> (without the <code>-json</code>) flag does not yet display ephemeral outputs.</li>
+<li><strong><code>ephemeralasnull</code> function</strong>: a function takes a value of any type and returns a similar value of the same type with any ephemeral values replaced with non-ephemeral null values and all non-ephemeral values preserved.</li>
+</ul>
+</li>
+</ul>
+<p>BUG FIXES:</p>
+<ul>
+<li>The error message for an invalid default value for an input variable now indicates when the problem is with a nested value in a complex data type. (<a href="https://github.com/hashicorp/terraform/issues/35465">#35465</a>)</li>
+<li>Sensitive marks could be incorrectly transferred to nested resource values, causing erroneous changes during a plan (<a href="https://github.com/hashicorp/terraform/issues/35501">#35501</a>)</li>
+<li>Allow unknown <code>error_message</code> values to pass the core validate step, so variable validation can be completed later during plan<br />
+(<a href="https://github.com/hashicorp/terraform/issues/35537">#35537</a>)</li>
+<li>Unencoded slashes within GitHub module source refs were being truncated and incorrectly used as subdirectories in the request path (<a href="https://github.com/hashicorp/terraform/issues/35552">#35552</a>)</li>
+</ul>
+<p>ENHANCEMENTS:</p>
+<ul>
+<li>The <code>element</code> function now accepts negative indices (<a href="https://github.com/hashicorp/terraform/issues/35501">#35501</a>)</li>
+<li>Import block validation has been improved to provide more useful errors and catch more invalid cases during <code>terraform validate</code> (<a href="https://github.com/hashicorp/terraform/issues/35543">#35543</a>)</li>
+<li>Performance enhancements for resource evaluation, especially when large numbers of resource instances are involved (<a href="https://github.com/hashicorp/terraform/issues/35558">#35558</a>)</li>
+<li>The <code>plan</code>, <code>apply</code>, and <code>refresh</code> commands now produce a deprecated warning when using the <code>-state</code> flag. Instead use the <code>path</code> attribute within the <code>local</code> backend to modify the state file. (<a href="https://github.com/hashicorp/terraform/issues/35660">#35660</a>)</li>
+</ul>
+<p>EXPERIMENTS:</p>
+<p>Experiments are only enabled in alpha releases of Terraform CLI. The following features are not yet available in stable releases.</p>
+<ul>
+<li><code>terraform test</code> accepts a new option <code>-junit-xml=FILENAME</code>. If specified, and if the test configuration is valid enough to begin executing, then Terraform writes a JUnit XML test result report to the given filename, describing similar information as included in the normal test output. (<a href="https://github.com/hashicorp/terraform/issues/34291">#34291</a>)</li>
+<li>The new command <code>terraform rpcapi</code> exposes some Terraform Core functionality through an RPC interface compatible with <a href="https://github.com/hashicorp/go-plugin"><code>go-plugin</code></a>. The exact RPC API exposed here is currently subject to change at any time, because it's here primarily as a vehicle to support the <a href="https://www.hashicorp.com/blog/terraform-stacks-explained" rel="nofollow">Terraform Stacks</a> private preview and so will be broken if necessary to respond to feedback from private preview participants, or possibly for other reasons. Do not use this mechanism yet outside of Terraform Stacks private preview.</li>
+<li>The experimental "deferred actions" feature, enabled by passing the <code>-allow-deferral</code> option to <code>terraform plan</code>, permits <code>count</code> and <code>for_each</code> arguments in <code>module</code>, <code>resource</code>, and <code>data</code> blocks to have unknown values and allows providers to react more flexibly to unknown values. This experiment is under active development, and so it's not yet useful to participate in this experiment</li>
+</ul>
+<h2>Previous Releases</h2>
+<p>For information on prior major and minor releases, refer to their changelogs:</p>
+<ul>
+<li><a href="https://github.com/hashicorp/terraform/blob/v1.9/CHANGELOG.md">v1.9</a></li>
+<li><a href="https://github.com/hashicorp/terraform/blob/v1.8/CHANGELOG.md">v1.8</a></li>
+<li><a href="https://github.com/hashicorp/terraform/blob/v1.7/CHANGELOG.md">v1.7</a></li>
+<li><a href="https://github.com/hashicorp/terraform/blob/v1.6/CHANGELOG.md">v1.6</a></li>
+<li><a href="https://github.com/hashicorp/terraform/blob/v1.5/CHANGELOG.md">v1.5</a></li>
+<li><a href="https://github.com/hashicorp/terraform/blob/v1.4/CHANGELOG.md">v1.4</a></li>
+<li><a href="https://github.com/hashicorp/terraform/blob/v1.3/CHANGELOG.md">v1.3</a></li>
+<li><a href="https://github.com/hashicorp/terraform/blob/v1.2/CHANGELOG.md">v1.2</a></li>
+<li><a href="https://github.com/hashicorp/terraform/blob/v1.1/CHANGELOG.md">v1.1</a></li>
+<li><a href="https://github.com/hashicorp/terraform/blob/v1.0/CHANGELOG.md">v1.0</a></li>
+<li><a href="https://github.com/hashicorp/terraform/blob/v0.15/CHANGELOG.md">v0.15</a></li>
+<li><a href="https://github.com/hashicorp/terraform/blob/v0.14/CHANGELOG.md">v0.14</a></li>
+<li><a href="https://github.com/hashicorp/terraform/blob/v0.13/CHANGELOG.md">v0.13</a></li>
+<li><a href="https://github.com/hashicorp/terraform/blob/v0.12/CHANGELOG.md">v0.12</a></li>
+<li><a href="https://github.com/hashicorp/terraform/blob/v0.11/CHANGELOG.md">v0.11 and earlier</a></li>
+</ul>]]></content>
+<author><name>hc-github-team-es-release-engineering</name></author>
+</entry>
+<entry>
+<title>Hashicorp Status Release: HCP Terraform Dynamic Credentials failure to assume role based on run phase</title>
+<link href='https://status.hashicorp.com/incidents/xt43drgn5yl2'/>
+<id>tag:status.hashicorp.com,2005:Incident/22124878</id>
+<updated>2024-09-10T22:03:38Z</updated>
+<content type='html'><![CDATA[<p><small>Sep <var>10</var>, <var>22:03</var> UTC</small><br /><strong>Resolved</strong> - Our Engineering team has resolved an issue assuming roles with Dynamic Provider Credentials based on plan vs apply run phases<br />If you continue to experience any problems, please open a ticket with our support team.</p><p><small>Sep <var>10</var>, <var>19:48</var> UTC</small><br /><strong>Monitoring</strong> - Our Engineering team has implemented a fix to resolve the issue assuming roles with Dynamic Provider Credentials based on plan vs apply run phases.<br /><br />We are monitoring to ensure that this issue is resolved</p><p><small>Sep <var>10</var>, <var>19:14</var> UTC</small><br /><strong>Investigating</strong> - Our engineering team is investigating an issue with HCP Terraform Dynamic Provider Credentials containing the incorrect run phase in the subject claim.<br />Dynamic Provider Credentials users who rely on run-phase based matching to assume roles in their cloud providers may see authentication errors in their HCP Terraform runs</p>]]></content>
+<author><name>No author available</name></author>
+</entry>
+<entry>
+<title>Vault Release: sdk/v0.14.0</title>
+<link href='https://github.com/hashicorp/vault/releases/tag/sdk%2Fv0.14.0'/>
+<id>tag:github.com,2008:Repository/31288958/sdk/v0.14.0</id>
+<updated>2024-09-10T18:03:47Z</updated>
+<content type='html'><![CDATA[<p>update vault auth submodules to api/v1.15.0 (<a class="issue-link js-issue-link" href="https://github.com/hashicorp/vault/pull/28338">#28338</a>)</p>]]></content>
+<author><name>victorr</name></author>
+</entry>
+<entry>
+<title>Vault Release: api/auth/userpass/v0.8.0</title>
+<link href='https://github.com/hashicorp/vault/releases/tag/api%2Fauth%2Fuserpass%2Fv0.8.0'/>
+<id>tag:github.com,2008:Repository/31288958/api/auth/userpass/v0.8.0</id>
+<updated>2024-09-10T18:03:47Z</updated>
+<content type='html'><![CDATA[<p>update vault auth submodules to api/v1.15.0 (<a class="issue-link js-issue-link" href="https://github.com/hashicorp/vault/pull/28338">#28338</a>)</p>]]></content>
+<author><name>victorr</name></author>
+</entry>
+<entry>
+<title>Vault Release: api/auth/ldap/v0.8.0</title>
+<link href='https://github.com/hashicorp/vault/releases/tag/api%2Fauth%2Fldap%2Fv0.8.0'/>
+<id>tag:github.com,2008:Repository/31288958/api/auth/ldap/v0.8.0</id>
+<updated>2024-09-10T18:03:47Z</updated>
+<content type='html'><![CDATA[<p>update vault auth submodules to api/v1.15.0 (<a class="issue-link js-issue-link" href="https://github.com/hashicorp/vault/pull/28338">#28338</a>)</p>]]></content>
+<author><name>victorr</name></author>
+</entry>
+<entry>
+<title>Vault Release: api/auth/kubernetes/v0.8.0</title>
+<link href='https://github.com/hashicorp/vault/releases/tag/api%2Fauth%2Fkubernetes%2Fv0.8.0'/>
+<id>tag:github.com,2008:Repository/31288958/api/auth/kubernetes/v0.8.0</id>
+<updated>2024-09-10T18:03:47Z</updated>
+<content type='html'><![CDATA[<p>update vault auth submodules to api/v1.15.0 (<a class="issue-link js-issue-link" href="https://github.com/hashicorp/vault/pull/28338">#28338</a>)</p>]]></content>
+<author><name>victorr</name></author>
+</entry>
+<entry>
+<title>Vault Release: api/auth/gcp/v0.8.0</title>
+<link href='https://github.com/hashicorp/vault/releases/tag/api%2Fauth%2Fgcp%2Fv0.8.0'/>
+<id>tag:github.com,2008:Repository/31288958/api/auth/gcp/v0.8.0</id>
+<updated>2024-09-10T18:03:47Z</updated>
+<content type='html'><![CDATA[<p>update vault auth submodules to api/v1.15.0 (<a class="issue-link js-issue-link" href="https://github.com/hashicorp/vault/pull/28338">#28338</a>)</p>]]></content>
+<author><name>victorr</name></author>
+</entry>
+<entry>
+<title>Vault Release: api/auth/azure/v0.7.0</title>
+<link href='https://github.com/hashicorp/vault/releases/tag/api%2Fauth%2Fazure%2Fv0.7.0'/>
+<id>tag:github.com,2008:Repository/31288958/api/auth/azure/v0.7.0</id>
+<updated>2024-09-10T18:03:47Z</updated>
+<content type='html'><![CDATA[<p>update vault auth submodules to api/v1.15.0 (<a class="issue-link js-issue-link" href="https://github.com/hashicorp/vault/pull/28338">#28338</a>)</p>]]></content>
+<author><name>victorr</name></author>
+</entry>
+<entry>
+<title>Vault Release: api/auth/aws/v0.8.0</title>
+<link href='https://github.com/hashicorp/vault/releases/tag/api%2Fauth%2Faws%2Fv0.8.0'/>
+<id>tag:github.com,2008:Repository/31288958/api/auth/aws/v0.8.0</id>
+<updated>2024-09-10T18:03:47Z</updated>
+<content type='html'><![CDATA[<p>update vault auth submodules to api/v1.15.0 (<a class="issue-link js-issue-link" href="https://github.com/hashicorp/vault/pull/28338">#28338</a>)</p>]]></content>
+<author><name>victorr</name></author>
+</entry>
+<entry>
+<title>Vault Release: api/auth/approle/v0.8.0</title>
+<link href='https://github.com/hashicorp/vault/releases/tag/api%2Fauth%2Fapprole%2Fv0.8.0'/>
+<id>tag:github.com,2008:Repository/31288958/api/auth/approle/v0.8.0</id>
+<updated>2024-09-10T18:03:47Z</updated>
+<content type='html'><![CDATA[<p>update vault auth submodules to api/v1.15.0 (<a class="issue-link js-issue-link" href="https://github.com/hashicorp/vault/pull/28338">#28338</a>)</p>]]></content>
+<author><name>victorr</name></author>
+</entry>
+<entry>
+<title>Vault Release: api/v1.15.0</title>
+<link href='https://github.com/hashicorp/vault/releases/tag/api%2Fv1.15.0'/>
+<id>tag:github.com,2008:Repository/31288958/api/v1.15.0</id>
+<updated>2024-09-10T16:59:08Z</updated>
+<content type='html'><![CDATA[<p>Update Go to 1.22.7. (<a class="issue-link js-issue-link" href="https://github.com/hashicorp/vault/pull/28335">#28335</a>)</p>]]></content>
+<author><name>victorr</name></author>
+</entry>
+<entry>
+<title>GCP Provider Release: v5.44.0</title>
+<link href='https://github.com/hashicorp/terraform-provider-google/releases/tag/v5.44.0'/>
+<id>tag:github.com,2008:Repository/93446075/v5.44.0</id>
+<updated>2024-09-09T17:30:51Z</updated>
+<content type='html'><![CDATA[<p>NOTES:</p>
+<ul>
+<li>5.44.0 is a backport release, intended to pull in critical container improvements from 6.2.0</li>
+</ul>
+<p>IMPROVEMENTS:</p>
+<ul>
+<li>container: added <code>insecure_kubelet_readonly_port_enabled</code> to <code>node_pool.node_config.kubelet_config</code> and <code>node_config.kubelet_config</code> in <code>google_container_node_pool</code> resource. (<a href="https://github.com/hashicorp/terraform-provider-google/pull/19312">#19312</a>)</li>
+<li>container: added <code>insecure_kubelet_readonly_port_enabled</code> to <code>node_pool_defaults.node_config_defaults</code>, <code>node_pool.node_config.kubelet_config</code>, and <code>node_config.kubelet_config</code> in <code>google_container_cluster</code> resource. (<a href="https://github.com/hashicorp/terraform-provider-google/pull/19312">#19312</a>)</li>
+<li>container: added <code>node_pool_auto_config.node_kublet_config.insecure_kubelet_readonly_port_enabled</code> field to <code>google_container_cluster</code>. (<a href="https://github.com/hashicorp/terraform-provider-google/pull/19320">#19320</a>)</li>
+</ul>]]></content>
+<author><name>github-actions[bot]</name></author>
+</entry>
+<entry>
+<title>GCP Provider Release: v6.2.0</title>
+<link href='https://github.com/hashicorp/terraform-provider-google/releases/tag/v6.2.0'/>
+<id>tag:github.com,2008:Repository/93446075/v6.2.0</id>
+<updated>2024-09-09T17:11:49Z</updated>
+<content type='html'><![CDATA[<p>FEATURES:</p>
+<ul>
+<li><strong>New Data Source:</strong> <code>google_certificate_manager_certificates</code> (<a href="https://github.com/hashicorp/terraform-provider-google/pull/19361">#19361</a>)</li>
+<li><strong>New Resource:</strong> <code>google_network_security_server_tls_policy</code> (<a href="https://github.com/hashicorp/terraform-provider-google/pull/19314">#19314</a>)</li>
+<li><strong>New Resource:</strong> <code>google_scc_v2_folder_scc_big_query_export</code> (<a href="https://github.com/hashicorp/terraform-provider-google/pull/19327">#19327</a>)</li>
+<li><strong>New Resource:</strong> <code>google_scc_v2_project_scc_big_query_export</code> (<a href="https://github.com/hashicorp/terraform-provider-google/pull/19311">#19311</a>)</li>
+</ul>
+<p>IMPROVEMENTS:</p>
+<ul>
+<li>assuredworkload: added field <code>partner_service_billing_account</code> to <code>google_assured_workloads_workload</code> (<a href="https://github.com/hashicorp/terraform-provider-google/pull/19358">#19358</a>)</li>
+<li>bigtable: added support for <code>column_family.type</code> in <code>google_bigtable_table</code> (<a href="https://github.com/hashicorp/terraform-provider-google/pull/19302">#19302</a>)</li>
+<li>cloudrun: promoted support for nfs and csi volumes (for Cloud Storage FUSE) for <code>google_cloud_run_service</code> to GA (<a href="https://github.com/hashicorp/terraform-provider-google/pull/19359">#19359</a>)</li>
+<li>cloudrunv2: promoted support for nfs and gcs volumes for <code>google_cloud_run_v2_job</code> to GA (<a href="https://github.com/hashicorp/terraform-provider-google/pull/19359">#19359</a>)</li>
+<li>compute: added <code>boot_disk.interface</code> field to <code>google_compute_instance</code> resource (<a href="https://github.com/hashicorp/terraform-provider-google/pull/19319">#19319</a>)</li>
+<li>container: added <code>node_pool_auto_config.node_kublet_config.insecure_kubelet_readonly_port_enabled</code> field to <code>google_container_cluster</code>. (<a href="https://github.com/hashicorp/terraform-provider-google/pull/19320">#19320</a>)</li>
+<li>container: added <code>insecure_kubelet_readonly_port_enabled</code> to <code>node_pool.node_config.kubelet_config</code> and <code>node_config.kubelet_config</code> in <code>google_container_node_pool</code> resource. (<a href="https://github.com/hashicorp/terraform-provider-google/pull/19312">#19312</a>)</li>
+<li>container: added <code>insecure_kubelet_readonly_port_enabled</code> to <code>node_pool_defaults.node_config_defaults</code>, <code>node_pool.node_config.kubelet_config</code>, and <code>node_config.kubelet_config</code> in <code>google_container_cluster</code> resource. (<a href="https://github.com/hashicorp/terraform-provider-google/pull/19312">#19312</a>)</li>
+<li>container: added support for in-place updates for <code>google_compute_node_pool.node_config.gcfs_config</code> and <code>google_container_cluster.node_config.gcfs_cluster</code> and <code>google_container_cluster.node_pool.node_config.gcfs_cluster</code> (<a href="https://github.com/hashicorp/terraform-provider-google/pull/19365">#19365</a>)</li>
+<li>container: promoted the <code>additive_vpc_scope_dns_domain</code> field on the <code>google_container_cluster</code> resource to GA (<a href="https://github.com/hashicorp/terraform-provider-google/pull/19313">#19313</a>)</li>
+<li>iambeta: added <code>x509</code> field to <code>google_iam_workload_identity_pool_provider </code> resource (<a href="https://github.com/hashicorp/terraform-provider-google/pull/19375">#19375</a>)</li>
+<li>networkconnectivity: added <code>include_export_ranges</code> to <code>google_network_connectivity_spoke</code> (<a href="https://github.com/hashicorp/terraform-provider-google/pull/19346">#19346</a>)</li>
+<li>pubsub: added <code>cloud_storage_config.max_messages</code> and <code>cloud_storage_config.avro_config.use_topic_schema</code> fields to <code>google_pubsub_subscription</code> resource (<a href="https://github.com/hashicorp/terraform-provider-google/pull/19338">#19338</a>)</li>
+<li>redis: added the <code>maintenance_policy</code> field to the <code>google_redis_cluster</code> resource (<a href="https://github.com/hashicorp/terraform-provider-google/pull/19341">#19341</a>)</li>
+<li>resourcemanager: added <code>tags</code> field to <code>google_project</code> to allow setting tags for projects at creation time (<a href="https://github.com/hashicorp/terraform-provider-google/pull/19351">#19351</a>)</li>
+<li>securitycenter: added support for empty <code>streaming_config.filter</code> values in <code>google_scc_notification_config</code> resources (<a href="https://github.com/hashicorp/terraform-provider-google/pull/19369">#19369</a>)</li>
+</ul>
+<p>BUG FIXES:</p>
+<ul>
+<li>compute: fixed <code>google_compute_interconnect</code> to support correct <code>available_features</code> option of <code>IF_MACSEC</code> (<a href="https://github.com/hashicorp/terraform-provider-google/pull/19330">#19330</a>)</li>
+<li>compute: fixed a bug where <code>advertised_route_priority</code> was accidentally set to 0 during updates in <code>google_compute_router_peer</code> (<a href="https://github.com/hashicorp/terraform-provider-google/pull/19366">#19366</a>)</li>
+<li>compute: fixed a permadiff caused by setting <code>start_time</code> in an incorrect H:mm format in <code>google_compute_resource_policies</code> resources (<a href="https://github.com/hashicorp/terraform-provider-google/pull/19297">#19297</a>)</li>
+<li>compute: fixed <code>network_interface.subnetwork_project</code> validation to match with the project in <code>network_interface.subnetwork</code> field when <code>network_interface.subnetwork</code> has full self_link in <code>google_compute_instance</code> resource (<a href="https://github.com/hashicorp/terraform-provider-google/pull/19348">#19348</a>)</li>
+<li>container: removed unnecessary force replacement in node pool <code>gcfs_config</code> (<a href="https://github.com/hashicorp/terraform-provider-google/pull/19365">#19365</a></li>
+<li>kms: updated the <code>google_kms_autokey_config</code> resource's <code>folder</code> field to accept values that are either full resource names (<code>folders/{folder_id}</code>) or just the folder id (<code>{folder_id}</code> only) (<a href="https://github.com/hashicorp/terraform-provider-google/pull/19364">#19364</a>))</li>
+<li>storage: added retry support for 429 errors in <code>google_storage_bucket</code> resource (<a href="https://github.com/hashicorp/terraform-provider-google/pull/19353">#19353</a>)</li>
+</ul>]]></content>
+<author><name>github-actions[bot]</name></author>
+</entry>
+<entry>
+<title>Hashicorp Status Release: HCP Boundary September Scheduled Maintenance</title>
+<link href='https://status.hashicorp.com/incidents/q4clwpyn1xs4'/>
+<id>tag:status.hashicorp.com,2005:Incident/22067690</id>
+<updated>2024-09-06T21:19:15Z</updated>
+<content type='html'><![CDATA[<p><small>Sep <var> 6</var>, <var>21:19</var> UTC</small><br /><strong>Update</strong> - HCP Boundary will undergo planned maintenance on Saturday, September 14th beginning at 14:00 UTC. We expect this maintenance to be complete within four hours. During this time, HCP Boundary sessions may disconnect unexpectedly and new sessions may not be created. We will post updates as necessary throughout the maintenance period.</p><p><small>Sep <var> 6</var>, <var>20:58</var> UTC</small><br /><strong>Update</strong> - HCP Boundary will undergo planned maintenance on Saturday, September 14th beginning at 16:00 UTC. We expect this maintenance to be complete within four hours. During this time, HCP Boundary sessions may disconnect unexpectedly and new sessions may not be created. We will post updates as necessary throughout the maintenance period.</p><p><small>Sep <var> 5</var>, <var>20:41</var> UTC</small><br /><strong>Investigating</strong> - HCP Boundary will undergo planned maintenance on Saturday, September 14th beginning at 14:00 UTC. We expect this maintenance to be complete within four hours. During this time, HCP Boundary sessions may disconnect unexpectedly and new sessions may not be created. We will post updates as necessary throughout the maintenance period.</p>]]></content>
 <author><name>No author available</name></author>
 </entry>
 <entry>
@@ -40,19 +270,11 @@
 <author><name>github-actions[bot]</name></author>
 </entry>
 <entry>
-<title>Hashicorp Status Release: HCP Boundary September Scheduled Maintenance</title>
-<link href='https://status.hashicorp.com/incidents/q4clwpyn1xs4'/>
-<id>tag:status.hashicorp.com,2005:Incident/22067690</id>
-<updated>2024-09-05T20:41:51Z</updated>
-<content type='html'><![CDATA[<p><small>Sep <var> 5</var>, <var>20:41</var> UTC</small><br /><strong>Investigating</strong> - HCP Boundary will undergo planned maintenance on Saturday, September 14th beginning at 14:00 UTC. We expect this maintenance to be complete within four hours. During this time, HCP Boundary sessions may disconnect unexpectedly and new sessions may not be created. We will post updates as necessary throughout the maintenance period.</p>]]></content>
-<author><name>No author available</name></author>
-</entry>
-<entry>
 <title>GitHub Status Release: Disruption with some GitHub services</title>
 <link href='https://www.githubstatus.com/incidents/9dyp7zt86rp5'/>
 <id>tag:www.githubstatus.com,2005:Incident/22064375</id>
 <updated>2024-09-05T17:24:08Z</updated>
-<content type='html'><![CDATA[<p><small>Sep <var> 5</var>, <var>17:24</var> UTC</small><br /><strong>Resolved</strong> - This incident has been resolved.</p><p><small>Sep <var> 5</var>, <var>16:49</var> UTC</small><br /><strong>Update</strong> - We continue to work on making GitHub Connect setup available for customers that experienced errors since Sept 2.  We will share another update as we make progress.</p><p><small>Sep <var> 5</var>, <var>16:15</var> UTC</small><br /><strong>Update</strong> - We've reverted a related change and customers can now setup GitHub Connect again. However, customers who attempted to setup GitHub Connect after September 2nd that saw a 404 will see continued failures until we complete an additional repair step. We will provide additional updates as this work progresses.</p><p><small>Sep <var> 5</var>, <var>15:56</var> UTC</small><br /><strong>Update</strong> - Enterprise administrators are seeing failures in the form of 404s when attempting to setup GitHub Connect for the first time. Existing Connect setups are not impacted. We are working on a fix for this issue.</p><p><small>Sep <var> 5</var>, <var>15:55</var> UTC</small><br /><strong>Investigating</strong> - We are currently investigating this issue.</p>]]></content>
+<content type='html'><![CDATA[<p><small>Sep <var> 5</var>, <var>17:24</var> UTC</small><br /><strong>Resolved</strong> - Between August 27, 2024, 15:52 UTC and September 5, 2024, 17:26 UTC the GitHub Connect service was degraded. This specifically impacted GHES customers who were enabling GitHub Connect for the first time on a GHES instance. Previously enabled GitHub Connect GHES instances were not impacted by this issue.<br /><br />Customers experiencing this issue would have received a 404 response during GitHub Connect enablement and subsequent messages about a failure to connect. This was due to a recent change in configuration to GitHub Connect which has since been rolled back. <br /><br />Subsequent enablement failures on re-attempts were caused by data corruption which has been remediated. Customers should now be able to enable GitHub Connect successfully.<br /><br />To reduce our time to detection and mitigation of such issues in the future, we are working to improve observability of GitHub Connect failures. We are also making efforts to prevent future misconfiguration of GitHub Connect.</p><p><small>Sep <var> 5</var>, <var>16:49</var> UTC</small><br /><strong>Update</strong> - We continue to work on making GitHub Connect setup available for customers that experienced errors since Sept 2.  We will share another update as we make progress.</p><p><small>Sep <var> 5</var>, <var>16:15</var> UTC</small><br /><strong>Update</strong> - We've reverted a related change and customers can now setup GitHub Connect again. However, customers who attempted to setup GitHub Connect after September 2nd that saw a 404 will see continued failures until we complete an additional repair step. We will provide additional updates as this work progresses.</p><p><small>Sep <var> 5</var>, <var>15:56</var> UTC</small><br /><strong>Update</strong> - Enterprise administrators are seeing failures in the form of 404s when attempting to setup GitHub Connect for the first time. Existing Connect setups are not impacted. We are working on a fix for this issue.</p><p><small>Sep <var> 5</var>, <var>15:55</var> UTC</small><br /><strong>Investigating</strong> - We are currently investigating this issue.</p>]]></content>
 <author><name>No author available</name></author>
 </entry>
 <entry>
@@ -167,40 +389,6 @@ displayed in the audit log in plaintext <a href="https://discuss.hashicorp.com/t
 <author><name>No author available</name></author>
 </entry>
 <entry>
-<title>Vault Release: v1.17.4</title>
-<link href='https://github.com/hashicorp/vault/releases/tag/v1.17.4'/>
-<id>tag:github.com,2008:Repository/31288958/v1.17.4</id>
-<updated>2024-08-29T19:32:01Z</updated>
-<content type='html'><![CDATA[<h2>1.17.4</h2>
-<h3>August 29, 2024</h3>
-<p>CHANGES:</p>
-<ul>
-<li>activity (enterprise): filter all fields in client count responses by the request namespace [<a href="https://github.com/hashicorp/vault/pull/27790">GH-27790</a>]</li>
-<li>core: Bump Go version to 1.22.6</li>
-<li>secrets/terraform: Update plugin to v0.9.0 [<a href="https://github.com/hashicorp/vault/pull/28016">GH-28016</a>]</li>
-</ul>
-<p>IMPROVEMENTS:</p>
-<ul>
-<li>activity log: Changes how new client counts in the current month are estimated, in order to return more<br />
-visibly sensible totals. [<a href="https://github.com/hashicorp/vault/pull/27547">GH-27547</a>]</li>
-<li>activity: <code>/sys/internal/counters/activity</code> will now include a warning if the specified usage period contains estimated client counts. [<a href="https://github.com/hashicorp/vault/pull/28068">GH-28068</a>]</li>
-<li>audit: Adds TRACE logging to log request/response under certain circumstances, and further improvements to the audit subsystem. [<a href="https://github.com/hashicorp/vault/pull/28056">GH-28056</a>]</li>
-<li>cli: <code>vault operator usage</code> will now include a warning if the specified usage period contains estimated client counts. [<a href="https://github.com/hashicorp/vault/pull/28068">GH-28068</a>]</li>
-<li>core/activity: Ensure client count queries that include the current month return consistent results by sorting the clients before performing estimation [<a href="https://github.com/hashicorp/vault/pull/28062">GH-28062</a>]</li>
-<li>raft-snapshot (enterprise): add support for managed identity credentials for azure snapshots</li>
-</ul>
-<p>BUG FIXES:</p>
-<ul>
-<li>activity: The sys/internal/counters/activity endpoint will return current month data when the end_date parameter is set to a future date. [<a href="https://github.com/hashicorp/vault/pull/28042">GH-28042</a>]</li>
-<li>auth/aws: fixes an issue where not supplying an external id was interpreted as an empty external id [<a href="https://github.com/hashicorp/vault/pull/27858">GH-27858</a>]</li>
-<li>command: The <code>vault secrets move</code> and <code>vault auth move</code> command will no longer attempt to write to storage on performance standby nodes. [<a href="https://github.com/hashicorp/vault/pull/28059">GH-28059</a>]</li>
-<li>core (enterprise): Fix deletion of MFA login-enforcement configurations on standby nodes</li>
-<li>secrets/database: Skip connection verification on reading existing DB connection configuration [<a href="https://github.com/hashicorp/vault/pull/28139">GH-28139</a>]</li>
-<li>ui: fixes toast (flash) alert message saying "created" when deleting a kv v2 secret [<a href="https://github.com/hashicorp/vault/pull/28093">GH-28093</a>]</li>
-</ul>]]></content>
-<author><name>hc-github-team-es-release-engineering</name></author>
-</entry>
-<entry>
 <title>GitHub Status Release: Disruption with some GitHub services</title>
 <link href='https://www.githubstatus.com/incidents/345t4sjty6q3'/>
 <id>tag:www.githubstatus.com,2005:Incident/21952389</id>
@@ -264,7 +452,7 @@ visibly sensible totals. [<a href="https://github.com/hashicorp/vault/pull/27547
 <link href='https://www.githubstatus.com/incidents/1zyrr8fxrl21'/>
 <id>tag:www.githubstatus.com,2005:Incident/21936136</id>
 <updated>2024-08-27T23:26:32Z</updated>
-<content type='html'><![CDATA[<p><small>Aug <var>27</var>, <var>23:26</var> UTC</small><br /><strong>Resolved</strong> - This incident has been resolved.</p><p><small>Aug <var>27</var>, <var>23:25</var> UTC</small><br /><strong>Update</strong> - We are no longer seeing any traffic going through the affected routes and this issue should be resolved.</p><p><small>Aug <var>27</var>, <var>23:20</var> UTC</small><br /><strong>Update</strong> - All traffic should be rerouted by now; and we have seen a complete drain from the affected provider. We are performing final validations that networking traffic is back to normal.</p><p><small>Aug <var>27</var>, <var>23:03</var> UTC</small><br /><strong>Update</strong> - We have drained connections that would be running through the affected routes and are waiting for caches to expire in order to validate that issues are resolved.</p><p><small>Aug <var>27</var>, <var>22:50</var> UTC</small><br /><strong>Update</strong> - We have identified some potential connectivity issues among public Internet transit routes and are attempting to reroute.</p><p><small>Aug <var>27</var>, <var>22:46</var> UTC</small><br /><strong>Update</strong> - Git Operations is experiencing degraded performance. We are continuing to investigate.</p><p><small>Aug <var>27</var>, <var>22:45</var> UTC</small><br /><strong>Update</strong> - Issues is experiencing degraded performance. We are continuing to investigate.</p><p><small>Aug <var>27</var>, <var>22:38</var> UTC</small><br /><strong>Update</strong> - We are experiencing some issues related to TLS/SSL encrypted connections and are currently investigating.</p><p><small>Aug <var>27</var>, <var>22:37</var> UTC</small><br /><strong>Investigating</strong> - We are currently investigating this issue.</p>]]></content>
+<content type='html'><![CDATA[<p><small>Aug <var>27</var>, <var>23:26</var> UTC</small><br /><strong>Resolved</strong> - On August 28th, 2024, starting at 20:43 UTC, some customers accessing GitHub from North America experienced degraded access to GitHub services. The error was intermittent and manifested as timeouts when requests tried to reach endpoints. This was due to a degraded route internal to one of our transit providers. We identified the unhealthy provider path and drained it at 23:26 UTC, rerouting traffic through other providers and promptly restoring normal traffic operations.</p><p><small>Aug <var>27</var>, <var>23:25</var> UTC</small><br /><strong>Update</strong> - We are no longer seeing any traffic going through the affected routes and this issue should be resolved.</p><p><small>Aug <var>27</var>, <var>23:20</var> UTC</small><br /><strong>Update</strong> - All traffic should be rerouted by now; and we have seen a complete drain from the affected provider. We are performing final validations that networking traffic is back to normal.</p><p><small>Aug <var>27</var>, <var>23:03</var> UTC</small><br /><strong>Update</strong> - We have drained connections that would be running through the affected routes and are waiting for caches to expire in order to validate that issues are resolved.</p><p><small>Aug <var>27</var>, <var>22:50</var> UTC</small><br /><strong>Update</strong> - We have identified some potential connectivity issues among public Internet transit routes and are attempting to reroute.</p><p><small>Aug <var>27</var>, <var>22:46</var> UTC</small><br /><strong>Update</strong> - Git Operations is experiencing degraded performance. We are continuing to investigate.</p><p><small>Aug <var>27</var>, <var>22:45</var> UTC</small><br /><strong>Update</strong> - Issues is experiencing degraded performance. We are continuing to investigate.</p><p><small>Aug <var>27</var>, <var>22:38</var> UTC</small><br /><strong>Update</strong> - We are experiencing some issues related to TLS/SSL encrypted connections and are currently investigating.</p><p><small>Aug <var>27</var>, <var>22:37</var> UTC</small><br /><strong>Investigating</strong> - We are currently investigating this issue.</p>]]></content>
 <author><name>No author available</name></author>
 </entry>
 <entry>
@@ -797,51 +985,6 @@ visibly sensible totals. [<a href="https://github.com/hashicorp/vault/pull/27547
 <author><name>github-actions[bot]</name></author>
 </entry>
 <entry>
-<title>Vault Release: v1.17.3</title>
-<link href='https://github.com/hashicorp/vault/releases/tag/v1.17.3'/>
-<id>tag:github.com,2008:Repository/31288958/v1.17.3</id>
-<updated>2024-08-07T21:42:55Z</updated>
-<content type='html'><![CDATA[<h2>1.17.3</h2>
-<h3>August 07, 2024</h3>
-<p>CHANGES:</p>
-<ul>
-<li>auth/cf: Update plugin to v0.18.0 [<a href="https://github.com/hashicorp/vault/pull/27724">GH-27724</a>]</li>
-</ul>
-<p>IMPROVEMENTS:</p>
-<ul>
-<li>audit: Ensure that any underyling errors from audit devices are logged even if we consider auditing to be a success. [<a href="https://github.com/hashicorp/vault/pull/27809">GH-27809</a>]</li>
-<li>audit: Internal implementation changes to the audit subsystem which improve performance. [<a href="https://github.com/hashicorp/vault/pull/27952">GH-27952</a>]</li>
-<li>audit: sinks (file, socket, syslog) will attempt to log errors to the server operational<br />
-log before returning (if there are errors to log, and the context is done). [<a href="https://github.com/hashicorp/vault/pull/27859">GH-27859</a>]</li>
-<li>auth/cert: Cache full list of role trust information separately to avoid<br />
-eviction, and avoid duplicate loading during multiple simultaneous logins on<br />
-the same role. [<a href="https://github.com/hashicorp/vault/pull/27902">GH-27902</a>]</li>
-<li>license utilization reporting (enterprise): Auto-roll billing start date. [<a href="https://github.com/hashicorp/vault/pull/27656">GH-27656</a>]</li>
-<li>website/docs: Added API documentation for Azure Secrets Engine delete role [<a href="https://github.com/hashicorp/vault/pull/27883">GH-27883</a>]</li>
-</ul>
-<p>BUG FIXES:</p>
-<ul>
-<li>auth/cert: Use subject's serial number, not issuer's within error message text in OCSP request errors [<a href="https://github.com/hashicorp/vault/pull/27696">GH-27696</a>]</li>
-<li>core (enterprise): Fix 500 errors that occurred querying <code>sys/internal/ui/mounts</code> for a mount prefixed by a namespace path when path filters are configured. [<a href="https://github.com/hashicorp/vault/pull/27939">GH-27939</a>]</li>
-<li>core/identity: Fixed an issue where deleted/reassigned entity-aliases were not removed from in-memory database. [<a href="https://github.com/hashicorp/vault/pull/27750">GH-27750</a>]</li>
-<li>proxy/cache (enterprise): Fixed an issue where Proxy would not correctly update KV secrets when talking to a perf standby. Proxy will now attempt to forward requests to update secrets triggered by events to the active node. Note that this requires <code>allow_forwarding_via_header</code> to be configured on the cluster. [<a href="https://github.com/hashicorp/vault/pull/27891">GH-27891</a>]</li>
-<li>proxy/cache (enterprise): Fixed an issue where cached static secrets could fail to update if the secrets belonged to a non-root namespace. [<a href="https://github.com/hashicorp/vault/pull/27730">GH-27730</a>]</li>
-<li>raft/autopilot: Fixed panic that may occur during shutdown [<a href="https://github.com/hashicorp/vault/pull/27726">GH-27726</a>]</li>
-<li>secrets-sync (enterprise): Destination set/remove operations will no longer be blocked as "purge in progress" after a purge job ended in failure.</li>
-<li>secrets-sync (enterprise): Normalize custom_tag keys and values for recoverable invalid characters.</li>
-<li>secrets-sync (enterprise): Normalize secret key names before storing the external_name in a secret association.</li>
-<li>secrets-sync (enterprise): Patching github sync destination credentials will properly update and save the new credentials.</li>
-<li>secrets-sync (enterprise): Return an error immediately on destination creation when providing invalid custom_tags based on destination type.</li>
-<li>secrets/identity (enterprise): Fix a bug that can cause DR promotion to fail in rare cases where a PR secondary has inconsistent alias information in storage.</li>
-<li>sys: Fix a bug where mounts of external plugins that were registered before Vault v1.0.0 could not be tuned to<br />
-use versioned plugins. [<a href="https://github.com/hashicorp/vault/pull/27881">GH-27881</a>]</li>
-<li>ui: Fix cursor jump on KVv2 json editor that would occur after pressing ENTER. [<a href="https://github.com/hashicorp/vault/pull/27569">GH-27569</a>]</li>
-<li>ui: fix issue where enabling then disabling "Tidy ACME" in PKI results in failed API call. [<a href="https://github.com/hashicorp/vault/pull/27742">GH-27742</a>]</li>
-<li>ui: fix namespace picker not working when in small screen where the sidebar is collapsed by default. [<a href="https://github.com/hashicorp/vault/pull/27728">GH-27728</a>]</li>
-</ul>]]></content>
-<author><name>hc-github-team-es-release-engineering</name></author>
-</entry>
-<entry>
 <title>Terraform CLI Release: v1.10.0-alpha20240807</title>
 <link href='https://github.com/hashicorp/terraform/releases/tag/v1.10.0-alpha20240807'/>
 <id>tag:github.com,2008:Repository/17728164/v1.10.0-alpha20240807</id>
@@ -996,17 +1139,6 @@ use versioned plugins. [<a href="https://github.com/hashicorp/vault/pull/27881">
 <author><name>No author available</name></author>
 </entry>
 <entry>
-<title>GCP Provider Release: v5.39.1</title>
-<link href='https://github.com/hashicorp/terraform-provider-google/releases/tag/v5.39.1'/>
-<id>tag:github.com,2008:Repository/93446075/v5.39.1</id>
-<updated>2024-07-30T18:28:28Z</updated>
-<content type='html'><![CDATA[<p>BUG FIXES:</p>
-<ul>
-<li>datastream: fixed a breaking change in 5.39.0 <code>google_datastream_stream</code> that made one of <code>destination_config.bigquery_destination_config.merge</code> or <code>destination_config.bigquery_destination_config.append_only</code> required (<a href="https://github.com/hashicorp/terraform-provider-google/pull/18903">#18903</a>)</li>
-</ul>]]></content>
-<author><name>github-actions[bot]</name></author>
-</entry>
-<entry>
 <title>Terraform CLI Release: v1.10.0-alpha20240730</title>
 <link href='https://github.com/hashicorp/terraform/releases/tag/v1.10.0-alpha20240730'/>
 <id>tag:github.com,2008:Repository/17728164/v1.10.0-alpha20240730</id>
@@ -1057,65 +1189,6 @@ use versioned plugins. [<a href="https://github.com/hashicorp/vault/pull/27881">
 <updated>2024-07-30T14:22:15Z</updated>
 <content type='html'><![CDATA[<p><small>Jul <var>30</var>, <var>14:22</var> UTC</small><br /><strong>Resolved</strong> - On July 30th, 2024, between 12:15 UTC and 14:22 UTC the Codespaces service was degraded in the UK South and West Europe regions. During this time, approximately 75% of attempts to create or resume Codespaces in these regions were failing.<br /><br />We mitigated the incident by resolving networking stability issues in these regions.<br /><br />We are working to improve network resiliency to reduce our time to detection and mitigation of issues like this one in the future.</p><p><small>Jul <var>30</var>, <var>14:16</var> UTC</small><br /><strong>Update</strong> - We are starting to see recovery for this issue and are monitoring things closely. We will keep this incident open for now until we are fully confident on complete recovery.</p><p><small>Jul <var>30</var>, <var>14:09</var> UTC</small><br /><strong>Update</strong> - We have correlated the impact on Codespaces to an outage with a third party service. We are continuing to investigate ways to reduce impact on our customers while we wait for that outage to be resolved.</p><p><small>Jul <var>30</var>, <var>13:47</var> UTC</small><br /><strong>Update</strong> - We are seeing increased failure rates for creation and resumption of Codespaces in the UK South and West Europe regions.<br /><br />We are working to resolve this issue and will update again soon.</p><p><small>Jul <var>30</var>, <var>13:36</var> UTC</small><br /><strong>Investigating</strong> - We are investigating reports of degraded performance for Codespaces</p>]]></content>
 <author><name>No author available</name></author>
-</entry>
-<entry>
-<title>GCP Provider Release: v5.39.0</title>
-<link href='https://github.com/hashicorp/terraform-provider-google/releases/tag/v5.39.0'/>
-<id>tag:github.com,2008:Repository/93446075/v5.39.0</id>
-<updated>2024-07-29T18:35:14Z</updated>
-<content type='html'><![CDATA[<p>NOTES:</p>
-<ul>
-<li>networkconnectivity: migrated <code>google_network_connectivity_hub</code> from DCL to MMv1 (<a href="https://github.com/hashicorp/terraform-provider-google/pull/18724">#18724</a>)</li>
-<li>networkconnectivity: migrated <code>google_network_connectivity_spoke</code> from DCL to MMv1 (<a href="https://github.com/hashicorp/terraform-provider-google/pull/18779">#18779</a>)</li>
-</ul>
-<p>DEPRECATIONS:</p>
-<ul>
-<li>bigquery: deprecated <code>allow_resource_tags_on_deletion</code> in <code>google_bigquery_table</code>. (<a href="https://github.com/hashicorp/terraform-provider-google/pull/18811">#18811</a>)</li>
-<li>bigqueryreservation: deprecated <code>multi_region_auxiliary</code> on <code>google_bigquery_reservation</code>. (<a href="https://github.com/hashicorp/terraform-provider-google/pull/18803">#18803</a>)</li>
-<li>datastore: deprecated the resource <code>google_datastore_index</code>. Use the <code>google_firestore_index</code> resource instead. (<a href="https://github.com/hashicorp/terraform-provider-google/pull/18781">#18781</a>)</li>
-</ul>
-<p>FEATURES:</p>
-<ul>
-<li><strong>New Resource:</strong> <code>google_apigee_environment_keyvaluemaps_entries</code> (<a href="https://github.com/hashicorp/terraform-provider-google/pull/18707">#18707</a>)</li>
-<li><strong>New Resource:</strong> <code>google_apigee_environment_keyvaluemaps</code> (<a href="https://github.com/hashicorp/terraform-provider-google/pull/18707">#18707</a>)</li>
-<li><strong>New Resource:</strong> <code>google_compute_resize_request</code> (<a href="https://github.com/hashicorp/terraform-provider-google/pull/18725">#18725</a>)</li>
-<li><strong>New Resource:</strong> <code>google_compute_router_route_policy</code> (<a href="https://github.com/hashicorp/terraform-provider-google/pull/18759">#18759</a>)</li>
-<li><strong>New Resource:</strong> <code>google_scc_v2_organization_mute_config</code> (<a href="https://github.com/hashicorp/terraform-provider-google/pull/18752">#18752</a>)</li>
-</ul>
-<p>IMPROVEMENTS:</p>
-<ul>
-<li>alloydb: added <code>observability_config</code> field to <code>google_alloydb_instance</code> resource (<a href="https://github.com/hashicorp/terraform-provider-google/pull/18743">#18743</a>)</li>
-<li>bigquery: added <code>resource_tags</code> field to <code>google_bigquery_dataset</code> resource (ga) (<a href="https://github.com/hashicorp/terraform-provider-google/pull/18711">#18711</a>)</li>
-<li>bigquery: added <code>resource_tags</code> field to <code>google_bigquery_table</code> resource (<a href="https://github.com/hashicorp/terraform-provider-google/pull/18741">#18741</a>)</li>
-<li>bigtable: added <code>data_boost_isolation_read_only</code> and <code>data_boost_isolation_read_only.compute_billing_owner</code> fields to <code>google_bigtable_app_profile</code> resource (<a href="https://github.com/hashicorp/terraform-provider-google/pull/18819">#18819</a>)</li>
-<li>cloudfunctions: added <code>build_service_account</code> field to <code>google_cloudfunctions_function</code> resource (<a href="https://github.com/hashicorp/terraform-provider-google/pull/18702">#18702</a>)</li>
-<li>compute: added <code>aws_v4_authentication</code> fields to <code>google_compute_backend_service</code> resource (<a href="https://github.com/hashicorp/terraform-provider-google/pull/18796">#18796</a>)</li>
-<li>compute: added <code>custom_learned_ip_ranges</code> and <code>custom_learned_route_priority</code> fields to <code>google_compute_router_peer</code> resource (<a href="https://github.com/hashicorp/terraform-provider-google/pull/18727">#18727</a>)</li>
-<li>compute: added <code>export_policies</code> and <code>import_policies</code> fields  to <code>google_compute_router_peer</code> resource (<a href="https://github.com/hashicorp/terraform-provider-google/pull/18759">#18759</a>)</li>
-<li>compute: added <code>shared_secret</code> field to <code>google_compute_public_advertised_prefix</code> resource (<a href="https://github.com/hashicorp/terraform-provider-google/pull/18786">#18786</a>)</li>
-<li>compute: added <code>storage_pool</code> under <code>boot_disk.initialize_params</code> to <code>google_compute_instance</code> resource (<a href="https://github.com/hashicorp/terraform-provider-google/pull/18817">#18817</a>)</li>
-<li>compute: changed <code>target_service</code> field on the <code>google_compute_service_attachment</code> resource to accept a <code>ForwardingRule</code> or <code>Gateway</code> URL. (<a href="https://github.com/hashicorp/terraform-provider-google/pull/18742">#18742</a>)</li>
-<li>container: added field <code>ray_operator_config</code> for <code>google_container_cluster</code> (<a href="https://github.com/hashicorp/terraform-provider-google/pull/18825">#18825</a>)</li>
-<li>datastream: added <code>merge</code> and <code>append_only</code> fields to <code>google_datastream_stream</code> resource (<a href="https://github.com/hashicorp/terraform-provider-google/pull/18726">#18726</a>)</li>
-<li>datastream: promoted <code>source_config.sql_server_source_config</code> and <code>backfill_all.sql_server_excluded_objects</code> fields in <code>google_datastream_stream</code> resource from beta to GA (<a href="https://github.com/hashicorp/terraform-provider-google/pull/18732">#18732</a>)</li>
-<li>datastream: promoted <code>sql_server_profile</code> field in <code>google_datastream_connection_profile</code> resource from beta to GA (<a href="https://github.com/hashicorp/terraform-provider-google/pull/18732">#18732</a>)</li>
-<li>dlp: added <code>cloud_storage_target</code> field to <code>google_data_loss_prevention_discovery_config</code> resource (<a href="https://github.com/hashicorp/terraform-provider-google/pull/18740">#18740</a>)</li>
-<li>resourcemanager: added <code>check_if_service_has_usage_on_destroy</code> field to <code>google_project_service</code> resource (<a href="https://github.com/hashicorp/terraform-provider-google/pull/18753">#18753</a>)</li>
-<li>resourcemanager: added the <code>member</code> property to <code>google_project_service_identity</code> (<a href="https://github.com/hashicorp/terraform-provider-google/pull/18695">#18695</a>)</li>
-<li>vmwareengine: added <code>deletion_delay_hours</code> field to <code>google_vmwareengine_private_cloud</code> resource (<a href="https://github.com/hashicorp/terraform-provider-google/pull/18698">#18698</a>)</li>
-<li>vmwareengine: supported type change from <code>TIME_LIMITED</code> to <code>STANDARD</code> for multi-node <code>google_vmwareengine_private_cloud</code> resource (<a href="https://github.com/hashicorp/terraform-provider-google/pull/18698">#18698</a>)</li>
-<li>workbench: added <code>access_configs</code> to <code>google_workbench_instance</code> resource (<a href="https://github.com/hashicorp/terraform-provider-google/pull/18737">#18737</a>)</li>
-</ul>
-<p>BUG FIXES:</p>
-<ul>
-<li>compute: fixed perma-diff for <code>interconnect_type</code> being <code>DEDICATED</code> in <code>google_compute_interconnect</code> resource (<a href="https://github.com/hashicorp/terraform-provider-google/pull/18761">#18761</a>)</li>
-<li>dialogflowcx: fixed intermittent issues with retrieving resource state soon after creating <code>google_dialogflow_cx_security_settings</code> resources (<a href="https://github.com/hashicorp/terraform-provider-google/pull/18792">#18792</a>)</li>
-<li>firestore: fixed missing import of <code>field</code> for <code>google_firestore_field</code>. (<a href="https://github.com/hashicorp/terraform-provider-google/pull/18771">#18771</a>)</li>
-<li>firestore: fixed bug where fields <code>database</code>, <code>collection</code>, <code>document_id</code>, and <code>field</code> could not be updated on <code>google_firestore_document</code> and <code>google_firestore_field</code> resources. (<a href="https://github.com/hashicorp/terraform-provider-google/pull/18821">#18821</a>)</li>
-<li>netapp: made the <code>smb_settings</code> field on the <code>google_netapp_volume</code> resource default to the value returned from the API. This solves permadiffs when the field is unset. (<a href="https://github.com/hashicorp/terraform-provider-google/pull/18790">#18790</a>)</li>
-<li>networksecurity: added recreate functionality on update for <code>client_validation_mode</code> and <code>client_validation_trust_config</code> in <code>google_network_security_server_tls_policy</code> (<a href="https://github.com/hashicorp/terraform-provider-google/pull/18769">#18769</a>)</li>
-</ul>]]></content>
-<author><name>github-actions[bot]</name></author>
 </entry>
 <entry>
 <title>Hashicorp Status Release: HCP UI Experiencing Intermittent Unavailability In Several Products</title>
@@ -1317,14 +1390,6 @@ use versioned plugins. [<a href="https://github.com/hashicorp/vault/pull/27881">
 <author><name>No author available</name></author>
 </entry>
 <entry>
-<title>GitHub Status Release: Disruption with some GitHub services</title>
-<link href='https://www.githubstatus.com/incidents/p55k2jdgsrgc'/>
-<id>tag:www.githubstatus.com,2005:Incident/21424650</id>
-<updated>2024-07-16T03:07:48Z</updated>
-<content type='html'><![CDATA[<p><small>Jul <var>16</var>, <var>03:07</var> UTC</small><br /><strong>Resolved</strong> - On July 16th, 2024, between 00:30 UTC and 03:07 UTC, Copilot Chat was degraded and rejected all requests. The error rate was close to 100% during this time period and customers would have received errors when attempting to use Copilot Chat. <br /><br />This was triggered during routine maintenance from a service provider, when GitHub services were disconnected and overwhelmed the dependent service during reconnections. <br /><br />To mitigate the issue in the future, we are working to improve our reconnection and circuit-breaking logic to dependent services to recover from this kind of event seamlessly, without overwhelming the other service.<br /></p><p><small>Jul <var>16</var>, <var>02:56</var> UTC</small><br /><strong>Update</strong> - Copilot chat is error rates are improving and we are continuing to monitor system health.</p><p><small>Jul <var>16</var>, <var>02:10</var> UTC</small><br /><strong>Update</strong> - Copilot chat is experiencing elevated error rates. We have identified the root cause and are working on remediation.</p><p><small>Jul <var>16</var>, <var>01:35</var> UTC</small><br /><strong>Update</strong> - Copilot chat is experiencing elevated error rates and we are currently investigating the issue.</p><p><small>Jul <var>16</var>, <var>00:53</var> UTC</small><br /><strong>Investigating</strong> - We are currently investigating this issue.</p>]]></content>
-<author><name>No author available</name></author>
-</entry>
-<entry>
 <title>AzureRM Provider Release: v3.112.0</title>
 <link href='https://github.com/hashicorp/terraform-provider-azurerm/releases/tag/v3.112.0'/>
 <id>tag:github.com,2008:Repository/93446042/v3.112.0</id>
@@ -1370,54 +1435,6 @@ use versioned plugins. [<a href="https://github.com/hashicorp/vault/pull/27881">
 <li><code>azurerm_servicebus_topic</code> - <code>enable_batched_operations</code>, <code>enable_express</code> and <code>enable_partitioning</code> are superseded by <code>batched_operations_enabled</code>, <code>express_enabled</code> and <code>partitioning_enabled</code> (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/26479">#26479</a>)</li>
 </ul>]]></content>
 <author><name>github-actions[bot]</name></author>
-</entry>
-<entry>
-<title>Terraform CLI Release: v1.9.1</title>
-<link href='https://github.com/hashicorp/terraform/releases/tag/v1.9.1'/>
-<id>tag:github.com,2008:Repository/17728164/v1.9.1</id>
-<updated>2024-07-11T09:55:49Z</updated>
-<content type='html'><![CDATA[<h2>1.9.1 (July 3, 2024)</h2>
-<p>UPGRADE NOTES:</p>
-<ul>
-<li>Library used by Terraform (hashicorp/go-getter) for installing/updating modules was upgraded from v1.7.4 to v1.7.5. This addresses <a href="https://nvd.nist.gov/vuln/detail/CVE-2024-6257" rel="nofollow">CVE-2024-6257</a>. This change may have a negative effect on performance of <code>terraform init</code> or <code>terraform get</code> in case of larger git repositories. Please do file an issue if you find the performance difference noticable. (<a href="https://github.com/hashicorp/terraform/pull/35376">#35376</a>)</li>
-</ul>
-<p>BUG FIXES:</p>
-<ul>
-<li><code>terraform test</code>: Removed additional erroneous error message when referencing attributes that don't exist. (<a href="https://github.com/hashicorp/terraform/pull/35408">#35408</a>)</li>
-<li><code>import</code> blocks: Fix crash that occurs when incorrectly referencing the <code>to</code> resource from the <code>id</code> attribute. (<a href="https://github.com/hashicorp/terraform/pull/35420">#35420</a>)</li>
-</ul>]]></content>
-<author><name>hc-github-team-es-release-engineering</name></author>
-</entry>
-<entry>
-<title>Vault Release: v1.17.2</title>
-<link href='https://github.com/hashicorp/vault/releases/tag/v1.17.2'/>
-<id>tag:github.com,2008:Repository/31288958/v1.17.2</id>
-<updated>2024-07-10T21:19:10Z</updated>
-<content type='html'><![CDATA[<h2>1.17.2</h2>
-<h3>July 10, 2024</h3>
-<p>CHANGES:</p>
-<ul>
-<li>core: Bump Go version to 1.22.5</li>
-<li>secrets/azure: Update plugin to v0.19.2 [<a href="https://github.com/hashicorp/vault/pull/27652">GH-27652</a>]</li>
-</ul>
-<p>FEATURES:</p>
-<ul>
-<li><strong>AWS secrets engine STS session tags support</strong>: Adds support for setting STS<br />
-session tags when generating temporary credentials using the AWS secrets<br />
-engine. [<a href="https://github.com/hashicorp/vault/pull/27620">GH-27620</a>]</li>
-</ul>
-<p>BUG FIXES:</p>
-<ul>
-<li>cli: Fixed issue with <code>vault hcp connect</code> where HCP resources with uppercase letters were inaccessible when entering the correct project name. [<a href="https://github.com/hashicorp/vault/pull/27694">GH-27694</a>]</li>
-<li>core (enterprise): Fix HTTP redirects in namespaces to use the correct path and (in the case of event subscriptions) the correct URI scheme. [<a href="https://github.com/hashicorp/vault/pull/27660">GH-27660</a>]</li>
-<li>core/config: fix issue when using <code>proxy_protocol_behavior</code> with <code>deny_unauthorized</code>,<br />
-which causes the Vault TCP listener to close after receiving an untrusted upstream proxy connection. [<a href="https://github.com/hashicorp/vault/pull/27589">GH-27589</a>]</li>
-<li>core: Fixed an issue with performance standbys not being able to handle rotate root requests. [<a href="https://github.com/hashicorp/vault/pull/27631">GH-27631</a>]</li>
-<li>secrets/transit (enterprise): Fix an issue that caused input data be returned as part of generated CMAC values.</li>
-<li>ui: Display an error and force a timeout when TOTP passcode is incorrect [<a href="https://github.com/hashicorp/vault/pull/27574">GH-27574</a>]</li>
-<li>ui: Ensure token expired banner displays when batch token expires [<a href="https://github.com/hashicorp/vault/pull/27479">GH-27479</a>]</li>
-</ul>]]></content>
-<author><name>hc-github-team-es-release-engineering</name></author>
 </entry>
 <entry>
 <title>Terraform CLI Release: v1.9.2</title>
@@ -1490,291 +1507,6 @@ which causes the Vault TCP listener to close after receiving an untrusted upstre
 <li><code>azurerm_virtual_network_gateway_connection</code> - split create and update function to fix lifecycle - ignore (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/26431">#26431</a>)</li>
 </ul>]]></content>
 <author><name>github-actions[bot]</name></author>
-</entry>
-<entry>
-<title>AzureRM Provider Release: v3.110.0</title>
-<link href='https://github.com/hashicorp/terraform-provider-azurerm/releases/tag/v3.110.0'/>
-<id>tag:github.com,2008:Repository/93446042/v3.110.0</id>
-<updated>2024-06-28T03:41:22Z</updated>
-<content type='html'><![CDATA[<p>FEATURES:</p>
-<ul>
-<li><strong>New Data Source:</strong> <code>azurerm_load_test</code> (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/26376">#26376</a>)</li>
-<li><strong>New Resource:</strong> <code>azurerm_virtual_desktop_scaling_plan_host_pool_association</code> (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/24670">#24670</a>)</li>
-</ul>
-<p>ENHANCEMENTS:</p>
-<ul>
-<li>Data Source: <code>azurerm_monitor_data_collection_endpoint</code> - support for the <code>immutable_id</code> property (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/26380">#26380</a>)</li>
-<li>Data Source: <code>azurerm_nginx_certificate</code> - export the properties <code>sha1_thumbprint</code>, <code>key_vault_secret_version</code>, <code>key_vault_secret_creation_date</code>, <code>error_code</code> and <code>error_message</code> (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/26160">#26160</a>)</li>
-<li><code>azurerm_backup_policy_vm</code> - support for the <code>tiering_policy</code> property (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/26263">#26263</a>)</li>
-<li><code>azurerm_kubernetes_cluster_node_pool</code> - Pod Disruption Budgets are now respected when deleting a node pool (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/26471">#26471</a>)</li>
-<li><code>azurerm_monitor_data_collection_endpoint</code> - support for the <code>immutable_id</code> property (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/26380">#26380</a>)</li>
-<li><code>azurerm_mssql_managed_instance</code> - support the value <code>GZRS</code> for the <code>storage_account_type</code> property (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/26448">#26448</a>)</li>
-<li><code>azurerm_mssql_managed_instance_transparent_data_encryption</code> - support for the <code>managed_hsm_key_id</code> property (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/26496">#26496</a>)</li>
-<li><code>azurerm_redis_cache_access_policy</code> - allow updates to <code>permissions</code> (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/26440">#26440</a>)</li>
-<li><code>azurerm_redhat_openshift_cluster</code> - support for the <code>managed_resource_group_name</code> property (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/25529">#25529</a>)</li>
-<li><code>azurerm_redhat_openshift_cluster</code> - support for the <code>preconfigured_network_security_group_enabled</code> property (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/26082">#26082</a>)</li>
-<li><code>azurerm_iotcentral_application</code> - remove Computed from <code>template</code> and set default of <code>iotc-pnp-preview@1.0.0</code> in 4.0  (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/26485">#26485</a>)</li>
-<li><code>azurerm_digital_twins_time_series_database_connection</code> - remove Computed from <code>kusto_table_name</code> and set a default of <code>AdtPropertyEvents</code> in 4.0 (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/26484">#26484</a>)</li>
-</ul>
-<p>BUG FIXES:</p>
-<ul>
-<li>Data Source: <code>azurerm_express_route_circuit_peering</code> - fix issue where data source attempts to parse an empty string instead of generating the resource ID (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/26441">#26441</a>)</li>
-<li><code>azurerm_express_route_gateway</code> - prevent a panic (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/26467">#26467</a>)</li>
-<li><code>azurerm_monitor_scheduled_query_rules_alert_v2</code> - correctly handle the <code>identity</code> block if not specified (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/26364">#26364</a>)</li>
-<li><code>azurerm_security_center_automation</code> - prevent resource recreation when <code>tags</code> are updated (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/26292">#26292</a>)</li>
-<li><code>azurerm_synapse_workspace</code> - fix issue where <code>azure_devops_repo</code> or <code>github_repo</code> configuration could not be removed (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/26421">#26421</a>)</li>
-<li><code>azurerm_virtual_network_dns_servers</code> - split create and update function to fix lifecycle - ignore (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/26427">#26427</a>)</li>
-<li><code>azurerm_linux_function_app</code> - set <code>allowed_applications</code> in the request payload (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/26462">#26462</a>)</li>
-<li><code>azurerm_linux_function_app_slot</code> - set <code>allowed_applications</code> in the request payload (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/26462">#26462</a>)</li>
-<li><code>azurerm_windows_function_app</code> - set <code>allowed_applications</code> in the request payload (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/26462">#26462</a>)</li>
-<li><code>azurerm_windows_function_app_slot</code> - set <code>allowed_applications</code> in the request payload (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/26462">#26462</a>)</li>
-<li><code>azurerm_linux_web_app</code> - set <code>allowed_applications</code> in the request payload (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/26462">#26462</a>)</li>
-<li><code>azurerm_linux_web_app_slot</code> - set <code>allowed_applications</code> in the request payload (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/26462">#26462</a>)</li>
-<li><code>azurerm_windows_web_app</code> - set <code>allowed_applications</code> in the request payload (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/26462">#26462</a>)</li>
-<li><code>azurerm_windows_web_app_slot</code> - set <code>allowed_applications</code> in the request payload (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/26462">#26462</a>)</li>
-<li><code>azurerm_api_management</code> - remove ForceNew from <code>additional_location.zones</code> (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/26384">#26384</a>)</li>
-<li><code>azurerm_logic_app_integration_account_schema</code> - the <code>name</code> property now allows underscores (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/26475">#26475</a>)</li>
-<li><code>azurerm_palo_alto_local_rulestack_rule</code> - prevent error when switching between <code>protocol</code> and <code>protocol_ports</code> (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/26490">#26490</a>)</li>
-</ul>
-<p>DEPRECATIONS:</p>
-<ul>
-<li><code>azurerm_analysis_service_server</code> - the property <code>enable_power_bi_service</code> has been superseded by <code>power_bi_service_enabled</code> (<a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/26456">#26456</a>)</li>
-</ul>]]></content>
-<author><name>github-actions[bot]</name></author>
-</entry>
-<entry>
-<title>Vault Release: v1.17.1</title>
-<link href='https://github.com/hashicorp/vault/releases/tag/v1.17.1'/>
-<id>tag:github.com,2008:Repository/31288958/v1.17.1</id>
-<updated>2024-06-27T16:12:33Z</updated>
-<content type='html'><![CDATA[<h2>1.17.1</h2>
-<h3>June 26, 2024</h3>
-<p>CHANGES:</p>
-<ul>
-<li>auth/jwt: Update plugin to v0.21.0 [<a href="https://github.com/hashicorp/vault/pull/27498">GH-27498</a>]</li>
-</ul>
-<p>IMPROVEMENTS:</p>
-<ul>
-<li>storage/raft: Improve autopilot logging on startup to show config values clearly and avoid spurious logs [<a href="https://github.com/hashicorp/vault/pull/27464">GH-27464</a>]</li>
-<li>ui/secrets-sync: Hide Secrets Sync from the sidebar nav if user does not have access to the feature. [<a href="https://github.com/hashicorp/vault/pull/27262">GH-27262</a>]</li>
-</ul>
-<p>BUG FIXES:</p>
-<ul>
-<li>agent: Fixed an issue causing excessive CPU usage during normal operation [<a href="https://github.com/hashicorp/vault/pull/27518">GH-27518</a>]</li>
-<li>config: Vault TCP listener config now correctly supports the documented proxy_protocol_behavior<br />
-setting of 'deny_unauthorized' [<a href="https://github.com/hashicorp/vault/pull/27459">GH-27459</a>]</li>
-<li>core/audit: Audit logging a Vault request/response checks if the existing context<br />
-is cancelled and will now use a new context with a 5 second timeout.<br />
-If the existing context is cancelled a new context, will be used. [<a href="https://github.com/hashicorp/vault/pull/27531">GH-27531</a>]</li>
-<li>helper/pkcs7: Fix parsing certain messages containing only certificates [<a href="https://github.com/hashicorp/vault/pull/27435">GH-27435</a>]</li>
-<li>proxy: Fixed an issue causing excessive CPU usage during normal operation [<a href="https://github.com/hashicorp/vault/pull/27518">GH-27518</a>]</li>
-<li>replication (enterprise): fix cache invalidation issue leading to namespace custom metadata not being shown correctly on performance secondaries</li>
-<li>secrets-sync (enterprise): Properly remove tags from secrets in AWS when they are removed from the source association</li>
-<li>secrets-sync (enterprise): Return more accurate error code for invalid connection details</li>
-<li>secrets-sync (enterprise): Skip invalid GitHub repository names when creating destinations</li>
-<li>storage/azure: Fix invalid account name initialization bug [<a href="https://github.com/hashicorp/vault/pull/27563">GH-27563</a>]</li>
-<li>storage/raft (enterprise): Fix issue with namespace cache not getting cleared on snapshot restore, resulting in namespaces not found in the snapshot being inaccurately represented by API responses. [<a href="https://github.com/hashicorp/vault/pull/27474">GH-27474</a>]</li>
-<li>ui: Allow creation of session_token type roles for AWS secret backend [<a href="https://github.com/hashicorp/vault/pull/27424">GH-27424</a>]</li>
-</ul>]]></content>
-<author><name>hc-github-team-es-release-engineering</name></author>
-</entry>
-<entry>
-<title>Vault Release: v1.17.0</title>
-<link href='https://github.com/hashicorp/vault/releases/tag/v1.17.0'/>
-<id>tag:github.com,2008:Repository/31288958/v1.17.0</id>
-<updated>2024-06-12T17:12:22Z</updated>
-<content type='html'><![CDATA[<h2>1.17.0</h2>
-<h3>June 12, 2024</h3>
-<p>CHANGES:</p>
-<ul>
-<li>api: Upgrade from github.com/go-jose/go-jose/v3 v3.0.3 to github.com/go-jose/go-jose/v4 v4.0.1. [<a href="https://github.com/hashicorp/vault/pull/26527">GH-26527</a>]</li>
-<li>audit: breaking change - Vault now allows audit logs to contain 'correlation-id' and 'x-correlation-id' headers when they<br />
-are present in the incoming request. By default they are not HMAC'ed (but can be configured to HMAC by Vault Operators). [<a href="https://github.com/hashicorp/vault/pull/26777">GH-26777</a>]</li>
-<li>auth/alicloud: Update plugin to v0.18.0 [<a href="https://github.com/hashicorp/vault/pull/27133">GH-27133</a>]</li>
-<li>auth/azure: Update plugin to v0.18.0 [<a href="https://github.com/hashicorp/vault/pull/27146">GH-27146</a>]</li>
-<li>auth/centrify: Remove the deprecated Centrify auth method plugin [<a href="https://github.com/hashicorp/vault/pull/27130">GH-27130</a>]</li>
-<li>auth/cf: Update plugin to v0.17.0 [<a href="https://github.com/hashicorp/vault/pull/27161">GH-27161</a>]</li>
-<li>auth/gcp: Update plugin to v0.18.0 [<a href="https://github.com/hashicorp/vault/pull/27140">GH-27140</a>]</li>
-<li>auth/jwt: Update plugin to v0.20.2 [<a href="https://github.com/hashicorp/vault/pull/26291">GH-26291</a>]</li>
-<li>auth/jwt: Update plugin to v0.20.3 [<a href="https://github.com/hashicorp/vault/pull/26890">GH-26890</a>]</li>
-<li>auth/kerberos: Update plugin to v0.12.0 [<a href="https://github.com/hashicorp/vault/pull/27177">GH-27177</a>]</li>
-<li>auth/kubernetes: Update plugin to v0.19.0 [<a href="https://github.com/hashicorp/vault/pull/27186">GH-27186</a>]</li>
-<li>auth/oci: Update plugin to v0.16.0 [<a href="https://github.com/hashicorp/vault/pull/27142">GH-27142</a>]</li>
-<li>core (enterprise): Seal High Availability (HA) must be enabled by <code>enable_multiseal</code> in configuration.</li>
-<li>core/identity: improve performance for secondary nodes receiving identity related updates through replication [<a href="https://github.com/hashicorp/vault/pull/27184">GH-27184</a>]</li>
-<li>core: Bump Go version to 1.22.4</li>
-<li>core: return an additional "invalid token" error message in 403 response when the provided request token is expired,<br />
-exceeded the number of uses, or is a bogus value [<a href="https://github.com/hashicorp/vault/pull/25953">GH-25953</a>]</li>
-<li>database/couchbase: Update plugin to v0.11.0 [<a href="https://github.com/hashicorp/vault/pull/27145">GH-27145</a>]</li>
-<li>database/elasticsearch: Update plugin to v0.15.0 [<a href="https://github.com/hashicorp/vault/pull/27136">GH-27136</a>]</li>
-<li>database/mongodbatlas: Update plugin to v0.12.0 [<a href="https://github.com/hashicorp/vault/pull/27143">GH-27143</a>]</li>
-<li>database/redis-elasticache: Update plugin to v0.4.0 [<a href="https://github.com/hashicorp/vault/pull/27139">GH-27139</a>]</li>
-<li>database/redis: Update plugin to v0.3.0 [<a href="https://github.com/hashicorp/vault/pull/27117">GH-27117</a>]</li>
-<li>database/snowflake: Update plugin to v0.11.0 [<a href="https://github.com/hashicorp/vault/pull/27132">GH-27132</a>]</li>
-<li>sdk: String templates now have a maximum size of 100,000 characters. [<a href="https://github.com/hashicorp/vault/pull/26110">GH-26110</a>]</li>
-<li>secrets/ad: Update plugin to v0.18.0 [<a href="https://github.com/hashicorp/vault/pull/27172">GH-27172</a>]</li>
-<li>secrets/alicloud: Update plugin to v0.17.0 [<a href="https://github.com/hashicorp/vault/pull/27134">GH-27134</a>]</li>
-<li>secrets/azure: Update plugin to v0.17.1 [<a href="https://github.com/hashicorp/vault/pull/26528">GH-26528</a>]</li>
-<li>secrets/azure: Update plugin to v0.19.0 [<a href="https://github.com/hashicorp/vault/pull/27141">GH-27141</a>]</li>
-<li>secrets/gcp: Update plugin to v0.19.0 [<a href="https://github.com/hashicorp/vault/pull/27164">GH-27164</a>]</li>
-<li>secrets/gcpkms: Update plugin to v0.17.0 [<a href="https://github.com/hashicorp/vault/pull/27163">GH-27163</a>]</li>
-<li>secrets/keymgmt (enterprise): Removed <code>namespace</code> label on the <code>vault.kmse.key.count</code> metric.</li>
-<li>secrets/kmip (enterprise): Update plugin to v0.15.0</li>
-<li>secrets/kubernetes: Update plugin to v0.8.0 [<a href="https://github.com/hashicorp/vault/pull/27187">GH-27187</a>]</li>
-<li>secrets/kv: Update plugin to v0.18.0 [<a href="https://github.com/hashicorp/vault/pull/26877">GH-26877</a>]</li>
-<li>secrets/kv: Update plugin to v0.19.0 [<a href="https://github.com/hashicorp/vault/pull/27159">GH-27159</a>]</li>
-<li>secrets/mongodbatlas: Update plugin to v0.12.0 [<a href="https://github.com/hashicorp/vault/pull/27149">GH-27149</a>]</li>
-<li>secrets/openldap: Update plugin to v0.13.0 [<a href="https://github.com/hashicorp/vault/pull/27137">GH-27137</a>]</li>
-<li>secrets/pki: sign-intermediate API will truncate notAfter if calculated to go beyond the signing issuer's notAfter. Previously the notAfter was permitted to go beyond leading to invalid chains. [<a href="https://github.com/hashicorp/vault/pull/26796">GH-26796</a>]</li>
-<li>secrets/terraform: Update plugin to v0.8.0 [<a href="https://github.com/hashicorp/vault/pull/27147">GH-27147</a>]</li>
-<li>ui/kubernetes: Update the roles filter-input to use explicit search. [<a href="https://github.com/hashicorp/vault/pull/27178">GH-27178</a>]</li>
-<li>ui: Update dependencies including D3 libraries [<a href="https://github.com/hashicorp/vault/pull/26346">GH-26346</a>]</li>
-<li>ui: Upgrade Ember data from 4.11.3 to 4.12.4 [<a href="https://github.com/hashicorp/vault/pull/25272">GH-25272</a>]</li>
-<li>ui: Upgrade Ember to version 5.4 [<a href="https://github.com/hashicorp/vault/pull/26708">GH-26708</a>]</li>
-<li>ui: deleting a nested secret will no longer redirect you to the nearest path segment [<a href="https://github.com/hashicorp/vault/pull/26845">GH-26845</a>]</li>
-<li>ui: flash messages render on right side of page [<a href="https://github.com/hashicorp/vault/pull/25459">GH-25459</a>]</li>
-</ul>
-<p>FEATURES:</p>
-<ul>
-<li><strong>PKI Certificate Metadata (enterprise)</strong>:  Add Certificate Metadata Functionality to Record and Return Client Information about a Certificate.</li>
-<li><strong>Adaptive Overload Protection (enterprise)</strong>: Adds Adaptive Overload Protection<br />
-for write requests as a Beta feature (disabled by default). This automatically<br />
-prevents overloads caused by too many write requests while maintaining optimal<br />
-throughput for the hardware configuration and workload.</li>
-<li><strong>Audit Filtering (enterprise)</strong> : Audit devices support expression-based filter rules (powered by go-bexpr) to determine which entries are written to the audit log.</li>
-<li><strong>LDAP Secrets engine hierarchical path support</strong>: Hierarchical path handling is now supported for role and set APIs. [<a href="https://github.com/hashicorp/vault/pull/27203">GH-27203</a>]</li>
-<li><strong>Plugin Identity Tokens</strong>: Adds secret-less configuration of AWS auth engine using web identity federation. [<a href="https://github.com/hashicorp/vault/pull/26507">GH-26507</a>]</li>
-<li><strong>Plugin Workload Identity</strong> (enterprise): Vault can generate identity tokens for plugins to use in workload identity federation auth flows.</li>
-<li><strong>Transit AES-CMAC (enterprise)</strong>: Added support to create and verify AES backed cipher-based message authentication codes</li>
-</ul>
-<p>IMPROVEMENTS:</p>
-<ul>
-<li>activity (enterprise): Change minimum retention window in activity log to 48 months</li>
-<li>agent: Added a new config option, <code>lease_renewal_threshold</code>, that controls the refresh rate of non-renewable leases in Agent's template engine. [<a href="https://github.com/hashicorp/vault/pull/25212">GH-25212</a>]</li>
-<li>agent: Agent will re-trigger auto auth if token used for rendering templates has been revoked, has exceeded the number of uses, or is a bogus value. [<a href="https://github.com/hashicorp/vault/pull/26172">GH-26172</a>]</li>
-<li>api: Move CLI token helper functions to importable packages in <code>api</code> module. [<a href="https://github.com/hashicorp/vault/pull/25744">GH-25744</a>]</li>
-<li>audit: timestamps across multiple audit devices for an audit entry will now match. [<a href="https://github.com/hashicorp/vault/pull/26088">GH-26088</a>]</li>
-<li>auth/aws: Add inferred_hostname metadata for IAM AWS authentication method. [<a href="https://github.com/hashicorp/vault/pull/25418">GH-25418</a>]</li>
-<li>auth/aws: add canonical ARN as entity alias option [<a href="https://github.com/hashicorp/vault/pull/22460">GH-22460</a>]</li>
-<li>auth/aws: add support for external_ids in AWS assume-role [<a href="https://github.com/hashicorp/vault/pull/26628">GH-26628</a>]</li>
-<li>auth/cert: Adds support for TLS certificate authenticaion through a reverse proxy that terminates the SSL connection [<a href="https://github.com/hashicorp/vault/pull/17272">GH-17272</a>]</li>
-<li>cli: Add events subscriptions commands</li>
-<li>command/server: Removed environment variable requirement to generate pprof<br />
-files using SIGUSR2. Added CPU profile support. [<a href="https://github.com/hashicorp/vault/pull/25391">GH-25391</a>]</li>
-<li>core (enterprise): persist seal rewrap status, so rewrap status API is consistent on secondary nodes.</li>
-<li>core/activity: Include ACME client metrics to precomputed queries [<a href="https://github.com/hashicorp/vault/pull/26519">GH-26519</a>]</li>
-<li>core/activity: Include ACME clients in activity log responses [<a href="https://github.com/hashicorp/vault/pull/26020">GH-26020</a>]</li>
-<li>core/activity: Include ACME clients in vault operator usage response [<a href="https://github.com/hashicorp/vault/pull/26525">GH-26525</a>]</li>
-<li>core/config: reload service registration configuration on SIGHUP [<a href="https://github.com/hashicorp/vault/pull/17598">GH-17598</a>]</li>
-<li>core: add deadlock detection in barrier and sealwrap</li>
-<li>license utilization reporting (enterprise): Add retention months to license utilization reports.</li>
-<li>proxy/cache (enterprise): Support new configuration parameter for static secret caching, <code>static_secret_token_capability_refresh_behavior</code>, to control the behavior when the capability refresh request receives an error from Vault.</li>
-<li>proxy: Proxy will re-trigger auto auth if the token used for requests has been revoked, has exceeded the number of uses,<br />
-or is an otherwise invalid value. [<a href="https://github.com/hashicorp/vault/pull/26307">GH-26307</a>]</li>
-<li>raft/snapshotagent (enterprise): upgrade raft-snapshotagent to v0.0.0-20221104090112-13395acd02c5</li>
-<li>replication (enterprise): Add replication heartbeat metric to telemetry</li>
-<li>replication (enterprise): Periodically write current time on the primary to storage, use that downstream to measure replication lag in time, expose that in health and replication status endpoints. [<a href="https://github.com/hashicorp/vault/pull/26406">GH-26406</a>]</li>
-<li>sdk/decompression: DecompressWithCanary will now chunk the decompression in memory to prevent loading it all at once. [<a href="https://github.com/hashicorp/vault/pull/26464">GH-26464</a>]</li>
-<li>sdk/helper/testcluster: add some new helpers, improve some error messages. [<a href="https://github.com/hashicorp/vault/pull/25329">GH-25329</a>]</li>
-<li>sdk/helper/testhelpers: add namespace helpers [<a href="https://github.com/hashicorp/vault/pull/25270">GH-25270</a>]</li>
-<li>secrets-sync (enterprise): Added global config path to the administrative namespace.</li>
-<li>secrets/pki (enterprise): Disable warnings about unknown parameters to the various CIEPS endpoints</li>
-<li>secrets/pki: Add a new ACME configuration parameter that allows increasing the maximum TTL for ACME leaf certificates [<a href="https://github.com/hashicorp/vault/pull/26797">GH-26797</a>]</li>
-<li>secrets/transform (enterprise): Add delete by token and delete by plaintext operations to Tokenization.</li>
-<li>storage/azure: Perform validation on Azure account name and container name [<a href="https://github.com/hashicorp/vault/pull/26135">GH-26135</a>]</li>
-<li>storage/raft (enterprise): add support for separate entry size limit for mount<br />
-and namespace table paths in storage to allow increased mount table size without<br />
-allowing other user storage entries to become larger. [<a href="https://github.com/hashicorp/vault/pull/25992">GH-25992</a>]</li>
-<li>storage/raft: panic on unknown Raft operations [<a href="https://github.com/hashicorp/vault/pull/25991">GH-25991</a>]</li>
-<li>ui (enterprise): Allow HVD users to access Secrets Sync. [<a href="https://github.com/hashicorp/vault/pull/26841">GH-26841</a>]</li>
-<li>ui (enterprise): Update dashboard to make activity log query using the same start time as the metrics overview [<a href="https://github.com/hashicorp/vault/pull/26729">GH-26729</a>]</li>
-<li>ui (enterprise): Update filters on the custom messages list view. [<a href="https://github.com/hashicorp/vault/pull/26653">GH-26653</a>]</li>
-<li>ui: Allow users to wrap inputted data again instead of resetting form [<a href="https://github.com/hashicorp/vault/pull/27289">GH-27289</a>]</li>
-<li>ui: Display ACME clients on a separate page in the UI. [<a href="https://github.com/hashicorp/vault/pull/26020">GH-26020</a>]</li>
-<li>ui: Hide dashboard client count card if user does not have permission to view clients. [<a href="https://github.com/hashicorp/vault/pull/26848">GH-26848</a>]</li>
-<li>ui: Show computed values from <code>sys/internal/ui/mounts</code> endpoint for auth mount configuration view [<a href="https://github.com/hashicorp/vault/pull/26663">GH-26663</a>]</li>
-<li>ui: Update PGP display and show error for Generate Operation Token flow with PGP [<a href="https://github.com/hashicorp/vault/pull/26993">GH-26993</a>]</li>
-<li>ui: Update language in Transit secret engine to reflect that not all keys are for encyryption [<a href="https://github.com/hashicorp/vault/pull/27346">GH-27346</a>]</li>
-<li>ui: Update userpass user form to allow setting <code>password_hash</code> field. [<a href="https://github.com/hashicorp/vault/pull/26577">GH-26577</a>]</li>
-<li>ui: fixes cases where inputs did not have associated labels [<a href="https://github.com/hashicorp/vault/pull/26263">GH-26263</a>]</li>
-<li>ui: show banner instead of permission denied error when batch token is expired [<a href="https://github.com/hashicorp/vault/pull/26396">GH-26396</a>]</li>
-<li>website/docs: Add note about eventual consietency with the MongoDB Atlas database secrets engine [<a href="https://github.com/hashicorp/vault/pull/24152">GH-24152</a>]</li>
-</ul>
-<p>DEPRECATIONS:</p>
-<ul>
-<li>Request Limiter Beta(enterprise): This Beta feature added in 1.16 has been<br />
-superseded by Adaptive Overload Protection and will be removed.</li>
-<li>secrets/azure: Deprecate field "password_policy" as we are not able to set it anymore with the new MS Graph API. [<a href="https://github.com/hashicorp/vault/pull/25637">GH-25637</a>]</li>
-</ul>
-<p>BUG FIXES:</p>
-<ul>
-<li>activity (enterprise): fix read-only storage error on upgrades</li>
-<li>agent: Correctly constructs kv-v2 secret paths in nested namespaces. [<a href="https://github.com/hashicorp/vault/pull/26863">GH-26863</a>]</li>
-<li>agent: Fixes a high Vault load issue, by restarting the Conusl template server after backing off instead of immediately. [<a href="https://github.com/hashicorp/vault/pull/25497">GH-25497</a>]</li>
-<li>agent: <code>vault.namespace</code> no longer gets incorrectly overridden by <code>auto_auth.namespace</code>, if set [<a href="https://github.com/hashicorp/vault/pull/26427">GH-26427</a>]</li>
-<li>api: fixed a bug where LifetimeWatcher routines weren't respecting exponential backoff in the presence of unexpected errors [<a href="https://github.com/hashicorp/vault/pull/26383">GH-26383</a>]</li>
-<li>audit: Operator changes to configured audit headers (via <code>/sys/config/auditing</code>)<br />
-will now force invalidation and be reloaded from storage when data is replicated<br />
-to other nodes.</li>
-<li>auth/ldap: Fix login error for group search anonymous bind. [<a href="https://github.com/hashicorp/vault/pull/26200">GH-26200</a>]</li>
-<li>auth/ldap: Fix login error missing entity alias attribute value. [<a href="https://github.com/hashicorp/vault/pull/26200">GH-26200</a>]</li>
-<li>auto-auth: Addressed issue where having no permissions to renew a renewable token caused auto-auth to attempt to renew constantly with no backoff [<a href="https://github.com/hashicorp/vault/pull/26844">GH-26844</a>]</li>
-<li>cli/debug: Fix resource leak in CLI debug command. [<a href="https://github.com/hashicorp/vault/pull/26167">GH-26167</a>]</li>
-<li>cli: fixed a bug where the Vault CLI would error out if<br />
-HOME was not set. [<a href="https://github.com/hashicorp/vault/pull/26243">GH-26243</a>]</li>
-<li>core (enterprise): Fix 403s returned when forwarding invalid token to active node from secondary.</li>
-<li>core (enterprise): Fix an issue that prevented the seal re-wrap status from reporting that a re-wrap is in progress for up to a second.</li>
-<li>core (enterprise): fix bug where raft followers disagree with the seal type after returning to one seal from two. [<a href="https://github.com/hashicorp/vault/pull/26523">GH-26523</a>]</li>
-<li>core (enterprise): fix issue where the Seal HA rewrap system may remain running when an active node steps down.</li>
-<li>core/audit: Audit logging a Vault request/response will now use a minimum 5 second context timeout.<br />
-If the existing context deadline occurs later than 5s in the future, it will be used, otherwise a<br />
-new context, separate from the original will be used. [<a href="https://github.com/hashicorp/vault/pull/26616">GH-26616</a>]</li>
-<li>core/metrics: store cluster name in unencrypted storage to prevent blank cluster name [<a href="https://github.com/hashicorp/vault/pull/26878">GH-26878</a>]</li>
-<li>core/namespace (enterprise): Privileged namespace paths provided in the <code>administrative_namespace_path</code> config will now be canonicalized.</li>
-<li>core/seal: During a seal reload through SIGHUP, only write updated seal barrier on an active node [<a href="https://github.com/hashicorp/vault/pull/26381">GH-26381</a>]</li>
-<li>core/seal: allow overriding of VAULT_GCPCKMS_SEAL_KEY_RING and VAULT_GCPCKMS_SEAL_CRYPTO_KEY environment keys in seal-ha</li>
-<li>core: Add missing field delegated_auth_accessors to GET /sys/mounts/:path API response [<a href="https://github.com/hashicorp/vault/pull/26876">GH-26876</a>]</li>
-<li>core: Address a data race updating a seal's last seen healthy time attribute [<a href="https://github.com/hashicorp/vault/pull/27014">GH-27014</a>]</li>
-<li>core: Fix <code>redact_version</code> listener parameter being ignored for some OpenAPI related endpoints. [<a href="https://github.com/hashicorp/vault/pull/26607">GH-26607</a>]</li>
-<li>core: Only reload seal configuration when enable_multiseal is set to true. [<a href="https://github.com/hashicorp/vault/pull/26166">GH-26166</a>]</li>
-<li>core: when listener configuration <code>chroot_namespace</code> is active, Vault will no longer report that the configuration is invalid when Vault is sealed</li>
-<li>events (enterprise): Fix bug preventing subscribing and receiving events within a namepace.</li>
-<li>events (enterprise): Terminate WebSocket connection when token is revoked.</li>
-<li>openapi: Fixing approle reponse duration types [<a href="https://github.com/hashicorp/vault/pull/25510">GH-25510</a>]</li>
-<li>openapi: added the missing migrate parameter for the unseal endpoint in vault/logical_system_paths.go [<a href="https://github.com/hashicorp/vault/pull/25550">GH-25550</a>]</li>
-<li>pki: Fix error in cross-signing using ed25519 keys [<a href="https://github.com/hashicorp/vault/pull/27093">GH-27093</a>]</li>
-<li>plugin/wif: fix a bug where the namespace was not set for external plugins using workload identity federation [<a href="https://github.com/hashicorp/vault/pull/26384">GH-26384</a>]</li>
-<li>replication (enterprise): fix "given mount path is not in the same namespace as the request" error that can occur when enabling replication for the first time on a secondary cluster</li>
-<li>replication (enterprise): fixed data integrity issue with the processing of identity aliases causing duplicates to occur in rare cases</li>
-<li>router: Fix missing lock in MatchingSystemView. [<a href="https://github.com/hashicorp/vault/pull/25191">GH-25191</a>]</li>
-<li>secret/database: Fixed race condition where database mounts may leak connections [<a href="https://github.com/hashicorp/vault/pull/26147">GH-26147</a>]</li>
-<li>secrets-sync (enterprise): Fixed an issue with syncing to target projects in GCP</li>
-<li>secrets/azure: Update vault-plugin-secrets-azure to 0.17.2 to include a bug fix for azure role creation [<a href="https://github.com/hashicorp/vault/pull/26896">GH-26896</a>]</li>
-<li>secrets/pki (enterprise): cert_role parameter within authenticators.cert EST configuration handler could not be set</li>
-<li>secrets/pki: fixed validation bug which rejected ldap schemed URLs in crl_distribution_points. [<a href="https://github.com/hashicorp/vault/pull/26477">GH-26477</a>]</li>
-<li>secrets/transform (enterprise): Fix a bug preventing the use of alternate schemas on PostgreSQL token stores.</li>
-<li>secrets/transit: Use 'hash_algorithm' parameter if present in HMAC verify requests. Otherwise fall back to deprecated 'algorithm' parameter. [<a href="https://github.com/hashicorp/vault/pull/27211">GH-27211</a>]</li>
-<li>storage/raft (enterprise): Fix a bug where autopilot automated upgrades could fail due to using the wrong upgrade version</li>
-<li>storage/raft (enterprise): Fix a regression introduced in 1.15.8 that causes<br />
-autopilot to fail to discover new server versions and so not trigger an upgrade. [<a href="https://github.com/hashicorp/vault/pull/27277">GH-27277</a>]</li>
-<li>storage/raft: prevent writes from impeding leader transfers, e.g. during automated upgrades [<a href="https://github.com/hashicorp/vault/pull/25390">GH-25390</a>]</li>
-<li>transform (enterprise): guard against a panic looking up a token in exportable mode with barrier storage.</li>
-<li>ui: Do not show resultant-ACL banner when ancestor namespace grants wildcard access. [<a href="https://github.com/hashicorp/vault/pull/27263">GH-27263</a>]</li>
-<li>ui: Fix KVv2 cursor jumping inside json editor after initial input. [<a href="https://github.com/hashicorp/vault/pull/27120">GH-27120</a>]</li>
-<li>ui: Fix KVv2 json editor to allow null values. [<a href="https://github.com/hashicorp/vault/pull/27094">GH-27094</a>]</li>
-<li>ui: Fix a bug where disabling TTL on the AWS credential form would still send TTL value [<a href="https://github.com/hashicorp/vault/pull/27366">GH-27366</a>]</li>
-<li>ui: Fix broken help link in console for the web command. [<a href="https://github.com/hashicorp/vault/pull/26858">GH-26858</a>]</li>
-<li>ui: Fix configuration link from Secret Engine list view for Ember engines. [<a href="https://github.com/hashicorp/vault/pull/27131">GH-27131</a>]</li>
-<li>ui: Fix link to v2 generic secrets engine from secrets list page. [<a href="https://github.com/hashicorp/vault/pull/27019">GH-27019</a>]</li>
-<li>ui: Prevent perpetual loading screen when Vault needs initialization [<a href="https://github.com/hashicorp/vault/pull/26985">GH-26985</a>]</li>
-<li>ui: Refresh model within a namespace on the Secrets Sync overview page. [<a href="https://github.com/hashicorp/vault/pull/26790">GH-26790</a>]</li>
-<li>ui: Remove possibility of returning an undefined timezone from date-format helper [<a href="https://github.com/hashicorp/vault/pull/26693">GH-26693</a>]</li>
-<li>ui: Resolved accessibility issues with Web REPL. Associated label and help text with input, added a conditional to show the console/ui-panel only when toggled open, added keyboard focus trap. [<a href="https://github.com/hashicorp/vault/pull/26872">GH-26872</a>]</li>
-<li>ui: fix issue where a month without new clients breaks the client count dashboard [<a href="https://github.com/hashicorp/vault/pull/27352">GH-27352</a>]</li>
-<li>ui: fixed a bug where the replication pages did not update display when navigating between DR and performance [<a href="https://github.com/hashicorp/vault/pull/26325">GH-26325</a>]</li>
-<li>ui: fixes undefined start time in filename for downloaded client count attribution csv [<a href="https://github.com/hashicorp/vault/pull/26485">GH-26485</a>]</li>
-</ul>]]></content>
-<author><name>hc-github-team-es-release-engineering</name></author>
 </entry>
 <entry>
 <title>terraform-docs Release: v0.18.0</title>
@@ -1906,116 +1638,6 @@ in the <code>.terraform-docs.yml</code>:</p>
 <li><a class="user-mention notranslate" href="https://github.com/tf-docs-bot">@tf-docs-bot</a></li>
 </ul>]]></content>
 <author><name>tf-docs-bot</name></author>
-</entry>
-<entry>
-<title>Vault Release: v1.15.9+ent</title>
-<link href='https://github.com/hashicorp/vault/releases/tag/ent-changelog-1.15.9'/>
-<id>tag:github.com,2008:Repository/31288958/ent-changelog-1.15.9</id>
-<updated>2024-05-30T22:52:32Z</updated>
-<content type='html'><![CDATA[<h2>1.15.9 Enterprise</h2>
-<h3>May 30, 2024</h3>
-<p>This release is created to share the Vault Enterprise changelog and notify consumers of availability. The attached source and assets do not include Vault Enterprise code and should not be used in place of official Docker <a href="https://hub.docker.com/r/hashicorp/vault-enterprise/tags" rel="nofollow">images</a> or <a href="https://releases.hashicorp.com/vault/" rel="nofollow">binaries</a>.</p>
-<p>CHANGES:</p>
-<ul>
-<li>auth/jwt: Update plugin to v0.17.3 [<a href="https://github.com/hashicorp/vault/pull/27063">GH-27063</a>]</li>
-<li>core: Bump Go version to 1.22.2.</li>
-</ul>
-<p>IMPROVEMENTS:</p>
-<ul>
-<li>secrets/pki (enterprise): Disable warnings about unknown parameters to the various CIEPS endpoints</li>
-<li>website/docs: Add note about eventual consietency with the MongoDB Atlas database secrets engine [<a href="https://github.com/hashicorp/vault/pull/24152">GH-24152</a>]</li>
-</ul>
-<p>BUG FIXES:</p>
-<ul>
-<li>activity (enterprise): fix read-only storage error on upgrades</li>
-<li>core: Address a data race updating a seal's last seen healthy time attribute [<a href="https://github.com/hashicorp/vault/pull/27014">GH-27014</a>]</li>
-<li>pki: Fix error in cross-signing using ed25519 keys [<a href="https://github.com/hashicorp/vault/pull/27093">GH-27093</a>]</li>
-<li>replication (enterprise): fix "given mount path is not in the same namespace as the request" error that can occur when enabling replication for the first time on a secondary cluster</li>
-<li>secrets/transit: Use 'hash_algorithm' parameter if present in HMAC verify requests. Otherwise fall back to deprecated 'algorithm' parameter. [<a href="https://github.com/hashicorp/vault/pull/27211">GH-27211</a>]</li>
-<li>ui: Fix KVv2 cursor jumping inside json editor after initial input. [<a href="https://github.com/hashicorp/vault/pull/27120">GH-27120</a>]</li>
-</ul>]]></content>
-<author><name>anwittin</name></author>
-</entry>
-<entry>
-<title>Vault Release: v1.14.13+ent</title>
-<link href='https://github.com/hashicorp/vault/releases/tag/ent-changelog-1.14.13'/>
-<id>tag:github.com,2008:Repository/31288958/ent-changelog-1.14.13</id>
-<updated>2024-05-30T22:45:23Z</updated>
-<content type='html'><![CDATA[<h2>1.14.13 Enterprise</h2>
-<h3>May 30, 2024</h3>
-<p>This release is created to share the Vault Enterprise changelog and notify consumers of availability. The attached source and assets do not include Vault Enterprise code and should not be used in place of official Docker <a href="https://hub.docker.com/r/hashicorp/vault-enterprise/tags" rel="nofollow">images</a> or <a href="https://releases.hashicorp.com/vault/" rel="nofollow">binaries</a>.</p>
-<p>CHANGES:</p>
-<ul>
-<li>auth/jwt: Update plugin to v0.16.1 [<a href="https://github.com/hashicorp/vault/pull/27122">GH-27122</a>]</li>
-<li>core: Bump Go version to 1.22.2.</li>
-</ul>
-<p>IMPROVEMENTS:</p>
-<ul>
-<li>website/docs: Add note about eventual consietency with the MongoDB Atlas database secrets engine [<a href="https://github.com/hashicorp/vault/pull/24152">GH-24152</a>]</li>
-</ul>
-<p>BUG FIXES:</p>
-<ul>
-<li>activity (enterprise): fix read-only storage error on upgrades</li>
-<li>pki: Fix error in cross-signing using ed25519 keys [<a href="https://github.com/hashicorp/vault/pull/27093">GH-27093</a>]</li>
-<li>replication (enterprise): fix "given mount path is not in the same namespace as the request" error that can occur when enabling replication for the first time on a secondary cluster</li>
-<li>secrets/transit: Use 'hash_algorithm' parameter if present in HMAC verify requests. Otherwise fall back to deprecated 'algorithm' parameter. [<a href="https://github.com/hashicorp/vault/pull/27211">GH-27211</a>]</li>
-</ul>]]></content>
-<author><name>anwittin</name></author>
-</entry>
-<entry>
-<title>Vault Release: v1.16.3</title>
-<link href='https://github.com/hashicorp/vault/releases/tag/v1.16.3'/>
-<id>tag:github.com,2008:Repository/31288958/v1.16.3</id>
-<updated>2024-05-30T22:33:24Z</updated>
-<content type='html'><![CDATA[<h2>1.16.3</h2>
-<h3>May 30, 2024</h3>
-<p>CHANGES:</p>
-<ul>
-<li>auth/jwt: Update plugin to v0.20.3 [<a href="https://github.com/hashicorp/vault/pull/26890">GH-26890</a>]</li>
-<li>core/identity: improve performance for secondary nodes receiving identity related updates through replication [<a href="https://github.com/hashicorp/vault/pull/27184">GH-27184</a>]</li>
-<li>core: Bump Go version to 1.22.2.</li>
-</ul>
-<p>IMPROVEMENTS:</p>
-<ul>
-<li>secrets/pki (enterprise): Disable warnings about unknown parameters to the various CIEPS endpoints</li>
-<li>ui: Update PGP display and show error for Generate Operation Token flow with PGP [<a href="https://github.com/hashicorp/vault/pull/26993">GH-26993</a>]</li>
-</ul>
-<p>BUG FIXES:</p>
-<ul>
-<li>activity (enterprise): fix read-only storage error on upgrades</li>
-<li>auto-auth: Addressed issue where having no permissions to renew a renewable token caused auto-auth to attempt to renew constantly with no backoff [<a href="https://github.com/hashicorp/vault/pull/26844">GH-26844</a>]</li>
-<li>core (enterprise): Fix an issue that prevented the seal re-wrap status from reporting that a re-wrap is in progress for up to a second.</li>
-<li>core/audit: Audit logging a Vault request/response will now use a minimum 5 second context timeout.<br />
-If the existing context deadline occurs later than 5s in the future, it will be used, otherwise a<br />
-new context, separate from the original will be used. [<a href="https://github.com/hashicorp/vault/pull/26616">GH-26616</a>]</li>
-<li>core: Add missing field delegated_auth_accessors to GET /sys/mounts/:path API response [<a href="https://github.com/hashicorp/vault/pull/26876">GH-26876</a>]</li>
-<li>core: Address a data race updating a seal's last seen healthy time attribute [<a href="https://github.com/hashicorp/vault/pull/27014">GH-27014</a>]</li>
-<li>core: Fix <code>redact_version</code> listener parameter being ignored for some OpenAPI related endpoints. [<a href="https://github.com/hashicorp/vault/pull/26607">GH-26607</a>]</li>
-<li>events (enterprise): Fix bug preventing subscribing and receiving events within a namepace.</li>
-<li>pki: Fix error in cross-signing using ed25519 keys [<a href="https://github.com/hashicorp/vault/pull/27093">GH-27093</a>]</li>
-<li>replication (enterprise): fix "given mount path is not in the same namespace as the request" error that can occur when enabling replication for the first time on a secondary cluster</li>
-<li>secrets-sync (enterprise): Secondary nodes in a cluster now properly check activation-flags values.</li>
-<li>secrets/azure: Update vault-plugin-secrets-azure to 0.17.2 to include a bug fix for azure role creation [<a href="https://github.com/hashicorp/vault/pull/26896">GH-26896</a>]</li>
-<li>secrets/pki (enterprise): cert_role parameter within authenticators.cert EST configuration handler could not be set</li>
-<li>secrets/transit: Use 'hash_algorithm' parameter if present in HMAC verify requests. Otherwise fall back to deprecated 'algorithm' parameter. [<a href="https://github.com/hashicorp/vault/pull/27211">GH-27211</a>]</li>
-<li>ui: Fix KVv2 cursor jumping inside json editor after initial input. [<a href="https://github.com/hashicorp/vault/pull/27120">GH-27120</a>]</li>
-<li>ui: Fix KVv2 json editor to allow null values. [<a href="https://github.com/hashicorp/vault/pull/27094">GH-27094</a>]</li>
-<li>ui: Fix broken help link in console for the web command. [<a href="https://github.com/hashicorp/vault/pull/26858">GH-26858</a>]</li>
-<li>ui: Fix link to v2 generic secrets engine from secrets list page. [<a href="https://github.com/hashicorp/vault/pull/27019">GH-27019</a>]</li>
-<li>ui: Prevent perpetual loading screen when Vault needs initialization [<a href="https://github.com/hashicorp/vault/pull/26985">GH-26985</a>]</li>
-<li>ui: Refresh model within a namespace on the Secrets Sync overview page. [<a href="https://github.com/hashicorp/vault/pull/26790">GH-26790</a>]</li>
-</ul>]]></content>
-<author><name>hc-github-team-es-release-engineering</name></author>
-</entry>
-<entry>
-<title>Vault Release: v1.17.0-rc1</title>
-<link href='https://github.com/hashicorp/vault/releases/tag/v1.17.0-rc1'/>
-<id>tag:github.com,2008:Repository/31288958/v1.17.0-rc1</id>
-<updated>2024-05-29T20:58:51Z</updated>
-<content type='html'><![CDATA[<p>[VAULT-27613] This is an automated pull request to build all artifact…</p>
-
-<p>…s for a release (<a class="issue-link js-issue-link" href="https://github.com/hashicorp/vault/pull/27253">#27253</a>)</p>]]></content>
-<author><name>hc-github-team-es-release-engineering</name></author>
 </entry>
 <entry>
 <title>terraform-docs Release: v0.16.0</title>
